@@ -2871,7 +2871,8 @@ const u16 gEggMoves[] = {
         MOVE_OMINOUS_WIND,
         MOVE_DARK_PULSE,
         MOVE_SKILL_SWAP,
-        MOVE_HAZE),
+        MOVE_HAZE,
+		MOVE_RAGE_FIST),
 #endif //P_FAMILY_DUSKULL
 
 #if P_FAMILY_TROPIUS

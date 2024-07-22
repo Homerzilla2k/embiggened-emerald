@@ -415,22 +415,20 @@ static const struct LevelUpMove sSpearowLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sFearowLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_DRILL_RUN),
-    LEVEL_UP_MOVE( 1, MOVE_PLUCK),
-    LEVEL_UP_MOVE( 1, MOVE_PECK),
-    LEVEL_UP_MOVE( 1, MOVE_GROWL),
-    LEVEL_UP_MOVE( 1, MOVE_LEER),
-    LEVEL_UP_MOVE( 4, MOVE_LEER),
-    LEVEL_UP_MOVE( 8, MOVE_ASSURANCE),
-    LEVEL_UP_MOVE(11, MOVE_FURY_ATTACK),
-    LEVEL_UP_MOVE(15, MOVE_AERIAL_ACE),
-    LEVEL_UP_MOVE(18, MOVE_WING_ATTACK),
-    LEVEL_UP_MOVE(23, MOVE_TAKE_DOWN),
-    LEVEL_UP_MOVE(27, MOVE_AGILITY),
-    LEVEL_UP_MOVE(32, MOVE_FOCUS_ENERGY),
-    LEVEL_UP_MOVE(36, MOVE_ROOST),
-    LEVEL_UP_MOVE(41, MOVE_DRILL_PECK),
-    LEVEL_UP_MOVE(45, MOVE_DRILL_RUN),
+	LEVEL_UP_MOVE( 1, MOVE_PECK),
+	LEVEL_UP_MOVE( 1, MOVE_GROWL),
+	LEVEL_UP_MOVE( 4, MOVE_LEER),
+	LEVEL_UP_MOVE( 8, MOVE_PURSUIT),
+	LEVEL_UP_MOVE(11, MOVE_FURY_ATTACK),
+	LEVEL_UP_MOVE(15, MOVE_AERIAL_ACE),
+	LEVEL_UP_MOVE(18, MOVE_MIRROR_MOVE),
+	LEVEL_UP_MOVE(23, MOVE_ASSURANCE),
+	LEVEL_UP_MOVE(26, MOVE_AGILITY),
+	LEVEL_UP_MOVE(30, MOVE_DUAL_WINGBEAT), // New Move Slot -> Dual Wingbeat: New Move. Breaks up 3 support move streak. Fearow would probably get it if it were in a game where it existed. 
+	LEVEL_UP_MOVE(33, MOVE_FOCUS_ENERGY),
+	LEVEL_UP_MOVE(36, MOVE_ROOST),
+	LEVEL_UP_MOVE(41, MOVE_DRILL_PECK),
+	LEVEL_UP_MOVE(45, MOVE_DRILL_RUN),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SPEAROW
@@ -689,19 +687,20 @@ static const struct LevelUpMove sNidoranFLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sNidorinaLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_GROWL),
-    LEVEL_UP_MOVE( 1, MOVE_POISON_STING),
-    LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
-    LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
-    LEVEL_UP_MOVE(15, MOVE_FURY_SWIPES),
-    LEVEL_UP_MOVE(22, MOVE_TOXIC_SPIKES),
-    LEVEL_UP_MOVE(29, MOVE_DOUBLE_KICK),
-    LEVEL_UP_MOVE(36, MOVE_BITE),
-    LEVEL_UP_MOVE(43, MOVE_HELPING_HAND),
-    LEVEL_UP_MOVE(50, MOVE_TOXIC),
-    LEVEL_UP_MOVE(57, MOVE_FLATTER),
-    LEVEL_UP_MOVE(64, MOVE_CRUNCH),
-    LEVEL_UP_MOVE(71, MOVE_EARTH_POWER),
+	LEVEL_UP_MOVE( 1, MOVE_GROWL),
+	LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
+	LEVEL_UP_MOVE( 7, MOVE_TAIL_WHIP),
+	LEVEL_UP_MOVE( 9, MOVE_DOUBLE_KICK),
+	LEVEL_UP_MOVE(13, MOVE_POISON_STING),
+	LEVEL_UP_MOVE(17, MOVE_POISON_STING), // New move:  Need something here. 7 level gap is unacceptable
+	LEVEL_UP_MOVE(20, MOVE_BARB_BARRAGE), // Fury Swipes -> Barb Barrage: Poison type Hex.  Fits Pokemon, its levelup move pool is terrible. Nothing got it before it and Tenta. Also for Misty
+	LEVEL_UP_MOVE(23, MOVE_BITE),
+	LEVEL_UP_MOVE(28, MOVE_HELPING_HAND),
+	LEVEL_UP_MOVE(35, MOVE_TOXIC_SPIKES),
+	LEVEL_UP_MOVE(38, MOVE_FLATTER),
+	LEVEL_UP_MOVE(43, MOVE_CRUNCH),
+	LEVEL_UP_MOVE(50, MOVE_CAPTIVATE),
+	LEVEL_UP_MOVE(58, MOVE_POISON_FANG),
     LEVEL_UP_END
 };
 
@@ -742,19 +741,20 @@ static const struct LevelUpMove sNidoranMLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sNidorinoLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_LEER),
-    LEVEL_UP_MOVE( 1, MOVE_POISON_STING),
-    LEVEL_UP_MOVE( 1, MOVE_PECK),
-    LEVEL_UP_MOVE( 1, MOVE_FOCUS_ENERGY),
-    LEVEL_UP_MOVE(15, MOVE_FURY_ATTACK),
-    LEVEL_UP_MOVE(22, MOVE_TOXIC_SPIKES),
-    LEVEL_UP_MOVE(29, MOVE_DOUBLE_KICK),
-    LEVEL_UP_MOVE(36, MOVE_HORN_ATTACK),
-    LEVEL_UP_MOVE(43, MOVE_HELPING_HAND),
-    LEVEL_UP_MOVE(50, MOVE_TOXIC),
-    LEVEL_UP_MOVE(57, MOVE_FLATTER),
-    LEVEL_UP_MOVE(64, MOVE_POISON_JAB),
-    LEVEL_UP_MOVE(71, MOVE_EARTH_POWER),
+	LEVEL_UP_MOVE( 1, MOVE_LEER),
+	LEVEL_UP_MOVE( 1, MOVE_PECK),
+	LEVEL_UP_MOVE( 7, MOVE_FOCUS_ENERGY),
+	LEVEL_UP_MOVE( 9, MOVE_DOUBLE_KICK),
+	LEVEL_UP_MOVE(13, MOVE_POISON_STING),
+	LEVEL_UP_MOVE(17, MOVE_POISON_STING), // New move:  Need something here. 7 level gap is unacceptable
+	LEVEL_UP_MOVE(20, MOVE_BARB_BARRAGE), // Fury Attack -> Barb Barrage: Poison type Hex.  Fits Pokemon, its levelup move pool is terrible. Nothing got it before it and Tenta.
+	LEVEL_UP_MOVE(23, MOVE_HORN_ATTACK),
+	LEVEL_UP_MOVE(28, MOVE_HELPING_HAND),
+	LEVEL_UP_MOVE(35, MOVE_TOXIC_SPIKES),
+	LEVEL_UP_MOVE(38, MOVE_FLATTER),
+	LEVEL_UP_MOVE(43, MOVE_POISON_JAB),
+	LEVEL_UP_MOVE(50, MOVE_CAPTIVATE),
+	LEVEL_UP_MOVE(58, MOVE_HORN_DRILL),
     LEVEL_UP_END
 };
 
@@ -868,23 +868,29 @@ static const struct LevelUpMove sVulpixLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sNinetalesLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_NASTY_PLOT),
-    LEVEL_UP_MOVE( 1, MOVE_INCINERATE),
-    LEVEL_UP_MOVE( 1, MOVE_SPITE),
-    LEVEL_UP_MOVE( 1, MOVE_CONFUSE_RAY),
-    LEVEL_UP_MOVE( 1, MOVE_WILL_O_WISP),
-    LEVEL_UP_MOVE( 1, MOVE_EXTRASENSORY),
-    LEVEL_UP_MOVE( 1, MOVE_FLAMETHROWER),
-    LEVEL_UP_MOVE( 1, MOVE_IMPRISON),
-    LEVEL_UP_MOVE( 1, MOVE_FIRE_SPIN),
-    LEVEL_UP_MOVE( 1, MOVE_SAFEGUARD),
-    LEVEL_UP_MOVE( 1, MOVE_INFERNO),
-    LEVEL_UP_MOVE( 1, MOVE_GRUDGE),
-    LEVEL_UP_MOVE( 1, MOVE_FIRE_BLAST),
-    LEVEL_UP_MOVE( 1, MOVE_EMBER),
-    LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
-    LEVEL_UP_MOVE( 1, MOVE_DISABLE),
-    LEVEL_UP_MOVE( 1, MOVE_QUICK_ATTACK),
+	LEVEL_UP_MOVE( 0, MOVE_INFERNAL_PARADE), // New Move Slot -> Infernal Parade: New Move.  No H-Typhlosian so give it to Ninetales as a "Signature Move"
+	LEVEL_UP_MOVE( 1, MOVE_INFERNAL_PARADE), // New Move Slot -> Infernal Parade: New Move.  No H-Typhlosian so give it to Ninetales as a "Signature Move"
+	LEVEL_UP_MOVE( 1, MOVE_EMBER),
+	LEVEL_UP_MOVE( 4, MOVE_TAIL_WHIP),
+	LEVEL_UP_MOVE( 7, MOVE_ROAR),
+	LEVEL_UP_MOVE( 9, MOVE_BABY_DOLL_EYES),
+	LEVEL_UP_MOVE(10, MOVE_QUICK_ATTACK),
+	LEVEL_UP_MOVE(12, MOVE_CONFUSE_RAY),
+	LEVEL_UP_MOVE(15, MOVE_FIRE_SPIN),
+	LEVEL_UP_MOVE(18, MOVE_PAYBACK),
+	LEVEL_UP_MOVE(20, MOVE_WILL_O_WISP),
+	LEVEL_UP_MOVE(23, MOVE_FEINT_ATTACK),
+	LEVEL_UP_MOVE(26, MOVE_HEX),
+	LEVEL_UP_MOVE(28, MOVE_FLAME_BURST),
+	LEVEL_UP_MOVE(31, MOVE_EXTRASENSORY),
+	LEVEL_UP_MOVE(34, MOVE_SAFEGUARD),
+	LEVEL_UP_MOVE(36, MOVE_FLAMETHROWER),
+	LEVEL_UP_MOVE(39, MOVE_IMPRISON),
+	LEVEL_UP_MOVE(42, MOVE_FIRE_BLAST),
+	LEVEL_UP_MOVE(44, MOVE_GRUDGE),
+	LEVEL_UP_MOVE(47, MOVE_CAPTIVATE),
+	LEVEL_UP_MOVE(50, MOVE_INFERNO),
+	LEVEL_UP_END
     LEVEL_UP_END
 };
 
@@ -950,51 +956,53 @@ static const struct LevelUpMove sIgglybuffLevelUpLearnset[] = {
 #endif //P_GEN_2_CROSS_EVOS
 
 static const struct LevelUpMove sJigglypuffLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_DISARMING_VOICE),
-    LEVEL_UP_MOVE( 1, MOVE_COPYCAT),
-    LEVEL_UP_MOVE( 1, MOVE_SWEET_KISS),
-    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
-    LEVEL_UP_MOVE( 1, MOVE_CHARM),
-    LEVEL_UP_MOVE( 1, MOVE_SING),
-    LEVEL_UP_MOVE( 1, MOVE_DISABLE),
-    LEVEL_UP_MOVE( 1, MOVE_POUND),
-    LEVEL_UP_MOVE( 4, MOVE_ECHOED_VOICE),
-    LEVEL_UP_MOVE( 8, MOVE_COVET),
-    LEVEL_UP_MOVE(12, MOVE_STOCKPILE),
-    LEVEL_UP_MOVE(12, MOVE_SPIT_UP),
-    LEVEL_UP_MOVE(12, MOVE_SWALLOW),
-    LEVEL_UP_MOVE(16, MOVE_ROUND),
-    LEVEL_UP_MOVE(20, MOVE_REST),
-    LEVEL_UP_MOVE(24, MOVE_BODY_SLAM),
-    LEVEL_UP_MOVE(28, MOVE_MIMIC),
-    LEVEL_UP_MOVE(32, MOVE_GYRO_BALL),
-    LEVEL_UP_MOVE(36, MOVE_HYPER_VOICE),
-    LEVEL_UP_MOVE(44, MOVE_DOUBLE_EDGE),
+	LEVEL_UP_MOVE( 0, MOVE_DOUBLE_SLAP), // New Move Slot -> Double Slap: It feel like Puff should have Double Slap but there's not a great spot for it.  Move to evolve
+	LEVEL_UP_MOVE( 1, MOVE_DOUBLE_SLAP), // New Move Slot -> Double Slap: It feel like Puff should have Double Slap but there's not a great spot for it.  Move to evolve
+	LEVEL_UP_MOVE( 1, MOVE_COPYCAT), // New Move Slot -> Copycat: Gen VIII and IX move  I think it fits and Copycat Prankster would be a fun early game thing.
+	LEVEL_UP_MOVE( 1, MOVE_SING),
+	LEVEL_UP_MOVE( 3, MOVE_PLAY_NICE), // Defense Curl -> Play Nice: Move Play Nice up to Level 3.  Does the same thing as Defense Curl basically
+	LEVEL_UP_MOVE( 5, MOVE_DISARMING_VOICE), // Pound -> Disarming Voice: Moving Disarming Voice up because it fits better and enough things get generic Pound/Tackle moves. Plus Copycat can give you that.
+	LEVEL_UP_MOVE( 8, MOVE_COVET), // Play Nice -> Covet: Gen VIII and IX move.  Fits character.
+	LEVEL_UP_MOVE(11, MOVE_DISABLE), // Disarming Voice -> Diable: Swap level with Fake Tears
+	LEVEL_UP_MOVE(14, MOVE_FAKE_TEARS), // Disable -> Fake Tears: TM Move.  Fits role better and gives power boost to Disarming Voice.
+	LEVEL_UP_MOVE(17, MOVE_SNARL), // Double Slap -> Snarl: New move for new role
+	LEVEL_UP_MOVE(20, MOVE_SWAGGER), // Rollout -> Swagger: New move for new role
+	LEVEL_UP_MOVE(22, MOVE_ROUND),
+	LEVEL_UP_MOVE(25, MOVE_TAUNT), // Stockpile Suite -> Taunt: TM Move.  New Move for the role.  Also useful for Erika's Doubles Gym
+	LEVEL_UP_MOVE(27, MOVE_FAKE_OUT), // Wake-Up Slap -> Fake Out: New Move.  Fits Role.  Have for Erika
+	LEVEL_UP_MOVE(30, MOVE_REST),
+	LEVEL_UP_MOVE(32, MOVE_DAZZLING_GLEAM), // Body Slam -> Dazzling Gleam: TM Move.  Needs a Fairy Power upgrade but there are no mid power Fairy moves.  Could move to 38
+	LEVEL_UP_MOVE(35, MOVE_FOUL_PLAY), // Gyro Ball -> Foul Play: New Move for new Role.  
+	LEVEL_UP_MOVE(38, MOVE_TOPSY_TURVY), // Mimc -> Topsy Turvy.  New Move.  Mischevious trickery. Could move to 32
+	LEVEL_UP_MOVE(41, MOVE_HYPER_VOICE),
+	LEVEL_UP_MOVE(45, MOVE_LOVELY_KISS), // Double-Edge -> Lovely Kiss: New Move. Update to Sing
+	LEVEL_UP_MOVE(48, MOVE_NASTY_PLOT), // New Move Slot -> Nasty Plot: TM Move.  
+	LEVEL_UP_MOVE(52, MOVE_PARTING_SHOT), // New Move Slot -> Parting Shot: New Move.  Fits new role
     LEVEL_UP_END
 };
 
 static const struct LevelUpMove sWigglytuffLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_STOCKPILE),
-    LEVEL_UP_MOVE( 1, MOVE_ECHOED_VOICE),
-    LEVEL_UP_MOVE( 1, MOVE_ROUND),
-    LEVEL_UP_MOVE( 1, MOVE_COPYCAT),
-    LEVEL_UP_MOVE( 1, MOVE_GYRO_BALL),
-    LEVEL_UP_MOVE( 1, MOVE_COVET),
-    LEVEL_UP_MOVE( 1, MOVE_HYPER_VOICE),
-    LEVEL_UP_MOVE( 1, MOVE_SWALLOW),
-    LEVEL_UP_MOVE( 1, MOVE_SPIT_UP),
-    LEVEL_UP_MOVE( 1, MOVE_DISARMING_VOICE),
-    LEVEL_UP_MOVE( 1, MOVE_POUND),
-    LEVEL_UP_MOVE( 1, MOVE_SWEET_KISS),
-    LEVEL_UP_MOVE( 1, MOVE_REST),
-    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
-    LEVEL_UP_MOVE( 1, MOVE_MIMIC),
-    LEVEL_UP_MOVE( 1, MOVE_DISABLE),
-    LEVEL_UP_MOVE( 1, MOVE_SING),
-    LEVEL_UP_MOVE( 1, MOVE_DOUBLE_EDGE),
-    LEVEL_UP_MOVE( 1, MOVE_BODY_SLAM),
-    LEVEL_UP_MOVE( 1, MOVE_CHARM),
-    LEVEL_UP_MOVE( 5, MOVE_PLAY_ROUGH),
+	LEVEL_UP_MOVE( 1, MOVE_DOUBLE_SLAP), // New Move Slot -> Double Slap: It feel like Puff should have Double Slap but there's not a great spot for it.  Move to evolve
+	LEVEL_UP_MOVE( 1, MOVE_COPYCAT), // New Move Slot -> Copycat: Gen VIII and IX move  I think it fits and Copycat Prankster would be a fun early game thing.
+	LEVEL_UP_MOVE( 1, MOVE_SING),
+	LEVEL_UP_MOVE( 3, MOVE_PLAY_NICE), // Defense Curl -> Play Nice: Move Play Nice up to Level 3.  Does the same thing as Defense Curl basically
+	LEVEL_UP_MOVE( 5, MOVE_DISARMING_VOICE), // Pound -> Disarming Voice: Moving Disarming Voice up because it fits better and enough things get generic Pound/Tackle moves. Plus Copycat can give you that.
+	LEVEL_UP_MOVE( 8, MOVE_COVET), // Play Nice -> Covet: Gen VIII and IX move.  Fits character.
+	LEVEL_UP_MOVE(11, MOVE_DISABLE), // Disarming Voice -> Diable: Swap level with Fake Tears
+	LEVEL_UP_MOVE(14, MOVE_FAKE_TEARS), // Disable -> Fake Tears: TM Move.  Fits role better and gives power boost to Disarming Voice.
+	LEVEL_UP_MOVE(17, MOVE_SNARL), // Double Slap -> Snarl: New move for new role
+	LEVEL_UP_MOVE(20, MOVE_SWAGGER), // Rollout -> Swagger: New move for new role
+	LEVEL_UP_MOVE(22, MOVE_ROUND),
+	LEVEL_UP_MOVE(25, MOVE_TAUNT), // Stockpile Suite -> Taunt: TM Move.  New Move for the role.  Also useful for Erika's Doubles Gym
+	LEVEL_UP_MOVE(27, MOVE_FAKE_OUT), // Wake-Up Slap -> Fake Out: New Move.  Fits Role.  Have for Erika.  Move Wake-Up Slap to Egg or MT List.  
+	LEVEL_UP_MOVE(30, MOVE_REST),
+	LEVEL_UP_MOVE(32, MOVE_DAZZLING_GLEAM), // Body Slam -> Dazzling Gleam: TM Move.  Needs a Fairy Power upgrade but there are no mid power Fairy moves.  Could move to 38
+	LEVEL_UP_MOVE(35, MOVE_FOUL_PLAY), // Gyro Ball -> Foul Play: New Move for new Role.  
+	LEVEL_UP_MOVE(38, MOVE_TOPSY_TURVY), // Mimc -> Topsy Turvy.  New Move.  Mischevious trickery. Could move to 32
+	LEVEL_UP_MOVE(41, MOVE_HYPER_VOICE),
+	LEVEL_UP_MOVE(45, MOVE_LOVELY_KISS), // Double-Edge -> Lovely Kiss: New Move. Update to Sing
+	LEVEL_UP_MOVE(48, MOVE_NASTY_PLOT), // New Move Slot -> Nasty Plot: TM Move.  
+	LEVEL_UP_MOVE(52, MOVE_PARTING_SHOT), // New Move Slot -> Parting Shot: New Move.  Fits new role
     LEVEL_UP_END
 };
 #endif //P_FAMILY_JIGGLYPUFF
@@ -1062,38 +1070,45 @@ static const struct LevelUpMove sCrobatLevelUpLearnset[] = {
 
 #if P_FAMILY_ODDISH
 static const struct LevelUpMove sOddishLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_ABSORB),
-    LEVEL_UP_MOVE( 1, MOVE_GROWTH),
-    LEVEL_UP_MOVE( 4, MOVE_ACID),
-    LEVEL_UP_MOVE( 8, MOVE_SWEET_SCENT),
-    LEVEL_UP_MOVE(12, MOVE_MEGA_DRAIN),
-    LEVEL_UP_MOVE(14, MOVE_POISON_POWDER),
-    LEVEL_UP_MOVE(16, MOVE_STUN_SPORE),
-    LEVEL_UP_MOVE(18, MOVE_SLEEP_POWDER),
-    LEVEL_UP_MOVE(20, MOVE_GIGA_DRAIN),
-    LEVEL_UP_MOVE(24, MOVE_TOXIC),
-    LEVEL_UP_MOVE(28, MOVE_MOONBLAST),
-    LEVEL_UP_MOVE(32, MOVE_GRASSY_TERRAIN),
-    LEVEL_UP_MOVE(36, MOVE_MOONLIGHT),
-    LEVEL_UP_MOVE(40, MOVE_PETAL_DANCE),
+	LEVEL_UP_MOVE( 1, MOVE_SWEET_SCENT), // Adding Sweet Scent to Level 1
+	LEVEL_UP_MOVE( 1, MOVE_ABSORB),
+	LEVEL_UP_MOVE( 1, MOVE_GROWTH),
+	LEVEL_UP_MOVE( 4, MOVE_ACID),
+	LEVEL_UP_MOVE( 8, MOVE_LEECH_SEED), // Sweet Scent -> Leech Seed: Egg Move.  Flavor Reasons (Dex)
+	LEVEL_UP_MOVE(12, MOVE_MEGA_DRAIN),
+	LEVEL_UP_MOVE(15, MOVE_POISON_POWDER),
+	LEVEL_UP_MOVE(17, MOVE_STUN_SPORE),
+	LEVEL_UP_MOVE(18, MOVE_SLEEP_POWDER),
+	LEVEL_UP_MOVE(20, MOVE_GIGA_DRAIN),
+	LEVEL_UP_MOVE(24, MOVE_VENOSHOCK),
+	LEVEL_UP_MOVE(26, MOVE_STRENGTH_SAP), // Move Strength Sap up.
+	LEVEL_UP_MOVE(28, MOVE_TOXIC),
+	LEVEL_UP_MOVE(32, MOVE_MOONLIGHT),
+	LEVEL_UP_MOVE(36, MOVE_MOONBLAST),
+	LEVEL_UP_MOVE(40, MOVE_GRASSY_TERRAIN),
+	LEVEL_UP_MOVE(44, MOVE_PETAL_DANCE),
     LEVEL_UP_END
 };
 
 static const struct LevelUpMove sGloomLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_ABSORB),
-    LEVEL_UP_MOVE( 1, MOVE_GROWTH),
-    LEVEL_UP_MOVE( 1, MOVE_ACID),
-    LEVEL_UP_MOVE( 1, MOVE_SWEET_SCENT),
-    LEVEL_UP_MOVE(12, MOVE_MEGA_DRAIN),
-    LEVEL_UP_MOVE(14, MOVE_POISON_POWDER),
-    LEVEL_UP_MOVE(16, MOVE_STUN_SPORE),
-    LEVEL_UP_MOVE(18, MOVE_SLEEP_POWDER),
-    LEVEL_UP_MOVE(20, MOVE_GIGA_DRAIN),
-    LEVEL_UP_MOVE(26, MOVE_TOXIC),
-    LEVEL_UP_MOVE(32, MOVE_MOONBLAST),
-    LEVEL_UP_MOVE(38, MOVE_GRASSY_TERRAIN),
-    LEVEL_UP_MOVE(44, MOVE_MOONLIGHT),
-    LEVEL_UP_MOVE(50, MOVE_PETAL_DANCE),
+	LEVEL_UP_MOVE( 1, MOVE_ABSORB),
+	LEVEL_UP_MOVE( 1, MOVE_GROWTH),
+	LEVEL_UP_MOVE( 1, MOVE_ACID),
+	LEVEL_UP_MOVE( 1, MOVE_SWEET_SCENT),
+	LEVEL_UP_MOVE( 8, MOVE_LEECH_SEED), // Sweet Scent -> Leech Seed: Egg Move.  Flavor Reasons (Dex)
+	LEVEL_UP_MOVE(12, MOVE_MEGA_DRAIN),
+	LEVEL_UP_MOVE(15, MOVE_POISON_POWDER),
+	LEVEL_UP_MOVE(17, MOVE_STUN_SPORE),
+	LEVEL_UP_MOVE(18, MOVE_SLEEP_POWDER),
+	LEVEL_UP_MOVE(20, MOVE_GIGA_DRAIN),
+	LEVEL_UP_MOVE(24, MOVE_VENOSHOCK),
+	LEVEL_UP_MOVE(28, MOVE_STRENGTH_SAP), // Move Strength Sap to 28.  Between Shiinotic and Corsola Level.
+	LEVEL_UP_MOVE(32, MOVE_TOXIC),
+	LEVEL_UP_MOVE(38, MOVE_MOONBLAST),
+	LEVEL_UP_MOVE(44, MOVE_MOONLIGHT),
+	LEVEL_UP_MOVE(48, MOVE_APPLE_ACID),
+	LEVEL_UP_MOVE(58, MOVE_GRASSY_TERRAIN),
+	LEVEL_UP_MOVE(68, MOVE_PETAL_DANCE),
     LEVEL_UP_END
 };
 
@@ -1101,42 +1116,50 @@ static const struct LevelUpMove sVileplumeLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_PETAL_BLIZZARD),
     LEVEL_UP_MOVE( 1, MOVE_PETAL_BLIZZARD),
     LEVEL_UP_MOVE( 1, MOVE_AROMATHERAPY),
-    LEVEL_UP_MOVE( 1, MOVE_MEGA_DRAIN),
-    LEVEL_UP_MOVE( 1, MOVE_POISON_POWDER),
-    LEVEL_UP_MOVE( 1, MOVE_STUN_SPORE),
-    LEVEL_UP_MOVE( 1, MOVE_SLEEP_POWDER),
-    LEVEL_UP_MOVE( 1, MOVE_GIGA_DRAIN),
-    LEVEL_UP_MOVE( 1, MOVE_TOXIC),
-    LEVEL_UP_MOVE( 1, MOVE_MOONBLAST),
-    LEVEL_UP_MOVE( 1, MOVE_GRASSY_TERRAIN),
-    LEVEL_UP_MOVE( 1, MOVE_MOONLIGHT),
-    LEVEL_UP_MOVE( 1, MOVE_PETAL_DANCE),
-    LEVEL_UP_MOVE( 1, MOVE_ABSORB),
-    LEVEL_UP_MOVE( 1, MOVE_GROWTH),
-    LEVEL_UP_MOVE( 1, MOVE_ACID),
-    LEVEL_UP_MOVE( 1, MOVE_SWEET_SCENT),
+	LEVEL_UP_MOVE( 1, MOVE_ABSORB),
+	LEVEL_UP_MOVE( 1, MOVE_GROWTH),
+	LEVEL_UP_MOVE( 1, MOVE_ACID),
+	LEVEL_UP_MOVE( 1, MOVE_SWEET_SCENT),
+	LEVEL_UP_MOVE( 8, MOVE_LEECH_SEED), // Sweet Scent -> Leech Seed: Egg Move.  Flavor Reasons (Dex)
+	LEVEL_UP_MOVE(12, MOVE_MEGA_DRAIN),
+	LEVEL_UP_MOVE(15, MOVE_POISON_POWDER),
+	LEVEL_UP_MOVE(17, MOVE_STUN_SPORE),
+	LEVEL_UP_MOVE(18, MOVE_SLEEP_POWDER),
+	LEVEL_UP_MOVE(20, MOVE_GIGA_DRAIN),
+	LEVEL_UP_MOVE(24, MOVE_VENOSHOCK),
+	LEVEL_UP_MOVE(28, MOVE_STRENGTH_SAP), // Move Strength Sap to 28.  Between Shiinotic and Corsola Level.
+	LEVEL_UP_MOVE(32, MOVE_TOXIC),
+	LEVEL_UP_MOVE(38, MOVE_MOONBLAST),
+	LEVEL_UP_MOVE(44, MOVE_MOONLIGHT),
+	LEVEL_UP_MOVE(48, MOVE_APPLE_ACID), // APPLE ACID -> NEW MOVE
+	LEVEL_UP_MOVE(58, MOVE_GRASSY_TERRAIN),
+	LEVEL_UP_MOVE(68, MOVE_PETAL_DANCE),
     LEVEL_UP_END
 };
 
 #if P_GEN_2_CROSS_EVOS
 static const struct LevelUpMove sBellossomLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 0, MOVE_PETAL_BLIZZARD),
-    LEVEL_UP_MOVE( 1, MOVE_PETAL_BLIZZARD),
-    LEVEL_UP_MOVE( 1, MOVE_QUIVER_DANCE),
-    LEVEL_UP_MOVE( 1, MOVE_MEGA_DRAIN),
-    LEVEL_UP_MOVE( 1, MOVE_POISON_POWDER),
-    LEVEL_UP_MOVE( 1, MOVE_STUN_SPORE),
-    LEVEL_UP_MOVE( 1, MOVE_SLEEP_POWDER),
-    LEVEL_UP_MOVE( 1, MOVE_GIGA_DRAIN),
-    LEVEL_UP_MOVE( 1, MOVE_TOXIC),
-    LEVEL_UP_MOVE( 1, MOVE_MOONBLAST),
-    LEVEL_UP_MOVE( 1, MOVE_GRASSY_TERRAIN),
-    LEVEL_UP_MOVE( 1, MOVE_MOONLIGHT),
-    LEVEL_UP_MOVE( 1, MOVE_PETAL_DANCE),
-    LEVEL_UP_MOVE( 1, MOVE_ABSORB),
-    LEVEL_UP_MOVE( 1, MOVE_GROWTH),
-    LEVEL_UP_MOVE( 1, MOVE_ACID),
-    LEVEL_UP_MOVE( 1, MOVE_SWEET_SCENT),
+	LEVEL_UP_MOVE( 0, MOVE_PETAL_DANCE),
+	LEVEL_UP_MOVE( 1, MOVE_PETAL_DANCE),
+	LEVEL_UP_MOVE( 1, MOVE_ABSORB),
+	LEVEL_UP_MOVE( 1, MOVE_GROWTH), 
+	LEVEL_UP_MOVE( 1, MOVE_DECORATE), // Acid -> Decorate: New Move.  Good doubles ability and fits the whole Hawaiian dancer thing.  Will probably go into the moveset proper but tbhis is currently a placeholder
+	LEVEL_UP_MOVE( 1, MOVE_SWEET_SCENT),
+	LEVEL_UP_MOVE( 8, MOVE_LEECH_SEED), // Sweet Scent -> Leech Seed: Egg Move.  Flavor Reasons (Dex)
+	LEVEL_UP_MOVE(12, MOVE_MEGA_DRAIN),
+	LEVEL_UP_MOVE(15, MOVE_POISON_POWDER),
+	LEVEL_UP_MOVE(17, MOVE_STUN_SPORE),
+	LEVEL_UP_MOVE(18, MOVE_SLEEP_POWDER),
+	LEVEL_UP_MOVE(20, MOVE_GIGA_DRAIN),
+	LEVEL_UP_MOVE(24, MOVE_FOLLOW_ME), // Venoshock -> Follow Me: New Move.  Redirection that can be used on Grass
+	LEVEL_UP_MOVE(28, MOVE_STRENGTH_SAP), // Move Strength Sap to 28.  Between Shiinotic and Corsola Level.
+	LEVEL_UP_MOVE(32, MOVE_FLORAL_HEALING), // Toxic -> Floral Healing: New Move.  Fits theme and is around the level Comfey gets it
+	LEVEL_UP_MOVE(36, MOVE_LOVELY_KISS), // New Move Slot -> Lovely Kiss: New Move.  I like the idea that Bellossom can do Grass type things to Grass type Pokemon and not have it be ineffective due to immunities.
+	LEVEL_UP_MOVE(39, MOVE_FIERY_DANCE), // Moonblast -> Fiery Dance: New Move.
+	LEVEL_UP_MOVE(44, MOVE_QUIVER_DANCE), // Moonlight -> Quiver Dance: Level up move.  Moved to Moonlight's spot due to having too many mvoes in the 30s, but still wanting QD for either Koga or Sabrina.
+	LEVEL_UP_MOVE(49, MOVE_MORNING_SUN),	//  Petal Blizzard -> Morning Sun: New Move.  Morning Sun actually replaces Moonlight but we moves the level down to Petal Blizzard's old spot.
+	LEVEL_UP_MOVE(53, MOVE_PETAL_BLIZZARD), // Petal Dance -> Petal blizzard: Petal Dance becomes and evolution move and other moves slid down a spot.  
+	LEVEL_UP_MOVE(58, MOVE_LEAF_STORM),
     LEVEL_UP_END
 };
 #endif //P_GEN_2_CROSS_EVOS
@@ -1160,22 +1183,23 @@ static const struct LevelUpMove sParasLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sParasectLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_CROSS_POISON),
-    LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
-    LEVEL_UP_MOVE( 1, MOVE_STUN_SPORE),
-    LEVEL_UP_MOVE( 1, MOVE_POISON_POWDER),
-    LEVEL_UP_MOVE( 1, MOVE_ABSORB),
-    LEVEL_UP_MOVE( 6, MOVE_STUN_SPORE),
-    LEVEL_UP_MOVE( 6, MOVE_POISON_POWDER),
-    LEVEL_UP_MOVE(11, MOVE_ABSORB),
-    LEVEL_UP_MOVE(17, MOVE_FURY_CUTTER),
-    LEVEL_UP_MOVE(22, MOVE_SPORE),
-    LEVEL_UP_MOVE(29, MOVE_SLASH),
-    LEVEL_UP_MOVE(37, MOVE_GROWTH),
-    LEVEL_UP_MOVE(44, MOVE_GIGA_DRAIN),
-    LEVEL_UP_MOVE(51, MOVE_AROMATHERAPY),
-    LEVEL_UP_MOVE(59, MOVE_RAGE_POWDER),
-    LEVEL_UP_MOVE(66, MOVE_X_SCISSOR),
+	LEVEL_UP_MOVE( 0, MOVE_SPORE), // Signature Move
+	LEVEL_UP_MOVE( 1, MOVE_CROSS_POISON),
+	LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
+	LEVEL_UP_MOVE( 1, MOVE_STUN_SPORE),
+	LEVEL_UP_MOVE( 1, MOVE_POISON_POWDER),
+	LEVEL_UP_MOVE( 1, MOVE_GROWTH),
+	LEVEL_UP_MOVE(11, MOVE_ABSORB), // Leech Life -> Absorb 
+	LEVEL_UP_MOVE(14, MOVE_METAL_CLAW),
+	LEVEL_UP_MOVE(17, MOVE_FURY_CUTTER),
+	LEVEL_UP_MOVE(21, MOVE_SLASH),
+	LEVEL_UP_MOVE(23, MOVE_SPORE), // For AI Movesets
+	LEVEL_UP_MOVE(27, MOVE_SHADOW_CLAW), // Spore -> Shadow Claw: New Ghost coverage. Spore on evolution
+	LEVEL_UP_MOVE(32, MOVE_STRENGTH_SAP), // Giga Drain -> Strength Sap: Fits theme better
+	LEVEL_UP_MOVE(37, MOVE_LEECH_LIFE),
+	LEVEL_UP_MOVE(43, MOVE_AROMATHERAPY),
+	LEVEL_UP_MOVE(49, MOVE_SEED_BOMB),
+	LEVEL_UP_MOVE(55, MOVE_RAGE_POWDER),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_PARAS
@@ -1391,22 +1415,28 @@ static const struct LevelUpMove sMeowthGalarianLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sPerrserkerLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 0, MOVE_IRON_HEAD),
-    LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
-    LEVEL_UP_MOVE( 1, MOVE_GROWL),
-    LEVEL_UP_MOVE( 1, MOVE_FAKE_OUT),
-    LEVEL_UP_MOVE( 1, MOVE_IRON_DEFENSE),
-    LEVEL_UP_MOVE( 1, MOVE_METAL_BURST),
-    LEVEL_UP_MOVE( 1, MOVE_HONE_CLAWS),
-    LEVEL_UP_MOVE(12, MOVE_PAY_DAY),
-    LEVEL_UP_MOVE(16, MOVE_METAL_CLAW),
-    LEVEL_UP_MOVE(20, MOVE_TAUNT),
-    LEVEL_UP_MOVE(24, MOVE_SWAGGER),
-    LEVEL_UP_MOVE(31, MOVE_FURY_SWIPES),
-    LEVEL_UP_MOVE(36, MOVE_SCREECH),
-    LEVEL_UP_MOVE(42, MOVE_SLASH),
-    LEVEL_UP_MOVE(48, MOVE_METAL_SOUND),
-    LEVEL_UP_MOVE(54, MOVE_THRASH),
+	LEVEL_UP_MOVE( 0, MOVE_IRON_HEAD),
+	LEVEL_UP_MOVE( 1, MOVE_IRON_HEAD),
+	LEVEL_UP_MOVE( 1, MOVE_METAL_BURST),
+	LEVEL_UP_MOVE( 1, MOVE_IRON_DEFENSE),
+	LEVEL_UP_MOVE( 1, MOVE_PAY_DAY), // New Move Slot -> Pay Day: Move PD up because the line should have access to it but it doesn't make as much sense in a level up moveset for Perrserker
+	LEVEL_UP_MOVE( 1, MOVE_FAKE_OUT),
+	LEVEL_UP_MOVE( 1, MOVE_GROWL),
+	LEVEL_UP_MOVE( 4, MOVE_HONE_CLAWS),
+	LEVEL_UP_MOVE( 8, MOVE_FURY_SWIPES), // Scratch -> Fury Swipes: Move Fury Swipes up.  More thematic than Scratch.
+	LEVEL_UP_MOVE(12, MOVE_BULLET_PUNCH), // Pay Day -> Bullet Punch: New Move.  This thing need priority and it should get BP.
+	LEVEL_UP_MOVE(17, MOVE_RAGE), // Metal Claw -> Rage: New Move.  rage just fits so well
+	LEVEL_UP_MOVE(21, MOVE_METAL_CLAW), // Taunt -> Metal Claw: Moving Metal Claw to the level 21 slot.  
+	LEVEL_UP_MOVE(25, MOVE_SWAGGER),
+	LEVEL_UP_MOVE(29, MOVE_TAUNT), // New Move Slot -> Slash is filler.  To avoid 7 level move gap
+	LEVEL_UP_MOVE(32, MOVE_SLASH), // Fury Swipes -> Slash: Move Slash up.  Fury Swipes at level 8
+	LEVEL_UP_MOVE(37, MOVE_SCREECH),
+	LEVEL_UP_MOVE(40, MOVE_SPIRIT_BREAK), // New Move Slot -> Spirit Break. I feel Spirit Break is fitting for Perrserker.  Viking take your spirit.  Plus it helps Perrserkers lower Sp. Def
+	LEVEL_UP_MOVE(44, MOVE_VICTORY_DANCE), // New Move Slot/Nasty Plot on Persian -> Victory Dance: New Move.  Seems like it would fit Perrserker
+	LEVEL_UP_MOVE(48, MOVE_CROSS_CHOP), // Metal Sound -> Cross Chop: New Move.  Cross Chop would be fun, especially with it's dagger hands.  Could move up.
+	LEVEL_UP_MOVE(52, MOVE_NIGHT_SLASH), // Thrash -> Night Slash: Moving NS (ot if anyting replaces it) to 52.  Raging Fury is better so get that later.  Night Slash isn't THAT good. 
+	LEVEL_UP_MOVE(56, MOVE_RAGING_FURY), //Thrash -> Raging Fury: New Move.  Ragiing Fury is just Thrash with Fire type, which makes it more flavorful.
+	LEVEL_UP_MOVE(60, MOVE_DOUBLE_IRON_BASH), // Feint -> Double Iron Bash: New Move.  I don't like that it's a Melmetal exclusive, especially with no Melmetal.  Might lower the BP.  Update description
     LEVEL_UP_END
 };
 #endif //P_GALARIAN_FORMS
@@ -1414,40 +1444,48 @@ static const struct LevelUpMove sPerrserkerLevelUpLearnset[] = {
 
 #if P_FAMILY_PSYDUCK
 static const struct LevelUpMove sPsyduckLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
-    LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
-    LEVEL_UP_MOVE( 3, MOVE_WATER_GUN),
-    LEVEL_UP_MOVE( 6, MOVE_CONFUSION),
-    LEVEL_UP_MOVE( 9, MOVE_FURY_SWIPES),
-    LEVEL_UP_MOVE(12, MOVE_WATER_PULSE),
-    LEVEL_UP_MOVE(15, MOVE_DISABLE),
-    LEVEL_UP_MOVE(18, MOVE_ZEN_HEADBUTT),
-    LEVEL_UP_MOVE(21, MOVE_SCREECH),
-    LEVEL_UP_MOVE(24, MOVE_AQUA_TAIL),
-    LEVEL_UP_MOVE(27, MOVE_SOAK),
-    LEVEL_UP_MOVE(30, MOVE_PSYCH_UP),
-    LEVEL_UP_MOVE(34, MOVE_AMNESIA),
-    LEVEL_UP_MOVE(39, MOVE_WONDER_ROOM),
+	LEVEL_UP_MOVE( 1, MOVE_WATER_SPORT),
+	LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP), //Move Tail Whip to level 1.  Golduck has it at level 1.  
+	LEVEL_UP_MOVE( 1, MOVE_FURY_SWIPES), //Scratch -> Fury Swipes: Moving Up.  Zen Mode
+	LEVEL_UP_MOVE( 4, MOVE_WORK_UP), // Tail Whip -> Work Up: New Move.  Feels fitting for Psyduck.  Sets up furute role.  
+	LEVEL_UP_MOVE( 7, MOVE_WATER_GUN),
+	LEVEL_UP_MOVE(10, MOVE_CONFUSION),
+	LEVEL_UP_MOVE(13, MOVE_HIDDEN_POWER), // Fury Swipes -> Hidden Power: TM Move. Zen Mode
+	LEVEL_UP_MOVE(16, MOVE_WATER_PULSE),
+	LEVEL_UP_MOVE(19, MOVE_STORED_POWER), // Disable -> Stored Power: New Move.  Fits role.  Good spot for it.  Zen Mode point, Disable is too deliberate
+	LEVEL_UP_MOVE(22, MOVE_SCREECH),
+	LEVEL_UP_MOVE(25, MOVE_AQUA_TAIL), //Zen Headbutt -> Aqua Tail.  Level Switch.
+	LEVEL_UP_MOVE(28, MOVE_ZEN_HEADBUTT),
+	LEVEL_UP_MOVE(31, MOVE_PSYCH_UP), // Soak -> Psych Up.  Level Switch
+	LEVEL_UP_MOVE(34, MOVE_SOAK),
+	LEVEL_UP_MOVE(37, MOVE_AMNESIA),
+	LEVEL_UP_MOVE(40, MOVE_HYDRO_PUMP),
+	LEVEL_UP_MOVE(43, MOVE_WONDER_ROOM),
     LEVEL_UP_END
 };
 
 static const struct LevelUpMove sGolduckLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
-    LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
-    LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),
-    LEVEL_UP_MOVE( 1, MOVE_CONFUSION),
-    LEVEL_UP_MOVE( 1, MOVE_AQUA_JET),
-    LEVEL_UP_MOVE( 9, MOVE_FURY_SWIPES),
-    LEVEL_UP_MOVE(12, MOVE_WATER_PULSE),
-    LEVEL_UP_MOVE(15, MOVE_DISABLE),
-    LEVEL_UP_MOVE(18, MOVE_ZEN_HEADBUTT),
-    LEVEL_UP_MOVE(21, MOVE_SCREECH),
-    LEVEL_UP_MOVE(24, MOVE_AQUA_TAIL),
-    LEVEL_UP_MOVE(27, MOVE_SOAK),
-    LEVEL_UP_MOVE(30, MOVE_PSYCH_UP),
-    LEVEL_UP_MOVE(36, MOVE_AMNESIA),
-    LEVEL_UP_MOVE(40, MOVE_HYDRO_PUMP),
-    LEVEL_UP_MOVE(45, MOVE_WONDER_ROOM),
+	LEVEL_UP_MOVE( 1, MOVE_ME_FIRST),
+	LEVEL_UP_MOVE( 1, MOVE_AQUA_JET),
+	LEVEL_UP_MOVE( 1, MOVE_WATER_SPORT),
+	LEVEL_UP_MOVE( 1, MOVE_FURY_SWIPES), //Scratch -> Fury Swipes: Moving Up.  Zen Mode
+	LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
+	LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),
+	LEVEL_UP_MOVE( 4, MOVE_WORK_UP), // Tail Whip -> Work Up: New Move.  Feels fitting for Psyduck.  Sets up furute role.  
+	LEVEL_UP_MOVE( 7, MOVE_WATER_GUN),
+	LEVEL_UP_MOVE(10, MOVE_CONFUSION),
+	LEVEL_UP_MOVE(13, MOVE_HIDDEN_POWER), // Fury Swipes -> Hidden Power: TM Move. Zen Mode
+	LEVEL_UP_MOVE(16, MOVE_WATER_PULSE),
+	LEVEL_UP_MOVE(19, MOVE_STORED_POWER), // Disable -> Stored Power: New Move.  Fits role.  Good spot for it.  Zen Mode point, Disable is too deliberate
+	LEVEL_UP_MOVE(22, MOVE_SCREECH),
+	LEVEL_UP_MOVE(25, MOVE_AQUA_TAIL), //Zen Headbutt -> Aqua Tail:  Level Switch.
+	LEVEL_UP_MOVE(28, MOVE_ZEN_HEADBUTT),
+	LEVEL_UP_MOVE(31, MOVE_PSYCH_UP), // Soak -> Psych Up:  Level Switch
+	LEVEL_UP_MOVE(36, MOVE_GLARE), //  Soak -> Glare:  New Move.  Pokedex based.  Switch level with Psych Up so it is Post Evoultion.
+	LEVEL_UP_MOVE(41, MOVE_DRAGON_DANCE), // Amnesia -> Dragon Dance:  New Move.  Physical Boosting move, will get Calm Mind around same level.  Golduck Only
+	LEVEL_UP_MOVE(45, MOVE_POWER_GEM), // Power Gem: TM Move.  New move slot.  Coverage option for fun.
+	LEVEL_UP_MOVE(49, MOVE_HYDRO_PUMP),
+	LEVEL_UP_MOVE(53, MOVE_WONDER_ROOM),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_PSYDUCK
@@ -1609,73 +1647,90 @@ static const struct LevelUpMove sArcanineHisuianLevelUpLearnset[] = {
 
 #if P_FAMILY_POLIWAG
 static const struct LevelUpMove sPoliwagLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),
-    LEVEL_UP_MOVE( 1, MOVE_HYPNOSIS),
-    LEVEL_UP_MOVE( 6, MOVE_POUND),
-    LEVEL_UP_MOVE(12, MOVE_MUD_SHOT),
-    LEVEL_UP_MOVE(18, MOVE_BUBBLE_BEAM),
-    LEVEL_UP_MOVE(24, MOVE_RAIN_DANCE),
-    LEVEL_UP_MOVE(30, MOVE_BODY_SLAM),
-    LEVEL_UP_MOVE(36, MOVE_EARTH_POWER),
-    LEVEL_UP_MOVE(42, MOVE_HYDRO_PUMP),
-    LEVEL_UP_MOVE(48, MOVE_BELLY_DRUM),
-    LEVEL_UP_MOVE(54, MOVE_DOUBLE_EDGE),
+	LEVEL_UP_MOVE( 1, MOVE_WATER_SPORT),
+	LEVEL_UP_MOVE( 5, MOVE_BUBBLE), // Water Gun -> Bubble:  Level Switch.  Bubble more connected to Poli line than Water Gun.
+	LEVEL_UP_MOVE( 8, MOVE_HYPNOSIS),
+	LEVEL_UP_MOVE(11, MOVE_AQUA_JET), // Bubble -> Aqua Jet: New Move.  New move for new role.
+	LEVEL_UP_MOVE(14, MOVE_DOUBLE_SLAP),
+	LEVEL_UP_MOVE(17, MOVE_RAIN_DANCE),
+	LEVEL_UP_MOVE(20, MOVE_BODY_SLAM),
+	LEVEL_UP_MOVE(23, MOVE_GROWTH), // New Move Slot -> Growth: NYC Pokecenter Event.  Trying to work in more NYCPC events.
+	LEVEL_UP_MOVE(25, MOVE_BUBBLE_BEAM),
+	LEVEL_UP_MOVE(28, MOVE_MUD_SHOT),
+	LEVEL_UP_MOVE(31, MOVE_BELLY_DRUM),
+	LEVEL_UP_MOVE(35, MOVE_WAKE_UP_SLAP),
+	LEVEL_UP_MOVE(38, MOVE_HYDRO_PUMP),
+	LEVEL_UP_MOVE(41, MOVE_MUD_BOMB),
+	LEVEL_UP_END
     LEVEL_UP_END
 };
 
 static const struct LevelUpMove sPoliwhirlLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),
-    LEVEL_UP_MOVE( 1, MOVE_HYPNOSIS),
-    LEVEL_UP_MOVE( 1, MOVE_POUND),
-    LEVEL_UP_MOVE( 1, MOVE_MUD_SHOT),
-    LEVEL_UP_MOVE(18, MOVE_BUBBLE_BEAM),
-    LEVEL_UP_MOVE(24, MOVE_RAIN_DANCE),
-    LEVEL_UP_MOVE(32, MOVE_BODY_SLAM),
-    LEVEL_UP_MOVE(40, MOVE_EARTH_POWER),
-    LEVEL_UP_MOVE(48, MOVE_HYDRO_PUMP),
-    LEVEL_UP_MOVE(56, MOVE_BELLY_DRUM),
-    LEVEL_UP_MOVE(66, MOVE_DOUBLE_EDGE),
+	LEVEL_UP_MOVE( 1, MOVE_WATER_SPORT),
+	LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),
+	LEVEL_UP_MOVE( 1, MOVE_HYPNOSIS),
+	LEVEL_UP_MOVE( 5, MOVE_BUBBLE), // Water Gun -> Bubble:  Level Switch.  Bubble more connected to Poli line than Water Gun.
+	LEVEL_UP_MOVE( 8, MOVE_HYPNOSIS),
+	LEVEL_UP_MOVE(11, MOVE_AQUA_JET), // Bubble -> Aqua Jet: New Move.  New move for new role.
+	LEVEL_UP_MOVE(15, MOVE_DOUBLE_SLAP),
+	LEVEL_UP_MOVE(18, MOVE_RAIN_DANCE),
+	LEVEL_UP_MOVE(21, MOVE_BODY_SLAM),
+	LEVEL_UP_MOVE(24, MOVE_GROWTH), // New Move Slot -> Growth: NYC Pokecenter Event.  Trying to work in more NYCPC events
+	LEVEL_UP_MOVE(28, MOVE_BUBBLE_BEAM),
+	LEVEL_UP_MOVE(32, MOVE_MUD_SHOT),
+	LEVEL_UP_MOVE(36, MOVE_BELLY_DRUM),
+	LEVEL_UP_MOVE(40, MOVE_LIQUIDATION),
+	LEVEL_UP_MOVE(44, MOVE_WAKE_UP_SLAP),
+	LEVEL_UP_MOVE(48, MOVE_HYDRO_PUMP),
+	LEVEL_UP_MOVE(53, MOVE_MUD_BOMB),
     LEVEL_UP_END
 };
 
 static const struct LevelUpMove sPoliwrathLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 0, MOVE_SUBMISSION),
-    LEVEL_UP_MOVE( 1, MOVE_SUBMISSION),
-    LEVEL_UP_MOVE( 1, MOVE_CIRCLE_THROW),
-    LEVEL_UP_MOVE( 1, MOVE_MIND_READER),
-    LEVEL_UP_MOVE( 1, MOVE_DYNAMIC_PUNCH),
-    LEVEL_UP_MOVE( 1, MOVE_BUBBLE_BEAM),
-    LEVEL_UP_MOVE( 1, MOVE_RAIN_DANCE),
-    LEVEL_UP_MOVE( 1, MOVE_BODY_SLAM),
-    LEVEL_UP_MOVE( 1, MOVE_EARTH_POWER),
-    LEVEL_UP_MOVE( 1, MOVE_HYDRO_PUMP),
-    LEVEL_UP_MOVE( 1, MOVE_BELLY_DRUM),
-    LEVEL_UP_MOVE( 1, MOVE_DOUBLE_EDGE),
-    LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),
-    LEVEL_UP_MOVE( 1, MOVE_HYPNOSIS),
-    LEVEL_UP_MOVE( 1, MOVE_POUND),
-    LEVEL_UP_MOVE( 1, MOVE_MUD_SHOT),
+	LEVEL_UP_MOVE( 0, MOVE_STORM_THROW), // Submission -> Storm Throw: New Move. More flavorful.  Water type/Storm.  Plus Pinisr is the only other Pokemon in game to get it.
+	LEVEL_UP_MOVE( 1, MOVE_STORM_THROW), // Submission -> Storm Throw: New Move. More flavorful.  Water type/Storm.  Plus Pinisr is the only other Pokemon in game to get it.
+	LEVEL_UP_MOVE( 1, MOVE_MACHPUNCH), // Circle Throw -> Mach Punch: New Move.  New move for new role.
+	LEVEL_UP_MOVE( 1, MOVE_BUBBLE_BEAM),
+	LEVEL_UP_MOVE( 1, MOVE_HYPNOSIS),
+	LEVEL_UP_MOVE( 1, MOVE_DOUBLE_SLAP),
+	LEVEL_UP_MOVE(11, MOVE_AQUA_JET), // Bubble -> Aqua Jet: New Move.  New move for new role.
+	LEVEL_UP_MOVE(15, MOVE_DOUBLE_SLAP),
+	LEVEL_UP_MOVE(18, MOVE_RAIN_DANCE),
+	LEVEL_UP_MOVE(21, MOVE_BODY_SLAM),
+	LEVEL_UP_MOVE(24, MOVE_GROWTH), // New Move Slot -> Growth: NYC Pokecenter Event.  Trying to work in more NYCPC events
+	LEVEL_UP_MOVE(27, MOVE_MIND_READER), // New Move Slot - Mind Reader: Move Mind Reader up
+	LEVEL_UP_MOVE(32, MOVE_DYNAMIC_PUNCH), // Might become Drain Punch if Drain Punch is not a TM or Move Tutor.  
+	LEVEL_UP_MOVE(36, MOVE_BELLY_DRUM),
+	LEVEL_UP_MOVE(40, MOVE_LIQUIDATION),
+	LEVEL_UP_MOVE(44, MOVE_HIGH_HORSEPOWER), // Mind Reader -> High Horsepower: New move.  Poli line gets Earth Power.  This is a Physical replacment that makes sense
+	LEVEL_UP_MOVE(48, MOVE_CLOSE_COMBAT), // Hydro Pump -> Close Combat: TM Move.  Replace STAB Special high power move with STAB Physical one.
+	LEVEL_UP_MOVE(53, MOVE_SURGING_STRIKES), // Circle Throw -> Surging Strike:  New Move.  Signature Final Move. Urshafu is not in this game, give to other Water/Fighting type.
     LEVEL_UP_END
 };
 
 #if P_GEN_2_CROSS_EVOS
 static const struct LevelUpMove sPolitoedLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 0, MOVE_BOUNCE),
-    LEVEL_UP_MOVE( 1, MOVE_BOUNCE),
-    LEVEL_UP_MOVE( 1, MOVE_SWAGGER),
-    LEVEL_UP_MOVE( 1, MOVE_HYPER_VOICE),
-    LEVEL_UP_MOVE( 1, MOVE_PERISH_SONG),
-    LEVEL_UP_MOVE( 1, MOVE_BUBBLE_BEAM),
-    LEVEL_UP_MOVE( 1, MOVE_RAIN_DANCE),
-    LEVEL_UP_MOVE( 1, MOVE_BODY_SLAM),
-    LEVEL_UP_MOVE( 1, MOVE_EARTH_POWER),
-    LEVEL_UP_MOVE( 1, MOVE_HYDRO_PUMP),
-    LEVEL_UP_MOVE( 1, MOVE_BELLY_DRUM),
-    LEVEL_UP_MOVE( 1, MOVE_DOUBLE_EDGE),
-    LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),
-    LEVEL_UP_MOVE( 1, MOVE_HYPNOSIS),
-    LEVEL_UP_MOVE( 1, MOVE_POUND),
-    LEVEL_UP_MOVE( 1, MOVE_MUD_SHOT),
+	LEVEL_UP_MOVE( 0, MOVE_NOBLE_ROAR), // New Move Slot -> Noble Roar: New Move.  Based on Pokedex Entries
+	LEVEL_UP_MOVE( 1, MOVE_NOBLE_ROAR), // New Move Slot -> Noble Roar: New Move.  Based on Pokedex Entries
+	LEVEL_UP_MOVE( 1, MOVE_BUBBLE_BEAM),
+	LEVEL_UP_MOVE( 1, MOVE_BODY_SLAM), // New Move Slot -> Body Slam: Want to keep it in moveset but need level 21 slot for Snarl.  Could replace with TM.
+	LEVEL_UP_MOVE( 1, MOVE_HYPNOSIS),
+	LEVEL_UP_MOVE( 1, MOVE_DOUBLE_SLAP),
+	LEVEL_UP_MOVE( 1, MOVE_PERISH_SONG),
+	LEVEL_UP_MOVE( 5, MOVE_BUBBLE), // Water Gun -> Bubble:  Level Switch.  Bubble more connected to Poli line than Water Gun.
+	LEVEL_UP_MOVE( 8, MOVE_HYPNOSIS),
+	LEVEL_UP_MOVE(11, MOVE_AQUA_JET), // Bubble -> Aqua Jet: New Move.  New move for new role.
+	LEVEL_UP_MOVE(15, MOVE_DOUBLE_SLAP),
+	LEVEL_UP_MOVE(18, MOVE_RAIN_DANCE),
+	LEVEL_UP_MOVE(21, MOVE_SNARL), // Body Slam -> Snarl: New Move. Fits with Pokedex Enteries.  Snarl with Liquid Voice gives mid-20 Politoed a Water Type move.  
+	LEVEL_UP_MOVE(24, MOVE_GROWTH), // New Move Slot -> Growth: NYC Pokecenter Event.  Trying to work in more NYCPC events
+	LEVEL_UP_MOVE(27, MOVE_SWAGGER),
+	LEVEL_UP_MOVE(32, MOVE_INSTRUCT), // Mud Shot -> Instruct: New Move.  Commanding minions to do stuff.  Could move to a different level
+	LEVEL_UP_MOVE(36, MOVE_BOUNCE),
+	LEVEL_UP_MOVE(40, MOVE_HYDRO_PUMP), //PLACEHOLDER
+	LEVEL_UP_MOVE(44, MOVE_EARTH_POWER), // New Move Slot -> Earth Power: Gen VIII Level 1 move.
+	LEVEL_UP_MOVE(48, MOVE_HYPER_VOICE),
+	LEVEL_UP_MOVE(53, MOVE_SPARKLING_ARIA), // Hydro Pump -> Sparkling Aria:  New Move.  SA buffed to be Torch Song lite.  Will be Signature Final Move, like Surging Strike for Poliwrath.
     LEVEL_UP_END
 };
 #endif //P_GEN_2_CROSS_EVOS
@@ -1787,62 +1842,72 @@ static const struct LevelUpMove sMachampLevelUpLearnset[] = {
 
 #if P_FAMILY_BELLSPROUT
 static const struct LevelUpMove sBellsproutLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_VINE_WHIP),
-    LEVEL_UP_MOVE( 7, MOVE_GROWTH),
-    LEVEL_UP_MOVE(11, MOVE_WRAP),
-    LEVEL_UP_MOVE(13, MOVE_SLEEP_POWDER),
-    LEVEL_UP_MOVE(15, MOVE_POISON_POWDER),
-    LEVEL_UP_MOVE(17, MOVE_STUN_SPORE),
-    LEVEL_UP_MOVE(23, MOVE_ACID),
-    LEVEL_UP_MOVE(27, MOVE_KNOCK_OFF),
-    LEVEL_UP_MOVE(29, MOVE_SWEET_SCENT),
-    LEVEL_UP_MOVE(35, MOVE_GASTRO_ACID),
-    LEVEL_UP_MOVE(39, MOVE_RAZOR_LEAF),
-    LEVEL_UP_MOVE(41, MOVE_POISON_JAB),
-    LEVEL_UP_MOVE(47, MOVE_SLAM),
+	LEVEL_UP_MOVE( 1, MOVE_VINE_WHIP),
+	LEVEL_UP_MOVE( 7, MOVE_GROWTH),
+	LEVEL_UP_MOVE(11, MOVE_WRAP),
+	LEVEL_UP_MOVE(13, MOVE_ACID), // Sleep Powder -> Acid: Move Acid up and Sleep Powder gets replaced by Egg Move Lovely Kiss
+	LEVEL_UP_MOVE(15, MOVE_POISON_POWDER),
+	LEVEL_UP_MOVE(18, MOVE_RAZOR_LEAF), // Stun Spore -> Razor Leaf: Move Razor Leaf up.
+	LEVEL_UP_MOVE(23, MOVE_SWEET_SCENT), // Acid -> Sweet Scent: Acid moved to 13.  SS moved from 32
+	LEVEL_UP_MOVE(27, MOVE_KNOCK_OFF),
+	LEVEL_UP_MOVE(29, MOVE_CROSS_POISON), // Sweet Scent -> Cross Poison: New move.  High crit Poison move.  Sweet Scent moved to 24
+	LEVEL_UP_MOVE(32, MOVE_SNAP_TRAP), // New Move Slot -> Snap Trap (or new move): New move to break up long gap
+	LEVEL_UP_MOVE(35, MOVE_GASTRO_ACID),
+	LEVEL_UP_MOVE(39, MOVE_LEAF_BLADE), // Razor Leaf -> Leaf Blade: Victreebel move. Razor Leaf moved to 18
+	LEVEL_UP_MOVE(41, MOVE_POISON_JAB), 
+	LEVEL_UP_MOVE(47, MOVE_SLAM),
+	LEVEL_UP_MOVE(50, MOVE_WRING_OUT),
+	LEVEL_UP_MOVE(54, MOVE_POWER_WHIP), // New Move Slot -> Power Whip: Egg Move.  This move makes sense in its level up list
     LEVEL_UP_END
 };
 
 static const struct LevelUpMove sWeepinbellLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_VINE_WHIP),
-    LEVEL_UP_MOVE( 1, MOVE_GROWTH),
-    LEVEL_UP_MOVE( 1, MOVE_WRAP),
-    LEVEL_UP_MOVE( 7, MOVE_GROWTH),
-    LEVEL_UP_MOVE(11, MOVE_WRAP),
-    LEVEL_UP_MOVE(13, MOVE_SLEEP_POWDER),
-    LEVEL_UP_MOVE(15, MOVE_POISON_POWDER),
-    LEVEL_UP_MOVE(17, MOVE_STUN_SPORE),
-    LEVEL_UP_MOVE(24, MOVE_ACID),
-    LEVEL_UP_MOVE(29, MOVE_KNOCK_OFF),
-    LEVEL_UP_MOVE(32, MOVE_SWEET_SCENT),
-    LEVEL_UP_MOVE(39, MOVE_GASTRO_ACID),
-    LEVEL_UP_MOVE(44, MOVE_RAZOR_LEAF),
-    LEVEL_UP_MOVE(47, MOVE_POISON_JAB),
-    LEVEL_UP_MOVE(54, MOVE_SLAM),
+	LEVEL_UP_MOVE( 0, MOVE_APPLE_ACID), // Evolution Move: Apple Acid. Weepinbell starts with the Acid theme so it makes sense to give it upon evolution.
+	LEVEL_UP_MOVE( 1, MOVE_APPLE_ACID), // Vine Whip -> Apple Acid: Vine Whip Redundent. Weepinbell starts with the Acid theme so it makes sense to give it upon evolution.
+	LEVEL_UP_MOVE( 1, MOVE_GROWTH), // Growth -> Something else or delete: Redundent
+	LEVEL_UP_MOVE( 1, MOVE_VINE_WHIP),
+	LEVEL_UP_MOVE( 7, MOVE_GROWTH),
+	LEVEL_UP_MOVE(11, MOVE_WRAP),
+	LEVEL_UP_MOVE(13, MOVE_ACID), // Sleep Powder -> Acid: Move Acid up and Sleep Powder gets replaced by Egg Move Lovely Kiss
+	LEVEL_UP_MOVE(15, MOVE_POISON_POWDER),
+	LEVEL_UP_MOVE(18, MOVE_RAZOR_LEAF), // Stun Spore -> Razor Leaf: Move Razor Leaf up.
+	LEVEL_UP_MOVE(24, MOVE_SWEET_SCENT), // Acid -> Sweet Scent: Acid moved to 13.  SS moved from 32
+	LEVEL_UP_MOVE(28, MOVE_KNOCK_OFF),
+	LEVEL_UP_MOVE(31, MOVE_CROSS_POISON), // Sweet Scent -> Cross Poison: New move.  High crit Poison move.  Sweet Scent moved to 24
+	LEVEL_UP_MOVE(35, MOVE_SNAP_TRAP), // New Move Slot -> Snap Trap (or new move): New move to break up long gap
+	LEVEL_UP_MOVE(38, MOVE_GASTRO_ACID),
+	LEVEL_UP_MOVE(41, MOVE_BARB_BARRAGE), // New Move Slot -> Barb Barrage: New Move.  Give the line something to use with Corrosion/Poison.  Move Knock Off to GA Up 1 level
+	LEVEL_UP_MOVE(44, MOVE_LEAF_BLADE), // Razor Leaf -> Leaf Blade: Victreebel move. Razor Leaf moved to 18
+	LEVEL_UP_MOVE(47, MOVE_POISON_JAB),
+	LEVEL_UP_MOVE(52, MOVE_BODY_SLAM), // Slam -> Body Slam?: TM Move in Gen 1 and 9.  Body Slam is just better and can Paralyze which Victreebel loses Stun Spore.
+	LEVEL_UP_MOVE(56, MOVE_WRING_OUT),
+	LEVEL_UP_MOVE(60, MOVE_POWER_WHIP), // New Move Slot -> Power Whip: Egg Move.  This move makes sense in its level up list
     LEVEL_UP_END
 };
 
 static const struct LevelUpMove sVictreebelLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 0, MOVE_LEAF_TORNADO),
-    LEVEL_UP_MOVE( 1, MOVE_LEAF_TORNADO),
-    LEVEL_UP_MOVE( 1, MOVE_STOCKPILE),
-    LEVEL_UP_MOVE( 1, MOVE_SWALLOW),
-    LEVEL_UP_MOVE( 1, MOVE_SPIT_UP),
-    LEVEL_UP_MOVE( 1, MOVE_VINE_WHIP),
-    LEVEL_UP_MOVE( 1, MOVE_SLEEP_POWDER),
-    LEVEL_UP_MOVE( 1, MOVE_SWEET_SCENT),
-    LEVEL_UP_MOVE( 1, MOVE_RAZOR_LEAF),
-    LEVEL_UP_MOVE( 1, MOVE_GROWTH),
-    LEVEL_UP_MOVE( 1, MOVE_WRAP),
-    LEVEL_UP_MOVE( 1, MOVE_POISON_POWDER),
-    LEVEL_UP_MOVE( 1, MOVE_STUN_SPORE),
-    LEVEL_UP_MOVE( 1, MOVE_ACID),
-    LEVEL_UP_MOVE( 1, MOVE_KNOCK_OFF),
-    LEVEL_UP_MOVE( 1, MOVE_GASTRO_ACID),
-    LEVEL_UP_MOVE( 1, MOVE_POISON_JAB),
-    LEVEL_UP_MOVE( 1, MOVE_SLAM),
-    LEVEL_UP_MOVE(32, MOVE_LEAF_STORM),
-    LEVEL_UP_MOVE(44, MOVE_LEAF_BLADE),
+	LEVEL_UP_MOVE( 1, MOVE_STOCKPILE),
+	LEVEL_UP_MOVE( 1, MOVE_SWALLOW),
+	LEVEL_UP_MOVE( 1, MOVE_SPIT_UP),
+	LEVEL_UP_MOVE( 1, MOVE_APPLE_ACID), // Vine Whip -> Apple Acid: Vine Whip Redundent. Weepinbell starts with the Acid theme so it makes sense to give it upon evolution.
+	LEVEL_UP_MOVE( 1, MOVE_SUCKER_PUNCH), // Growth -> Sucker Punch: BDSP Move.  Level 1 move from BDSP.  
+	LEVEL_UP_MOVE( 1, MOVE_VINE_WHIP),
+	LEVEL_UP_MOVE( 7, MOVE_GROWTH),
+	LEVEL_UP_MOVE(11, MOVE_WRAP),
+	LEVEL_UP_MOVE(13, MOVE_ACID), // Sleep Powder -> Acid: Move Acid up and Sleep Powder gets replaced by Egg Move Lovely Kiss
+	LEVEL_UP_MOVE(15, MOVE_POISON_POWDER),
+	LEVEL_UP_MOVE(18, MOVE_RAZOR_LEAF), // Stun Spore -> Razor Leaf: Move Razor Leaf up.
+	LEVEL_UP_MOVE(24, MOVE_SWEET_SCENT), // Acid -> Sweet Scent: Acid moved to 13.  SS moved from 32
+	LEVEL_UP_MOVE(28, MOVE_KNOCK_OFF),
+	LEVEL_UP_MOVE(31, MOVE_CROSS_POISON), // Sweet Scent -> Cross Poison: New move.  High crit Poison move.  Sweet Scent moved to 24
+	LEVEL_UP_MOVE(35, MOVE_SNAP_TRAP), // New Move Slot -> Snap Trap (or new move): New move to break up long gap
+	LEVEL_UP_MOVE(38, MOVE_GASTRO_ACID),
+	LEVEL_UP_MOVE(41, MOVE_BARB_BARRAGE), // New Move Slot -> Barb Barrage: New Move.  Give the line something to use with Corrosion/Poison.  Move Knock Off to GA Up 1 level.  May swap Snap Trap for this and move everything back up a level.
+	LEVEL_UP_MOVE(44, MOVE_LEAF_BLADE), // Leaf Blade is level 44 move for Victreebel, not earlier evos.  
+	LEVEL_UP_MOVE(47, MOVE_POISON_JAB),
+	LEVEL_UP_MOVE(52, MOVE_BODY_SLAM), // Slam -> Body Slam?: TM Move in Gen 1 and 9.  Body Slam is just better and can Paralyze which Victreebel loses Stun Spore.
+	LEVEL_UP_MOVE(56, MOVE_WRING_OUT),
+	LEVEL_UP_MOVE(60, MOVE_POWER_WHIP), // New Move Slot -> Power Whip: Egg Move.  This move makes sense in its level up list
     LEVEL_UP_END
 };
 #endif //P_FAMILY_BELLSPROUT
@@ -1929,6 +1994,7 @@ static const struct LevelUpMove sGravelerLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sGolemLevelUpLearnset[] = {
+ 	LEVEL_UP_MOVE( 1, MOVE_SHELL_SMASH), // New Move Slot -> Shell Smash: New move.  May move to different level  
     LEVEL_UP_MOVE( 1, MOVE_HEAVY_SLAM),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
@@ -2433,7 +2499,7 @@ static const struct LevelUpMove sSeelLevelUpLearnset[] = {
     LEVEL_UP_MOVE(23, MOVE_AQUA_RING),
     LEVEL_UP_MOVE(27, MOVE_AURORA_BEAM),
     LEVEL_UP_MOVE(31, MOVE_AQUA_JET),
-    LEVEL_UP_MOVE(33, MOVE_BRINE),
+	LEVEL_UP_MOVE(33, MOVE_FLIP_TURN), // Brine -> Flip Turn: TM Move (SV). I think it makes sense, and gives it a good pivot option.
     LEVEL_UP_MOVE(37, MOVE_TAKE_DOWN),
     LEVEL_UP_MOVE(41, MOVE_DIVE),
     LEVEL_UP_MOVE(43, MOVE_AQUA_TAIL),
@@ -2460,7 +2526,7 @@ static const struct LevelUpMove sDewgongLevelUpLearnset[] = {
     LEVEL_UP_MOVE(23, MOVE_AQUA_RING),
     LEVEL_UP_MOVE(27, MOVE_AURORA_BEAM),
     LEVEL_UP_MOVE(31, MOVE_AQUA_JET),
-    LEVEL_UP_MOVE(33, MOVE_BRINE),
+	LEVEL_UP_MOVE(33, MOVE_FLIP_TURN), // Brine -> Flip Turn: TM Move (SV). I think it makes sense, and gives it a good pivot option.
     LEVEL_UP_MOVE(39, MOVE_TAKE_DOWN),
     LEVEL_UP_MOVE(45, MOVE_DIVE),
     LEVEL_UP_MOVE(49, MOVE_AQUA_TAIL),
@@ -2483,7 +2549,7 @@ static const struct LevelUpMove sGrimerLevelUpLearnset[] = {
     LEVEL_UP_MOVE(21, MOVE_MINIMIZE),
     LEVEL_UP_MOVE(26, MOVE_TOXIC),
     LEVEL_UP_MOVE(29, MOVE_SLUDGE_BOMB),
-    LEVEL_UP_MOVE(32, MOVE_SLUDGE_WAVE),
+    LEVEL_UP_MOVE(32, MOVE_DIRE_CLAW), // Sludge Wave -> Dire Claw: New Move.  I think they're so toxic that they can inflict any amount of poisons on you with one hit
     LEVEL_UP_MOVE(37, MOVE_SCREECH),
     LEVEL_UP_MOVE(40, MOVE_GUNK_SHOT),
     LEVEL_UP_MOVE(43, MOVE_ACID_ARMOR),
@@ -2503,7 +2569,7 @@ static const struct LevelUpMove sMukLevelUpLearnset[] = {
     LEVEL_UP_MOVE(21, MOVE_MINIMIZE),
     LEVEL_UP_MOVE(26, MOVE_TOXIC),
     LEVEL_UP_MOVE(29, MOVE_SLUDGE_BOMB),
-    LEVEL_UP_MOVE(32, MOVE_SLUDGE_WAVE),
+    LEVEL_UP_MOVE(32, MOVE_DIRE_CLAW), // Sludge Bomb -> Dire Claw: New Move.  I think they're so toxic that they can inflict any amount of poisons on you with one hit
     LEVEL_UP_MOVE(37, MOVE_SCREECH),
     LEVEL_UP_MOVE(40, MOVE_GUNK_SHOT),
     LEVEL_UP_MOVE(46, MOVE_ACID_ARMOR),
@@ -2650,7 +2716,7 @@ static const struct LevelUpMove sGengarLevelUpLearnset[] = {
     LEVEL_UP_MOVE(30, MOVE_NIGHT_SHADE),
     LEVEL_UP_MOVE(36, MOVE_SUCKER_PUNCH),
     LEVEL_UP_MOVE(42, MOVE_DARK_PULSE),
-    LEVEL_UP_MOVE(48, MOVE_SHADOW_BALL),
+    LEVEL_UP_MOVE(48, MOVE_BITTER_MALICE), // Shadow Ball -> Bitter Malice: New Move.  New "Signature Move"
     LEVEL_UP_MOVE(54, MOVE_DESTINY_BOND),
     LEVEL_UP_MOVE(60, MOVE_DREAM_EATER),
     LEVEL_UP_END
@@ -2659,24 +2725,25 @@ static const struct LevelUpMove sGengarLevelUpLearnset[] = {
 
 #if P_FAMILY_ONIX
 static const struct LevelUpMove sOnixLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_TACKLE),
-    LEVEL_UP_MOVE( 1, MOVE_HARDEN),
-    LEVEL_UP_MOVE( 1, MOVE_BIND),
-    LEVEL_UP_MOVE( 1, MOVE_ROCK_THROW),
-    LEVEL_UP_MOVE( 4, MOVE_SMACK_DOWN),
-    LEVEL_UP_MOVE( 8, MOVE_ROCK_POLISH),
-    LEVEL_UP_MOVE(12, MOVE_DRAGON_BREATH),
-    LEVEL_UP_MOVE(16, MOVE_CURSE),
-    LEVEL_UP_MOVE(20, MOVE_ROCK_SLIDE),
-    LEVEL_UP_MOVE(24, MOVE_SCREECH),
-    LEVEL_UP_MOVE(28, MOVE_SAND_TOMB),
-    LEVEL_UP_MOVE(32, MOVE_STEALTH_ROCK),
-    LEVEL_UP_MOVE(36, MOVE_SLAM),
-    LEVEL_UP_MOVE(40, MOVE_SANDSTORM),
-    LEVEL_UP_MOVE(44, MOVE_DIG),
-    LEVEL_UP_MOVE(48, MOVE_IRON_TAIL),
-    LEVEL_UP_MOVE(52, MOVE_STONE_EDGE),
-    LEVEL_UP_MOVE(56, MOVE_DOUBLE_EDGE),
+	LEVEL_UP_MOVE( 1, MOVE_MUD_SPORT),
+	LEVEL_UP_MOVE( 1, MOVE_RAGE), // Tackle -> Rage: Old Level Up Move.  Theme and Zen Mode
+	LEVEL_UP_MOVE( 1, MOVE_HARDEN),
+	LEVEL_UP_MOVE( 1, MOVE_BIND),
+	LEVEL_UP_MOVE( 4, MOVE_SMACK_DOWN),
+	LEVEL_UP_MOVE( 8, MOVE_ROCK_POLISH),
+	LEVEL_UP_MOVE(12, MOVE_DRAGON_BREATH),
+	LEVEL_UP_MOVE(16, MOVE_CURSE),
+	LEVEL_UP_MOVE(20, MOVE_ROCK_SLIDE),
+	LEVEL_UP_MOVE(24, MOVE_SCREECH),
+	LEVEL_UP_MOVE(28, MOVE_BULLDOZE), // Sand Tomb -> Bulldoze: TM Move.
+	LEVEL_UP_MOVE(32, MOVE_STEALTH_ROCK),
+	LEVEL_UP_MOVE(36, MOVE_BODY_SLAM), // Slam -> Body Slam: New Move. Xen Mode
+	LEVEL_UP_MOVE(40, MOVE_SAND_STORM),
+	LEVEL_UP_MOVE(44, MOVE_DIG),
+	LEVEL_UP_MOVE(48, MOVE_IRON_TAIL),
+	LEVEL_UP_MOVE(52, MOVE_STONE_EDGE),
+	LEVEL_UP_MOVE(56, MOVE_DOUBLE_EDGE),
+	LEVEL_UP_MOVE(60, MOVE_EARTHQUAKE),
     LEVEL_UP_END
 };
 
@@ -2713,39 +2780,50 @@ static const struct LevelUpMove sSteelixLevelUpLearnset[] = {
 
 #if P_FAMILY_DROWZEE
 static const struct LevelUpMove sDrowzeeLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_POUND),
-    LEVEL_UP_MOVE( 1, MOVE_HYPNOSIS),
-    LEVEL_UP_MOVE( 5, MOVE_DISABLE),
-    LEVEL_UP_MOVE( 9, MOVE_CONFUSION),
-    LEVEL_UP_MOVE(13, MOVE_HEADBUTT),
-    LEVEL_UP_MOVE(17, MOVE_POISON_GAS),
-    LEVEL_UP_MOVE(21, MOVE_PSYBEAM),
-    LEVEL_UP_MOVE(25, MOVE_PSYCH_UP),
-    LEVEL_UP_MOVE(29, MOVE_ZEN_HEADBUTT),
-    LEVEL_UP_MOVE(33, MOVE_SWAGGER),
-    LEVEL_UP_MOVE(37, MOVE_PSYCHIC),
-    LEVEL_UP_MOVE(41, MOVE_NASTY_PLOT),
-    LEVEL_UP_MOVE(45, MOVE_PSYSHOCK),
-    LEVEL_UP_MOVE(49, MOVE_FUTURE_SIGHT),
+	LEVEL_UP_MOVE( 1, MOVE_ASSIST), // New Move Slot -> Assist: Egg Move.  I think this would be fun for a playthrough without breeding.  
+	LEVEL_UP_MOVE( 1, MOVE_COVET), // Pound -> Covet: New Move.  I like the idea of Drowzee/Hypno using their powers to get the opponents item
+	LEVEL_UP_MOVE( 1, MOVE_HYPNOSIS),
+	LEVEL_UP_MOVE( 5, MOVE_DISABLE),
+	LEVEL_UP_MOVE( 9, MOVE_CONFUSION),
+	LEVEL_UP_MOVE(13, MOVE_FAKE_OUT), // Poison Gas -> Fake Out: New Move. Poison Gas never made sense to me.  Fake Out can be symbolic of the hypnotist snapping fingers trope.
+	LEVEL_UP_MOVE(17, MOVE_HEADBUTT), // Headbutt and Poison Gas Switched.
+	LEVEL_UP_MOVE(21, MOVE_ENCORE), // Meditate -> Encore: New Move:  You WILL use the same move over and over
+	LEVEL_UP_MOVE(25, MOVE_PSYBEAM),
+	LEVEL_UP_MOVE(29, MOVE_ZEN_HEADBUTT), // Wake-Up Slap and Zen Headbutt Switch.  Closer to Gen IX ZH level and moves Foul Play to the range most Pokemon learn it.0
+	LEVEL_UP_MOVE(33, MOVE_PSYCHO_SHIFT), // Psych Up -> Psycho Shift: New Move.  Hypno using its weird powers to move it's status effects to an enemy can be fun.  Might block sleep but it's flavorful and Psych Up is a TM (usually)
+	LEVEL_UP_MOVE(37, MOVE_DREAM_EATER), // Synchronise -> Dream Eater: TM Move.  Synchronise stinks and Dream Eater is an absolute nescessity.
+	LEVEL_UP_MOVE(41, MOVE_FOUL_PLAY), // Wake-Up Slap -> Foul Play: TM Move. Hypno using it's powers to have the Pokemon essentially hurt itself.
+	LEVEL_UP_MOVE(45, MOVE_TOPSY_TURVY), // Swagger -> Topsy Turvy: New Move. Swapping stat drops seems like such a hypnosis thing to do. Also, Malamar uses it and it's the new hypnosis pokemon.  Swagger moves to TM
+	LEVEL_UP_MOVE(49, MOVE_EERIE_SPELL), // Psychic -> Eerie Spell: New Move.  Something more unique.  By the time you hit level 49 you should have the Psychic TM anyway.
+	LEVEL_UP_MOVE(53, MOVE_NASTY_PLOT),
+	LEVEL_UP_MOVE(57, MOVE_PSYSHOCK),
+	LEVEL_UP_MOVE(61, MOVE_FUTURE_SIGHT),
     LEVEL_UP_END
 };
 
 static const struct LevelUpMove sHypnoLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_POUND),
-    LEVEL_UP_MOVE( 1, MOVE_DISABLE),
-    LEVEL_UP_MOVE( 1, MOVE_CONFUSION),
-    LEVEL_UP_MOVE( 1, MOVE_HYPNOSIS),
-    LEVEL_UP_MOVE( 1, MOVE_SWITCHEROO),
-    LEVEL_UP_MOVE(13, MOVE_HEADBUTT),
-    LEVEL_UP_MOVE(17, MOVE_POISON_GAS),
-    LEVEL_UP_MOVE(21, MOVE_PSYBEAM),
-    LEVEL_UP_MOVE(25, MOVE_PSYCH_UP),
-    LEVEL_UP_MOVE(32, MOVE_ZEN_HEADBUTT),
-    LEVEL_UP_MOVE(37, MOVE_SWAGGER),
-    LEVEL_UP_MOVE(42, MOVE_PSYCHIC),
-    LEVEL_UP_MOVE(47, MOVE_NASTY_PLOT),
-    LEVEL_UP_MOVE(51, MOVE_PSYSHOCK),
-    LEVEL_UP_MOVE(56, MOVE_FUTURE_SIGHT),
+	LEVEL_UP_MOVE( 1, MOVE_ASSIST), // New Move Slot -> Assist: Egg Move.  I think this would be fun for a playthrough without breeding.  
+	LEVEL_UP_MOVE( 1, MOVE_FUTURE_SIGHT),
+	LEVEL_UP_MOVE( 1, MOVE_NASTY_PLOT),
+	LEVEL_UP_MOVE( 1, MOVE_NIGHTMARE),
+	LEVEL_UP_MOVE( 1, MOVE_SWITCHEROO),
+	LEVEL_UP_MOVE( 1, MOVE_COVET), // Pound -> Covet: New Move.  I like the idea of Drowzee/Hypno using their powers to get the opponents item
+	LEVEL_UP_MOVE( 1, MOVE_HYPNOSIS),
+	LEVEL_UP_MOVE( 5, MOVE_DISABLE),
+	LEVEL_UP_MOVE( 9, MOVE_CONFUSION),
+	LEVEL_UP_MOVE(13, MOVE_FAKE_OUT), // Poison Gas -> Fake Out: New Move. Poison Gas never made sense to me.  Fake Out can be symbolic of the hypnotist snapping fingers trope.
+	LEVEL_UP_MOVE(17, MOVE_HEADBUTT), // Headbutt and Poison Gas Switched.
+	LEVEL_UP_MOVE(21, MOVE_ENCORE), // Meditate -> Encore: New Move:  You WILL use the same move over and over
+	LEVEL_UP_MOVE(25, MOVE_PSYBEAM),
+	LEVEL_UP_MOVE(29, MOVE_ZEN_HEADBUTT), // Wake-Up Slap and Zen Headbutt Switch.  Closer to Gen IX ZH level and moves Foul Play to the range most Pokemon learn it.
+	LEVEL_UP_MOVE(33, MOVE_PSYCHO_SHIFT), // Psych Up -> Psycho Shift: New Move.  Hypno using its weird powers to move it's status effects to an enemy can be fun.  Might block sleep but it's flavorful and Psych Up is a TM (usually)
+	LEVEL_UP_MOVE(37, MOVE_DREAM_EATER), // Synchronise -> Dream Eater: TM Move.  Synchronise stinks and Dream Eater is an absolute nescessity.  
+	LEVEL_UP_MOVE(41, MOVE_FOUL_PLAY), // Wake-Up Slap -> Foul Play: TM Move. Hypno using it's powers to have the Pokemon essentially hurt itself.
+	LEVEL_UP_MOVE(45, MOVE_TOPSY_TURVY), // Swagger -> Topsy Turvy: New Move. Swapping stat drops seems like such a hypnosis thing to do. Also, Malamar uses it and it's the new hypnosis pokemon.  Swagger moves to TM
+	LEVEL_UP_MOVE(49, MOVE_EERIE_SPELL), // Psychic -> Eerie Spell: New Move.  Something more unique.  By the time you hit level 49 you should have the Psychic TM anyway.
+	LEVEL_UP_MOVE(53, MOVE_NASTY_PLOT),
+	LEVEL_UP_MOVE(57, MOVE_PSYSHOCK),
+	LEVEL_UP_MOVE(61, MOVE_EXPANDING_FORCE), // Future Sight -> Expanding Force: TM/Tutor Move. Hypno really could use the power boost and it gets Psychic Surge
     LEVEL_UP_END
 };
 #endif //P_FAMILY_DROWZEE
@@ -3023,25 +3101,25 @@ static const struct LevelUpMove sTyrogueLevelUpLearnset[] = {
 #endif //P_GEN_2_CROSS_EVOS
 
 static const struct LevelUpMove sHitmonleeLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 0, MOVE_BRICK_BREAK),
-    LEVEL_UP_MOVE( 1, MOVE_BRICK_BREAK),
-    LEVEL_UP_MOVE( 1, MOVE_FEINT),
-    LEVEL_UP_MOVE( 1, MOVE_LOW_SWEEP),
-    LEVEL_UP_MOVE( 1, MOVE_TACKLE),
-    LEVEL_UP_MOVE( 1, MOVE_HELPING_HAND),
-    LEVEL_UP_MOVE( 1, MOVE_FAKE_OUT),
-    LEVEL_UP_MOVE( 1, MOVE_FOCUS_ENERGY),
-    LEVEL_UP_MOVE( 4, MOVE_DOUBLE_KICK),
-    LEVEL_UP_MOVE( 8, MOVE_LOW_KICK),
-    LEVEL_UP_MOVE(12, MOVE_ENDURE),
-    LEVEL_UP_MOVE(16, MOVE_REVENGE),
-    LEVEL_UP_MOVE(21, MOVE_WIDE_GUARD),
-    LEVEL_UP_MOVE(24, MOVE_BLAZE_KICK),
-    LEVEL_UP_MOVE(28, MOVE_MIND_READER),
-    LEVEL_UP_MOVE(32, MOVE_MEGA_KICK),
-    LEVEL_UP_MOVE(36, MOVE_CLOSE_COMBAT),
-    LEVEL_UP_MOVE(40, MOVE_REVERSAL),
-    LEVEL_UP_MOVE(44, MOVE_HIGH_JUMP_KICK),
+	LEVEL_UP_MOVE( 0, MOVE_DOUBLE_KICK),
+	LEVEL_UP_MOVE( 1, MOVE_DOUBLE_KICK),
+	LEVEL_UP_MOVE( 1, MOVE_REVENGE),
+	LEVEL_UP_MOVE( 1, MOVE_ENDURE), // Meditate -> Endure: Level Up Move. Change Lvl 1 Meditate to Endure and move Endure from Lvl 49
+	LEVEL_UP_MOVE( 5, MOVE_MEDITATE),
+	LEVEL_UP_MOVE( 9, MOVE_ROLLING_KICK),
+	LEVEL_UP_MOVE(13, MOVE_JUMP_KICK),
+	LEVEL_UP_MOVE(17, MOVE_BRICK_BREAK),
+	LEVEL_UP_MOVE(21, MOVE_FOCUS_ENERGY),
+	LEVEL_UP_MOVE(25, MOVE_FEINT),
+	LEVEL_UP_MOVE(29, MOVE_HIGH_JUMP_KICK),
+	LEVEL_UP_MOVE(33, MOVE_MIND_READER),
+	LEVEL_UP_MOVE(37, MOVE_TROP_KICK), // Wide Guard -> Trop Kick: New Move. Trop Kick is a kicking coverage move. Not Grass types in our game really fit with it, and Hitmonlee is the kicking expert.
+	LEVEL_UP_MOVE(41, MOVE_FORESIGHT), // Wide Guard -> Foresight: Level Swap. Move Foresight into Wide Guard's old spot to allow Hitmonlee to have Trop Kick for Silph Co. Giovanni.
+	LEVEL_UP_MOVE(45, MOVE_BLAZE_KICK),
+	LEVEL_UP_MOVE(49, MOVE_THUNDEROUS_KICK), // Endure -> Thunderous Kick: New Move. Hitmonlee is the kicking pokemon and Galarian Zapdos is not in the game. also, this move doesn't seem to fit regular Zapdos unfortunately.
+	LEVEL_UP_MOVE(53, MOVE_MEGA_KICK),
+	LEVEL_UP_MOVE(57, MOVE_CLOSE_COMBAT),
+	LEVEL_UP_MOVE(61, MOVE_REVERSAL),
     LEVEL_UP_END
 };
 
@@ -3136,43 +3214,49 @@ static const struct LevelUpMove sLickilickyLevelUpLearnset[] = {
 
 #if P_FAMILY_KOFFING
 static const struct LevelUpMove sKoffingLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_POISON_GAS),
-    LEVEL_UP_MOVE( 1, MOVE_TACKLE),
-    LEVEL_UP_MOVE( 4, MOVE_SMOG),
-    LEVEL_UP_MOVE( 8, MOVE_SMOKESCREEN),
-    LEVEL_UP_MOVE(12, MOVE_CLEAR_SMOG),
-    LEVEL_UP_MOVE(16, MOVE_ASSURANCE),
-    LEVEL_UP_MOVE(20, MOVE_SLUDGE),
-    LEVEL_UP_MOVE(24, MOVE_HAZE),
-    LEVEL_UP_MOVE(28, MOVE_SELF_DESTRUCT),
-    LEVEL_UP_MOVE(32, MOVE_SLUDGE_BOMB),
-    LEVEL_UP_MOVE(36, MOVE_TOXIC),
-    LEVEL_UP_MOVE(40, MOVE_BELCH),
-    LEVEL_UP_MOVE(44, MOVE_EXPLOSION),
-    LEVEL_UP_MOVE(48, MOVE_MEMENTO),
-    LEVEL_UP_MOVE(52, MOVE_DESTINY_BOND),
+	LEVEL_UP_MOVE( 1, MOVE_HAZE), // Move Haze to Level 1
+	LEVEL_UP_MOVE( 1, MOVE_POISON_GAS),
+	LEVEL_UP_MOVE( 1, MOVE_TACKLE),
+	LEVEL_UP_MOVE( 4, MOVE_SMOG),
+	LEVEL_UP_MOVE( 7, MOVE_SMOKESCREEN),
+	LEVEL_UP_MOVE(12, MOVE_ASSURANCE),
+	LEVEL_UP_MOVE(15, MOVE_CLEAR_SMOG),
+	LEVEL_UP_MOVE(18, MOVE_SLUDGE),
+	LEVEL_UP_MOVE(21, MOVE_PURIFY), // New Move Slot -> Purify: New Move.  A recovery option that creates an interesting decision.  Also, a hint at Fairy Type.  
+	LEVEL_UP_MOVE(24, MOVE_SELF_DESTRUCT),
+	LEVEL_UP_MOVE(27, MOVE_WILL_O_WISP), // Haze -> Will o' Wisp: TM Move. I want WoW in the level up moveset and I think the clear Smog/Haze debate should be earlier in the game.
+	LEVEL_UP_MOVE(30, MOVE_CORROSIVE_GAS), // GYRO_BALL -> Corossive Gas: Move Tutor Move. Knock Poison type Knock Off.  Weezing Signature move.
+	LEVEL_UP_MOVE(34, MOVE_HEAT_WAVE), // Destiny Bond -> Heat Wave: Level 1 move. Moving Destiny Bond down the list.  Heat Wave is too good for Lvl. 1 Koffing
+	LEVEL_UP_MOVE(37, MOVE_EXPLOSION),
+	LEVEL_UP_MOVE(40, MOVE_SLUDGE_BOMB), // Switch Sludge Bomb and Heat Wave Level: Having Sludge Bomb and Corrosive Gas back to back seems a bit counter intuitative.  
+	LEVEL_UP_MOVE(42, MOVE_BELCH),
+	LEVEL_UP_MOVE(45, MOVE_PARTING_SHOT), // Memento -> Parting Shot: New move.  Does the same thing as Memento but does't faint Weezing.  If Weezing is going to faint on purpose it will Explode
+	LEVEL_UP_MOVE(48, MOVE_DESTINY_BOND),
     LEVEL_UP_END
 };
 
 static const struct LevelUpMove sWeezingLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 0, MOVE_DOUBLE_HIT),
-    LEVEL_UP_MOVE( 1, MOVE_DOUBLE_HIT),
-    LEVEL_UP_MOVE( 1, MOVE_HEAT_WAVE),
-    LEVEL_UP_MOVE( 1, MOVE_POISON_GAS),
-    LEVEL_UP_MOVE( 1, MOVE_TACKLE),
-    LEVEL_UP_MOVE( 1, MOVE_SMOG),
-    LEVEL_UP_MOVE( 1, MOVE_SMOKESCREEN),
-    LEVEL_UP_MOVE(12, MOVE_CLEAR_SMOG),
-    LEVEL_UP_MOVE(16, MOVE_ASSURANCE),
-    LEVEL_UP_MOVE(20, MOVE_SLUDGE),
-    LEVEL_UP_MOVE(24, MOVE_HAZE),
-    LEVEL_UP_MOVE(28, MOVE_SELF_DESTRUCT),
-    LEVEL_UP_MOVE(32, MOVE_SLUDGE_BOMB),
-    LEVEL_UP_MOVE(38, MOVE_TOXIC),
-    LEVEL_UP_MOVE(44, MOVE_BELCH),
-    LEVEL_UP_MOVE(50, MOVE_EXPLOSION),
-    LEVEL_UP_MOVE(56, MOVE_MEMENTO),
-    LEVEL_UP_MOVE(62, MOVE_DESTINY_BOND),
+	LEVEL_UP_MOVE( 0, MOVE_STRANGE_STEAM), // Double Hit -> Strange Steam: G. Weezing move.  Strange Steam is a signature move of G Weezing anfd Double Hit is a lame evo move.
+	LEVEL_UP_MOVE( 1, MOVE_STRANGE_STEAM),
+	LEVEL_UP_MOVE( 1, MOVE_DOUBLE_HIT),
+	LEVEL_UP_MOVE( 1, MOVE_HAZE), // Move Haze to Level 1
+	LEVEL_UP_MOVE( 1, MOVE_POISON_GAS),
+	LEVEL_UP_MOVE( 1, MOVE_TACKLE),
+	LEVEL_UP_MOVE( 4, MOVE_SMOG),
+	LEVEL_UP_MOVE( 7, MOVE_SMOKESCREEN),
+	LEVEL_UP_MOVE(12, MOVE_ASSURANCE),
+	LEVEL_UP_MOVE(15, MOVE_CLEAR_SMOG),
+	LEVEL_UP_MOVE(18, MOVE_SLUDGE),
+	LEVEL_UP_MOVE(21, MOVE_PURIFY), // New Move Slot -> Purify: New Move.  A recovery option that creates an interesting decision.  Also, a hint at Fairy Type.  
+	LEVEL_UP_MOVE(24, MOVE_SELF_DESTRUCT),
+	LEVEL_UP_MOVE(27, MOVE_WILL_O_WISP), // Haze -> Will o' Wisp: TM Move. I want WoW in the level up moveset and I think the clear Smog/Haze debate should be earlier in the game.
+	LEVEL_UP_MOVE(30, MOVE_CORROSIVE_GAS), // GYRO_BALL -> Corossive Gas: Move Tutor Move. Knock Poison type Knock Off.  Weezing Signature move.
+	LEVEL_UP_MOVE(34, MOVE_HEAT_WAVE), // Destiny Bond -> Heat Wave: Level 1 move. Moving Destiny Bond down the list.
+	LEVEL_UP_MOVE(40, MOVE_EXPLOSION),
+	LEVEL_UP_MOVE(45, MOVE_SLUDGE_BOMB), // Switch Sludge Bomb and Heat Wave Level: Having Sludge Bomb and Corrosive Gas back to back seems a bit counter intuitative.  
+	LEVEL_UP_MOVE(51, MOVE_BELCH),
+	LEVEL_UP_MOVE(55, MOVE_PARTING_SHOT), // Memento -> Parting Shot: New move.  Does the same thing as Memento but does't faint Weezing.  If Weezing is going to faint on purpose it will Explode
+	LEVEL_UP_MOVE(60, MOVE_DESTINY_BOND),
     LEVEL_UP_END
 };
 
@@ -3357,23 +3441,27 @@ static const struct LevelUpMove sTangelaLevelUpLearnset[] = {
 
 #if P_GEN_4_CROSS_EVOS
 static const struct LevelUpMove sTangrowthLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_BLOCK),
-    LEVEL_UP_MOVE( 1, MOVE_ABSORB),
-    LEVEL_UP_MOVE( 1, MOVE_BIND),
-    LEVEL_UP_MOVE( 1, MOVE_STUN_SPORE),
-    LEVEL_UP_MOVE( 1, MOVE_GROWTH),
-    LEVEL_UP_MOVE(12, MOVE_MEGA_DRAIN),
-    LEVEL_UP_MOVE(16, MOVE_VINE_WHIP),
-    LEVEL_UP_MOVE(20, MOVE_POISON_POWDER),
-    LEVEL_UP_MOVE(24, MOVE_ANCIENT_POWER),
-    LEVEL_UP_MOVE(28, MOVE_KNOCK_OFF),
-    LEVEL_UP_MOVE(32, MOVE_GIGA_DRAIN),
-    LEVEL_UP_MOVE(36, MOVE_SLEEP_POWDER),
-    LEVEL_UP_MOVE(40, MOVE_SLAM),
-    LEVEL_UP_MOVE(44, MOVE_TICKLE),
-    LEVEL_UP_MOVE(48, MOVE_POWER_WHIP),
-    LEVEL_UP_MOVE(52, MOVE_INGRAIN),
-    LEVEL_UP_MOVE(56, MOVE_GRASSY_TERRAIN),
+	LEVEL_UP_MOVE( 1, MOVE_BLOCK),
+	LEVEL_UP_MOVE( 1, MOVE_INGRAIN),
+	LEVEL_UP_MOVE( 1, MOVE_CONSTRICT),
+	LEVEL_UP_MOVE( 4, MOVE_SLEEP_POWDER),
+	LEVEL_UP_MOVE( 7, MOVE_VINE_WHIP),
+	LEVEL_UP_MOVE(10, MOVE_ABSORB),
+	LEVEL_UP_MOVE(14, MOVE_POISON_POWDER),
+	LEVEL_UP_MOVE(17, MOVE_BIND),
+	LEVEL_UP_MOVE(20, MOVE_GROWTH),
+	LEVEL_UP_MOVE(23, MOVE_MEGA_DRAIN),
+	LEVEL_UP_MOVE(27, MOVE_KNOCK_OFF),
+	LEVEL_UP_MOVE(30, MOVE_STUN_SPORE),
+	LEVEL_UP_MOVE(33, MOVE_NATURAL_GIFT),
+	LEVEL_UP_MOVE(36, MOVE_GIGA_DRAIN),
+	LEVEL_UP_MOVE(40, MOVE_ANCIENT_POWER),
+	LEVEL_UP_MOVE(43, MOVE_HAMMER_ARM), // Slam -> Hammer Arm: New Move.  Fighting Type coverage.  Tangrowth already gets a few Fighting moves. Rillaboom gets it in SS/SV and Tangrowth is slow enough to not mind the Speed Drop, especially in TR.
+	LEVEL_UP_MOVE(46, MOVE_TICKLE),
+	LEVEL_UP_MOVE(49, MOVE_WRING_OUT),
+	LEVEL_UP_MOVE(50, MOVE_GRASSY_TERRAIN),
+	LEVEL_UP_MOVE(53, MOVE_POWER_WHIP),
+	LEVEL_UP_MOVE(56, MOVE_BLOCK), // Block -> New Move:  I don't like it getting Block twice
     LEVEL_UP_END
 };
 #endif //P_GEN_4_CROSS_EVOS
@@ -3459,34 +3547,44 @@ static const struct LevelUpMove sKingdraLevelUpLearnset[] = {
 
 #if P_FAMILY_GOLDEEN
 static const struct LevelUpMove sGoldeenLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_PECK),
-    LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
-    LEVEL_UP_MOVE( 5, MOVE_SUPERSONIC),
-    LEVEL_UP_MOVE(10, MOVE_WATER_PULSE),
-    LEVEL_UP_MOVE(15, MOVE_HORN_ATTACK),
-    LEVEL_UP_MOVE(20, MOVE_AGILITY),
-    LEVEL_UP_MOVE(25, MOVE_AQUA_RING),
-    LEVEL_UP_MOVE(30, MOVE_FLAIL),
-    LEVEL_UP_MOVE(35, MOVE_WATERFALL),
-    LEVEL_UP_MOVE(40, MOVE_SOAK),
-    LEVEL_UP_MOVE(45, MOVE_MEGAHORN),
-    LEVEL_UP_MOVE(50, MOVE_HORN_DRILL),
+	LEVEL_UP_MOVE( 1, MOVE_PECK),
+	LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
+	LEVEL_UP_MOVE( 1, MOVE_WATER_SPORT),
+	LEVEL_UP_MOVE( 6, MOVE_SUPERSONIC),
+	LEVEL_UP_MOVE(10, MOVE_AQUA_JET), // Quick Attack -> Aqua Jet: Same idea but Physical Water move
+	LEVEL_UP_MOVE(14, MOVE_WATER_PULSE),
+	LEVEL_UP_MOVE(18, MOVE_HORN_ATTACK),
+	LEVEL_UP_MOVE(22, MOVE_AGILITY),
+	LEVEL_UP_MOVE(26, MOVE_WATERFALL), // Fury Attack -> Waterfall: Goldeen learns Waterfall at 24 in LGPE
+	LEVEL_UP_MOVE(30, MOVE_AQUA_RING),
+	LEVEL_UP_MOVE(34, MOVE_FLAIL),
+	LEVEL_UP_MOVE(38, MOVE_SCALE_SHOT), // Waterfall -> Fishious Rend: New Move.  
+	LEVEL_UP_MOVE(42, MOVE_FISHIOUS_REND), // New move:  Soak?  Really?  Reasons like this are why Seaking is bad.
+	LEVEL_UP_MOVE(46, MOVE_DRILL_RUN), // New Move: Fishious Rend moved to 38
+	LEVEL_UP_MOVE(49, MOVE_MEGAHORN),
+	LEVEL_UP_MOVE(53, MOVE_WAVE_CRASH),
     LEVEL_UP_END
 };
 
 static const struct LevelUpMove sSeakingLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_PECK),
-    LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
-    LEVEL_UP_MOVE( 1, MOVE_SUPERSONIC),
-    LEVEL_UP_MOVE( 1, MOVE_WATER_PULSE),
-    LEVEL_UP_MOVE(15, MOVE_HORN_ATTACK),
-    LEVEL_UP_MOVE(20, MOVE_AGILITY),
-    LEVEL_UP_MOVE(25, MOVE_AQUA_RING),
-    LEVEL_UP_MOVE(30, MOVE_FLAIL),
-    LEVEL_UP_MOVE(37, MOVE_WATERFALL),
-    LEVEL_UP_MOVE(44, MOVE_SOAK),
-    LEVEL_UP_MOVE(51, MOVE_MEGAHORN),
-    LEVEL_UP_MOVE(58, MOVE_HORN_DRILL),
+	LEVEL_UP_MOVE( 1, MOVE_POISON_JAB),
+	LEVEL_UP_MOVE( 1, MOVE_HORN_DRILL), // Level 1 -> Horn Drill: OHKO moves are disappointing, especailly late in level up movesets.  Move to level 1 to keep in moveset.
+	LEVEL_UP_MOVE( 1, MOVE_PECK),
+	LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
+	LEVEL_UP_MOVE( 1, MOVE_WATER_SPORT),
+	LEVEL_UP_MOVE( 1, MOVE_SUPERSONIC),
+	LEVEL_UP_MOVE(10, MOVE_AQUA_JET), // Quick Attack -> Aqua Jet: Same idea but Physical Water move
+	LEVEL_UP_MOVE(14, MOVE_WATER_PULSE),
+	LEVEL_UP_MOVE(18, MOVE_HORN_ATTACK),
+	LEVEL_UP_MOVE(22, MOVE_AGILITY),
+	LEVEL_UP_MOVE(26, MOVE_WATERFALL), // Fury Attack -> Waterfall: Goldeen learns Waterfall at 24 in LGPE
+	LEVEL_UP_MOVE(30, MOVE_AQUA_RING),
+	LEVEL_UP_MOVE(35, MOVE_FLAIL),
+	LEVEL_UP_MOVE(40, MOVE_SCALE_SHOT), 
+	LEVEL_UP_MOVE(44, MOVE_FISHIOUS_REND), // Waterfall -> Fishious Rend: New Move.  Move to 44 to get use in story.
+	LEVEL_UP_MOVE(47, MOVE_DRILL_RUN), // Soak -> Drill Run:  TM Move.  To fill the role of the Anti-Electric Water Type that it's sitting into.  Plus, Drill.
+	LEVEL_UP_MOVE(51, MOVE_MEGAHORN),
+	LEVEL_UP_MOVE(55, MOVE_WAVE_CRASH), // Horn Drill -> Wave Crash: New Move.  Fitting Move
     LEVEL_UP_END
 };
 #endif //P_FAMILY_GOLDEEN
@@ -3774,42 +3872,50 @@ static const struct LevelUpMove sElekidLevelUpLearnset[] = {
 #endif //P_GEN_2_CROSS_EVOS
 
 static const struct LevelUpMove sElectabuzzLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_QUICK_ATTACK),
-    LEVEL_UP_MOVE( 1, MOVE_LEER),
-    LEVEL_UP_MOVE( 1, MOVE_THUNDER_SHOCK),
-    LEVEL_UP_MOVE( 1, MOVE_CHARGE),
-    LEVEL_UP_MOVE(12, MOVE_SWIFT),
-    LEVEL_UP_MOVE(16, MOVE_SHOCK_WAVE),
-    LEVEL_UP_MOVE(20, MOVE_THUNDER_WAVE),
-    LEVEL_UP_MOVE(24, MOVE_SCREECH),
-    LEVEL_UP_MOVE(28, MOVE_THUNDER_PUNCH),
-    LEVEL_UP_MOVE(34, MOVE_DISCHARGE),
-    LEVEL_UP_MOVE(40, MOVE_LOW_KICK),
-    LEVEL_UP_MOVE(46, MOVE_THUNDERBOLT),
-    LEVEL_UP_MOVE(52, MOVE_LIGHT_SCREEN),
-    LEVEL_UP_MOVE(58, MOVE_THUNDER),
-    LEVEL_UP_MOVE(64, MOVE_GIGA_IMPACT),
+	LEVEL_UP_MOVE( 1, MOVE_QUICK_ATTACK),
+	LEVEL_UP_MOVE( 1, MOVE_LEER),
+	LEVEL_UP_MOVE( 1, MOVE_THUNDER_SHOCK),
+	LEVEL_UP_MOVE( 5, MOVE_THUNDER_SHOCK),
+	LEVEL_UP_MOVE( 8, MOVE_LOW_KICK),
+	LEVEL_UP_MOVE(12, MOVE_SWIFT),
+	LEVEL_UP_MOVE(15, MOVE_SHOCK_WAVE),
+	LEVEL_UP_MOVE(19, MOVE_THUNDER_WAVE),
+	LEVEL_UP_MOVE(22, MOVE_ELECTRO_BALL),
+	LEVEL_UP_MOVE(26, MOVE_LIGHT_SCREEN),
+	LEVEL_UP_MOVE(29, MOVE_THUNDER_PUNCH),
+	LEVEL_UP_MOVE(36, MOVE_DISCHARGE),
+	LEVEL_UP_MOVE(40, MOVE_SCREECH),
+	LEVEL_UP_MOVE(44, MOVE_PLASMA_FISTS), // Thunderbolt -> Plasma Fists: New Move.
+	LEVEL_UP_MOVE(49, MOVE_GIGA_IMPACT),
+	LEVEL_UP_MOVE(55, MOVE_THUNDER),
     LEVEL_UP_END
 };
 
 #if P_GEN_4_CROSS_EVOS
 static const struct LevelUpMove sElectivireLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_WILD_CHARGE),
-    LEVEL_UP_MOVE( 1, MOVE_QUICK_ATTACK),
-    LEVEL_UP_MOVE( 1, MOVE_LEER),
-    LEVEL_UP_MOVE( 1, MOVE_THUNDER_SHOCK),
-    LEVEL_UP_MOVE( 1, MOVE_CHARGE),
-    LEVEL_UP_MOVE(12, MOVE_SWIFT),
-    LEVEL_UP_MOVE(16, MOVE_SHOCK_WAVE),
-    LEVEL_UP_MOVE(20, MOVE_THUNDER_WAVE),
-    LEVEL_UP_MOVE(24, MOVE_SCREECH),
-    LEVEL_UP_MOVE(28, MOVE_THUNDER_PUNCH),
-    LEVEL_UP_MOVE(34, MOVE_DISCHARGE),
-    LEVEL_UP_MOVE(40, MOVE_LOW_KICK),
-    LEVEL_UP_MOVE(46, MOVE_THUNDERBOLT),
-    LEVEL_UP_MOVE(52, MOVE_LIGHT_SCREEN),
-    LEVEL_UP_MOVE(58, MOVE_THUNDER),
-    LEVEL_UP_MOVE(64, MOVE_GIGA_IMPACT),
+	LEVEL_UP_MOVE( 0, MOVE_CROSS_CHOP), // New Move Slot -> Cross Chop: Egg Move/Special Distribution. New move for Fighting type. Cross Chop seems to be a move that Electivire seems to get a bunch as a special distribution move so I think it makes sense to make CC its first Fighting move as a Fighting type.
+	LEVEL_UP_MOVE( 1, MOVE_CROSS_CHOP), // Low Kick -> Cross Chop: Egg Move/Special Distribution. Replace Level 1 Low Kick with Cross Chop so it can relearn Cross Chop.
+	LEVEL_UP_MOVE( 1, MOVE_ELECTRIC_TERRAIN),
+	LEVEL_UP_MOVE( 1, MOVE_ION_DELUGE),
+	LEVEL_UP_MOVE( 1, MOVE_FIRE_PUNCH),
+	LEVEL_UP_MOVE( 1, MOVE_THUNDER_SHOCK),
+	LEVEL_UP_MOVE( 1, MOVE_QUICK_ATTACK),
+	LEVEL_UP_MOVE( 1, MOVE_LEER),
+	LEVEL_UP_MOVE( 5, MOVE_THUNDER_SHOCK),
+	LEVEL_UP_MOVE( 8, MOVE_LOW_KICK),
+	LEVEL_UP_MOVE(12, MOVE_SWIFT),
+	LEVEL_UP_MOVE(15, MOVE_SHOCK_WAVE),
+	LEVEL_UP_MOVE(19, MOVE_THUNDER_WAVE),
+	LEVEL_UP_MOVE(22, MOVE_ELECTRO_BALL),
+	LEVEL_UP_MOVE(26, MOVE_LIGHT_SCREEN),
+	LEVEL_UP_MOVE(29, MOVE_THUNDER_PUNCH),
+	LEVEL_UP_MOVE(36, MOVE_DISCHARGE),
+	LEVEL_UP_MOVE(41, MOVE_THUNDEROUS_KICK), // Screech -> Thunderous Kick: New Move. Makes sense for Electivire and really doesn't make sense for Regular Zapdos.  
+	LEVEL_UP_MOVE(45, MOVE_PLASMA_FISTS), // Thunderbolt -> Plasma Fists: New Move. Works really well on Electivire. Plasma Fist is kind of like Electric type Earthquake and this is around where everytihng leanrs EQ. Also, give it a much needed upgrade in Physical Electric for late game.
+	LEVEL_UP_MOVE(50, MOVE_THUNDER),
+	LEVEL_UP_MOVE(54, MOVE_GIGA_IMPACT), 
+	LEVEL_UP_MOVE(59, MOVE_CLOSE_COMBAT), // New Move Slot -> Close Combat: New Move. 
+	LEVEL_UP_MOVE(63, MOVE_ELECTRIC_TERRAIN),
     LEVEL_UP_END
 };
 #endif //P_GEN_4_CROSS_EVOS
@@ -3837,41 +3943,47 @@ static const struct LevelUpMove sMagbyLevelUpLearnset[] = {
 #endif //P_GEN_2_CROSS_EVOS
 
 static const struct LevelUpMove sMagmarLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_SMOG),
-    LEVEL_UP_MOVE( 1, MOVE_LEER),
-    LEVEL_UP_MOVE( 1, MOVE_EMBER),
-    LEVEL_UP_MOVE( 1, MOVE_SMOKESCREEN),
-    LEVEL_UP_MOVE(12, MOVE_CLEAR_SMOG),
-    LEVEL_UP_MOVE(16, MOVE_FLAME_WHEEL),
-    LEVEL_UP_MOVE(20, MOVE_CONFUSE_RAY),
-    LEVEL_UP_MOVE(24, MOVE_SCARY_FACE),
-    LEVEL_UP_MOVE(28, MOVE_FIRE_PUNCH),
-    LEVEL_UP_MOVE(34, MOVE_LAVA_PLUME),
-    LEVEL_UP_MOVE(40, MOVE_LOW_KICK),
-    LEVEL_UP_MOVE(46, MOVE_FLAMETHROWER),
-    LEVEL_UP_MOVE(52, MOVE_SUNNY_DAY),
-    LEVEL_UP_MOVE(58, MOVE_FIRE_BLAST),
-    LEVEL_UP_MOVE(64, MOVE_HYPER_BEAM),
+	LEVEL_UP_MOVE( 1, MOVE_SMOG),
+	LEVEL_UP_MOVE( 1, MOVE_LEER),
+	LEVEL_UP_MOVE( 1, MOVE_EMBER),
+	LEVEL_UP_MOVE( 5, MOVE_EMBER),
+	LEVEL_UP_MOVE( 8, MOVE_SMOKESCREEN),
+	LEVEL_UP_MOVE(12, MOVE_FEINT_ATTACK),
+	LEVEL_UP_MOVE(15, MOVE_FIRE_SPIN),
+	LEVEL_UP_MOVE(19, MOVE_CLEAR_SMOG),
+	LEVEL_UP_MOVE(22, MOVE_FLAME_BURST),
+	LEVEL_UP_MOVE(26, MOVE_CONFUSE_RAY),
+	LEVEL_UP_MOVE(29, MOVE_FIRE_PUNCH),
+	LEVEL_UP_MOVE(36, MOVE_LAVA_PLUME),
+	LEVEL_UP_MOVE(42, MOVE_SUNNY_DAY),
+	LEVEL_UP_MOVE(49, MOVE_FLAMETHROWER),
+	LEVEL_UP_MOVE(55, MOVE_SEARING_SHOT), // Fire Blast -> Searing Shot: New Move
     LEVEL_UP_END
 };
 
 #if P_GEN_4_CROSS_EVOS
 static const struct LevelUpMove sMagmortarLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_SMOG),
-    LEVEL_UP_MOVE( 1, MOVE_LEER),
-    LEVEL_UP_MOVE( 1, MOVE_EMBER),
-    LEVEL_UP_MOVE( 1, MOVE_SMOKESCREEN),
-    LEVEL_UP_MOVE(12, MOVE_CLEAR_SMOG),
-    LEVEL_UP_MOVE(16, MOVE_FLAME_WHEEL),
-    LEVEL_UP_MOVE(20, MOVE_CONFUSE_RAY),
-    LEVEL_UP_MOVE(24, MOVE_SCARY_FACE),
-    LEVEL_UP_MOVE(28, MOVE_FIRE_PUNCH),
-    LEVEL_UP_MOVE(34, MOVE_LAVA_PLUME),
-    LEVEL_UP_MOVE(40, MOVE_LOW_KICK),
-    LEVEL_UP_MOVE(46, MOVE_FLAMETHROWER),
-    LEVEL_UP_MOVE(52, MOVE_SUNNY_DAY),
-    LEVEL_UP_MOVE(58, MOVE_FIRE_BLAST),
-    LEVEL_UP_MOVE(64, MOVE_HYPER_BEAM),
+	LEVEL_UP_MOVE( 0, MOVE_FLASH_CANNON), // New Move Slot -> Flash Cannon: Steel type STAB.  Cannon for an arm.  
+	LEVEL_UP_MOVE( 1, MOVE_FLASH_CANNON), // New Move Slot -> Flash Cannon: Steel type STAB.  Cannon for an arm.  
+	LEVEL_UP_MOVE( 1, MOVE_THUNDER_PUNCH),
+	LEVEL_UP_MOVE( 1, MOVE_EMBER),
+	LEVEL_UP_MOVE( 1, MOVE_SMOG),
+	LEVEL_UP_MOVE( 1, MOVE_LEER),
+	LEVEL_UP_MOVE( 5, MOVE_EMBER),
+	LEVEL_UP_MOVE( 8, MOVE_SMOKESCREEN),
+	LEVEL_UP_MOVE(12, MOVE_FEINT_ATTACK),
+	LEVEL_UP_MOVE(15, MOVE_FIRE_SPIN),
+	LEVEL_UP_MOVE(19, MOVE_CLEAR_SMOG),
+	LEVEL_UP_MOVE(22, MOVE_FLAME_BURST),
+	LEVEL_UP_MOVE(26, MOVE_CONFUSE_RAY),
+	LEVEL_UP_MOVE(29, MOVE_FIRE_PUNCH),
+	LEVEL_UP_MOVE(36, MOVE_LAVA_PLUME),
+	LEVEL_UP_MOVE(41, MOVE_AURA_SPHERE), // Sunny Day -> Aura Sphere: New Move. This slot is where Low Kick goes in newer games.  Really replacing Low Kick for Aura Sphere here.
+	LEVEL_UP_MOVE(45, MOVE_FLAMETHROWER), // Moved up from 49. Closer to where it is in Gen IX.
+	LEVEL_UP_MOVE(50, MOVE_SUNNY_DAY), // New Move Slot -> Sunny Day: Level up move.  Putting it closer to where it is in Gen IX.  Might swap it out.
+	LEVEL_UP_MOVE(54, MOVE_SEARING_SHOT), // Fire Blast -> Searing Shot: New Move.  Just makes too much sense. Moved around a bit due to making new moves happen more often.
+	LEVEL_UP_MOVE(59, MOVE_STEEL_BEAM), // New Move Slot -> Steel Beam: New Move. "Ultimate" Steel special move. Makes most sense to give to Magmortar.
+	LEVEL_UP_MOVE(63, MOVE_HYPER_BEAM),
     LEVEL_UP_END
 };
 #endif //P_GEN_4_CROSS_EVOS
@@ -3879,41 +3991,49 @@ static const struct LevelUpMove sMagmortarLevelUpLearnset[] = {
 
 #if P_FAMILY_PINSIR
 static const struct LevelUpMove sPinsirLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_VISE_GRIP),
-    LEVEL_UP_MOVE( 1, MOVE_HARDEN),
-    LEVEL_UP_MOVE( 4, MOVE_FOCUS_ENERGY),
-    LEVEL_UP_MOVE( 8, MOVE_BIND),
-    LEVEL_UP_MOVE(12, MOVE_SEISMIC_TOSS),
-    LEVEL_UP_MOVE(16, MOVE_BUG_BITE),
-    LEVEL_UP_MOVE(20, MOVE_STORM_THROW),
-    LEVEL_UP_MOVE(24, MOVE_DOUBLE_HIT),
-    LEVEL_UP_MOVE(28, MOVE_VITAL_THROW),
-    LEVEL_UP_MOVE(32, MOVE_X_SCISSOR),
-    LEVEL_UP_MOVE(36, MOVE_STRENGTH),
-    LEVEL_UP_MOVE(40, MOVE_SWORDS_DANCE),
-    LEVEL_UP_MOVE(44, MOVE_SUBMISSION),
-    LEVEL_UP_MOVE(48, MOVE_GUILLOTINE),
-    LEVEL_UP_MOVE(52, MOVE_SUPERPOWER),
+	LEVEL_UP_MOVE( 1, MOVE_VISE_GRIP), 
+	LEVEL_UP_MOVE( 1, MOVE_FOCUS_ENERGY),
+	LEVEL_UP_MOVE( 4, MOVE_BIND),
+	LEVEL_UP_MOVE( 8, MOVE_SEISMIC_TOSS),
+	LEVEL_UP_MOVE(11, MOVE_HARDEN),
+	LEVEL_UP_MOVE(15, MOVE_POUNCE), // Revenge -> Pounce: Bug type, lowers Speed on hit.
+	LEVEL_UP_MOVE(18, MOVE_VITAL_THROW),
+	LEVEL_UP_MOVE(22, MOVE_DOUBLEHIT),
+	LEVEL_UP_MOVE(26, MOVE_FELL_STINGER), // Brick Break -> Fell Stinger: New Move.  Potential run away move.  Fills gap of no Swords Dance too.
+	LEVEL_UP_MOVE(29, MOVE_STOMPING_TANTRUM), // X-Scissor -> Stompoing Tantrum: New move, Gorund type coverage that I think fits Pinsir.
+	LEVEL_UP_MOVE(33, MOVE_STORM_THROW), // Submission -> Storm Throw: Rearrange. Move ST up a slot to fit in Lunge.  Pinsir is one of 2 Pokemon GF has learn it naturally.  XY and BW2 Level Slot.
+	LEVEL_UP_MOVE(36, MOVE_LUNGE), // Storm Throw -> Lunge: New move.  Replacement for X-Scissor with stat dropping ability
+	LEVEL_UP_MOVE(40, MOVE_SWORDS_DANCE),
+	LEVEL_UP_MOVE(43, MOVE_FIRST_IMPRESSION), // Thrash -> First Impression: New move.  Buggiest Bug Type.  Frst Impression is given either at level 1 or between 41-44 on non-legendaries.  
+	LEVEL_UP_MOVE(47, MOVE_HIGH_HORSEPOWER), // SUPERPOWER -> High Horsepower: TM Move.  Ground type coverage.  Move SUPERPOWER -> HLR down a spot
+	LEVEL_UP_MOVE(50, MOVE_SUPERPOWER),
+	LEVEL_UP_MOVE(54, MOVE_GUILLOTINE),
+	LEVEL_UP_MOVE(57, MOVE_HEADLONG_RUSH), // New Move Slot -> Headlong Rush: New Move.  Want to give Pinsir some Ground coverage and this fits.  Close Combat substitute
+	LEVEL_UP_MOVE(61, MOVE_CRUSH_GRIP), // New Move Slot -> Crush Grip: New Move.  Regigigas signature move, but I feel it makes sense for Pinsir.  Especially since no Regigigas.
     LEVEL_UP_END
 };
 #endif //P_FAMILY_PINSIR
 
 #if P_FAMILY_TAUROS
 static const struct LevelUpMove sTaurosLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_TACKLE),
-    LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
-    LEVEL_UP_MOVE( 5, MOVE_WORK_UP),
-    LEVEL_UP_MOVE(10, MOVE_PAYBACK),
-    LEVEL_UP_MOVE(15, MOVE_ASSURANCE),
-    LEVEL_UP_MOVE(20, MOVE_HORN_ATTACK),
-    LEVEL_UP_MOVE(25, MOVE_SCARY_FACE),
-    LEVEL_UP_MOVE(30, MOVE_ZEN_HEADBUTT),
-    LEVEL_UP_MOVE(35, MOVE_RAGING_BULL),
-    LEVEL_UP_MOVE(40, MOVE_REST),
-    LEVEL_UP_MOVE(45, MOVE_SWAGGER),
-    LEVEL_UP_MOVE(50, MOVE_THRASH),
-    LEVEL_UP_MOVE(55, MOVE_DOUBLE_EDGE),
-    LEVEL_UP_MOVE(60, MOVE_GIGA_IMPACT),
+	LEVEL_UP_MOVE( 1, MOVE_TACKLE),
+	LEVEL_UP_MOVE( 1, MOVE_SCARY_FACE),
+	LEVEL_UP_MOVE( 3, MOVE_TAIL_WHIP),
+	LEVEL_UP_MOVE( 5, MOVE_RAGE),
+	LEVEL_UP_MOVE( 8, MOVE_HORN_ATTACK),
+	LEVEL_UP_MOVE(11, MOVE_DOUBLE_KICK), // Scary Face -> Double Kick: Double Kick is from Paldean Tauros forms at Level 10. Scary Face moes to Level 1
+	LEVEL_UP_MOVE(15, MOVE_PURSUIT),
+	LEVEL_UP_MOVE(19, MOVE_REST),
+	LEVEL_UP_MOVE(24, MOVE_PAYBACK),
+	LEVEL_UP_MOVE(29, MOVE_WORK_UP),
+	LEVEL_UP_MOVE(34, MOVE_TAKE_DOWN),
+	LEVEL_UP_MOVE(38, MOVE_ZEN_HEADBUTT),
+	LEVEL_UP_MOVE(43, MOVE_SWAGGER),
+	LEVEL_UP_MOVE(47, MOVE_THRASH),
+	LEVEL_UP_MOVE(52, MOVE_DOUBLE_EDGE),
+	LEVEL_UP_MOVE(56, MOVE_GIGA_IMPACT),
+	LEVEL_UP_MOVE(60, MOVE_FLARE_BLITZ),
+	LEVEL_UP_MOVE(63, MOVE_WAVE_CRASH),
     LEVEL_UP_END
 };
 
@@ -4396,9 +4516,9 @@ static const struct LevelUpMove sKabutoLevelUpLearnset[] = {
     LEVEL_UP_MOVE(10, MOVE_SAND_ATTACK),
     LEVEL_UP_MOVE(15, MOVE_AQUA_JET),
     LEVEL_UP_MOVE(20, MOVE_LEER),
-    LEVEL_UP_MOVE(25, MOVE_MUD_SHOT),
+    LEVEL_UP_MOVE(25, MOVE_ACCELEROCK), // Mud-Shot -> Accelerock
     LEVEL_UP_MOVE(30, MOVE_ANCIENT_POWER),
-    LEVEL_UP_MOVE(35, MOVE_BRINE),
+    LEVEL_UP_MOVE(35, MOVE_RAZOR_SHELL), // Brine -> Razor Shell
     LEVEL_UP_MOVE(41, MOVE_PROTECT),
     LEVEL_UP_MOVE(45, MOVE_LEECH_LIFE),
     LEVEL_UP_MOVE(50, MOVE_LIQUIDATION),
@@ -4418,9 +4538,9 @@ static const struct LevelUpMove sKabutopsLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SAND_ATTACK),
     LEVEL_UP_MOVE(15, MOVE_AQUA_JET),
     LEVEL_UP_MOVE(20, MOVE_LEER),
-    LEVEL_UP_MOVE(25, MOVE_MUD_SHOT),
+    LEVEL_UP_MOVE(25, MOVE_ACCELEROCK), // Mud-Shot -> Accelerock
     LEVEL_UP_MOVE(30, MOVE_ANCIENT_POWER),
-    LEVEL_UP_MOVE(35, MOVE_BRINE),
+    LEVEL_UP_MOVE(35, MOVE_RAZOR_SHELL), // Brine -> Razor Shell
     LEVEL_UP_MOVE(43, MOVE_PROTECT),
     LEVEL_UP_MOVE(49, MOVE_LEECH_LIFE),
     LEVEL_UP_MOVE(56, MOVE_LIQUIDATION),
@@ -5132,43 +5252,46 @@ static const struct LevelUpMove sAriadosLevelUpLearnset[] = {
 
 #if P_FAMILY_CHINCHOU
 static const struct LevelUpMove sChinchouLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),
-    LEVEL_UP_MOVE( 1, MOVE_SUPERSONIC),
-    LEVEL_UP_MOVE( 4, MOVE_ELECTRO_BALL),
-    LEVEL_UP_MOVE( 8, MOVE_THUNDER_WAVE),
-    LEVEL_UP_MOVE(12, MOVE_BUBBLE_BEAM),
-    LEVEL_UP_MOVE(16, MOVE_CONFUSE_RAY),
-    LEVEL_UP_MOVE(20, MOVE_SPARK),
-    LEVEL_UP_MOVE(24, MOVE_CHARGE),
-    LEVEL_UP_MOVE(28, MOVE_DISCHARGE),
-    LEVEL_UP_MOVE(32, MOVE_AQUA_RING),
-    LEVEL_UP_MOVE(36, MOVE_FLAIL),
-    LEVEL_UP_MOVE(40, MOVE_TAKE_DOWN),
-    LEVEL_UP_MOVE(44, MOVE_HYDRO_PUMP),
+	LEVEL_UP_MOVE( 1, MOVE_BUBBLE),
+	LEVEL_UP_MOVE( 1, MOVE_SUPERSONIC),
+	LEVEL_UP_MOVE( 4, MOVE_ELECTRO_BALL),
+	LEVEL_UP_MOVE( 7, MOVE_WATER_GUN),
+	LEVEL_UP_MOVE( 9, MOVE_THUNDER_WAVE),
+	LEVEL_UP_MOVE(12, MOVE_BUBBLE_BEAM),
+	LEVEL_UP_MOVE(16, MOVE_CONFUSE_RAY),
+	LEVEL_UP_MOVE(20, MOVE_SPARK),
+	LEVEL_UP_MOVE(24, MOVE_CHARGE),
+	LEVEL_UP_MOVE(28, MOVE_PARABOLIC_CHARGE), // Discharge -> Parabolic Charge.  New Move: Like Discharge but can be used for Bulky Pokemon.  No other Pokemon in the hack have it.
+	LEVEL_UP_MOVE(31, MOVE_SIGNAL_BEAM),
+	LEVEL_UP_MOVE(33, MOVE_AQUA_RING),
+	LEVEL_UP_MOVE(37, MOVE_FLAIL),
+	LEVEL_UP_MOVE(41, MOVE_TAKE_DOWN),
+	LEVEL_UP_MOVE(45, MOVE_HYDRO_PUMP),
+	LEVEL_UP_MOVE(49, MOVE_ION_DELUGE),
     LEVEL_UP_END
 };
 
 static const struct LevelUpMove sLanturnLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 0, MOVE_SWALLOW),
-    LEVEL_UP_MOVE( 0, MOVE_STOCKPILE),
-    LEVEL_UP_MOVE( 0, MOVE_SPIT_UP),
-    LEVEL_UP_MOVE( 1, MOVE_STOCKPILE),
-    LEVEL_UP_MOVE( 1, MOVE_SWALLOW),
-    LEVEL_UP_MOVE( 1, MOVE_SPIT_UP),
-    LEVEL_UP_MOVE( 1, MOVE_EERIE_IMPULSE),
-    LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),
-    LEVEL_UP_MOVE( 1, MOVE_SUPERSONIC),
-    LEVEL_UP_MOVE( 1, MOVE_ELECTRO_BALL),
-    LEVEL_UP_MOVE( 1, MOVE_THUNDER_WAVE),
-    LEVEL_UP_MOVE(12, MOVE_BUBBLE_BEAM),
-    LEVEL_UP_MOVE(16, MOVE_CONFUSE_RAY),
-    LEVEL_UP_MOVE(20, MOVE_SPARK),
-    LEVEL_UP_MOVE(24, MOVE_CHARGE),
-    LEVEL_UP_MOVE(30, MOVE_DISCHARGE),
-    LEVEL_UP_MOVE(36, MOVE_AQUA_RING),
-    LEVEL_UP_MOVE(42, MOVE_FLAIL),
-    LEVEL_UP_MOVE(48, MOVE_TAKE_DOWN),
-    LEVEL_UP_MOVE(54, MOVE_HYDRO_PUMP),
+	LEVEL_UP_MOVE( 0, MOVE_STOCKPILE),
+	LEVEL_UP_MOVE( 0, MOVE_SWALLOW),
+	LEVEL_UP_MOVE( 0, MOVE_SPIT_UP),
+	LEVEL_UP_MOVE( 1, MOVE_EERIE_IMPULSE),
+	LEVEL_UP_MOVE( 1, MOVE_SPOTLIGHT),
+	LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),
+	LEVEL_UP_MOVE( 1, MOVE_SUPERSONIC),
+	LEVEL_UP_MOVE( 1, MOVE_ELECTRO_BALL),
+	LEVEL_UP_MOVE( 1, MOVE_THUNDER_WAVE),
+	LEVEL_UP_MOVE(12, MOVE_BUBBLE_BEAM),
+	LEVEL_UP_MOVE(16, MOVE_CONFUSE_RAY),
+	LEVEL_UP_MOVE(20, MOVE_SPARK),
+	LEVEL_UP_MOVE(24, MOVE_CHARGE),
+	LEVEL_UP_MOVE(30, MOVE_PARABOLIC_CHARGE), // Discharge -> Parabolic Charge.  New Move: Like Discharge but can be used for Bulky Pokemon.  No other Pokemon in the hack have it.
+	LEVEL_UP_MOVE(33, MOVE_SIGNAL_BEAM),
+	LEVEL_UP_MOVE(36, MOVE_AQUA_RING), 
+	LEVEL_UP_MOVE(42, MOVE_SPLISHY_SPLASH), // Flail -> Splishy Splash.  New Move.  Level switched with Aqua Ring for more in game use
+	LEVEL_UP_MOVE(48, MOVE_TAKE_DOWN),
+	LEVEL_UP_MOVE(54, MOVE_HYDRO_PUMP),
+	LEVEL_UP_MOVE(58, MOVE_ION_DELUGE),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_CHINCHOU
@@ -5245,37 +5368,45 @@ static const struct LevelUpMove sTogekissLevelUpLearnset[] = {
 
 #if P_FAMILY_NATU
 static const struct LevelUpMove sNatuLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_PECK),
-    LEVEL_UP_MOVE( 1, MOVE_LEER),
-    LEVEL_UP_MOVE( 5, MOVE_STORED_POWER),
-    LEVEL_UP_MOVE(10, MOVE_TELEPORT),
-    LEVEL_UP_MOVE(15, MOVE_CONFUSE_RAY),
-    LEVEL_UP_MOVE(20, MOVE_NIGHT_SHADE),
-    LEVEL_UP_MOVE(26, MOVE_PSYCHO_SHIFT),
-    LEVEL_UP_MOVE(30, MOVE_POWER_SWAP),
-    LEVEL_UP_MOVE(35, MOVE_GUARD_SWAP),
-    LEVEL_UP_MOVE(35, MOVE_PSYCHIC),
-    LEVEL_UP_MOVE(40, MOVE_WISH),
-    LEVEL_UP_MOVE(45, MOVE_FUTURE_SIGHT),
+	LEVEL_UP_MOVE( 1, MOVE_PECK),
+	LEVEL_UP_MOVE( 1, MOVE_CONFIDE), // Leer -> Confide: New Move. A lot of things get Leer. I like the idea of Xatu/Natu telling secrets of the future that mess with the opponent. 
+	LEVEL_UP_MOVE( 6, MOVE_STORED_POWER), // Nightshade -> Stored Power: Move Stored Power to Level 6 to match Gen VIII
+	LEVEL_UP_MOVE( 9, MOVE_TELEPORT),
+	LEVEL_UP_MOVE(12, MOVE_PSYCH_UP), // Lucky Chant: Psych Up: New Move
+	LEVEL_UP_MOVE(16, MOVE_AIR_CUTTER), // Stored Power -> Air Cutter: Move Tutor Move. Power Boost and Special Flying Move
+	LEVEL_UP_MOVE(20, MOVE_OMINOUS_WIND),
+	LEVEL_UP_MOVE(23, MOVE_ROOST), // Confuse Ray -> ROOST: Confuse Ray will get outclassed by Chatter is 2 levels.  ROOST IS INTERESTING BECAUSE NATU/XATU ARE REALLY MORE PSYCHIC THAN FLYING TYPES SO THEM ROOSTING EARLIER MAKES SENSE SINCE THEY DON'T USE FLYING AS MUCH
+	LEVEL_UP_MOVE(28, MOVE_WISH),
+	LEVEL_UP_MOVE(33, MOVE_ESPER_WING), // Psychic -> Esper Wing: New Move.  Esper Wing is Xatu exclusive and is more thematic than Psychic.  Can get Psychic via TM.  
+	LEVEL_UP_MOVE(36, MOVE_MIRACLE_EYE),
+	LEVEL_UP_MOVE(39, MOVE_PSYCHO_SHIFT),
+	LEVEL_UP_MOVE(44, MOVE_FUTURE_SIGHT),
+	LEVEL_UP_MOVE(47, MOVE_POWER_SWAP),
+	LEVEL_UP_MOVE(47, MOVE_GUARD_SWAP),
+	LEVEL_UP_MOVE(50, MOVE_ME_FIRST),
     LEVEL_UP_END
 };
 
 static const struct LevelUpMove sXatuLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 0, MOVE_AIR_SLASH),
-    LEVEL_UP_MOVE( 1, MOVE_AIR_SLASH),
-    LEVEL_UP_MOVE( 1, MOVE_TAILWIND),
-    LEVEL_UP_MOVE( 1, MOVE_PECK),
-    LEVEL_UP_MOVE( 1, MOVE_LEER),
-    LEVEL_UP_MOVE( 1, MOVE_STORED_POWER),
-    LEVEL_UP_MOVE( 1, MOVE_TELEPORT),
-    LEVEL_UP_MOVE(15, MOVE_CONFUSE_RAY),
-    LEVEL_UP_MOVE(20, MOVE_NIGHT_SHADE),
-    LEVEL_UP_MOVE(28, MOVE_PSYCHO_SHIFT),
-    LEVEL_UP_MOVE(34, MOVE_POWER_SWAP),
-    LEVEL_UP_MOVE(34, MOVE_GUARD_SWAP),
-    LEVEL_UP_MOVE(41, MOVE_PSYCHIC),
-    LEVEL_UP_MOVE(48, MOVE_WISH),
-    LEVEL_UP_MOVE(55, MOVE_FUTURE_SIGHT),
+	LEVEL_UP_MOVE( 0, MOVE_CHATTER), // Air Slash -> Chatter: New Move.  I like the idea of Xatu telling enemies the ramblings from the past and future it sees completely confusing them. Will probably add Air Slah back in later.
+	LEVEL_UP_MOVE( 1, MOVE_CHATTER),
+	LEVEL_UP_MOVE( 1, MOVE_TAILWIND),
+	LEVEL_UP_MOVE( 1, MOVE_PECK),
+	LEVEL_UP_MOVE( 1, MOVE_CONFIDE), // Leer -> Confide: New Move. A lot of things get Leer. I like the idea of Xatu/Natu telling secrets of the future that mess with the opponent. 
+	LEVEL_UP_MOVE( 6, MOVE_STORED_POWER), // Nightshade -> Stored Power: Move Stored Power to Level 6 to match Gen VIII
+	LEVEL_UP_MOVE( 9, MOVE_TELEPORT),
+	LEVEL_UP_MOVE(12, MOVE_PSYCH_UP), // Lucky Chant -> Psych Up. New Move: COPY STAT BUFF FOR STORED POWER
+	LEVEL_UP_MOVE(16, MOVE_AIR_CUTTER), // Stored Power -> Air Cutter: Move Tutor Move. Power Boost and Special Flying Move
+	LEVEL_UP_MOVE(20, MOVE_OMINOUS_WIND),
+	LEVEL_UP_MOVE(23, MOVE_ROOST), // Confuse Ray -> ROOST: Confuse Ray will get outclassed by Chatter is 2 levels.  ROOST IS INTERESTING BECAUSE NATU/XATU ARE REALLY MORE PSYCHIC THAN FLYING TYPES SO THEM ROOSTING EARLIER MAKES SENSE SINCE THEY DON'T USE FLYING AS MUCH
+	LEVEL_UP_MOVE(29, MOVE_WISH),
+	LEVEL_UP_MOVE(35, MOVE_ESPER_WING), // Psychic -> Esper Wing: New Move.  Esper Wing is Xatu exclusive and is more thematic than Psychic.  Can get Psychic via TM.  
+	LEVEL_UP_MOVE(39, MOVE_MIRACLE_EYE),
+	LEVEL_UP_MOVE(43, MOVE_PSYCHO_SHIFT),
+	LEVEL_UP_MOVE(49, MOVE_FUTURE_SIGHT),
+	LEVEL_UP_MOVE(53, MOVE_POWER_SWAP),
+	LEVEL_UP_MOVE(53, MOVE_GUARD_SWAP),
+	LEVEL_UP_MOVE(57, MOVE_ME_FIRST),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_NATU
@@ -5447,68 +5578,75 @@ static const struct LevelUpMove sSudowoodoLevelUpLearnset[] = {
 
 #if P_FAMILY_HOPPIP
 static const struct LevelUpMove sHoppipLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_SPLASH),
-    LEVEL_UP_MOVE( 1, MOVE_TACKLE),
-    LEVEL_UP_MOVE( 4, MOVE_TAIL_WHIP),
-    LEVEL_UP_MOVE( 6, MOVE_ABSORB),
-    LEVEL_UP_MOVE( 8, MOVE_FAIRY_WIND),
-    LEVEL_UP_MOVE(10, MOVE_POISON_POWDER),
-    LEVEL_UP_MOVE(10, MOVE_STUN_SPORE),
-    LEVEL_UP_MOVE(10, MOVE_SLEEP_POWDER),
-    LEVEL_UP_MOVE(12, MOVE_BULLET_SEED),
-    LEVEL_UP_MOVE(15, MOVE_SYNTHESIS),
-    LEVEL_UP_MOVE(19, MOVE_LEECH_SEED),
-    LEVEL_UP_MOVE(22, MOVE_MEGA_DRAIN),
-    LEVEL_UP_MOVE(24, MOVE_ACROBATICS),
-    LEVEL_UP_MOVE(27, MOVE_COTTON_SPORE),
-    LEVEL_UP_MOVE(29, MOVE_U_TURN),
-    LEVEL_UP_MOVE(32, MOVE_GIGA_DRAIN),
-    LEVEL_UP_MOVE(35, MOVE_BOUNCE),
-    LEVEL_UP_MOVE(38, MOVE_MEMENTO),
+	LEVEL_UP_MOVE( 1, MOVE_SPLASH),
+	LEVEL_UP_MOVE( 1, MOVE_MEGA_DRAIN), // Absorb -> Mega Drain.  Mega Drain + 35 Sp. Atk is not too broken
+	LEVEL_UP_MOVE( 4, MOVE_SYNTHESIS),
+	LEVEL_UP_MOVE( 6, MOVE_TAIL_WHIP),
+	LEVEL_UP_MOVE( 8, MOVE_TACKLE),
+	LEVEL_UP_MOVE(10, MOVE_GUST), //Fairy Wind -> Gust: New move STAB
+	LEVEL_UP_MOVE(12, MOVE_STUN_SPORE), // Poison Powder -> Stun Spore: Move Stun Spore up and remove Poison Powder.  Not a Poison type and makes Hoppip line mroe unique.
+	LEVEL_UP_MOVE(14, MOVE_ENCORE), // Stun Spore -> Encore: Egg Move. See above.  Replace Poison Powder with Encore.
+	LEVEL_UP_MOVE(16, MOVE_SLEEP_POWDER),
+	LEVEL_UP_MOVE(18, MOVE_LEAF_TORNADO), // Mega Drain -> Laf Torndao: New Move.  Fits the whole plant riding wind theme
+	LEVEL_UP_MOVE(21, MOVE_LEECH_SEED),
+	LEVEL_UP_MOVE(23, MOVE_STRENGTH_SAP), // Bullet Seed -> Strength Sap: Egg Move.  Morelull/Shiinotic level
+	LEVEL_UP_MOVE(26, MOVE_ACROBATICS),
+	LEVEL_UP_MOVE(29, MOVE_RAGE_POWDER),
+	LEVEL_UP_MOVE(31, MOVE_COTTON_SPORE),
+	LEVEL_UP_MOVE(33, MOVE_GIGA_DRAIN),
+	LEVEL_UP_MOVE(36, MOVE_WORRY_SEED),
+	LEVEL_UP_MOVE(38, MOVE_U_TURN),
+	LEVEL_UP_MOVE(41, MOVE_BOUNCE),
+	LEVEL_UP_MOVE(44, MOVE_PARTING_SHOT), // Memento -> Parting Shot: Same effect but doesn't faint user.
     LEVEL_UP_END
 };
 
 static const struct LevelUpMove sSkiploomLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_SPLASH),
-    LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
-    LEVEL_UP_MOVE( 1, MOVE_ABSORB),
-    LEVEL_UP_MOVE( 1, MOVE_SYNTHESIS),
-    LEVEL_UP_MOVE( 8, MOVE_TACKLE),
-    LEVEL_UP_MOVE(10, MOVE_FAIRY_WIND),
-    LEVEL_UP_MOVE(12, MOVE_POISON_POWDER),
-    LEVEL_UP_MOVE(12, MOVE_STUN_SPORE),
-    LEVEL_UP_MOVE(12, MOVE_SLEEP_POWDER),
-    LEVEL_UP_MOVE(15, MOVE_BULLET_SEED),
-    LEVEL_UP_MOVE(20, MOVE_LEECH_SEED),
-    LEVEL_UP_MOVE(24, MOVE_MEGA_DRAIN),
-    LEVEL_UP_MOVE(28, MOVE_ACROBATICS),
-    LEVEL_UP_MOVE(31, MOVE_COTTON_SPORE),
-    LEVEL_UP_MOVE(34, MOVE_U_TURN),
-    LEVEL_UP_MOVE(37, MOVE_GIGA_DRAIN),
-    LEVEL_UP_MOVE(41, MOVE_BOUNCE),
-    LEVEL_UP_MOVE(44, MOVE_MEMENTO),
+	LEVEL_UP_MOVE( 1, MOVE_SPLASH),
+	LEVEL_UP_MOVE( 1, MOVE_MEGA_DRAIN), // Absorb -> Mega Drain.  Mega Drain + 35 Sp. Atk is not too broken
+	LEVEL_UP_MOVE( 1, MOVE_SYNTHESIS),
+	LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
+	LEVEL_UP_MOVE( 1, MOVE_TACKLE),
+	LEVEL_UP_MOVE(10, MOVE_GUST), //Fairy Wind -> Gust: New Move STAB
+	LEVEL_UP_MOVE(12, MOVE_STUN_SPORE), // Poison Powder -> Stun Spore: Move Stun Spore up and remove Poison Powder.  Not a Poison type and makes Hoppip line mroe unique.
+	LEVEL_UP_MOVE(14, MOVE_ENCORE), // Stun Spore -> Encore: Egg Move. See above.  Replace Poison Powder with Encore.
+	LEVEL_UP_MOVE(16, MOVE_SLEEP_POWDER),
+	LEVEL_UP_MOVE(18, MOVE_LEAF_TORNADO), // Mega Drain -> Laf Torndao: New Move.  Fits the whole plant riding wind theme
+	LEVEL_UP_MOVE(23, MOVE_LEECH_SEED),
+	LEVEL_UP_MOVE(26, MOVE_STRENGTH_SAP), // Bullet Seed -> Strength Sap: Egg Move.  Morelull/Shiinotic level
+	LEVEL_UP_MOVE(30, MOVE_ACROBATICS),
+	LEVEL_UP_MOVE(34, MOVE_RAGE_POWDER),
+	LEVEL_UP_MOVE(37, MOVE_COTTON_SPORE),
+	LEVEL_UP_MOVE(40, MOVE_GIGA_DRAIN),
+	LEVEL_UP_MOVE(44, MOVE_WORRY_SEED),
+	LEVEL_UP_MOVE(47, MOVE_U_TURN),
+	LEVEL_UP_MOVE(51, MOVE_FLOATY_FALL),
+	LEVEL_UP_MOVE(55, MOVE_PARTING_SHOT), // Memento -> Parting Shot: Same effect but doesn't faint user.
     LEVEL_UP_END
 };
 
 static const struct LevelUpMove sJumpluffLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_SPLASH),
-    LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
-    LEVEL_UP_MOVE( 1, MOVE_ABSORB),
-    LEVEL_UP_MOVE( 1, MOVE_SYNTHESIS),
-    LEVEL_UP_MOVE( 8, MOVE_TACKLE),
-    LEVEL_UP_MOVE(10, MOVE_FAIRY_WIND),
-    LEVEL_UP_MOVE(12, MOVE_POISON_POWDER),
-    LEVEL_UP_MOVE(12, MOVE_STUN_SPORE),
-    LEVEL_UP_MOVE(12, MOVE_SLEEP_POWDER),
-    LEVEL_UP_MOVE(15, MOVE_BULLET_SEED),
-    LEVEL_UP_MOVE(20, MOVE_LEECH_SEED),
-    LEVEL_UP_MOVE(24, MOVE_MEGA_DRAIN),
-    LEVEL_UP_MOVE(30, MOVE_ACROBATICS),
-    LEVEL_UP_MOVE(35, MOVE_COTTON_SPORE),
-    LEVEL_UP_MOVE(39, MOVE_U_TURN),
-    LEVEL_UP_MOVE(43, MOVE_GIGA_DRAIN),
-    LEVEL_UP_MOVE(49, MOVE_BOUNCE),
-    LEVEL_UP_MOVE(55, MOVE_MEMENTO),
+	LEVEL_UP_MOVE( 1, MOVE_U_TURN),
+	LEVEL_UP_MOVE( 1, MOVE_SPLASH), // Replace: Never going to relearn Splash
+	LEVEL_UP_MOVE( 1, MOVE_MEGA_DRAIN), // Absorb -> Mega Drain.  Mega Drain + 35 Sp. Atk is not too broken
+	LEVEL_UP_MOVE( 1, MOVE_SYNTHESIS),
+	LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
+	LEVEL_UP_MOVE( 1, MOVE_TACKLE),
+	LEVEL_UP_MOVE(10, MOVE_GUST), //Fairy Wind -> Gust: New move STAB.
+	LEVEL_UP_MOVE(12, MOVE_STUN_SPORE), // Poison Powder -> Stun Spore: Move Stun Spore up and remove Poison Powder.  Not a Poison type and makes Hoppip line mroe unique.
+	LEVEL_UP_MOVE(14, MOVE_ENCORE), // Stun Spore -> Encore: Egg Move. See above.  Replace Poison Powder with Encore.
+	LEVEL_UP_MOVE(16, MOVE_SLEEP_POWDER),
+	LEVEL_UP_MOVE(18, MOVE_LEAF_TORNADO), // Mega Drain -> Laf Torndao: New Move.  Fits the whole plant riding wind theme
+	LEVEL_UP_MOVE(23, MOVE_LEECH_SEED),
+	LEVEL_UP_MOVE(26, MOVE_STRENGTH_SAP), // Bullet Seed -> Strength Sap: Egg Move.  Morelull/Shiinotic level
+	LEVEL_UP_MOVE(29, MOVE_TAILWIND), // New Move Slot: Tailwind.  Around level Whimsicott learns it (28), and gives more playtime with it.
+	LEVEL_UP_MOVE(32, MOVE_ACROBATICS),
+	LEVEL_UP_MOVE(37, MOVE_RAGE_POWDER),
+	LEVEL_UP_MOVE(41, MOVE_POLLEN_PUFF),
+	LEVEL_UP_MOVE(45, MOVE_GIGA_DRAIN),
+	LEVEL_UP_MOVE(50, MOVE_COTTON_SPORE),
+	LEVEL_UP_MOVE(54, MOVE_FLOATY_FALL), // Bounce -> Floaty Fall
+	LEVEL_UP_MOVE(59, MOVE_PARTING_SHOT), // Memento -> Parting Shot: Same effect but doesn't faint user.
     LEVEL_UP_END
 };
 #endif //P_FAMILY_HOPPIP
@@ -5558,40 +5696,49 @@ static const struct LevelUpMove sAmbipomLevelUpLearnset[] = {
 
 #if P_FAMILY_SUNKERN
 static const struct LevelUpMove sSunkernLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_TACKLE),
-    LEVEL_UP_MOVE( 1, MOVE_GROWTH),
-    LEVEL_UP_MOVE( 7, MOVE_ABSORB),
-    LEVEL_UP_MOVE(10, MOVE_MEGA_DRAIN),
-    LEVEL_UP_MOVE(16, MOVE_RAZOR_LEAF),
-    LEVEL_UP_MOVE(19, MOVE_WORRY_SEED),
-    LEVEL_UP_MOVE(22, MOVE_GIGA_DRAIN),
-    LEVEL_UP_MOVE(25, MOVE_ENDEAVOR),
-    LEVEL_UP_MOVE(28, MOVE_SYNTHESIS),
-    LEVEL_UP_MOVE(31, MOVE_SOLAR_BEAM),
-    LEVEL_UP_MOVE(34, MOVE_DOUBLE_EDGE),
-    LEVEL_UP_MOVE(36, MOVE_SUNNY_DAY),
-    LEVEL_UP_MOVE(39, MOVE_SEED_BOMB),
+	LEVEL_UP_MOVE( 1, MOVE_ABSORB),
+	LEVEL_UP_MOVE( 1, MOVE_GROWTH),
+	LEVEL_UP_MOVE( 4, MOVE_INGRAIN),
+	LEVEL_UP_MOVE( 7, MOVE_GRASS_WHISTLE),
+	LEVEL_UP_MOVE(10, MOVE_MEGA_DRAIN),
+	LEVEL_UP_MOVE(13, MOVE_LEECH_SEED),
+	LEVEL_UP_MOVE(16, MOVE_MAGICAL_LEAF), // Razor Leaf -> Magical Leaf: Egg Move. Makes more sense for a Special Attacker
+	LEVEL_UP_MOVE(19, MOVE_WORRY_SEED),
+	LEVEL_UP_MOVE(22, MOVE_GIGA_DRAIN),
+	LEVEL_UP_MOVE(25, MOVE_SYNTHESIS), // Endeavor -> Synthesis: Switch moves to align with Sunflora.
+	LEVEL_UP_MOVE(28, MOVE_ENDEAVOR),
+	LEVEL_UP_MOVE(31, MOVE_NATURAL_GIFT),
+	LEVEL_UP_MOVE(34, MOVE_SOLAR_BEAM),
+	LEVEL_UP_MOVE(37, MOVE_DOUBLE_EDGE),
+	LEVEL_UP_MOVE(40, MOVE_SUNNY_DAY),
+	LEVEL_UP_MOVE(43, MOVE_SEED_BOMB),
+	LEVEL_UP_END // Come back to Sunkern/Sunflora once you figure out where they will be!
     LEVEL_UP_END
 };
 
 static const struct LevelUpMove sSunfloraLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_POUND),
-    LEVEL_UP_MOVE( 1, MOVE_TACKLE),
-    LEVEL_UP_MOVE( 1, MOVE_GROWTH),
-    LEVEL_UP_MOVE( 4, MOVE_INGRAIN),
-    LEVEL_UP_MOVE( 7, MOVE_ABSORB),
-    LEVEL_UP_MOVE(10, MOVE_MEGA_DRAIN),
-    LEVEL_UP_MOVE(13, MOVE_LEECH_SEED),
-    LEVEL_UP_MOVE(16, MOVE_RAZOR_LEAF),
-    LEVEL_UP_MOVE(19, MOVE_WORRY_SEED),
-    LEVEL_UP_MOVE(22, MOVE_GIGA_DRAIN),
-    LEVEL_UP_MOVE(25, MOVE_BULLET_SEED),
-    LEVEL_UP_MOVE(28, MOVE_PETAL_DANCE),
-    LEVEL_UP_MOVE(31, MOVE_SOLAR_BEAM),
-    LEVEL_UP_MOVE(34, MOVE_DOUBLE_EDGE),
-    LEVEL_UP_MOVE(39, MOVE_SUNNY_DAY),
-    LEVEL_UP_MOVE(43, MOVE_LEAF_STORM),
-    LEVEL_UP_MOVE(50, MOVE_PETAL_BLIZZARD),
+	LEVEL_UP_MOVE( 0, MOVE_FIERY_DANCE), // New Move Slot -> Fiery Dance: New Move.  Learned on Evolution to Reflect new typing.
+	LEVEL_UP_MOVE( 1, MOVE_FIERY_DANCE), 
+	LEVEL_UP_MOVE( 1, MOVE_FLOWER_SHIELD),
+	LEVEL_UP_MOVE( 1, MOVE_ABSORB),
+	LEVEL_UP_MOVE( 1, MOVE_POUND),
+	LEVEL_UP_MOVE( 1, MOVE_GROWTH),
+	LEVEL_UP_MOVE( 4, MOVE_INGRAIN),
+	LEVEL_UP_MOVE( 7, MOVE_GRASS_WHISTLE),
+	LEVEL_UP_MOVE(10, MOVE_MEGA_DRAIN),
+	LEVEL_UP_MOVE(13, MOVE_LEECH_SEED),
+	LEVEL_UP_MOVE(16, MOVE_MAGICAL_LEAF), // Razor Leaf -> Magical Leaf: Egg Move. Makes more sense for a Special Attacker
+	LEVEL_UP_MOVE(19, MOVE_WORRY_SEED),
+	LEVEL_UP_MOVE(22, MOVE_GIGA_DRAIN),
+	LEVEL_UP_MOVE(25, MOVE_SYNTHESIS), // Bullet Seed -> Synthesis: Move Tutor move.  How does the Sunflower Pokemon not learn this naturally?  How?!
+	LEVEL_UP_MOVE(28, MOVE_PETAL_DANCE),
+	LEVEL_UP_MOVE(31, MOVE_NATURAL_GIFT),
+	LEVEL_UP_MOVE(34, MOVE_SUNNY_DAY), // Solar Beam -> Sunny Day: Switching move slots
+	LEVEL_UP_MOVE(37, MOVE_WEATHER_BALL), // Double Edge -> Weather Ball: TM Move.  Feels like a move it should learn naturally.
+	LEVEL_UP_MOVE(40, MOVE_SOLAR_BEAM), // Solar Beam -> Sunny Day: Switching move slots
+	LEVEL_UP_MOVE(43, MOVE_LEAF_STORM),
+	LEVEL_UP_MOVE(46, MOVE_HEAT_WAVE), // New Move Slot -> Heat Wave: New Move.  Heat wave is going to be on the moveset since I want it's natural Fire moves to be more Heat based than Fire based
+	LEVEL_UP_MOVE(50, MOVE_CHLOROBLAST), // Petal Dance -> Chloroblast: New Move.  Something needs to get it an I think it fits
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SUNKERN
@@ -5757,18 +5904,20 @@ static const struct LevelUpMove sHonchkrowLevelUpLearnset[] = {
 
 #if P_FAMILY_MISDREAVUS
 static const struct LevelUpMove sMisdreavusLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_GROWL),
-    LEVEL_UP_MOVE( 1, MOVE_CONFUSION),
-    LEVEL_UP_MOVE(10, MOVE_ASTONISH),
-    LEVEL_UP_MOVE(14, MOVE_CONFUSE_RAY),
-    LEVEL_UP_MOVE(19, MOVE_MEAN_LOOK),
-    LEVEL_UP_MOVE(23, MOVE_HEX),
-    LEVEL_UP_MOVE(28, MOVE_PSYBEAM),
-    LEVEL_UP_MOVE(32, MOVE_PAIN_SPLIT),
-    LEVEL_UP_MOVE(37, MOVE_PAYBACK),
-    LEVEL_UP_MOVE(41, MOVE_SHADOW_BALL),
-    LEVEL_UP_MOVE(46, MOVE_PERISH_SONG),
-    LEVEL_UP_MOVE(50, MOVE_POWER_GEM),
+	LEVEL_UP_MOVE( 1, MOVE_GROWL),
+	LEVEL_UP_MOVE( 1, MOVE_DISARMING_VOICE), // Psywave -> Disarming Voice: New Move.  Fairy type.  Fits thematically.
+	LEVEL_UP_MOVE( 5, MOVE_SPITE),
+	LEVEL_UP_MOVE(10, MOVE_ASTONISH),
+	LEVEL_UP_MOVE(14, MOVE_FAKE_TEARS), // Confuse Ray -> Fake Tears: New Move.  Fits based on Pokedex.
+	LEVEL_UP_MOVE(19, MOVE_MEAN_LOOK),
+	LEVEL_UP_MOVE(23, MOVE_HEX),
+	LEVEL_UP_MOVE(28, MOVE_PSYBEAM),
+	LEVEL_UP_MOVE(32, MOVE_WISH), // Pain Split -> Wish: New Move.  Based on Flutter Mane.
+	LEVEL_UP_MOVE(37, MOVE_PAYBACK),
+	LEVEL_UP_MOVE(41, MOVE_SHADOW_BALL),
+	LEVEL_UP_MOVE(46, MOVE_PERISH_SONG),
+	LEVEL_UP_MOVE(50, MOVE_GRUDGE),
+	LEVEL_UP_MOVE(55, MOVE_POWER_GEM),
     LEVEL_UP_END
 };
 
@@ -6645,38 +6794,48 @@ static const struct LevelUpMove sHoundoomLevelUpLearnset[] = {
 
 #if P_FAMILY_PHANPY
 static const struct LevelUpMove sPhanpyLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_TACKLE),
-    LEVEL_UP_MOVE( 1, MOVE_GROWL),
-    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
-    LEVEL_UP_MOVE( 6, MOVE_FLAIL),
-    LEVEL_UP_MOVE(10, MOVE_ROLLOUT),
-    LEVEL_UP_MOVE(15, MOVE_BULLDOZE),
-    LEVEL_UP_MOVE(19, MOVE_ENDURE),
-    LEVEL_UP_MOVE(24, MOVE_SLAM),
-    LEVEL_UP_MOVE(28, MOVE_TAKE_DOWN),
-    LEVEL_UP_MOVE(33, MOVE_CHARM),
-    LEVEL_UP_MOVE(37, MOVE_LAST_RESORT),
-    LEVEL_UP_MOVE(42, MOVE_DOUBLE_EDGE),
+	LEVEL_UP_MOVE( 1, MOVE_NATURAL_GIFT), // Move Natural Gift to Level 1, could be fun shenanigans.
+	LEVEL_UP_MOVE( 1, MOVE_ODORSLEUTH),
+	LEVEL_UP_MOVE( 1, MOVE_TACKLE), // Potentially replace with Rapid Spin for flavor.  
+	LEVEL_UP_MOVE( 1, MOVE_GROWL),
+	LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+	LEVEL_UP_MOVE( 4, MOVE_MUD_SLAP), // New Move Slot -> Mud Slap: TM Move.  Early Ground STAB that isn't broken and makes sense.
+	LEVEL_UP_MOVE( 6, MOVE_FLAIL),
+	LEVEL_UP_MOVE(10, MOVE_ROLLOUT),
+	LEVEL_UP_MOVE(15, MOVE_BULLDOZE), 
+	LEVEL_UP_MOVE(19, MOVE_ENDURE),
+	LEVEL_UP_MOVE(24, MOVE_SLAM),
+	LEVEL_UP_MOVE(28, MOVE_TAKE_DOWN),
+	LEVEL_UP_MOVE(33, MOVE_CHARM),
+	LEVEL_UP_MOVE(37, MOVE_LAST_RESORT),
+	LEVEL_UP_MOVE(40, MOVE_EARTHQUAKE),
+	LEVEL_UP_MOVE(42, MOVE_DOUBLE_EDGE),
     LEVEL_UP_END
 };
 
 static const struct LevelUpMove sDonphanLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 0, MOVE_FURY_ATTACK),
+    LEVEL_UP_MOVE( 0, MOVE_BRICK_BREAK),
     LEVEL_UP_MOVE( 1, MOVE_HORN_ATTACK),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
     LEVEL_UP_MOVE( 1, MOVE_THUNDER_FANG),
     LEVEL_UP_MOVE( 1, MOVE_FIRE_FANG),
     LEVEL_UP_MOVE( 1, MOVE_BULLDOZE),
-    LEVEL_UP_MOVE( 6, MOVE_RAPID_SPIN),
-    LEVEL_UP_MOVE(10, MOVE_ROLLOUT),
-    LEVEL_UP_MOVE(15, MOVE_ASSURANCE),
-    LEVEL_UP_MOVE(19, MOVE_KNOCK_OFF),
-    LEVEL_UP_MOVE(24, MOVE_SLAM),
-    LEVEL_UP_MOVE(30, MOVE_STOMPING_TANTRUM),
-    LEVEL_UP_MOVE(37, MOVE_SCARY_FACE),
-    LEVEL_UP_MOVE(43, MOVE_EARTHQUAKE),
-    LEVEL_UP_MOVE(50, MOVE_GIGA_IMPACT),
+ 	LEVEL_UP_MOVE( 6, MOVE_RAPID_SPIN),
+	LEVEL_UP_MOVE(10, MOVE_ROLLOUT),
+	LEVEL_UP_MOVE(14, MOVE_SLAM),
+	LEVEL_UP_MOVE(18, MOVE_SCARY_FACE),
+	LEVEL_UP_MOVE(22, MOVE_BULLDOZE),
+	LEVEL_UP_MOVE(24, MOVE_BRICK_BREAK), // Fury Attack -> Brick Break:  New Fighting Type Move - Great Tusk Move
+	LEVEL_UP_MOVE(27, MOVE_ASSURANCE),
+	LEVEL_UP_MOVE(30, MOVE_STOMPING_TANTRUM), // Stomping Tantrum at 30 same as Gen IX
+	LEVEL_UP_MOVE(32, MOVE_KNOCK_OFF),
+	LEVEL_UP_MOVE(36, MOVE_BODY_PRESS), // Body Press: New Move Slot: TM Move
+	LEVEL_UP_MOVE(39, MOVE_HEAVY_SLAM), // Magnitude -> Heavy Slam: TM Move.
+	LEVEL_UP_MOVE(42, MOVE_SHIFT_GEAR), // Endure -> Shift Gear: New Move because Tire.  Move from 32 to 42 and move everything else up. Move Endure to Level 1
+	LEVEL_UP_MOVE(46, MOVE_EARTHQUAKE),
+	LEVEL_UP_MOVE(51, MOVE_CLOSE_COMBAT), // Giga Impact -> Close Combat: New Fighting Type Move - Great Tusk Move
+	LEVEL_UP_MOVE(56, MOVE_STEAMROLLER), // Steam Roller: New Move Slot: Iron Treads Move
     LEVEL_UP_END
 };
 #endif //P_FAMILY_PHANPY
@@ -6738,19 +6897,20 @@ static const struct LevelUpMove sSmeargleLevelUpLearnset[] = {
 
 #if P_FAMILY_MILTANK
 static const struct LevelUpMove sMiltankLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_TACKLE),
-    LEVEL_UP_MOVE( 1, MOVE_GROWL),
-    LEVEL_UP_MOVE( 5, MOVE_ROLLOUT),
-    LEVEL_UP_MOVE(10, MOVE_DEFENSE_CURL),
-    LEVEL_UP_MOVE(15, MOVE_STOMP),
-    LEVEL_UP_MOVE(20, MOVE_HEAL_BELL),
-    LEVEL_UP_MOVE(25, MOVE_HEADBUTT),
-    LEVEL_UP_MOVE(30, MOVE_ZEN_HEADBUTT),
-    LEVEL_UP_MOVE(35, MOVE_MILK_DRINK),
-    LEVEL_UP_MOVE(40, MOVE_BODY_SLAM),
-    LEVEL_UP_MOVE(45, MOVE_PLAY_ROUGH),
-    LEVEL_UP_MOVE(50, MOVE_CHARM),
-    LEVEL_UP_MOVE(55, MOVE_HIGH_HORSEPOWER),
+	LEVEL_UP_MOVE( 1, MOVE_TACKLE),
+	LEVEL_UP_MOVE( 3, MOVE_GROWL),
+	LEVEL_UP_MOVE( 5, MOVE_DEFENSE_CURL),
+	LEVEL_UP_MOVE( 8, MOVE_STOMP),
+	LEVEL_UP_MOVE(11, MOVE_MILK_DRINK),
+	LEVEL_UP_MOVE(15, MOVE_HEART_STAMP), // Bide -> Heart Stamp: Egg Move. No way to get it without Swoobat and Bide stinks.
+	LEVEL_UP_MOVE(19, MOVE_ROLLOUT),
+	LEVEL_UP_MOVE(23, MOVE_BODY_SLAM), // Body Slam move from 24 to 23
+	LEVEL_UP_MOVE(26, MOVE_YAWN), // New Move Slot -> Yawn: New Move. Gives it a niche over Blissey, faster Yawn than Lax.
+	LEVEL_UP_MOVE(30, MOVE_ZEN_HEADBUTT), // Zen headbutt moves from 29 to 30
+	LEVEL_UP_MOVE(35, MOVE_CAPTIVATE),
+	LEVEL_UP_MOVE(41, MOVE_GYRO_BALL),
+	LEVEL_UP_MOVE(48, MOVE_HEAL_BELL),
+	LEVEL_UP_MOVE(50, MOVE_HIGH_JUMP_KICK), // Wake Up Slap -> Hi-Jump Kick: New Move. Cow jumping over the moon and the cow fight from Kung Pow make for a fun reference and an interesting coverage move
     LEVEL_UP_END
 };
 #endif //P_FAMILY_MILTANK
@@ -6962,67 +7122,65 @@ static const struct LevelUpMove sCelebiLevelUpLearnset[] = {
 static const struct LevelUpMove sTreeckoLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_POUND),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
-    LEVEL_UP_MOVE( 3, MOVE_LEAFAGE),
-    LEVEL_UP_MOVE( 6, MOVE_QUICK_ATTACK),
-    LEVEL_UP_MOVE( 9, MOVE_MEGA_DRAIN),
-    LEVEL_UP_MOVE(12, MOVE_DETECT),
-    LEVEL_UP_MOVE(15, MOVE_QUICK_GUARD),
-    LEVEL_UP_MOVE(18, MOVE_ASSURANCE),
+    LEVEL_UP_MOVE( 5, MOVE_ABSORB),
+    LEVEL_UP_MOVE( 9, MOVE_QUICK_ATTACK),
+    LEVEL_UP_MOVE(13, MOVE_MEGA_DRAIN),
+    LEVEL_UP_MOVE(17, MOVE_PURSUIT),
     LEVEL_UP_MOVE(21, MOVE_GIGA_DRAIN),
-    LEVEL_UP_MOVE(24, MOVE_SLAM),
-    LEVEL_UP_MOVE(27, MOVE_DOUBLE_TEAM),
-    LEVEL_UP_MOVE(30, MOVE_ENERGY_BALL),
-    LEVEL_UP_MOVE(33, MOVE_SCREECH),
-    LEVEL_UP_MOVE(36, MOVE_ENDEAVOR),
-    LEVEL_UP_MOVE(39, MOVE_LEAF_STORM),
+    LEVEL_UP_MOVE(25, MOVE_AGILITY),
+    LEVEL_UP_MOVE(29, MOVE_SLAM),
+    LEVEL_UP_MOVE(33, MOVE_DETECT),
+    LEVEL_UP_MOVE(37, MOVE_ENERGY_BALL),
+    LEVEL_UP_MOVE(41, MOVE_QUICK_GUARD),
+    LEVEL_UP_MOVE(45, MOVE_ENDEAVOR),
+    LEVEL_UP_MOVE(49, MOVE_SCREECH),
     LEVEL_UP_END
 };
 
 static const struct LevelUpMove sGrovyleLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_FURY_CUTTER),
-    LEVEL_UP_MOVE( 1, MOVE_FALSE_SWIPE),
-    LEVEL_UP_MOVE( 1, MOVE_X_SCISSOR),
-    LEVEL_UP_MOVE( 1, MOVE_ENERGY_BALL),
     LEVEL_UP_MOVE( 1, MOVE_POUND),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
-    LEVEL_UP_MOVE( 1, MOVE_LEAFAGE),
+    LEVEL_UP_MOVE( 1, MOVE_ABSORB),
     LEVEL_UP_MOVE( 1, MOVE_QUICK_ATTACK),
-    LEVEL_UP_MOVE( 9, MOVE_MEGA_DRAIN),
-    LEVEL_UP_MOVE(12, MOVE_DETECT),
-    LEVEL_UP_MOVE(15, MOVE_QUICK_GUARD),
-    LEVEL_UP_MOVE(20, MOVE_ASSURANCE),
-    LEVEL_UP_MOVE(25, MOVE_GIGA_DRAIN),
-    LEVEL_UP_MOVE(30, MOVE_SLAM),
-    LEVEL_UP_MOVE(35, MOVE_DOUBLE_TEAM),
-    LEVEL_UP_MOVE(40, MOVE_LEAF_BLADE),
-    LEVEL_UP_MOVE(45, MOVE_SCREECH),
-    LEVEL_UP_MOVE(50, MOVE_ENDEAVOR),
-    LEVEL_UP_MOVE(55, MOVE_LEAF_STORM),
+    LEVEL_UP_MOVE( 5, MOVE_ABSORB),
+    LEVEL_UP_MOVE( 9, MOVE_QUICK_ATTACK),
+    LEVEL_UP_MOVE(13, MOVE_MEGA_DRAIN),
+    LEVEL_UP_MOVE(16, MOVE_FURY_CUTTER),
+    LEVEL_UP_MOVE(18, MOVE_PURSUIT),
+    LEVEL_UP_MOVE(23, MOVE_LEAF_BLADE),
+    LEVEL_UP_MOVE(28, MOVE_AGILITY),
+    LEVEL_UP_MOVE(33, MOVE_SLAM),
+    LEVEL_UP_MOVE(38, MOVE_DETECT),
+    LEVEL_UP_MOVE(43, MOVE_X_SCISSOR),
+    LEVEL_UP_MOVE(48, MOVE_FALSE_SWIPE),
+    LEVEL_UP_MOVE(53, MOVE_QUICK_GUARD),
+    LEVEL_UP_MOVE(58, MOVE_LEAF_STORM),
+    LEVEL_UP_MOVE(63, MOVE_SCREECH),
     LEVEL_UP_END
 };
 
 static const struct LevelUpMove sSceptileLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 0, MOVE_DUAL_CHOP),
-    LEVEL_UP_MOVE( 1, MOVE_DUAL_CHOP),
-    LEVEL_UP_MOVE( 1, MOVE_FURY_CUTTER),
-    LEVEL_UP_MOVE( 1, MOVE_FALSE_SWIPE),
-    LEVEL_UP_MOVE( 1, MOVE_X_SCISSOR),
-    LEVEL_UP_MOVE( 1, MOVE_ENERGY_BALL),
+    LEVEL_UP_MOVE( 1, MOVE_LEAF_STORM),
+    LEVEL_UP_MOVE( 1, MOVE_NIGHT_SLASH),
     LEVEL_UP_MOVE( 1, MOVE_POUND),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
-    LEVEL_UP_MOVE( 1, MOVE_LEAFAGE),
+    LEVEL_UP_MOVE( 1, MOVE_ABSORB),
     LEVEL_UP_MOVE( 1, MOVE_QUICK_ATTACK),
-    LEVEL_UP_MOVE( 5, MOVE_MEGA_DRAIN),
-    LEVEL_UP_MOVE(12, MOVE_DETECT),
-    LEVEL_UP_MOVE(15, MOVE_QUICK_GUARD),
-    LEVEL_UP_MOVE(20, MOVE_ASSURANCE),
-    LEVEL_UP_MOVE(25, MOVE_GIGA_DRAIN),
-    LEVEL_UP_MOVE(30, MOVE_SLAM),
-    LEVEL_UP_MOVE(35, MOVE_DOUBLE_TEAM),
-    LEVEL_UP_MOVE(42, MOVE_LEAF_BLADE),
-    LEVEL_UP_MOVE(49, MOVE_SCREECH),
-    LEVEL_UP_MOVE(56, MOVE_ENDEAVOR),
+    LEVEL_UP_MOVE( 5, MOVE_ABSORB),
+    LEVEL_UP_MOVE( 9, MOVE_QUICK_ATTACK),
+    LEVEL_UP_MOVE(13, MOVE_MEGA_DRAIN),
+    LEVEL_UP_MOVE(16, MOVE_FURY_CUTTER),
+    LEVEL_UP_MOVE(18, MOVE_PURSUIT),
+    LEVEL_UP_MOVE(23, MOVE_LEAF_BLADE),
+    LEVEL_UP_MOVE(28, MOVE_AGILITY),
+    LEVEL_UP_MOVE(33, MOVE_SLAM),
+    LEVEL_UP_MOVE(36, MOVE_DUAL_CHOP),
+    LEVEL_UP_MOVE(39, MOVE_DETECT),
+    LEVEL_UP_MOVE(45, MOVE_X_SCISSOR),
+    LEVEL_UP_MOVE(51, MOVE_FALSE_SWIPE),
+    LEVEL_UP_MOVE(57, MOVE_QUICK_GUARD),
     LEVEL_UP_MOVE(63, MOVE_LEAF_STORM),
+    LEVEL_UP_MOVE(69, MOVE_SCREECH),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_TREECKO
@@ -7031,66 +7189,59 @@ static const struct LevelUpMove sSceptileLevelUpLearnset[] = {
 static const struct LevelUpMove sTorchicLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
-    LEVEL_UP_MOVE( 3, MOVE_EMBER),
-    LEVEL_UP_MOVE( 6, MOVE_QUICK_ATTACK),
-    LEVEL_UP_MOVE( 9, MOVE_FLAME_CHARGE),
-    LEVEL_UP_MOVE(12, MOVE_DETECT),
-    LEVEL_UP_MOVE(15, MOVE_SAND_ATTACK),
-    LEVEL_UP_MOVE(18, MOVE_AERIAL_ACE),
-    LEVEL_UP_MOVE(21, MOVE_SLASH),
-    LEVEL_UP_MOVE(24, MOVE_BOUNCE),
-    LEVEL_UP_MOVE(27, MOVE_FOCUS_ENERGY),
-    LEVEL_UP_MOVE(30, MOVE_FLAMETHROWER),
-    LEVEL_UP_MOVE(33, MOVE_FEATHER_DANCE),
-    LEVEL_UP_MOVE(36, MOVE_REVERSAL),
-    LEVEL_UP_MOVE(39, MOVE_FLARE_BLITZ),
+    LEVEL_UP_MOVE( 5, MOVE_EMBER),
+    LEVEL_UP_MOVE(10, MOVE_SAND_ATTACK),
+    LEVEL_UP_MOVE(14, MOVE_PECK),
+    LEVEL_UP_MOVE(19, MOVE_FIRE_SPIN),
+    LEVEL_UP_MOVE(23, MOVE_QUICK_ATTACK),
+    LEVEL_UP_MOVE(28, MOVE_FLAME_BURST),
+    LEVEL_UP_MOVE(32, MOVE_FOCUS_ENERGY),
+    LEVEL_UP_MOVE(37, MOVE_SLASH),
+    LEVEL_UP_MOVE(41, MOVE_MIRROR_MOVE),
+    LEVEL_UP_MOVE(46, MOVE_FLAMETHROWER),
     LEVEL_UP_END
 };
 
 static const struct LevelUpMove sCombuskenLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 0, MOVE_DOUBLE_KICK),
-    LEVEL_UP_MOVE( 1, MOVE_DOUBLE_KICK),
-    LEVEL_UP_MOVE( 1, MOVE_FLAMETHROWER),
-    LEVEL_UP_MOVE( 1, MOVE_FEATHER_DANCE),
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 1, MOVE_EMBER),
-    LEVEL_UP_MOVE( 1, MOVE_QUICK_ATTACK),
-    LEVEL_UP_MOVE( 9, MOVE_FLAME_CHARGE),
-    LEVEL_UP_MOVE(12, MOVE_DETECT),
-    LEVEL_UP_MOVE(15, MOVE_SAND_ATTACK),
-    LEVEL_UP_MOVE(20, MOVE_AERIAL_ACE),
-    LEVEL_UP_MOVE(25, MOVE_SLASH),
-    LEVEL_UP_MOVE(30, MOVE_BOUNCE),
-    LEVEL_UP_MOVE(35, MOVE_FOCUS_ENERGY),
-    LEVEL_UP_MOVE(40, MOVE_BLAZE_KICK),
-    LEVEL_UP_MOVE(45, MOVE_BULK_UP),
-    LEVEL_UP_MOVE(50, MOVE_REVERSAL),
-    LEVEL_UP_MOVE(55, MOVE_FLARE_BLITZ),
+    LEVEL_UP_MOVE( 1, MOVE_SAND_ATTACK),
+    LEVEL_UP_MOVE( 5, MOVE_EMBER),
+    LEVEL_UP_MOVE(10, MOVE_SAND_ATTACK),
+    LEVEL_UP_MOVE(14, MOVE_PECK),
+    LEVEL_UP_MOVE(16, MOVE_DOUBLE_KICK),
+    LEVEL_UP_MOVE(20, MOVE_FLAME_CHARGE),
+    LEVEL_UP_MOVE(25, MOVE_QUICK_ATTACK),
+    LEVEL_UP_MOVE(31, MOVE_BULK_UP),
+    LEVEL_UP_MOVE(36, MOVE_FOCUS_ENERGY),
+    LEVEL_UP_MOVE(42, MOVE_SLASH),
+    LEVEL_UP_MOVE(47, MOVE_MIRROR_MOVE),
+    LEVEL_UP_MOVE(53, MOVE_SKY_UPPERCUT),
+    LEVEL_UP_MOVE(58, MOVE_FLARE_BLITZ),
     LEVEL_UP_END
 };
 
 static const struct LevelUpMove sBlazikenLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_CLOSE_COMBAT),
-    LEVEL_UP_MOVE( 1, MOVE_DOUBLE_KICK),
+    LEVEL_UP_MOVE( 1, MOVE_FLARE_BLITZ),
     LEVEL_UP_MOVE( 1, MOVE_FIRE_PUNCH),
-    LEVEL_UP_MOVE( 1, MOVE_BRAVE_BIRD),
-    LEVEL_UP_MOVE( 1, MOVE_FLAMETHROWER),
-    LEVEL_UP_MOVE( 1, MOVE_FEATHER_DANCE),
+    LEVEL_UP_MOVE( 1, MOVE_HIGH_JUMP_KICK),
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 1, MOVE_EMBER),
-    LEVEL_UP_MOVE( 1, MOVE_QUICK_ATTACK),
-    LEVEL_UP_MOVE( 9, MOVE_FLAME_CHARGE),
-    LEVEL_UP_MOVE(12, MOVE_DETECT),
-    LEVEL_UP_MOVE(15, MOVE_SAND_ATTACK),
-    LEVEL_UP_MOVE(20, MOVE_AERIAL_ACE),
-    LEVEL_UP_MOVE(25, MOVE_SLASH),
-    LEVEL_UP_MOVE(30, MOVE_BOUNCE),
-    LEVEL_UP_MOVE(35, MOVE_FOCUS_ENERGY),
-    LEVEL_UP_MOVE(42, MOVE_BLAZE_KICK),
-    LEVEL_UP_MOVE(49, MOVE_BULK_UP),
-    LEVEL_UP_MOVE(56, MOVE_REVERSAL),
+    LEVEL_UP_MOVE( 1, MOVE_SAND_ATTACK),
+    LEVEL_UP_MOVE( 5, MOVE_EMBER),
+    LEVEL_UP_MOVE(10, MOVE_SAND_ATTACK),
+    LEVEL_UP_MOVE(14, MOVE_PECK),
+    LEVEL_UP_MOVE(16, MOVE_DOUBLE_KICK),
+    LEVEL_UP_MOVE(20, MOVE_FLAME_CHARGE),
+    LEVEL_UP_MOVE(25, MOVE_QUICK_ATTACK),
+    LEVEL_UP_MOVE(31, MOVE_BULK_UP),
+    LEVEL_UP_MOVE(36, MOVE_BLAZE_KICK),
+    LEVEL_UP_MOVE(37, MOVE_FOCUS_ENERGY),
+    LEVEL_UP_MOVE(44, MOVE_SLASH),
+    LEVEL_UP_MOVE(50, MOVE_BRAVE_BIRD),
+    LEVEL_UP_MOVE(57, MOVE_SKY_UPPERCUT),
     LEVEL_UP_MOVE(63, MOVE_FLARE_BLITZ),
     LEVEL_UP_END
 };
@@ -7100,65 +7251,59 @@ static const struct LevelUpMove sBlazikenLevelUpLearnset[] = {
 static const struct LevelUpMove sMudkipLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
-    LEVEL_UP_MOVE( 3, MOVE_WATER_GUN),
-    LEVEL_UP_MOVE( 6, MOVE_ROCK_SMASH),
-    LEVEL_UP_MOVE( 9, MOVE_ROCK_THROW),
-    LEVEL_UP_MOVE(12, MOVE_PROTECT),
-    LEVEL_UP_MOVE(15, MOVE_SUPERSONIC),
-    LEVEL_UP_MOVE(18, MOVE_WATER_PULSE),
-    LEVEL_UP_MOVE(21, MOVE_ROCK_SLIDE),
-    LEVEL_UP_MOVE(24, MOVE_TAKE_DOWN),
-    LEVEL_UP_MOVE(27, MOVE_AMNESIA),
-    LEVEL_UP_MOVE(30, MOVE_SURF),
-    LEVEL_UP_MOVE(33, MOVE_SCREECH),
-    LEVEL_UP_MOVE(36, MOVE_ENDEAVOR),
-    LEVEL_UP_MOVE(39, MOVE_HYDRO_PUMP),
+    LEVEL_UP_MOVE( 4, MOVE_WATER_GUN),
+    LEVEL_UP_MOVE( 9, MOVE_MUD_SLAP),
+    LEVEL_UP_MOVE(12, MOVE_FORESIGHT),
+    LEVEL_UP_MOVE(17, MOVE_BIDE),
+    LEVEL_UP_MOVE(20, MOVE_MUD_SPORT),
+    LEVEL_UP_MOVE(25, MOVE_ROCK_THROW),
+    LEVEL_UP_MOVE(28, MOVE_PROTECT),
+    LEVEL_UP_MOVE(33, MOVE_WHIRLPOOL),
+    LEVEL_UP_MOVE(36, MOVE_TAKE_DOWN),
+    LEVEL_UP_MOVE(41, MOVE_HYDRO_PUMP),
+    LEVEL_UP_MOVE(44, MOVE_ENDEAVOR),
     LEVEL_UP_END
 };
 
 static const struct LevelUpMove sMarshtompLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 0, MOVE_MUD_SHOT),
-    LEVEL_UP_MOVE( 1, MOVE_MUD_SHOT),
-    LEVEL_UP_MOVE( 1, MOVE_EARTHQUAKE),
-    LEVEL_UP_MOVE( 1, MOVE_SURF),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),
-    LEVEL_UP_MOVE( 1, MOVE_ROCK_SMASH),
-    LEVEL_UP_MOVE( 9, MOVE_ROCK_THROW),
-    LEVEL_UP_MOVE(12, MOVE_PROTECT),
-    LEVEL_UP_MOVE(15, MOVE_SUPERSONIC),
-    LEVEL_UP_MOVE(20, MOVE_WATER_PULSE),
-    LEVEL_UP_MOVE(25, MOVE_ROCK_SLIDE),
-    LEVEL_UP_MOVE(30, MOVE_TAKE_DOWN),
-    LEVEL_UP_MOVE(35, MOVE_AMNESIA),
-    LEVEL_UP_MOVE(40, MOVE_MUDDY_WATER),
-    LEVEL_UP_MOVE(45, MOVE_SCREECH),
-    LEVEL_UP_MOVE(50, MOVE_ENDEAVOR),
-    LEVEL_UP_MOVE(55, MOVE_HYDRO_PUMP),
+    LEVEL_UP_MOVE( 1, MOVE_MUD_SLAP),
+    LEVEL_UP_MOVE( 4, MOVE_WATER_GUN),
+    LEVEL_UP_MOVE( 9, MOVE_MUD_SLAP),
+    LEVEL_UP_MOVE(12, MOVE_FORESIGHT),
+    LEVEL_UP_MOVE(16, MOVE_MUD_SHOT),
+    LEVEL_UP_MOVE(18, MOVE_BIDE),
+    LEVEL_UP_MOVE(22, MOVE_MUD_BOMB),
+    LEVEL_UP_MOVE(28, MOVE_ROCK_SLIDE),
+    LEVEL_UP_MOVE(32, MOVE_PROTECT),
+    LEVEL_UP_MOVE(38, MOVE_MUDDY_WATER),
+    LEVEL_UP_MOVE(42, MOVE_TAKE_DOWN),
+    LEVEL_UP_MOVE(48, MOVE_EARTHQUAKE),
+    LEVEL_UP_MOVE(52, MOVE_ENDEAVOR),
     LEVEL_UP_END
 };
 
 static const struct LevelUpMove sSwampertLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_MUD_SHOT),
     LEVEL_UP_MOVE( 1, MOVE_HAMMER_ARM),
-    LEVEL_UP_MOVE( 1, MOVE_EARTHQUAKE),
-    LEVEL_UP_MOVE( 1, MOVE_SURF),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),
-    LEVEL_UP_MOVE( 1, MOVE_ROCK_SMASH),
-    LEVEL_UP_MOVE( 9, MOVE_ROCK_THROW),
-    LEVEL_UP_MOVE(12, MOVE_PROTECT),
-    LEVEL_UP_MOVE(15, MOVE_SUPERSONIC),
-    LEVEL_UP_MOVE(20, MOVE_WATER_PULSE),
-    LEVEL_UP_MOVE(25, MOVE_ROCK_SLIDE),
-    LEVEL_UP_MOVE(30, MOVE_TAKE_DOWN),
-    LEVEL_UP_MOVE(35, MOVE_AMNESIA),
-    LEVEL_UP_MOVE(42, MOVE_MUDDY_WATER),
-    LEVEL_UP_MOVE(49, MOVE_SCREECH),
+    LEVEL_UP_MOVE( 1, MOVE_MUD_SLAP),
+    LEVEL_UP_MOVE( 4, MOVE_WATER_GUN),
+    LEVEL_UP_MOVE( 9, MOVE_MUD_SLAP),
+    LEVEL_UP_MOVE(12, MOVE_FORESIGHT),
+    LEVEL_UP_MOVE(16, MOVE_MUD_SHOT),
+    LEVEL_UP_MOVE(18, MOVE_BIDE),
+    LEVEL_UP_MOVE(22, MOVE_MUD_BOMB),
+    LEVEL_UP_MOVE(28, MOVE_ROCK_SLIDE),
+    LEVEL_UP_MOVE(32, MOVE_PROTECT),
+    LEVEL_UP_MOVE(39, MOVE_MUDDY_WATER),
+    LEVEL_UP_MOVE(44, MOVE_TAKE_DOWN),
+    LEVEL_UP_MOVE(51, MOVE_EARTHQUAKE),
     LEVEL_UP_MOVE(56, MOVE_ENDEAVOR),
-    LEVEL_UP_MOVE(63, MOVE_HYDRO_PUMP),
+    LEVEL_UP_MOVE(63, MOVE_HAMMER_ARM),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_MUDKIP
@@ -7190,12 +7335,8 @@ static const struct LevelUpMove sMightyenaLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_FIRE_FANG),
     LEVEL_UP_MOVE( 1, MOVE_THUNDER_FANG),
     LEVEL_UP_MOVE( 1, MOVE_ICE_FANG),
-    LEVEL_UP_MOVE( 1, MOVE_CRUNCH),
     LEVEL_UP_MOVE( 1, MOVE_THIEF),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
-    LEVEL_UP_MOVE( 1, MOVE_HOWL),
-    LEVEL_UP_MOVE( 1, MOVE_SAND_ATTACK),
-    LEVEL_UP_MOVE( 1, MOVE_BITE),
     LEVEL_UP_MOVE( 4, MOVE_HOWL),
     LEVEL_UP_MOVE( 7, MOVE_SAND_ATTACK),
     LEVEL_UP_MOVE(10, MOVE_BITE),
@@ -7409,52 +7550,58 @@ static const struct LevelUpMove sLotadLevelUpLearnset[] = {
     LEVEL_UP_MOVE(28, MOVE_GIGA_DRAIN),
     LEVEL_UP_MOVE(33, MOVE_RAIN_DANCE),
     LEVEL_UP_MOVE(38, MOVE_ZEN_HEADBUTT),
-    LEVEL_UP_MOVE(43, MOVE_ENERGY_BALL),
+    LEVEL_UP_MOVE(43, MOVE_MATCHA_GOTCHA),
     LEVEL_UP_END
 };
 
 static const struct LevelUpMove sLombreLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TEETER_DANCE),
-    LEVEL_UP_MOVE( 1, MOVE_FAKE_OUT),
     LEVEL_UP_MOVE( 1, MOVE_KNOCK_OFF),
     LEVEL_UP_MOVE( 1, MOVE_FLAIL),
     LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
-    LEVEL_UP_MOVE( 1, MOVE_ABSORB),
-    LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),
+    LEVEL_UP_MOVE( 3, MOVE_ABSORB),
+    LEVEL_UP_MOVE( 6, MOVE_WATER_GUN),
     LEVEL_UP_MOVE( 9, MOVE_MIST),
     LEVEL_UP_MOVE(12, MOVE_MEGA_DRAIN),
-    LEVEL_UP_MOVE(18, MOVE_FURY_SWIPES),
-    LEVEL_UP_MOVE(24, MOVE_BUBBLE_BEAM),
-    LEVEL_UP_MOVE(30, MOVE_NATURE_POWER),
-    LEVEL_UP_MOVE(36, MOVE_GIGA_DRAIN),
-    LEVEL_UP_MOVE(43, MOVE_RAIN_DANCE),
-    LEVEL_UP_MOVE(50, MOVE_ZEN_HEADBUTT),
-    LEVEL_UP_MOVE(57, MOVE_ENERGY_BALL),
-    LEVEL_UP_MOVE(64, MOVE_HYDRO_PUMP),
+    LEVEL_UP_MOVE(16, MOVE_FAKE_OUT), // FURY SWIPES -> FAKE OUT: FAKE OUT IS MORE USEFUL THAN FURY SWIPES.  MOVE FAKE OUT FROM LEVEL 1.
+    LEVEL_UP_MOVE(19, MOVE_BUBBLE_BEAM),
+    LEVEL_UP_MOVE(22, MOVE_NATURE_POWER),
+    LEVEL_UP_MOVE(25, MOVE_GIGA_DRAIN),
+	LEVEL_UP_MOVE(28, MOVE_ENCORE), // NEW MOVE SLOT -> ENCORE: TM MOVE.
+    LEVEL_UP_MOVE(31, MOVE_RAIN_DANCE),
+    LEVEL_UP_MOVE(34, MOVE_ZEN_HEADBUTT),
+    LEVEL_UP_MOVE(39, MOVE_MATCHA_GOTCHA),
+    LEVEL_UP_MOVE(44, MOVE_PARTING_SHOT),
+	LEVEL_UP_MOVE(49, MOVE_HYDRO_PUMP),
     LEVEL_UP_END
 };
 
 static const struct LevelUpMove sLudicoloLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_TEETER_DANCE),
-    LEVEL_UP_MOVE( 1, MOVE_FAKE_OUT),
+    LEVEL_UP_MOVE( 0, MOVE_AQUA_STEP), // NEW EVOLUTION MOVE -> AQUA STEP. NEW MOVE: ITS A DANCE MOVE USING WATER. 
+	LEVEL_UP_MOVE( 1, MOVE_AQUA_STEP),
+	LEVEL_UP_MOVE( 1, MOVE_TEETER_DANCE),
     LEVEL_UP_MOVE( 1, MOVE_KNOCK_OFF),
     LEVEL_UP_MOVE( 1, MOVE_FLAIL),
-    LEVEL_UP_MOVE( 1, MOVE_MIST),
-    LEVEL_UP_MOVE( 1, MOVE_MEGA_DRAIN),
-    LEVEL_UP_MOVE( 1, MOVE_FURY_SWIPES),
-    LEVEL_UP_MOVE( 1, MOVE_BUBBLE_BEAM),
-    LEVEL_UP_MOVE( 1, MOVE_NATURE_POWER),
-    LEVEL_UP_MOVE( 1, MOVE_GIGA_DRAIN),
-    LEVEL_UP_MOVE( 1, MOVE_RAIN_DANCE),
-    LEVEL_UP_MOVE( 1, MOVE_ZEN_HEADBUTT),
-    LEVEL_UP_MOVE( 1, MOVE_ENERGY_BALL),
-    LEVEL_UP_MOVE( 1, MOVE_HYDRO_PUMP),
-    LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
+	LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
-    LEVEL_UP_MOVE( 1, MOVE_ABSORB),
-    LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),
-    LEVEL_UP_END
+    LEVEL_UP_MOVE( 3, MOVE_ABSORB),
+    LEVEL_UP_MOVE( 6, MOVE_WATER_GUN),
+    LEVEL_UP_MOVE( 9, MOVE_MIST),
+    LEVEL_UP_MOVE(12, MOVE_MEGA_DRAIN),
+    LEVEL_UP_MOVE(16, MOVE_FAKE_OUT), // FURY SWIPES -> FAKE OUT: FAKE OUT IS MORE USEFUL THAN FURY SWIPES.  MOVE FAKE OUT FROM LEVEL 1.
+    LEVEL_UP_MOVE(19, MOVE_BUBBLE_BEAM),
+    LEVEL_UP_MOVE(22, MOVE_NATURE_POWER),
+    LEVEL_UP_MOVE(25, MOVE_GIGA_DRAIN),
+	LEVEL_UP_MOVE(28, MOVE_ENCORE), // NEW MOVE SLOT -> ENCORE: TM MOVE.
+    LEVEL_UP_MOVE(31, MOVE_RAIN_DANCE),
+    LEVEL_UP_MOVE(34, MOVE_ZEN_HEADBUTT),
+    LEVEL_UP_MOVE(38, MOVE_MATCHA_GOTCHA), // ENERGY BALL -> MATCHA GOTCHA. NEW MOVE: MATCHA GOTCHA IS A GRASS AND WATER (TEA) MOVE THAT BURNS AND RECOVERS HP WHICH I WHAT LUDICOLO WANTS TO DO.
+	LEVEL_UP_MOVE(41, MOVE_WEATHER_BALL), // NEW MOVE SLOT -> WEATHER BALL. TM MOVE: A WEATHER RELATED MOVE AND LATER THAN CASTFORM
+    LEVEL_UP_MOVE(45, MOVE_HYDRO_STEAM), // NEW MOVE SLOT -> HYDRO STEAM. NEW MOVE: WATER MOVE THAT DEALS MORE DAMAGE IN THE SUN. THIS FITS THE I WANT IT TO BE GOOD IN BOTH WEATHERS VIBE. HAVE IT BEFORE MAXIE FIGHTS? DEPENDS ON IF I GIVE IT TO TEAM MAGMA
+	LEVEL_UP_MOVE(49, MOVE_PARTING_SHOT), // NEW MOVE SLOT -> PARTING SHOT. NEW MOVE: A SUPPORT MOVE THAT I CAN SEE WORKING
+	LEVEL_UP_MOVE(53, MOVE_HYDRO_PUMP),
+    LEVEL_UP_END 
 };
 #endif //P_FAMILY_LOTAD
 
@@ -7462,7 +7609,7 @@ static const struct LevelUpMove sLudicoloLevelUpLearnset[] = {
 static const struct LevelUpMove sSeedotLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_HARDEN),
-    LEVEL_UP_MOVE( 3, MOVE_ABSORB),
+    LEVEL_UP_MOVE( 3, MOVE_BRANCH_POKE), // Absorb -> Branch Poke
     LEVEL_UP_MOVE( 6, MOVE_ASTONISH),
     LEVEL_UP_MOVE( 9, MOVE_GROWTH),
     LEVEL_UP_MOVE(12, MOVE_ROLLOUT),
@@ -7480,52 +7627,47 @@ static const struct LevelUpMove sNuzleafLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_RAZOR_LEAF),
     LEVEL_UP_MOVE( 1, MOVE_RAZOR_LEAF),
     LEVEL_UP_MOVE( 1, MOVE_AIR_CUTTER),
-    LEVEL_UP_MOVE( 1, MOVE_TORMENT),
-    LEVEL_UP_MOVE( 1, MOVE_FAKE_OUT),
     LEVEL_UP_MOVE( 1, MOVE_SWAGGER),
-    LEVEL_UP_MOVE( 1, MOVE_SYNTHESIS),
-    LEVEL_UP_MOVE( 1, MOVE_EXPLOSION),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_HARDEN),
-    LEVEL_UP_MOVE( 1, MOVE_ABSORB),
-    LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
+    LEVEL_UP_MOVE( 3, MOVE_BRANCH_POKE), // Absorb -> Branch Poke
+    LEVEL_UP_MOVE( 6, MOVE_ASTONISH),
     LEVEL_UP_MOVE( 9, MOVE_GROWTH),
     LEVEL_UP_MOVE(12, MOVE_ROLLOUT),
-    LEVEL_UP_MOVE(18, MOVE_MEGA_DRAIN),
-    LEVEL_UP_MOVE(24, MOVE_PAYBACK),
-    LEVEL_UP_MOVE(30, MOVE_NATURE_POWER),
-    LEVEL_UP_MOVE(36, MOVE_SUNNY_DAY),
-    LEVEL_UP_MOVE(43, MOVE_EXTRASENSORY),
-    LEVEL_UP_MOVE(50, MOVE_SUCKER_PUNCH),
-    LEVEL_UP_MOVE(57, MOVE_LEAF_BLADE),
+	LEVEL_UP_MOVE(16, MOVE_FAKE_OUT),
+    LEVEL_UP_MOVE(19, MOVE_TAUNT), // Mega Drain -> Taunt
+    LEVEL_UP_MOVE(22, MOVE_SNARL), // Payback -> Snarl
+    LEVEL_UP_MOVE(26, MOVE_ICY_WIND), // Nature Power -> Icy Wind
+    LEVEL_UP_MOVE(30, MOVE_SYNTHESIS), // Sunny Day -> Synthesis
+    LEVEL_UP_MOVE(34, MOVE_EXTRASENSORY),
+    LEVEL_UP_MOVE(39, MOVE_SUCKER_PUNCH),
+    LEVEL_UP_MOVE(44, MOVE_LEAF_BLADE),
+	LEVEL_UP_MOVE(49, MOVE_EXPLOSION),
     LEVEL_UP_END
 };
 
 static const struct LevelUpMove sShiftryLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_LEAF_TORNADO),
     LEVEL_UP_MOVE( 1, MOVE_LEAF_TORNADO),
-    LEVEL_UP_MOVE( 1, MOVE_RAZOR_LEAF),
-    LEVEL_UP_MOVE( 1, MOVE_AIR_CUTTER),
-    LEVEL_UP_MOVE( 1, MOVE_TORMENT),
-    LEVEL_UP_MOVE( 1, MOVE_FAKE_OUT),
+    LEVEL_UP_MOVE( 1, MOVE_RAZOR_LEAF), 
     LEVEL_UP_MOVE( 1, MOVE_SWAGGER),
     LEVEL_UP_MOVE( 1, MOVE_WHIRLWIND),
-    LEVEL_UP_MOVE( 1, MOVE_HURRICANE),
-    LEVEL_UP_MOVE( 1, MOVE_SYNTHESIS),
-    LEVEL_UP_MOVE( 1, MOVE_EXPLOSION),
-    LEVEL_UP_MOVE( 1, MOVE_GROWTH),
-    LEVEL_UP_MOVE( 1, MOVE_ROLLOUT),
-    LEVEL_UP_MOVE( 1, MOVE_MEGA_DRAIN),
-    LEVEL_UP_MOVE( 1, MOVE_PAYBACK),
-    LEVEL_UP_MOVE( 1, MOVE_NATURE_POWER),
-    LEVEL_UP_MOVE( 1, MOVE_SUNNY_DAY),
-    LEVEL_UP_MOVE( 1, MOVE_EXTRASENSORY),
-    LEVEL_UP_MOVE( 1, MOVE_SUCKER_PUNCH),
-    LEVEL_UP_MOVE( 1, MOVE_LEAF_BLADE),
-    LEVEL_UP_MOVE( 1, MOVE_TACKLE),
-    LEVEL_UP_MOVE( 1, MOVE_HARDEN),
-    LEVEL_UP_MOVE( 1, MOVE_ABSORB),
-    LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
+    LEVEL_UP_MOVE( 3, MOVE_BRANCH_POKE), // Absorb -> Branch Poke
+    LEVEL_UP_MOVE( 6, MOVE_ASTONISH),
+    LEVEL_UP_MOVE( 9, MOVE_GROWTH),
+    LEVEL_UP_MOVE(12, MOVE_ROLLOUT),
+	LEVEL_UP_MOVE(16, MOVE_FAKE_OUT),
+    LEVEL_UP_MOVE(19, MOVE_TAUNT), // Mega Drain -> Taunt
+    LEVEL_UP_MOVE(22, MOVE_SNARL), // Payback -> Snarl
+    LEVEL_UP_MOVE(26, MOVE_ICY_WIND), // Nature Power -> Icy Wind
+    LEVEL_UP_MOVE(30, MOVE_SYNTHESIS), // Sunny Day -> Synthesis
+    LEVEL_UP_MOVE(34, MOVE_EXTRASENSORY),
+    LEVEL_UP_MOVE(38, MOVE_SUCKER_PUNCH),
+	LEVEL_UP_MOVE(41, MOVE_AIR_SLASH), // NEW MOVE SLOT -> AIR SLASH: REPLACE AIR CUTTER
+    LEVEL_UP_MOVE(45, MOVE_LEAF_BLADE),
+	LEVEL_UP_MOVE(49, MOVE_KOWTOW_CLEAVE), // Explosion -> Kowtow Cleave
+	LEVEL_UP_MOVE(53, MOVE_LEAF_STORM)
+	LEVEL_UP_MOVE(58, MOVE_HURRICANE),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SEEDOT
@@ -7549,8 +7691,6 @@ static const struct LevelUpMove sTaillowLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sSwellowLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_BRAVE_BIRD),
-    LEVEL_UP_MOVE( 1, MOVE_AIR_SLASH),
     LEVEL_UP_MOVE( 1, MOVE_PLUCK),
     LEVEL_UP_MOVE( 1, MOVE_PECK),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
@@ -7562,8 +7702,10 @@ static const struct LevelUpMove sSwellowLevelUpLearnset[] = {
     LEVEL_UP_MOVE(17, MOVE_DOUBLE_TEAM),
     LEVEL_UP_MOVE(21, MOVE_AERIAL_ACE),
     LEVEL_UP_MOVE(27, MOVE_QUICK_GUARD),
+	LEVEL_UP_MOVE(30, MOVE_U_TURN), // NEW MOVE SLOT -> U-TURN: TM MOVE.
     LEVEL_UP_MOVE(33, MOVE_AGILITY),
-    LEVEL_UP_MOVE(39, MOVE_AIR_SLASH),
+    LEVEL_UP_MOVE(37, MOVE_AIR_SLASH),
+	LEVEL_UP_MOVE(41, MOVE_HEAT_WAVE), // NEW MOVE SLOT -> HEAT WAVE IS FILLER
     LEVEL_UP_MOVE(45, MOVE_ENDEAVOR),
     LEVEL_UP_MOVE(51, MOVE_BRAVE_BIRD),
     LEVEL_UP_MOVE(57, MOVE_REVERSAL),
@@ -7575,38 +7717,42 @@ static const struct LevelUpMove sSwellowLevelUpLearnset[] = {
 static const struct LevelUpMove sWingullLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),
-    LEVEL_UP_MOVE( 5, MOVE_QUICK_ATTACK),
-    LEVEL_UP_MOVE(10, MOVE_SUPERSONIC),
-    LEVEL_UP_MOVE(15, MOVE_WING_ATTACK),
-    LEVEL_UP_MOVE(20, MOVE_WATER_PULSE),
-    LEVEL_UP_MOVE(26, MOVE_AGILITY),
-    LEVEL_UP_MOVE(30, MOVE_AIR_SLASH),
-    LEVEL_UP_MOVE(35, MOVE_MIST),
-    LEVEL_UP_MOVE(40, MOVE_ROOST),
-    LEVEL_UP_MOVE(45, MOVE_HURRICANE),
+    LEVEL_UP_MOVE( 5, MOVE_SUPERSONIC),
+    LEVEL_UP_MOVE( 8, MOVE_WING_ATTACK),
+    LEVEL_UP_MOVE(12, MOVE_MIST),
+    LEVEL_UP_MOVE(15, MOVE_WATER_PULSE),
+    LEVEL_UP_MOVE(19, MOVE_QUICK_ATTACK),
+    LEVEL_UP_MOVE(22, MOVE_AIR_CUTTER),
+    LEVEL_UP_MOVE(26, MOVE_PURSUIT),
+    LEVEL_UP_MOVE(29, MOVE_AERIAL_ACE),
+    LEVEL_UP_MOVE(33, MOVE_ROOST),
+    LEVEL_UP_MOVE(36, MOVE_AIR_SLASH),
+    LEVEL_UP_MOVE(40, MOVE_AGILITY),
+    LEVEL_UP_MOVE(43, MOVE_HURRICANE),
     LEVEL_UP_END
 };
 
 static const struct LevelUpMove sPelipperLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_STOCKPILE),
+    LEVEL_UP_MOVE( 1, MOVE_SWALLOW),
+    LEVEL_UP_MOVE( 1, MOVE_SPIT_UP),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
-    LEVEL_UP_MOVE( 1, MOVE_SUPERSONIC),
-    LEVEL_UP_MOVE( 1, MOVE_AIR_SLASH),
     LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),
-    LEVEL_UP_MOVE( 1, MOVE_TAILWIND),
-    LEVEL_UP_MOVE( 1, MOVE_AGILITY),
-    LEVEL_UP_MOVE( 1, MOVE_QUICK_ATTACK),
-    LEVEL_UP_MOVE( 1, MOVE_PROTECT),
-    LEVEL_UP_MOVE( 1, MOVE_SOAK),
-    LEVEL_UP_MOVE(15, MOVE_WING_ATTACK),
-    LEVEL_UP_MOVE(20, MOVE_WATER_PULSE),
-    LEVEL_UP_MOVE(28, MOVE_STOCKPILE),
-    LEVEL_UP_MOVE(28, MOVE_SPIT_UP),
-    LEVEL_UP_MOVE(28, MOVE_SWALLOW),
-    LEVEL_UP_MOVE(34, MOVE_FLING),
-    LEVEL_UP_MOVE(41, MOVE_MIST),
-    LEVEL_UP_MOVE(48, MOVE_ROOST),
+    LEVEL_UP_MOVE( 5, MOVE_SUPERSONIC),
+    LEVEL_UP_MOVE( 8, MOVE_WING_ATTACK),
+    LEVEL_UP_MOVE(12, MOVE_MIST),
+    LEVEL_UP_MOVE(15, MOVE_WATER_PULSE),
+    LEVEL_UP_MOVE(19, MOVE_PAYBACK),
+    LEVEL_UP_MOVE(22, MOVE_ROOST),
+    LEVEL_UP_MOVE(25, MOVE_PROTECT),
+    LEVEL_UP_MOVE(28, MOVE_BRINE),
+	LEVEL_UP_MOVE(32, MOVE_DEFOG), // STOCKPILE -> DEFOG. TM MOVE: DEFOG WORKS TO REMOVE HAZARDS, IS POWERED UP MIST, AND WOULD WORK ON THE HIGH SEAS. STOCK PILE MOVES TO LEVEL 1 OR EVLOUTION.
+	LEVEL_UP_MOVE(36, MOVE_AIR_SLASH), // NEW MOVE SLOT -> AIR SLASH. WINGULL MOVE: MORE FLYING TYPE FIRE POWER.
+    LEVEL_UP_MOVE(39, MOVE_U_TURN), // FLING -> U-TURN. TM MOVE: PIVOT ABILITY
+    LEVEL_UP_MOVE(43, MOVE_TAILWIND),
+	LEVEL_UP_MOVE(47, MOVE_WIDE_GUARD), // NEW MOVE SLOT -> WIDE GUARD. EGG MOVE: FITS FOR DOUBLES FUN AND IS USED ON VGC TEAMS. NONE OF THE WIDE GUARD USERS THAT CAN PASS IT TO PELIPPER ARE IN THE GAME
+    LEVEL_UP_MOVE(50, MOVE_HYDRO_PUMP),
     LEVEL_UP_MOVE(55, MOVE_HURRICANE),
-    LEVEL_UP_MOVE(62, MOVE_HYDRO_PUMP),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_WINGULL
@@ -7652,15 +7798,14 @@ static const struct LevelUpMove sKirliaLevelUpLearnset[] = {
 
 static const struct LevelUpMove sGardevoirLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_DAZZLING_GLEAM),
-    LEVEL_UP_MOVE( 1, MOVE_GROWL),
-    LEVEL_UP_MOVE( 1, MOVE_CONFUSION),
-    LEVEL_UP_MOVE( 1, MOVE_MYSTICAL_FIRE),
-    LEVEL_UP_MOVE( 1, MOVE_DOUBLE_TEAM),
+	LEVEL_UP_MOVE( 1, MOVE_DAZZLING_GLEAM),
     LEVEL_UP_MOVE( 1, MOVE_MISTY_TERRAIN),
+	LEVEL_UP_MOVE( 1, MOVE_HEALING_WISH),
+    LEVEL_UP_MOVE( 1, MOVE_HEAL_PULSE),
     LEVEL_UP_MOVE( 1, MOVE_CHARM),
     LEVEL_UP_MOVE( 1, MOVE_DISARMING_VOICE),
-    LEVEL_UP_MOVE( 1, MOVE_HEALING_WISH),
-    LEVEL_UP_MOVE( 1, MOVE_HEAL_PULSE),
+	LEVEL_UP_MOVE( 3, MOVE_DOUBLE_TEAM),
+    LEVEL_UP_MOVE( 6, MOVE_CONFUSION),	
     LEVEL_UP_MOVE( 9, MOVE_HYPNOSIS),
     LEVEL_UP_MOVE(12, MOVE_DRAINING_KISS),
     LEVEL_UP_MOVE(15, MOVE_TELEPORT),
@@ -7668,10 +7813,11 @@ static const struct LevelUpMove sGardevoirLevelUpLearnset[] = {
     LEVEL_UP_MOVE(23, MOVE_LIFE_DEW),
     LEVEL_UP_MOVE(28, MOVE_WISH),
     LEVEL_UP_MOVE(35, MOVE_CALM_MIND),
+	LEVEL_UP_MOVE(38, MOVE_MYSTICAL_FIRE), // NEW MOVE SLOT -> MYSTICAL FIRE.  MOVE DOWN FROM LEVEL 1
     LEVEL_UP_MOVE(42, MOVE_PSYCHIC),
-    LEVEL_UP_MOVE(49, MOVE_MOONBLAST),
-    LEVEL_UP_MOVE(56, MOVE_DREAM_EATER),
-    LEVEL_UP_MOVE(63, MOVE_FUTURE_SIGHT),
+    LEVEL_UP_MOVE(47, MOVE_MOONBLAST),
+    LEVEL_UP_MOVE(51, MOVE_DREAM_EATER),
+    LEVEL_UP_MOVE(56, MOVE_FUTURE_SIGHT),
     LEVEL_UP_END
 };
 
@@ -7679,37 +7825,25 @@ static const struct LevelUpMove sGardevoirLevelUpLearnset[] = {
 static const struct LevelUpMove sGalladeLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_SLASH),
     LEVEL_UP_MOVE( 1, MOVE_NIGHT_SLASH),
-    LEVEL_UP_MOVE( 1, MOVE_IMPRISON),
     LEVEL_UP_MOVE( 1, MOVE_LIFE_DEW),
-    LEVEL_UP_MOVE( 1, MOVE_FUTURE_SIGHT),
     LEVEL_UP_MOVE( 1, MOVE_FURY_CUTTER),
-    LEVEL_UP_MOVE( 1, MOVE_SACRED_SWORD),
     LEVEL_UP_MOVE( 1, MOVE_CHARM),
-    LEVEL_UP_MOVE( 1, MOVE_DISARMING_VOICE),
-    LEVEL_UP_MOVE( 1, MOVE_CALM_MIND),
-    LEVEL_UP_MOVE( 1, MOVE_LEAF_BLADE),
-    LEVEL_UP_MOVE( 1, MOVE_DOUBLE_TEAM),
-    LEVEL_UP_MOVE( 1, MOVE_DRAINING_KISS),
-    LEVEL_UP_MOVE( 1, MOVE_HYPNOSIS),
-    LEVEL_UP_MOVE( 1, MOVE_PSYCHIC),
-    LEVEL_UP_MOVE( 1, MOVE_CONFUSION),
-    LEVEL_UP_MOVE( 1, MOVE_PSYBEAM),
-    LEVEL_UP_MOVE( 1, MOVE_GROWL),
-    LEVEL_UP_MOVE( 1, MOVE_LEER),
-    LEVEL_UP_MOVE( 1, MOVE_DREAM_EATER),
-    LEVEL_UP_MOVE( 1, MOVE_AQUA_CUTTER),
+    LEVEL_UP_MOVE( 1, MOVE_ALLY_SWITCH), // LEER -> ALLY SWITCH: OLD MOVE. FITS KNIGHT PROTECTING ALLY VIBE.
+	LEVEL_UP_MOVE( 3, MOVE_DOUBLE_TEAM),
     LEVEL_UP_MOVE( 9, MOVE_HELPING_HAND),
     LEVEL_UP_MOVE(12, MOVE_FEINT),
     LEVEL_UP_MOVE(15, MOVE_TELEPORT),
-    LEVEL_UP_MOVE(18, MOVE_AERIAL_ACE),
+    LEVEL_UP_MOVE(18, MOVE_WIDE_GUARD), // AERIAL ACE -> WIDE GUARD: MOVE WIDE GUARD TO LEVEL 18. AERIAL ACE IS TM MOVE. 
     LEVEL_UP_MOVE(23, MOVE_FALSE_SWIPE),
-    LEVEL_UP_MOVE(28, MOVE_PROTECT),
+    LEVEL_UP_MOVE(28, MOVE_AQUA_CUTTER), // PROTECT -> AQUA CUTTER: MOVE FROM LEVEL 1 TO 28. PROTECT IS A TM. I SEE GALLADE MORE AS THE KNIGHT GOING TO RESCUE THE PRINCESS THAN GUARDING HER.
+	LEVEL_UP_MOVE(31, MOVE_PSYCHO_CUT), // NEW MOVE SLOT -> PSYCHO CUT: MOVED TO PRE-GEN VII SLOT. MAYBE MAKE EVOLUTION MOVE IF GOING WITH MALE AT 30 EVO.
     LEVEL_UP_MOVE(35, MOVE_SWORDS_DANCE),
-    LEVEL_UP_MOVE(42, MOVE_PSYCHO_CUT),
-    LEVEL_UP_MOVE(49, MOVE_HEAL_PULSE),
-    LEVEL_UP_MOVE(56, MOVE_WIDE_GUARD),
+	LEVEL_UP_MOVE(38, MOVE_LEAF_BLADE), // NEW MOVE SLOT -> LEAF BLADE: MOVE FROM LEVEL 1
+    LEVEL_UP_MOVE(42, MOVE_KINGS_SHIELD), // HEAL PULSE -> KING'S SHIELD. FITS THE VIBE.
+    LEVEL_UP_MOVE(47, MOVE_SACRED_SWORD), // HEAL PULSE -> SACRED SWORD: MOVE HEAL PULSE TO 42, MOVE 49 TO 47 AND PUT SACRED SWORD HERE.
+    LEVEL_UP_MOVE(51, MOVE_HEAL_PULSE), // WILL LIKELY MOVE HEAL PULSE.
     LEVEL_UP_MOVE(56, MOVE_QUICK_GUARD),
-    LEVEL_UP_MOVE(63, MOVE_CLOSE_COMBAT),
+    LEVEL_UP_MOVE(60, MOVE_CLOSE_COMBAT),
     LEVEL_UP_END
 };
 #endif //P_GEN_4_CROSS_EVOS
@@ -7717,34 +7851,35 @@ static const struct LevelUpMove sGalladeLevelUpLearnset[] = {
 
 #if P_FAMILY_SURSKIT
 static const struct LevelUpMove sSurskitLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),
+    LEVEL_UP_MOVE( 1, MOVE_BUBBLE),
     LEVEL_UP_MOVE( 6, MOVE_QUICK_ATTACK),
     LEVEL_UP_MOVE( 9, MOVE_SWEET_SCENT),
-    LEVEL_UP_MOVE(14, MOVE_SOAK),
+    LEVEL_UP_MOVE(14, MOVE_WATER_SPORT),
     LEVEL_UP_MOVE(17, MOVE_BUBBLE_BEAM),
     LEVEL_UP_MOVE(22, MOVE_AGILITY),
     LEVEL_UP_MOVE(25, MOVE_MIST),
     LEVEL_UP_MOVE(25, MOVE_HAZE),
+    LEVEL_UP_MOVE(30, MOVE_AQUA_JET),
     LEVEL_UP_MOVE(35, MOVE_BATON_PASS),
     LEVEL_UP_MOVE(38, MOVE_STICKY_WEB),
     LEVEL_UP_END
 };
 
 static const struct LevelUpMove sMasquerainLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_WHIRLWIND),
-    LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),
-    LEVEL_UP_MOVE( 1, MOVE_QUICK_ATTACK),
-    LEVEL_UP_MOVE( 1, MOVE_SWEET_SCENT),
-    LEVEL_UP_MOVE( 1, MOVE_SOAK),
+    LEVEL_UP_MOVE( 1, MOVE_OMINOUS_WIND),
+    LEVEL_UP_MOVE( 1, MOVE_BUBBLE),
+    LEVEL_UP_MOVE( 6, MOVE_QUICK_ATTACK),
+    LEVEL_UP_MOVE( 9, MOVE_SWEET_SCENT),
+    LEVEL_UP_MOVE(14, MOVE_WATER_SPORT),
     LEVEL_UP_MOVE(17, MOVE_GUST),
     LEVEL_UP_MOVE(22, MOVE_SCARY_FACE),
     LEVEL_UP_MOVE(22, MOVE_AIR_CUTTER),
     LEVEL_UP_MOVE(26, MOVE_STUN_SPORE),
-    LEVEL_UP_MOVE(32, MOVE_AIR_SLASH),
-    LEVEL_UP_MOVE(38, MOVE_GIGA_DRAIN),
-    LEVEL_UP_MOVE(44, MOVE_BUG_BUZZ),
+    LEVEL_UP_MOVE(32, MOVE_SILVER_WIND),
+    LEVEL_UP_MOVE(38, MOVE_AIR_SLASH),
+    LEVEL_UP_MOVE(42, MOVE_BUG_BUZZ),
+    LEVEL_UP_MOVE(48, MOVE_WHIRLWIND),
     LEVEL_UP_MOVE(52, MOVE_QUIVER_DANCE),
-    LEVEL_UP_END
 };
 #endif //P_FAMILY_SURSKIT
 
@@ -7779,11 +7914,11 @@ static const struct LevelUpMove sBreloomLevelUpLearnset[] = {
     LEVEL_UP_MOVE(19, MOVE_FEINT),
     LEVEL_UP_MOVE(22, MOVE_COUNTER),
     LEVEL_UP_MOVE(28, MOVE_FORCE_PALM),
-    LEVEL_UP_MOVE(33, MOVE_WORRY_SEED),
-    LEVEL_UP_MOVE(39, MOVE_BRICK_BREAK),
-    LEVEL_UP_MOVE(44, MOVE_SEED_BOMB),
-    LEVEL_UP_MOVE(50, MOVE_DYNAMIC_PUNCH),
-    LEVEL_UP_MOVE(55, MOVE_FOCUS_PUNCH),
+    LEVEL_UP_MOVE(33, MOVE_SEED_BOMB), // Worry Seed -> Seed Bomb
+    LEVEL_UP_MOVE(37, MOVE_SKY_UPPERCUT), // Brick Break -> Sky Uppercut
+    LEVEL_UP_MOVE(42, MOVE_SPORE), // Seed Bomb -> Spore
+    LEVEL_UP_MOVE(47, MOVE_DYNAMIC_PUNCH),
+    LEVEL_UP_MOVE(52, MOVE_FOCUS_PUNCH),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SHROOMISH
@@ -7904,60 +8039,63 @@ static const struct LevelUpMove sShedinjaLevelUpLearnset[] = {
 
 #if P_FAMILY_WHISMUR
 static const struct LevelUpMove sWhismurLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
     LEVEL_UP_MOVE( 1, MOVE_POUND),
-    LEVEL_UP_MOVE( 5, MOVE_ECHOED_VOICE),
-    LEVEL_UP_MOVE(10, MOVE_HOWL),
-    LEVEL_UP_MOVE(15, MOVE_REST),
-    LEVEL_UP_MOVE(15, MOVE_SLEEP_TALK),
-    LEVEL_UP_MOVE(21, MOVE_STOMP),
-    LEVEL_UP_MOVE(25, MOVE_ROAR),
-    LEVEL_UP_MOVE(30, MOVE_SUPERSONIC),
-    LEVEL_UP_MOVE(35, MOVE_UPROAR),
-    LEVEL_UP_MOVE(40, MOVE_SCREECH),
-    LEVEL_UP_MOVE(45, MOVE_HYPER_VOICE),
+    LEVEL_UP_MOVE( 4, MOVE_ECHOED_VOICE),
+    LEVEL_UP_MOVE( 8, MOVE_ASTONISH),
+    LEVEL_UP_MOVE(11, MOVE_HOWL),
+    LEVEL_UP_MOVE(15, MOVE_SCREECH),
+    LEVEL_UP_MOVE(18, MOVE_SUPERSONIC),
+    LEVEL_UP_MOVE(22, MOVE_STOMP),
+    LEVEL_UP_MOVE(25, MOVE_UPROAR),
+    LEVEL_UP_MOVE(29, MOVE_ROAR),
+    LEVEL_UP_MOVE(32, MOVE_REST),
+    LEVEL_UP_MOVE(36, MOVE_SLEEP_TALK),
+    LEVEL_UP_MOVE(39, MOVE_HYPER_VOICE),
+    LEVEL_UP_MOVE(43, MOVE_SYNCHRONOISE),
     LEVEL_UP_END
 };
 
 static const struct LevelUpMove sLoudredLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 0, MOVE_BITE),
-    LEVEL_UP_MOVE( 1, MOVE_BITE),
-    LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
     LEVEL_UP_MOVE( 1, MOVE_POUND),
-    LEVEL_UP_MOVE( 1, MOVE_ECHOED_VOICE),
-    LEVEL_UP_MOVE( 1, MOVE_HOWL),
-    LEVEL_UP_MOVE(15, MOVE_REST),
-    LEVEL_UP_MOVE(15, MOVE_SLEEP_TALK),
+    LEVEL_UP_MOVE( 4, MOVE_ECHOED_VOICE),
+    LEVEL_UP_MOVE( 9, MOVE_ASTONISH),
+    LEVEL_UP_MOVE(11, MOVE_HOWL),
+    LEVEL_UP_MOVE(15, MOVE_SCREECH),
+    LEVEL_UP_MOVE(18, MOVE_SUPERSONIC),
+    LEVEL_UP_MOVE(20, MOVE_BITE),
     LEVEL_UP_MOVE(23, MOVE_STOMP),
-    LEVEL_UP_MOVE(29, MOVE_ROAR),
-    LEVEL_UP_MOVE(36, MOVE_SUPERSONIC),
-    LEVEL_UP_MOVE(43, MOVE_UPROAR),
-    LEVEL_UP_MOVE(50, MOVE_SCREECH),
-    LEVEL_UP_MOVE(57, MOVE_HYPER_VOICE),
+    LEVEL_UP_MOVE(27, MOVE_UPROAR),
+    LEVEL_UP_MOVE(32, MOVE_ROAR),
+    LEVEL_UP_MOVE(36, MOVE_REST),
+	LEVEL_UP_MOVE(36, MOVE_SLEEP_TALK),
+    LEVEL_UP_MOVE(41, MOVE_NOBLE_ROAR), // SLEEP TALK -> NOBLE ROAR: NEW MOVE. MOVE SLEEP TALK WITH REST. NOBLE ROAR TO FILL OLD SLEEP TALK SPOT.
+    LEVEL_UP_MOVE(45, MOVE_HYPER_VOICE),
+    LEVEL_UP_MOVE(50, MOVE_SYNCHRONOISE),
     LEVEL_UP_END
 };
 
 static const struct LevelUpMove sExploudLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 0, MOVE_CRUNCH),
-    LEVEL_UP_MOVE( 1, MOVE_CRUNCH),
-    LEVEL_UP_MOVE( 1, MOVE_BITE),
     LEVEL_UP_MOVE( 1, MOVE_ICE_FANG),
     LEVEL_UP_MOVE( 1, MOVE_FIRE_FANG),
     LEVEL_UP_MOVE( 1, MOVE_THUNDER_FANG),
-    LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
     LEVEL_UP_MOVE( 1, MOVE_POUND),
-    LEVEL_UP_MOVE( 1, MOVE_ECHOED_VOICE),
-    LEVEL_UP_MOVE( 1, MOVE_HOWL),
-    LEVEL_UP_MOVE(15, MOVE_REST),
-    LEVEL_UP_MOVE(15, MOVE_SLEEP_TALK),
+    LEVEL_UP_MOVE( 4, MOVE_ECHOED_VOICE),
+    LEVEL_UP_MOVE( 9, MOVE_ASTONISH),
+    LEVEL_UP_MOVE(11, MOVE_HOWL),
+    LEVEL_UP_MOVE(15, MOVE_SCREECH),
+    LEVEL_UP_MOVE(18, MOVE_SUPERSONIC),
+    LEVEL_UP_MOVE(20, MOVE_BITE),
     LEVEL_UP_MOVE(23, MOVE_STOMP),
-    LEVEL_UP_MOVE(29, MOVE_ROAR),
-    LEVEL_UP_MOVE(36, MOVE_SUPERSONIC),
-    LEVEL_UP_MOVE(45, MOVE_UPROAR),
-    LEVEL_UP_MOVE(54, MOVE_SCREECH),
-    LEVEL_UP_MOVE(63, MOVE_HYPER_VOICE),
-    LEVEL_UP_MOVE(72, MOVE_BOOMBURST),
-    LEVEL_UP_MOVE(81, MOVE_HYPER_BEAM),
+    LEVEL_UP_MOVE(27, MOVE_UPROAR),
+    LEVEL_UP_MOVE(32, MOVE_ROAR),
+    LEVEL_UP_MOVE(36, MOVE_REST),
+	LEVEL_UP_MOVE(36, MOVE_SLEEP_TALK),
+    LEVEL_UP_MOVE(40, MOVE_CRUNCH),
+    LEVEL_UP_MOVE(42, MOVE_NOBLE_ROAR), // SLEEP TALK -> NOBLE ROAR: NEW MOVE. MOVE SLEEP TALK WITH REST. NOBLE ROAR TO FILL OLD SLEEP TALK SPOT.
+    LEVEL_UP_MOVE(47, MOVE_HYPER_VOICE),
+    LEVEL_UP_MOVE(51, MOVE_SYNCHRONOISE),
+    LEVEL_UP_MOVE(55, MOVE_BOOMBURST),
+    LEVEL_UP_MOVE(60, MOVE_HYPER_BEAM),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_WHISMUR
@@ -8074,8 +8212,9 @@ static const struct LevelUpMove sSkittyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(13, MOVE_DISARMING_VOICE),
     LEVEL_UP_MOVE(16, MOVE_FURY_SWIPES),
     LEVEL_UP_MOVE(19, MOVE_COPYCAT),
-    LEVEL_UP_MOVE(22, MOVE_PAYBACK),
+    LEVEL_UP_MOVE(22, MOVE_ASSIST), // Payback -> Assist
     LEVEL_UP_MOVE(25, MOVE_CHARM),
+	LEVEL_UP_MOVE(28, MOVE_ENCORE),
     LEVEL_UP_MOVE(31, MOVE_FACADE),
     LEVEL_UP_MOVE(34, MOVE_COVET),
     LEVEL_UP_MOVE(37, MOVE_HEAL_BELL),
@@ -8095,7 +8234,7 @@ static const struct LevelUpMove sDelcattyLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_DISARMING_VOICE),
     LEVEL_UP_MOVE( 1, MOVE_FURY_SWIPES),
     LEVEL_UP_MOVE( 1, MOVE_COPYCAT),
-    LEVEL_UP_MOVE( 1, MOVE_PAYBACK),
+    LEVEL_UP_MOVE( 1, MOVE_ASSIST), // Payback -> Assist
     LEVEL_UP_MOVE( 1, MOVE_CHARM),
     LEVEL_UP_MOVE( 1, MOVE_FACADE),
     LEVEL_UP_MOVE( 1, MOVE_COVET),
@@ -8132,18 +8271,19 @@ static const struct LevelUpMove sSableyeLevelUpLearnset[] = {
 
 #if P_FAMILY_MAWILE
 static const struct LevelUpMove sMawileLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
+    LEVEL_UP_MOVE( 1, MOVE_STOCKPILE), // MOVE THIS TO LEVEL 1.  IT'S SOMETHING MAWILE GETS, BUT I DON'T LOVE IT SO DON'T WANT TO REMOVE IT.  
+    LEVEL_UP_MOVE( 1, MOVE_SWALLOW),
+    LEVEL_UP_MOVE( 1, MOVE_SPIT_UP),
+	LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 4, MOVE_FAIRY_WIND),
     LEVEL_UP_MOVE( 8, MOVE_BATON_PASS),
     LEVEL_UP_MOVE(12, MOVE_BITE),
-    LEVEL_UP_MOVE(16, MOVE_STOCKPILE),
-    LEVEL_UP_MOVE(16, MOVE_SWALLOW),
-    LEVEL_UP_MOVE(16, MOVE_SPIT_UP),
+	LEVEL_UP_MOVE(16, MOVE_VISE_GRIP), // STOCKPILE -> VISE GRIP: GEN 6 MOVE.
     LEVEL_UP_MOVE(20, MOVE_SUCKER_PUNCH),
     LEVEL_UP_MOVE(24, MOVE_IRON_DEFENSE),
     LEVEL_UP_MOVE(28, MOVE_CRUNCH),
-    LEVEL_UP_MOVE(32, MOVE_SWEET_SCENT),
+    LEVEL_UP_MOVE(32, MOVE_SPIRIT_BREAK), // SWEET SCENT -> SPIRIT BREAK: NEW MOVE. NOT SURE WHAT SWEET SCENT EVEN DOES HERE.  NEEDS A PHYSICAL FAIRY MOVE BEFORE END GAME STAGE.
     LEVEL_UP_MOVE(36, MOVE_IRON_HEAD),
     LEVEL_UP_MOVE(40, MOVE_TAUNT),
     LEVEL_UP_MOVE(44, MOVE_FAKE_TEARS),
@@ -8267,38 +8407,39 @@ static const struct LevelUpMove sElectrikeLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_THUNDER_WAVE),
     LEVEL_UP_MOVE( 4, MOVE_LEER),
-    LEVEL_UP_MOVE( 8, MOVE_HOWL),
-    LEVEL_UP_MOVE(12, MOVE_QUICK_ATTACK),
-    LEVEL_UP_MOVE(16, MOVE_SHOCK_WAVE),
-    LEVEL_UP_MOVE(20, MOVE_BITE),
-    LEVEL_UP_MOVE(24, MOVE_THUNDER_FANG),
-    LEVEL_UP_MOVE(28, MOVE_ROAR),
-    LEVEL_UP_MOVE(32, MOVE_DISCHARGE),
-    LEVEL_UP_MOVE(36, MOVE_CHARGE),
-    LEVEL_UP_MOVE(40, MOVE_WILD_CHARGE),
-    LEVEL_UP_MOVE(44, MOVE_THUNDER),
+    LEVEL_UP_MOVE( 7, MOVE_HOWL),
+    LEVEL_UP_MOVE(10, MOVE_QUICK_ATTACK),
+    LEVEL_UP_MOVE(13, MOVE_SPARK),
+    LEVEL_UP_MOVE(16, MOVE_ODOR_SLEUTH),
+    LEVEL_UP_MOVE(19, MOVE_THUNDER_FANG),
+    LEVEL_UP_MOVE(24, MOVE_BITE),
+    LEVEL_UP_MOVE(29, MOVE_DISCHARGE),
+    LEVEL_UP_MOVE(34, MOVE_ROAR),
+    LEVEL_UP_MOVE(39, MOVE_WILD_CHARGE),
+    LEVEL_UP_MOVE(44, MOVE_CHARGE),
+    LEVEL_UP_MOVE(49, MOVE_THUNDER),
     LEVEL_UP_END
 };
 
 static const struct LevelUpMove sManectricLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_ELECTRIC_TERRAIN),
     LEVEL_UP_MOVE( 1, MOVE_FIRE_FANG),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_THUNDER_WAVE),
-    LEVEL_UP_MOVE( 1, MOVE_LEER),
-    LEVEL_UP_MOVE( 1, MOVE_HOWL),
-    LEVEL_UP_MOVE(12, MOVE_QUICK_ATTACK),
-    LEVEL_UP_MOVE(16, MOVE_SHOCK_WAVE),
-    LEVEL_UP_MOVE(20, MOVE_BITE),
-    LEVEL_UP_MOVE(24, MOVE_THUNDER_FANG),
-    LEVEL_UP_MOVE(30, MOVE_ROAR),
-    LEVEL_UP_MOVE(36, MOVE_DISCHARGE),
-    LEVEL_UP_MOVE(42, MOVE_CHARGE),
-    LEVEL_UP_MOVE(48, MOVE_WILD_CHARGE),
+    LEVEL_UP_MOVE( 4, MOVE_LEER),
+    LEVEL_UP_MOVE( 7, MOVE_HOWL),
+    LEVEL_UP_MOVE(10, MOVE_QUICK_ATTACK),
+    LEVEL_UP_MOVE(13, MOVE_SPARK),
+    LEVEL_UP_MOVE(16, MOVE_ODOR_SLEUTH),
+    LEVEL_UP_MOVE(19, MOVE_THUNDER_FANG),
+    LEVEL_UP_MOVE(24, MOVE_BITE),
+    LEVEL_UP_MOVE(30, MOVE_DISCHARGE),
+    LEVEL_UP_MOVE(36, MOVE_ROAR),
+    LEVEL_UP_MOVE(42, MOVE_WILD_CHARGE),
+    LEVEL_UP_MOVE(48, MOVE_CHARGE),
     LEVEL_UP_MOVE(54, MOVE_THUNDER),
     LEVEL_UP_MOVE(60, MOVE_ELECTRIC_TERRAIN),
     LEVEL_UP_END
-};
-#endif //P_FAMILY_ELECTRIKE
 
 #if P_FAMILY_PLUSLE
 static const struct LevelUpMove sPlusleLevelUpLearnset[] = {
@@ -8408,48 +8549,47 @@ static const struct LevelUpMove sBudewLevelUpLearnset[] = {
 #endif //P_GEN_4_CROSS_EVOS
 
 static const struct LevelUpMove sRoseliaLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 0, MOVE_POISON_STING),
-    LEVEL_UP_MOVE( 1, MOVE_POISON_STING),
     LEVEL_UP_MOVE( 1, MOVE_ABSORB),
-    LEVEL_UP_MOVE( 1, MOVE_GROWTH),
-    LEVEL_UP_MOVE( 1, MOVE_STUN_SPORE),
-    LEVEL_UP_MOVE( 1, MOVE_WORRY_SEED),
-    LEVEL_UP_MOVE( 5, MOVE_MEGA_DRAIN),
-    LEVEL_UP_MOVE(10, MOVE_LEECH_SEED),
-    LEVEL_UP_MOVE(15, MOVE_MAGICAL_LEAF),
-    LEVEL_UP_MOVE(20, MOVE_TOXIC_SPIKES),
-    LEVEL_UP_MOVE(25, MOVE_SWEET_SCENT),
-    LEVEL_UP_MOVE(30, MOVE_GIGA_DRAIN),
-    LEVEL_UP_MOVE(35, MOVE_SYNTHESIS),
+    LEVEL_UP_MOVE( 4, MOVE_GROWTH),
+    LEVEL_UP_MOVE( 7, MOVE_POISON_STING),
+    LEVEL_UP_MOVE(10, MOVE_STUN_SPORE),
+    LEVEL_UP_MOVE(13, MOVE_MEGA_DRAIN),
+    LEVEL_UP_MOVE(16, MOVE_LEECH_SEED),
+    LEVEL_UP_MOVE(19, MOVE_MAGICAL_LEAF),
+    LEVEL_UP_MOVE(22, MOVE_GRASS_WHISTLE),
+    LEVEL_UP_MOVE(25, MOVE_GIGA_DRAIN),
+    LEVEL_UP_MOVE(28, MOVE_TOXIC_SPIKES),
+    LEVEL_UP_MOVE(31, MOVE_SWEET_SCENT),
+    LEVEL_UP_MOVE(34, MOVE_VENOSHOCK), // INGRAIN -> VENOSHOCK: TM MOVE. DOESN'T GET ANY LEVEL UP DAMAGING POISON MOVES.
+    LEVEL_UP_MOVE(37, MOVE_PETAL_BLIZZARD),
     LEVEL_UP_MOVE(40, MOVE_TOXIC),
-    LEVEL_UP_MOVE(45, MOVE_PETAL_BLIZZARD),
-    LEVEL_UP_MOVE(50, MOVE_AROMATHERAPY),
-    LEVEL_UP_MOVE(55, MOVE_INGRAIN),
-    LEVEL_UP_MOVE(60, MOVE_PETAL_DANCE),
+    LEVEL_UP_MOVE(43, MOVE_AROMATHERAPY),
+    LEVEL_UP_MOVE(46, MOVE_SYNTHESIS),
+    LEVEL_UP_MOVE(50, MOVE_PETAL_DANCE),
     LEVEL_UP_END
-};
 
 #if P_GEN_4_CROSS_EVOS
 static const struct LevelUpMove sRoseradeLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_GRASSY_TERRAIN),
-    LEVEL_UP_MOVE( 1, MOVE_POISON_STING),
-    LEVEL_UP_MOVE( 1, MOVE_VENOM_DRENCH),
-    LEVEL_UP_MOVE( 1, MOVE_MEGA_DRAIN),
-    LEVEL_UP_MOVE( 1, MOVE_LEECH_SEED),
-    LEVEL_UP_MOVE( 1, MOVE_MAGICAL_LEAF),
-    LEVEL_UP_MOVE( 1, MOVE_TOXIC_SPIKES),
-    LEVEL_UP_MOVE( 1, MOVE_SWEET_SCENT),
-    LEVEL_UP_MOVE( 1, MOVE_GIGA_DRAIN),
-    LEVEL_UP_MOVE( 1, MOVE_SYNTHESIS),
-    LEVEL_UP_MOVE( 1, MOVE_TOXIC),
-    LEVEL_UP_MOVE( 1, MOVE_PETAL_BLIZZARD),
-    LEVEL_UP_MOVE( 1, MOVE_AROMATHERAPY),
-    LEVEL_UP_MOVE( 1, MOVE_INGRAIN),
-    LEVEL_UP_MOVE( 1, MOVE_PETAL_DANCE),
+    LEVEL_UP_MOVE( 0, MOVE_FLOWER_TRICK), // NEW MOVE -> FLOWER TRICK: NEW MOVE. WORKS SO WELL FOR ROSERADE. PLUS, EVEN IF IT ALWAYS CRITS ITS A PHYSICAL ATTACK SO YOU HAVE TO USE THE LOWER STAT.
+	LEVEL_UP_MOVE( 1, MOVE_FLOWER_TRICK), // NEW MOVE -> FLOWER TRICK: NEW MOVE. WORKS SO WELL FOR ROSERADE. PLUS, EVEN IF IT ALWAYS CRITS ITS A PHYSICAL ATTACK SO YOU HAVE TO USE THE LOWER STAT.
+	LEVEL_UP_MOVE( 1, MOVE_GRASSY_TERRAIN),
     LEVEL_UP_MOVE( 1, MOVE_ABSORB),
-    LEVEL_UP_MOVE( 1, MOVE_GROWTH),
-    LEVEL_UP_MOVE( 1, MOVE_STUN_SPORE),
-    LEVEL_UP_MOVE( 1, MOVE_WORRY_SEED),
+    LEVEL_UP_MOVE( 4, MOVE_GROWTH),
+    LEVEL_UP_MOVE( 7, MOVE_POISON_STING),
+    LEVEL_UP_MOVE(10, MOVE_STUN_SPORE),
+    LEVEL_UP_MOVE(13, MOVE_MEGA_DRAIN),
+    LEVEL_UP_MOVE(16, MOVE_LEECH_SEED),
+    LEVEL_UP_MOVE(19, MOVE_MAGICAL_LEAF),
+    LEVEL_UP_MOVE(22, MOVE_GRASS_WHISTLE),
+    LEVEL_UP_MOVE(25, MOVE_GIGA_DRAIN),
+    LEVEL_UP_MOVE(28, MOVE_TOXIC_SPIKES),
+    LEVEL_UP_MOVE(31, MOVE_SWEET_SCENT),
+    LEVEL_UP_MOVE(34, MOVE_VENOSHOCK), // INGRAIN -> VENOSHOCK: TM MOVE. DOESN'T GET ANY LEVEL UP DAMAGING POISON MOVES.
+    LEVEL_UP_MOVE(37, MOVE_PETAL_BLIZZARD),
+    LEVEL_UP_MOVE(40, MOVE_TOXIC),
+    LEVEL_UP_MOVE(43, MOVE_AROMATHERAPY),
+    LEVEL_UP_MOVE(46, MOVE_SYNTHESIS),
+    LEVEL_UP_MOVE(50, MOVE_PETAL_DANCE),
     LEVEL_UP_END
 };
 #endif //P_GEN_4_CROSS_EVOS
@@ -8499,39 +8639,45 @@ static const struct LevelUpMove sSwalotLevelUpLearnset[] = {
 
 #if P_FAMILY_CARVANHA
 static const struct LevelUpMove sCarvanhaLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_AQUA_JET),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
-    LEVEL_UP_MOVE( 4, MOVE_POISON_FANG),
+    LEVEL_UP_MOVE( 1, MOVE_BITE),
+    LEVEL_UP_MOVE( 4, MOVE_RAGE),
     LEVEL_UP_MOVE( 8, MOVE_FOCUS_ENERGY),
-    LEVEL_UP_MOVE(12, MOVE_SCARY_FACE),
-    LEVEL_UP_MOVE(16, MOVE_BITE),
-    LEVEL_UP_MOVE(20, MOVE_ICE_FANG),
-    LEVEL_UP_MOVE(24, MOVE_SCREECH),
-    LEVEL_UP_MOVE(28, MOVE_SWAGGER),
-    LEVEL_UP_MOVE(32, MOVE_CRUNCH),
-    LEVEL_UP_MOVE(36, MOVE_AGILITY),
-    LEVEL_UP_MOVE(40, MOVE_LIQUIDATION),
-    LEVEL_UP_MOVE(44, MOVE_TAKE_DOWN),
+    LEVEL_UP_MOVE(11, MOVE_AQUA_JET),
+    LEVEL_UP_MOVE(15, MOVE_ASSURANCE),
+    LEVEL_UP_MOVE(18, MOVE_SCREECH),
+    LEVEL_UP_MOVE(22, MOVE_SWAGGER),
+    LEVEL_UP_MOVE(25, MOVE_ICE_FANG),
+    LEVEL_UP_MOVE(29, MOVE_SCARY_FACE),
+    LEVEL_UP_MOVE(32, MOVE_POISON_FANG),
+	LEVEL_UP_MOVE(34, MOVE_LIQUIDATION), // NEW MOVE SLOT -> LIQUIDATION: GEN 9 MOVE.
+    LEVEL_UP_MOVE(36, MOVE_CRUNCH),
+    LEVEL_UP_MOVE(39, MOVE_AGILITY),
+    LEVEL_UP_MOVE(43, MOVE_TAKE_DOWN),
     LEVEL_UP_END
 };
 
 static const struct LevelUpMove sSharpedoLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 0, MOVE_SLASH),
-    LEVEL_UP_MOVE( 1, MOVE_SLASH),
     LEVEL_UP_MOVE( 1, MOVE_NIGHT_SLASH),
-    LEVEL_UP_MOVE( 1, MOVE_AQUA_JET),
+    LEVEL_UP_MOVE( 1, MOVE_FEINT),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
-    LEVEL_UP_MOVE( 1, MOVE_POISON_FANG),
-    LEVEL_UP_MOVE( 1, MOVE_FOCUS_ENERGY),
-    LEVEL_UP_MOVE(12, MOVE_SCARY_FACE),
-    LEVEL_UP_MOVE(16, MOVE_BITE),
-    LEVEL_UP_MOVE(20, MOVE_ICE_FANG),
-    LEVEL_UP_MOVE(24, MOVE_SCREECH),
-    LEVEL_UP_MOVE(28, MOVE_SWAGGER),
-    LEVEL_UP_MOVE(34, MOVE_CRUNCH),
-    LEVEL_UP_MOVE(40, MOVE_AGILITY),
-    LEVEL_UP_MOVE(46, MOVE_LIQUIDATION),
-    LEVEL_UP_MOVE(52, MOVE_TAKE_DOWN),
+    LEVEL_UP_MOVE( 1, MOVE_BITE),
+    LEVEL_UP_MOVE( 4, MOVE_RAGE),
+    LEVEL_UP_MOVE( 8, MOVE_FOCUS_ENERGY),
+    LEVEL_UP_MOVE(11, MOVE_AQUA_JET),
+    LEVEL_UP_MOVE(15, MOVE_ASSURANCE),
+    LEVEL_UP_MOVE(18, MOVE_SCREECH),
+    LEVEL_UP_MOVE(22, MOVE_SWAGGER),
+    LEVEL_UP_MOVE(25, MOVE_ICE_FANG),
+    LEVEL_UP_MOVE(29, MOVE_SCARY_FACE),
+    LEVEL_UP_MOVE(30, MOVE_SLASH),
+    LEVEL_UP_MOVE(34, MOVE_POISON_FANG),
+	LEVEL_UP_MOVE(37, MOVE_LIQUIDATION), // NEW MOVE SLOT -> LIQUIDATION: GEN 9 MOVE.
+    LEVEL_UP_MOVE(41, MOVE_CRUNCH),
+    LEVEL_UP_MOVE(45, MOVE_AGILITY),
+    LEVEL_UP_MOVE(51, MOVE_NIGHT_SLASH), // SKULL BASH -> NIGHT SLASH: MOVE NIGHT SLASH UP
+    LEVEL_UP_MOVE(56, MOVE_TAUNT),
+    LEVEL_UP_MOVE(60, MOVE_WAVE_CRASH),// NIGHT SLASH -> WAVE CRASH: NEW MOVE. HIGH POWERED PHYSICAL WATER MOVE. 
     LEVEL_UP_END
 };
 #endif //P_FAMILY_CARVANHA
@@ -8623,23 +8769,23 @@ static const struct LevelUpMove sCameruptLevelUpLearnset[] = {
 #if P_FAMILY_TORKOAL
 static const struct LevelUpMove sTorkoalLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_EMBER),
-    LEVEL_UP_MOVE( 1, MOVE_SMOG),
-    LEVEL_UP_MOVE( 4, MOVE_WITHDRAW),
-    LEVEL_UP_MOVE( 8, MOVE_RAPID_SPIN),
-    LEVEL_UP_MOVE(12, MOVE_SMOKESCREEN),
-    LEVEL_UP_MOVE(16, MOVE_CLEAR_SMOG),
-    LEVEL_UP_MOVE(20, MOVE_FLAME_WHEEL),
-    LEVEL_UP_MOVE(24, MOVE_PROTECT),
-    LEVEL_UP_MOVE(28, MOVE_LAVA_PLUME),
-    LEVEL_UP_MOVE(32, MOVE_BODY_SLAM),
-    LEVEL_UP_MOVE(36, MOVE_IRON_DEFENSE),
-    LEVEL_UP_MOVE(40, MOVE_FLAMETHROWER),
-    LEVEL_UP_MOVE(44, MOVE_CURSE),
-    LEVEL_UP_MOVE(48, MOVE_HEAT_WAVE),
-    LEVEL_UP_MOVE(52, MOVE_AMNESIA),
-    LEVEL_UP_MOVE(56, MOVE_INFERNO),
-    LEVEL_UP_MOVE(60, MOVE_SHELL_SMASH),
-    LEVEL_UP_MOVE(64, MOVE_ERUPTION),
+    LEVEL_UP_MOVE( 4, MOVE_SMOG),
+    LEVEL_UP_MOVE( 7, MOVE_WITHDRAW),
+    LEVEL_UP_MOVE(10, MOVE_RAPID_SPIN),
+    LEVEL_UP_MOVE(13, MOVE_FIRE_SPIN),
+    LEVEL_UP_MOVE(15, MOVE_SMOKESCREEN),
+    LEVEL_UP_MOVE(18, MOVE_FLAME_WHEEL),
+    LEVEL_UP_MOVE(22, MOVE_CURSE),
+    LEVEL_UP_MOVE(25, MOVE_LAVA_PLUME),
+    LEVEL_UP_MOVE(27, MOVE_BODY_SLAM),
+    LEVEL_UP_MOVE(30, MOVE_PROTECT),
+    LEVEL_UP_MOVE(34, MOVE_FLAMETHROWER),
+    LEVEL_UP_MOVE(38, MOVE_IRON_DEFENSE),
+    LEVEL_UP_MOVE(40, MOVE_AMNESIA),
+    LEVEL_UP_MOVE(42, MOVE_FLAIL),
+    LEVEL_UP_MOVE(45, MOVE_HEAT_WAVE),
+    LEVEL_UP_MOVE(47, MOVE_SHELL_SMASH),
+    LEVEL_UP_MOVE(50, MOVE_INFERNO),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_TORKOAL
@@ -8649,35 +8795,39 @@ static const struct LevelUpMove sSpoinkLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
     LEVEL_UP_MOVE( 7, MOVE_CONFUSION),
     LEVEL_UP_MOVE(10, MOVE_GROWL),
-    LEVEL_UP_MOVE(14, MOVE_PSYBEAM),
-    LEVEL_UP_MOVE(18, MOVE_PSYCH_UP),
+    LEVEL_UP_MOVE(13, MOVE_PSYBEAM),
+    LEVEL_UP_MOVE(16, MOVE_PSYCH_UP),
+	LEVEL_UP_MOVE(19, MOVE_STORED_POWER), // NEW MOVE SLOT -> STORED POWER IS FILLER TO EXPAND THE MOVESET
     LEVEL_UP_MOVE(22, MOVE_CONFUSE_RAY),
-    LEVEL_UP_MOVE(29, MOVE_REST),
+	LEVEL_UP_MOVE(26, MOVE_SIMPLE_BEAM), // ZEN HEADBUTT -> SIMPLE BEAM: EGG MOVE. NOT A LOT OF POKEMON GET THIS AND IT SEEMS LIKE A FUN THING TO PLAY WITH
     LEVEL_UP_MOVE(29, MOVE_POWER_GEM),
-    LEVEL_UP_MOVE(33, MOVE_SNORE),
-    LEVEL_UP_MOVE(38, MOVE_PSYSHOCK),
-    LEVEL_UP_MOVE(40, MOVE_PAYBACK),
-    LEVEL_UP_MOVE(44, MOVE_PSYCHIC),
-    LEVEL_UP_MOVE(50, MOVE_BOUNCE),
+    LEVEL_UP_MOVE(33, MOVE_SLACK_OFF),
+    LEVEL_UP_MOVE(36, MOVE_PSYSHOCK),
+    LEVEL_UP_MOVE(39, MOVE_FOUL_PLAY), // PAYBACK -> FOUL PLAY: TM MOVE. MAKES MORE SENSE FOR GRUMPIG.
+    LEVEL_UP_MOVE(43, MOVE_PSYCHIC),
+    LEVEL_UP_MOVE(47, MOVE_BOUNCE),
+	LEVEL_UP_MOVE(50, MOVE_SLACK_OFF),
     LEVEL_UP_END
 };
 
 static const struct LevelUpMove sGrumpigLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_TEETER_DANCE),
-    LEVEL_UP_MOVE( 1, MOVE_PSYBEAM),
-    LEVEL_UP_MOVE( 1, MOVE_CONFUSION),
-    LEVEL_UP_MOVE( 1, MOVE_SPLASH),
+	LEVEL_UP_MOVE( 1, MOVE_SPLASH),
     LEVEL_UP_MOVE( 1, MOVE_BELCH),
-    LEVEL_UP_MOVE(18, MOVE_PSYCH_UP),
+    LEVEL_UP_MOVE( 7, MOVE_CONFUSION),
+	LEVEL_UP_MOVE(10, MOVE_GROWL),
+	LEVEL_UP_MOVE(13, MOVE_PSYBEAM),
+    LEVEL_UP_MOVE(16, MOVE_PSYCH_UP),
+	LEVEL_UP_MOVE(19, MOVE_STORED_POWER), // NEW MOVE SLOT -> STORED POWER IS FILLER TO EXPAND THE MOVESET
     LEVEL_UP_MOVE(22, MOVE_CONFUSE_RAY),
-    LEVEL_UP_MOVE(26, MOVE_ZEN_HEADBUTT),
+    LEVEL_UP_MOVE(26, MOVE_SIMPLE_BEAM), // ZEN HEADBUTT -> SIMPLE BEAM: EGG MOVE. NOT A LOT OF POKEMON GET THIS AND IT SEEMS LIKE A FUN THING TO PLAY WITH
     LEVEL_UP_MOVE(29, MOVE_POWER_GEM),
-    LEVEL_UP_MOVE(35, MOVE_REST),
-    LEVEL_UP_MOVE(35, MOVE_SNORE),
-    LEVEL_UP_MOVE(42, MOVE_PSYSHOCK),
-    LEVEL_UP_MOVE(46, MOVE_PAYBACK),
-    LEVEL_UP_MOVE(52, MOVE_PSYCHIC),
-    LEVEL_UP_MOVE(60, MOVE_BOUNCE),
+    LEVEL_UP_MOVE(33, MOVE_PSYSHOCK),
+    LEVEL_UP_MOVE(37, MOVE_SLACK_OFF), // REST/SNORE -> SLACK OFF: NEW MOVE. IS MORE RELIABLE THAN REST/SNORE.
+    LEVEL_UP_MOVE(41, MOVE_FOUL_PLAY), // PAYBACK -> FOUL PLAY: TM MOVE. MAKES MORE SENSE FOR GRUMPIG.
+    LEVEL_UP_MOVE(46, MOVE_EXPANDING_FORCE), // PSYCHIC -> EXPANDING FORCE: TUTOR MOVE. THIS WOULD BE COOL WITH PSYCHIC TERRAIN. NOT SURE IF I'M GIVING IT THE ABILITY OR NOT.
+    LEVEL_UP_MOVE(50, MOVE_BOUNCE),
+	LEVEL_UP_MOVE(54, MOVE_QUIVER_DANCE), // NEW MOVE SLOT -> QUIVER DANCE: NEW MOVE. NEW BIG BUFF MOVE. MIGHT MOVE UP IN LEARNSET TO HAVE FOR THE E4.
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SPOINK
@@ -8786,7 +8936,7 @@ static const struct LevelUpMove sCacneaLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 7, MOVE_GROWTH),
     LEVEL_UP_MOVE(10, MOVE_LEECH_SEED),
     LEVEL_UP_MOVE(13, MOVE_SAND_ATTACK),
-    LEVEL_UP_MOVE(16, MOVE_BULLET_SEED),
+    LEVEL_UP_MOVE(16, MOVE_NEEDLE_ARM),
     LEVEL_UP_MOVE(19, MOVE_POWER_TRIP),
     LEVEL_UP_MOVE(22, MOVE_INGRAIN),
     LEVEL_UP_MOVE(26, MOVE_PAYBACK),
@@ -8801,63 +8951,79 @@ static const struct LevelUpMove sCacneaLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sCacturneLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 0, MOVE_SPIKY_SHIELD),
+    LEVEL_UP_MOVE( 1, MOVE_DESTINY_BOND),
+    LEVEL_UP_MOVE( 1, MOVE_REVENGE),
     LEVEL_UP_MOVE( 1, MOVE_POISON_STING),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 1, MOVE_ABSORB),
     LEVEL_UP_MOVE( 1, MOVE_GROWTH),
-    LEVEL_UP_MOVE( 1, MOVE_DESTINY_BOND),
+    LEVEL_UP_MOVE( 4, MOVE_ABSORB),
+    LEVEL_UP_MOVE( 7, MOVE_GROWTH),
     LEVEL_UP_MOVE(10, MOVE_LEECH_SEED),
     LEVEL_UP_MOVE(13, MOVE_SAND_ATTACK),
-    LEVEL_UP_MOVE(16, MOVE_BULLET_SEED),
+    LEVEL_UP_MOVE(16, MOVE_NEEDLE_ARM),
     LEVEL_UP_MOVE(19, MOVE_POWER_TRIP),
     LEVEL_UP_MOVE(22, MOVE_INGRAIN),
     LEVEL_UP_MOVE(26, MOVE_PAYBACK),
     LEVEL_UP_MOVE(30, MOVE_SPIKES),
+    LEVEL_UP_MOVE(32, MOVE_SPIKY_SHIELD),
     LEVEL_UP_MOVE(35, MOVE_SUCKER_PUNCH),
     LEVEL_UP_MOVE(38, MOVE_PIN_MISSILE),
     LEVEL_UP_MOVE(44, MOVE_ENERGY_BALL),
     LEVEL_UP_MOVE(49, MOVE_COTTON_SPORE),
     LEVEL_UP_MOVE(54, MOVE_SANDSTORM),
+    LEVEL_UP_MOVE(59, MOVE_DESTINY_BOND),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_CACNEA
 
+
 #if P_FAMILY_SWABLU
 static const struct LevelUpMove sSwabluLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 1, MOVE_PECK),
-    LEVEL_UP_MOVE( 4, MOVE_DISARMING_VOICE),
-    LEVEL_UP_MOVE( 8, MOVE_MIST),
-    LEVEL_UP_MOVE(12, MOVE_FURY_ATTACK),
-    LEVEL_UP_MOVE(16, MOVE_ROUND),
-    LEVEL_UP_MOVE(20, MOVE_DRAGON_BREATH),
-    LEVEL_UP_MOVE(24, MOVE_SAFEGUARD),
-    LEVEL_UP_MOVE(28, MOVE_SING),
-    LEVEL_UP_MOVE(32, MOVE_COTTON_GUARD),
-    LEVEL_UP_MOVE(36, MOVE_TAKE_DOWN),
-    LEVEL_UP_MOVE(40, MOVE_MOONBLAST),
-    LEVEL_UP_MOVE(44, MOVE_PERISH_SONG),
+    LEVEL_UP_MOVE( 1, MOVE_GROWL),
+    LEVEL_UP_MOVE( 3, MOVE_ASTONISH),
+    LEVEL_UP_MOVE( 5, MOVE_SING),
+    LEVEL_UP_MOVE( 7, MOVE_FURY_ATTACK),
+    LEVEL_UP_MOVE( 9, MOVE_SAFEGUARD),
+    LEVEL_UP_MOVE(11, MOVE_DISARMING_VOICE),
+    LEVEL_UP_MOVE(14, MOVE_MIST),
+    LEVEL_UP_MOVE(17, MOVE_ROUND),
+    LEVEL_UP_MOVE(20, MOVE_NATURAL_GIFT),
+    LEVEL_UP_MOVE(23, MOVE_TAKE_DOWN),
+    LEVEL_UP_MOVE(26, MOVE_REFRESH),
+    LEVEL_UP_MOVE(30, MOVE_MIRROR_MOVE),
+    LEVEL_UP_MOVE(34, MOVE_COTTON_GUARD),
+    LEVEL_UP_MOVE(38, MOVE_DRAGON_PULSE),
+    LEVEL_UP_MOVE(42, MOVE_PERISH_SONG),
+    LEVEL_UP_MOVE(46, MOVE_MOONBLAST),
     LEVEL_UP_END
 };
 
 static const struct LevelUpMove sAltariaLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 0, MOVE_DRAGON_PULSE),
-    LEVEL_UP_MOVE( 1, MOVE_GROWL),
-    LEVEL_UP_MOVE( 1, MOVE_MIST),
-    LEVEL_UP_MOVE( 1, MOVE_PECK),
+    LEVEL_UP_MOVE( 1, MOVE_SKY_ATTACK),
     LEVEL_UP_MOVE( 1, MOVE_PLUCK),
-    LEVEL_UP_MOVE( 1, MOVE_DISARMING_VOICE),
-    LEVEL_UP_MOVE(12, MOVE_FURY_ATTACK),
-    LEVEL_UP_MOVE(16, MOVE_ROUND),
-    LEVEL_UP_MOVE(20, MOVE_DRAGON_BREATH),
-    LEVEL_UP_MOVE(24, MOVE_SAFEGUARD),
-    LEVEL_UP_MOVE(28, MOVE_SING),
-    LEVEL_UP_MOVE(32, MOVE_COTTON_GUARD),
-    LEVEL_UP_MOVE(38, MOVE_TAKE_DOWN),
-    LEVEL_UP_MOVE(44, MOVE_MOONBLAST),
-    LEVEL_UP_MOVE(50, MOVE_PERISH_SONG),
-    LEVEL_UP_MOVE(56, MOVE_SKY_ATTACK),
+    LEVEL_UP_MOVE( 1, MOVE_PECK),
+    LEVEL_UP_MOVE( 1, MOVE_GROWL),
+    LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
+    LEVEL_UP_MOVE( 1, MOVE_SING),
+    LEVEL_UP_MOVE( 3, MOVE_ASTONISH),
+    LEVEL_UP_MOVE( 5, MOVE_SING),
+    LEVEL_UP_MOVE( 7, MOVE_FURY_ATTACK),
+    LEVEL_UP_MOVE( 9, MOVE_SAFEGUARD),
+    LEVEL_UP_MOVE(11, MOVE_DISARMING_VOICE),
+    LEVEL_UP_MOVE(14, MOVE_MIST),
+    LEVEL_UP_MOVE(17, MOVE_ROUND),
+    LEVEL_UP_MOVE(20, MOVE_NATURAL_GIFT),
+    LEVEL_UP_MOVE(23, MOVE_TAKE_DOWN),
+    LEVEL_UP_MOVE(26, MOVE_REFRESH),
+    LEVEL_UP_MOVE(30, MOVE_DRAGON_DANCE),
+    LEVEL_UP_MOVE(34, MOVE_COTTON_GUARD),
+    LEVEL_UP_MOVE(35, MOVE_DRAGON_BREATH),
+    LEVEL_UP_MOVE(40, MOVE_DRAGON_PULSE),
+    LEVEL_UP_MOVE(46, MOVE_PERISH_SONG),
+    LEVEL_UP_MOVE(52, MOVE_MOONBLAST),
+    LEVEL_UP_MOVE(59, MOVE_SKY_ATTACK),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SWABLU
@@ -8910,124 +9076,134 @@ static const struct LevelUpMove sSeviperLevelUpLearnset[] = {
 #if P_FAMILY_LUNATONE
 static const struct LevelUpMove sLunatoneLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_MOONBLAST),
-    LEVEL_UP_MOVE( 1, MOVE_MOONLIGHT),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_HARDEN),
     LEVEL_UP_MOVE( 1, MOVE_CONFUSION),
     LEVEL_UP_MOVE( 1, MOVE_ROCK_THROW),
     LEVEL_UP_MOVE( 5, MOVE_HYPNOSIS),
-    LEVEL_UP_MOVE(10, MOVE_ROCK_POLISH),
-    LEVEL_UP_MOVE(15, MOVE_ROCK_SLIDE),
-    LEVEL_UP_MOVE(20, MOVE_PSYSHOCK),
+    LEVEL_UP_MOVE( 9, MOVE_ROCK_POLISH),
+    LEVEL_UP_MOVE(13, MOVE_PSYWAVE),
+    LEVEL_UP_MOVE(17, MOVE_EMBARGO),
+    LEVEL_UP_MOVE(21, MOVE_ROCK_SLIDE),
     LEVEL_UP_MOVE(25, MOVE_COSMIC_POWER),
-    LEVEL_UP_MOVE(30, MOVE_PSYCHIC),
-    LEVEL_UP_MOVE(35, MOVE_STONE_EDGE),
-    LEVEL_UP_MOVE(40, MOVE_FUTURE_SIGHT),
-    LEVEL_UP_MOVE(45, MOVE_MAGIC_ROOM),
-    LEVEL_UP_MOVE(50, MOVE_EXPLOSION),
+    LEVEL_UP_MOVE(29, MOVE_PSYCHIC),
+    LEVEL_UP_MOVE(33, MOVE_HEAL_BLOCK),
+    LEVEL_UP_MOVE(37, MOVE_STONE_EDGE),
+    LEVEL_UP_MOVE(41, MOVE_FUTURE_SIGHT),
+    LEVEL_UP_MOVE(45, MOVE_EXPLOSION),
+    LEVEL_UP_MOVE(49, MOVE_MAGIC_ROOM),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_LUNATONE
 
 #if P_FAMILY_SOLROCK
 static const struct LevelUpMove sSolrockLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_FLARE_BLITZ),
-    LEVEL_UP_MOVE( 1, MOVE_MORNING_SUN),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_HARDEN),
     LEVEL_UP_MOVE( 1, MOVE_CONFUSION),
     LEVEL_UP_MOVE( 1, MOVE_ROCK_THROW),
-    LEVEL_UP_MOVE( 5, MOVE_HYPNOSIS),
-    LEVEL_UP_MOVE(10, MOVE_ROCK_POLISH),
-    LEVEL_UP_MOVE(15, MOVE_ROCK_SLIDE),
-    LEVEL_UP_MOVE(20, MOVE_ZEN_HEADBUTT),
+    LEVEL_UP_MOVE( 5, MOVE_FIRE_SPIN),
+    LEVEL_UP_MOVE( 9, MOVE_ROCK_POLISH),
+    LEVEL_UP_MOVE(13, MOVE_PSYWAVE),
+    LEVEL_UP_MOVE(17, MOVE_EMBARGO),
+    LEVEL_UP_MOVE(21, MOVE_ROCK_SLIDE),
     LEVEL_UP_MOVE(25, MOVE_COSMIC_POWER),
-    LEVEL_UP_MOVE(30, MOVE_PSYCHIC),
-    LEVEL_UP_MOVE(35, MOVE_STONE_EDGE),
-    LEVEL_UP_MOVE(40, MOVE_SOLAR_BEAM),
-    LEVEL_UP_MOVE(45, MOVE_WONDER_ROOM),
-    LEVEL_UP_MOVE(50, MOVE_EXPLOSION),
+    LEVEL_UP_MOVE(29, MOVE_PSYCHIC),
+    LEVEL_UP_MOVE(33, MOVE_HEAL_BLOCK),
+    LEVEL_UP_MOVE(37, MOVE_STONE_EDGE),
+    LEVEL_UP_MOVE(41, MOVE_SOLAR_BEAM),
+    LEVEL_UP_MOVE(45, MOVE_EXPLOSION),
+    LEVEL_UP_MOVE(49, MOVE_WONDER_ROOM),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SOLROCK
 
 #if P_FAMILY_BARBOACH
 static const struct LevelUpMove sBarboachLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),
     LEVEL_UP_MOVE( 1, MOVE_MUD_SLAP),
-    LEVEL_UP_MOVE( 6, MOVE_REST),
-    LEVEL_UP_MOVE( 6, MOVE_SNORE),
-    LEVEL_UP_MOVE(12, MOVE_WATER_PULSE),
-    LEVEL_UP_MOVE(18, MOVE_AMNESIA),
-    LEVEL_UP_MOVE(24, MOVE_AQUA_TAIL),
-    LEVEL_UP_MOVE(31, MOVE_MUDDY_WATER),
-    LEVEL_UP_MOVE(36, MOVE_EARTHQUAKE),
-    LEVEL_UP_MOVE(42, MOVE_FUTURE_SIGHT),
-    LEVEL_UP_MOVE(48, MOVE_FISSURE),
+    LEVEL_UP_MOVE( 6, MOVE_MUD_SPORT),
+    LEVEL_UP_MOVE( 6, MOVE_WATER_SPORT),
+    LEVEL_UP_MOVE( 9, MOVE_WATER_GUN),
+    LEVEL_UP_MOVE(13, MOVE_MUD_BOMB),
+    LEVEL_UP_MOVE(15, MOVE_AMNESIA),
+    LEVEL_UP_MOVE(17, MOVE_WATER_PULSE),
+    LEVEL_UP_MOVE(20, MOVE_MAGNITUDE),
+    LEVEL_UP_MOVE(25, MOVE_REST),
+    LEVEL_UP_MOVE(25, MOVE_SNORE),
+    LEVEL_UP_MOVE(28, MOVE_AQUA_TAIL),
+    LEVEL_UP_MOVE(32, MOVE_EARTHQUAKE),
+    LEVEL_UP_MOVE(35, MOVE_MUDDY_WATER),
+    LEVEL_UP_MOVE(39, MOVE_FUTURE_SIGHT),
+    LEVEL_UP_MOVE(44, MOVE_FISSURE),
     LEVEL_UP_END
 };
 
 static const struct LevelUpMove sWhiscashLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 0, MOVE_THRASH),
-    LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),
-    LEVEL_UP_MOVE( 1, MOVE_REST),
-    LEVEL_UP_MOVE( 1, MOVE_SNORE),
-    LEVEL_UP_MOVE( 1, MOVE_MUD_SLAP),
     LEVEL_UP_MOVE( 1, MOVE_TICKLE),
-    LEVEL_UP_MOVE( 1, MOVE_ZEN_HEADBUTT),
-    LEVEL_UP_MOVE( 1, MOVE_BELCH),
-    LEVEL_UP_MOVE(12, MOVE_WATER_PULSE),
-    LEVEL_UP_MOVE(18, MOVE_AMNESIA),
-    LEVEL_UP_MOVE(24, MOVE_AQUA_TAIL),
-    LEVEL_UP_MOVE(33, MOVE_MUDDY_WATER),
-    LEVEL_UP_MOVE(40, MOVE_EARTHQUAKE),
-    LEVEL_UP_MOVE(48, MOVE_FUTURE_SIGHT),
-    LEVEL_UP_MOVE(56, MOVE_FISSURE),
+    LEVEL_UP_MOVE( 1, MOVE_MUD_SLAP),
+    LEVEL_UP_MOVE( 1, MOVE_MUD_SPORT),
+    LEVEL_UP_MOVE( 1, MOVE_WATER_SPORT),
+    LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),
+    LEVEL_UP_MOVE( 6, MOVE_MUD_SPORT),
+    LEVEL_UP_MOVE( 6, MOVE_WATER_SPORT),
+    LEVEL_UP_MOVE( 9, MOVE_WATER_GUN),
+    LEVEL_UP_MOVE(13, MOVE_MUD_BOMB),
+    LEVEL_UP_MOVE(15, MOVE_AMNESIA),
+    LEVEL_UP_MOVE(17, MOVE_WATER_PULSE),
+    LEVEL_UP_MOVE(20, MOVE_MAGNITUDE),
+    LEVEL_UP_MOVE(25, MOVE_REST),
+    LEVEL_UP_MOVE(25, MOVE_SNORE),
+    LEVEL_UP_MOVE(28, MOVE_AQUA_TAIL),
+    LEVEL_UP_MOVE(30, MOVE_ZEN_HEADBUTT),
+    LEVEL_UP_MOVE(34, MOVE_EARTHQUAKE),
+    LEVEL_UP_MOVE(39, MOVE_MUDDY_WATER),
+    LEVEL_UP_MOVE(45, MOVE_FUTURE_SIGHT),
+    LEVEL_UP_MOVE(52, MOVE_FISSURE),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_BARBOACH
 
 #if P_FAMILY_CORPHISH
 static const struct LevelUpMove sCorphishLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),
-    LEVEL_UP_MOVE( 1, MOVE_HARDEN),
-    LEVEL_UP_MOVE( 4, MOVE_LEER),
-    LEVEL_UP_MOVE( 8, MOVE_TAUNT),
-    LEVEL_UP_MOVE(12, MOVE_BUBBLE_BEAM),
-    LEVEL_UP_MOVE(16, MOVE_KNOCK_OFF),
+    LEVEL_UP_MOVE( 1, MOVE_BUBBLE),
+    LEVEL_UP_MOVE( 5, MOVE_HARDEN),
+    LEVEL_UP_MOVE( 7, MOVE_VISE_GRIP),
+    LEVEL_UP_MOVE(10, MOVE_LEER),
+    LEVEL_UP_MOVE(14, MOVE_BUBBLE_BEAM),
+    LEVEL_UP_MOVE(17, MOVE_PROTECT),
     LEVEL_UP_MOVE(20, MOVE_DOUBLE_HIT),
-    LEVEL_UP_MOVE(24, MOVE_PROTECT),
-    LEVEL_UP_MOVE(28, MOVE_NIGHT_SLASH),
-    LEVEL_UP_MOVE(32, MOVE_RAZOR_SHELL),
-    LEVEL_UP_MOVE(36, MOVE_SWORDS_DANCE),
-    LEVEL_UP_MOVE(40, MOVE_CRUNCH),
-    LEVEL_UP_MOVE(44, MOVE_CRABHAMMER),
-    LEVEL_UP_MOVE(48, MOVE_ENDEAVOR),
-    LEVEL_UP_MOVE(52, MOVE_GUILLOTINE),
+    LEVEL_UP_MOVE(23, MOVE_KNOCK_OFF),
+    LEVEL_UP_MOVE(26, MOVE_NIGHT_SLASH),
+    LEVEL_UP_MOVE(31, MOVE_RAZOR_SHELL),
+    LEVEL_UP_MOVE(34, MOVE_TAUNT),
+    LEVEL_UP_MOVE(37, MOVE_SWORDS_DANCE),
+    LEVEL_UP_MOVE(39, MOVE_CRUNCH),
+    LEVEL_UP_MOVE(43, MOVE_CRABHAMMER),
+    LEVEL_UP_MOVE(48, MOVE_GUILLOTINE),
     LEVEL_UP_END
 };
 
 static const struct LevelUpMove sCrawdauntLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 0, MOVE_SWIFT),
-    LEVEL_UP_MOVE( 1, MOVE_SWIFT),
-    LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),
+    LEVEL_UP_MOVE( 1, MOVE_BUBBLE),
     LEVEL_UP_MOVE( 1, MOVE_HARDEN),
+    LEVEL_UP_MOVE( 1, MOVE_VISE_GRIP),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
-    LEVEL_UP_MOVE( 1, MOVE_TAUNT),
-    LEVEL_UP_MOVE(12, MOVE_BUBBLE_BEAM),
-    LEVEL_UP_MOVE(16, MOVE_KNOCK_OFF),
+    LEVEL_UP_MOVE( 5, MOVE_HARDEN),
+    LEVEL_UP_MOVE( 7, MOVE_VISE_GRIP),
+    LEVEL_UP_MOVE(10, MOVE_LEER),
+    LEVEL_UP_MOVE(14, MOVE_BUBBLE_BEAM),
+    LEVEL_UP_MOVE(17, MOVE_PROTECT),
     LEVEL_UP_MOVE(20, MOVE_DOUBLE_HIT),
-    LEVEL_UP_MOVE(24, MOVE_PROTECT),
-    LEVEL_UP_MOVE(28, MOVE_NIGHT_SLASH),
-    LEVEL_UP_MOVE(34, MOVE_RAZOR_SHELL),
+    LEVEL_UP_MOVE(23, MOVE_KNOCK_OFF),
+    LEVEL_UP_MOVE(26, MOVE_NIGHT_SLASH),
+    LEVEL_UP_MOVE(30, MOVE_SWIFT),
+    LEVEL_UP_MOVE(32, MOVE_RAZOR_SHELL),
+    LEVEL_UP_MOVE(36, MOVE_TAUNT),
     LEVEL_UP_MOVE(40, MOVE_SWORDS_DANCE),
-    LEVEL_UP_MOVE(46, MOVE_CRUNCH),
-    LEVEL_UP_MOVE(52, MOVE_CRABHAMMER),
-    LEVEL_UP_MOVE(58, MOVE_ENDEAVOR),
-    LEVEL_UP_MOVE(64, MOVE_GUILLOTINE),
+    LEVEL_UP_MOVE(43, MOVE_CRUNCH),
+    LEVEL_UP_MOVE(48, MOVE_CRABHAMMER),
+    LEVEL_UP_MOVE(54, MOVE_GUILLOTINE),
     LEVEL_UP_END
-};
-#endif //P_FAMILY_CORPHISH
 
 #if P_FAMILY_BALTOY
 static const struct LevelUpMove sBaltoyLevelUpLearnset[] = {
@@ -9071,84 +9247,86 @@ static const struct LevelUpMove sClaydolLevelUpLearnset[] = {
     LEVEL_UP_MOVE(38, MOVE_GUARD_SPLIT),
     LEVEL_UP_MOVE(38, MOVE_POWER_SPLIT),
     LEVEL_UP_MOVE(43, MOVE_SANDSTORM),
-    LEVEL_UP_MOVE(48, MOVE_EXPLOSION),
+    LEVEL_UP_MOVE(48, MOVE_EXPLOSION), 
     LEVEL_UP_END
 };
-#endif //P_FAMILY_BALTOY
+#endif //P_FAMILY_BALTOY // ADD SHORE UP AND BODY PRESS. MAYBE FOUL PLAY IN HERE
 
 #if P_FAMILY_LILEEP
 static const struct LevelUpMove sLileepLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_WRAP),
     LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
-    LEVEL_UP_MOVE( 4, MOVE_ACID),
-    LEVEL_UP_MOVE( 8, MOVE_CONFUSE_RAY),
-    LEVEL_UP_MOVE(12, MOVE_INGRAIN),
-    LEVEL_UP_MOVE(16, MOVE_ANCIENT_POWER),
-    LEVEL_UP_MOVE(20, MOVE_MEGA_DRAIN),
-    LEVEL_UP_MOVE(24, MOVE_BRINE),
-    LEVEL_UP_MOVE(28, MOVE_AMNESIA),
-    LEVEL_UP_MOVE(32, MOVE_GASTRO_ACID),
-    LEVEL_UP_MOVE(36, MOVE_GIGA_DRAIN),
-    LEVEL_UP_MOVE(41, MOVE_STOCKPILE),
-    LEVEL_UP_MOVE(41, MOVE_SPIT_UP),
-    LEVEL_UP_MOVE(41, MOVE_SWALLOW),
-    LEVEL_UP_MOVE(44, MOVE_ENERGY_BALL),
+    LEVEL_UP_MOVE( 1, MOVE_CONSTRICT),
+    LEVEL_UP_MOVE( 5, MOVE_ACID),
+    LEVEL_UP_MOVE( 9, MOVE_INGRAIN),
+    LEVEL_UP_MOVE(13, MOVE_CONFUSE_RAY),
+    LEVEL_UP_MOVE(17, MOVE_ANCIENT_POWER),
+    LEVEL_UP_MOVE(21, MOVE_BRINE),
+    LEVEL_UP_MOVE(26, MOVE_GIGA_DRAIN),
+    LEVEL_UP_MOVE(31, MOVE_GASTRO_ACID),
+    LEVEL_UP_MOVE(36, MOVE_AMNESIA),
+    LEVEL_UP_MOVE(41, MOVE_ENERGY_BALL),
+    LEVEL_UP_MOVE(46, MOVE_STOCKPILE),
+    LEVEL_UP_MOVE(46, MOVE_SPIT_UP),
+    LEVEL_UP_MOVE(46, MOVE_SWALLOW),
+    LEVEL_UP_MOVE(52, MOVE_WRING_OUT),
     LEVEL_UP_END
 };
 
 static const struct LevelUpMove sCradilyLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_LEECH_SEED),
-    LEVEL_UP_MOVE( 1, MOVE_WRAP),
     LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
-    LEVEL_UP_MOVE( 1, MOVE_ACID),
-    LEVEL_UP_MOVE( 1, MOVE_CONFUSE_RAY),
-    LEVEL_UP_MOVE(12, MOVE_INGRAIN),
-    LEVEL_UP_MOVE(16, MOVE_ANCIENT_POWER),
-    LEVEL_UP_MOVE(20, MOVE_MEGA_DRAIN),
-    LEVEL_UP_MOVE(24, MOVE_BRINE),
-    LEVEL_UP_MOVE(28, MOVE_AMNESIA),
-    LEVEL_UP_MOVE(32, MOVE_GASTRO_ACID),
-    LEVEL_UP_MOVE(36, MOVE_GIGA_DRAIN),
-    LEVEL_UP_MOVE(43, MOVE_STOCKPILE),
-    LEVEL_UP_MOVE(43, MOVE_SPIT_UP),
-    LEVEL_UP_MOVE(43, MOVE_SWALLOW),
-    LEVEL_UP_MOVE(48, MOVE_ENERGY_BALL),
+    LEVEL_UP_MOVE( 1, MOVE_CONSTRICT),
+    LEVEL_UP_MOVE( 5, MOVE_ACID),
+    LEVEL_UP_MOVE( 9, MOVE_INGRAIN),
+    LEVEL_UP_MOVE(13, MOVE_CONFUSE_RAY),
+    LEVEL_UP_MOVE(17, MOVE_ANCIENT_POWER),
+    LEVEL_UP_MOVE(21, MOVE_BRINE),
+    LEVEL_UP_MOVE(26, MOVE_GIGA_DRAIN),
+    LEVEL_UP_MOVE(31, MOVE_GASTRO_ACID),
+    LEVEL_UP_MOVE(36, MOVE_AMNESIA),
+    LEVEL_UP_MOVE(44, MOVE_ENERGY_BALL),
+    LEVEL_UP_MOVE(52, MOVE_STOCKPILE),
+    LEVEL_UP_MOVE(52, MOVE_SPIT_UP),
+    LEVEL_UP_MOVE(52, MOVE_SWALLOW),
+    LEVEL_UP_MOVE(61, MOVE_WRING_OUT),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_LILEEP
 
 #if P_FAMILY_ANORITH
 static const struct LevelUpMove sAnorithLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_FURY_CUTTER),
+    LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_HARDEN),
-    LEVEL_UP_MOVE( 4, MOVE_WATER_GUN),
-    LEVEL_UP_MOVE( 8, MOVE_SMACK_DOWN),
-    LEVEL_UP_MOVE(12, MOVE_METAL_CLAW),
-    LEVEL_UP_MOVE(16, MOVE_ANCIENT_POWER),
-    LEVEL_UP_MOVE(20, MOVE_BUG_BITE),
-    LEVEL_UP_MOVE(24, MOVE_BRINE),
-    LEVEL_UP_MOVE(28, MOVE_SLASH),
-    LEVEL_UP_MOVE(32, MOVE_CRUSH_CLAW),
-    LEVEL_UP_MOVE(36, MOVE_ROCK_BLAST),
-    LEVEL_UP_MOVE(41, MOVE_PROTECT),
+    LEVEL_UP_MOVE( 4, MOVE_MUD_SPORT),
+    LEVEL_UP_MOVE( 7, MOVE_WATER_GUN),
+    LEVEL_UP_MOVE(10, MOVE_FURY_CUTTER),
+    LEVEL_UP_MOVE(13, MOVE_SMACK_DOWN),
+    LEVEL_UP_MOVE(17, MOVE_METAL_CLAW),
+    LEVEL_UP_MOVE(21, MOVE_ANCIENT_POWER),
+    LEVEL_UP_MOVE(25, MOVE_BUG_BITE),
+    LEVEL_UP_MOVE(29, MOVE_BRINE),
+    LEVEL_UP_MOVE(34, MOVE_SLASH),
+    LEVEL_UP_MOVE(39, MOVE_CRUSH_CLAW),
     LEVEL_UP_MOVE(44, MOVE_X_SCISSOR),
+    LEVEL_UP_MOVE(49, MOVE_PROTECT),
+    LEVEL_UP_MOVE(55, MOVE_ROCK_BLAST),
     LEVEL_UP_END
 };
 
 static const struct LevelUpMove sArmaldoLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_FURY_CUTTER),
+    LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_HARDEN),
-    LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),
-    LEVEL_UP_MOVE( 1, MOVE_SMACK_DOWN),
-    LEVEL_UP_MOVE(12, MOVE_METAL_CLAW),
-    LEVEL_UP_MOVE(16, MOVE_ANCIENT_POWER),
-    LEVEL_UP_MOVE(20, MOVE_BUG_BITE),
-    LEVEL_UP_MOVE(24, MOVE_BRINE),
-    LEVEL_UP_MOVE(28, MOVE_SLASH),
-    LEVEL_UP_MOVE(32, MOVE_CRUSH_CLAW),
-    LEVEL_UP_MOVE(36, MOVE_ROCK_BLAST),
-    LEVEL_UP_MOVE(43, MOVE_PROTECT),
-    LEVEL_UP_MOVE(48, MOVE_X_SCISSOR),
+    LEVEL_UP_MOVE( 4, MOVE_MUD_SPORT),
+    LEVEL_UP_MOVE( 7, MOVE_WATER_GUN),
+    LEVEL_UP_MOVE(10, MOVE_FURY_CUTTER),
+    LEVEL_UP_MOVE(13, MOVE_SMACK_DOWN),
+    LEVEL_UP_MOVE(17, MOVE_METAL_CLAW),
+    LEVEL_UP_MOVE(21, MOVE_ANCIENT_POWER),
+    LEVEL_UP_MOVE(29, MOVE_BRINE),
+	LEVEL_UP_MOVE(34, MOVE_SLASH),
+    LEVEL_UP_MOVE(39, MOVE_CRUSH_CLAW),
+    LEVEL_UP_MOVE(46, MOVE_X_SCISSOR),
+    LEVEL_UP_MOVE(53, MOVE_PROTECT),
+    LEVEL_UP_MOVE(61, MOVE_ROCK_BLAST),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_ANORITH
@@ -9200,10 +9378,12 @@ static const struct LevelUpMove sCastformLevelUpLearnset[] = {
     LEVEL_UP_MOVE(35, MOVE_HYDRO_PUMP),
     LEVEL_UP_MOVE(35, MOVE_FIRE_BLAST),
     LEVEL_UP_MOVE(35, MOVE_BLIZZARD),
+	LEVEL_UP_MOVE(40, MOVE_HYDRO_STEAM), // NEW MOVE SLOT -> HYDRO STEAM. NEW MOVE: PLAYS OFF THE MULTI WEATHER THING. 
+	LEVEL_UP_MOVE(40, MOVE_CHILLY_RECEPTION), // NEW MOVE SLOT -> CHILLY RECEPTION. MEW MOVE: WEATHER SETTING SWITCH MOVE COULD BE FUN TO PLAY WITH.
     LEVEL_UP_MOVE(45, MOVE_HURRICANE),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_CASTFORM
+#endif //P_FAMILY_CASTFORM COME BACK TO ORGANIZE THIS
 
 #if P_FAMILY_KECLEON
 static const struct LevelUpMove sKecleonLevelUpLearnset[] = {
@@ -9233,38 +9413,47 @@ static const struct LevelUpMove sKecleonLevelUpLearnset[] = {
 #if P_FAMILY_SHUPPET
 static const struct LevelUpMove sShuppetLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
-    LEVEL_UP_MOVE( 4, MOVE_SCREECH),
+    LEVEL_UP_MOVE( 4, MOVE_RAGE), // Screech -> Rage
     LEVEL_UP_MOVE( 7, MOVE_NIGHT_SHADE),
     LEVEL_UP_MOVE(10, MOVE_SPITE),
+	LEVEL_UP_MOVE(13, MOVE_SHADOW_SNEAK),
     LEVEL_UP_MOVE(16, MOVE_WILL_O_WISP),
-    LEVEL_UP_MOVE(19, MOVE_SHADOW_SNEAK),
-    LEVEL_UP_MOVE(22, MOVE_HEX),
+    LEVEL_UP_MOVE(19, MOVE_FRUSTRATION), // Feint Attack -> Frustration
+    LEVEL_UP_MOVE(22, MOVE_BITTER_MALICE), // HEX -> BITTER MALICE: IT JUST FITS...SO WELL
     LEVEL_UP_MOVE(26, MOVE_CURSE),
     LEVEL_UP_MOVE(30, MOVE_SHADOW_BALL),
     LEVEL_UP_MOVE(34, MOVE_ROLE_PLAY),
     LEVEL_UP_MOVE(38, MOVE_SUCKER_PUNCH),
     LEVEL_UP_MOVE(42, MOVE_TRICK),
-    LEVEL_UP_MOVE(48, MOVE_PHANTOM_FORCE),
+    LEVEL_UP_MOVE(46, MOVE_GRUDGE),
+	LEVEL_UP_MOVE(50, MOVE_POLTERGEIST), // Trick -> Poltergesit
     LEVEL_UP_END
 };
 
 static const struct LevelUpMove sBanetteLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 0, MOVE_KNOCK_OFF),
-    LEVEL_UP_MOVE( 1, MOVE_NIGHT_SHADE),
-    LEVEL_UP_MOVE( 1, MOVE_SCREECH),
-    LEVEL_UP_MOVE( 1, MOVE_SPITE),
+    LEVEL_UP_MOVE( 0, MOVE_SHADOW_CLAW), // Knock Off -> Shadow Claw
+	LEVEL_UP_MOVE( 1, MOVE_SHADOW_CLAW),
+	LEVEL_UP_MOVE( 1, MOVE_KNOCK_OFF),
+	LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
+    LEVEL_UP_MOVE( 1, MOVE_RAGE), // Screech -> Rage
+	LEVEL_UP_MOVE( 7, MOVE_NIGHT_SHADE),
+    LEVEL_UP_MOVE(10, MOVE_SPITE),
+	LEVEL_UP_MOVE(13, MOVE_SHADOW_SNEAK),
     LEVEL_UP_MOVE(16, MOVE_WILL_O_WISP),
-    LEVEL_UP_MOVE(19, MOVE_SHADOW_SNEAK),
-    LEVEL_UP_MOVE(22, MOVE_HEX),
+    LEVEL_UP_MOVE(19, MOVE_FRUSTRATION), // feint Attack -> Frustration
+    LEVEL_UP_MOVE(22, MOVE_BITTER_MALICE), // HEX -> BITTER MALICE: IT JUST FITS...SO WELL
     LEVEL_UP_MOVE(26, MOVE_CURSE),
-    LEVEL_UP_MOVE(30, MOVE_SHADOW_BALL),
-    LEVEL_UP_MOVE(34, MOVE_ROLE_PLAY),
-    LEVEL_UP_MOVE(40, MOVE_SUCKER_PUNCH),
-    LEVEL_UP_MOVE(46, MOVE_TRICK),
-    LEVEL_UP_MOVE(53, MOVE_PHANTOM_FORCE),
+    LEVEL_UP_MOVE(30, MOVE_REVENGE), // Shadow Ball -> Revenge
+    LEVEL_UP_MOVE(34, MOVE_TRICK), // ROLE PLAY -> TRICK: REMOVE ROLE PLAY FOR TRICK. WANDERING SPIRIT REPLACES THE EFFECT OF ROLE PLAY
+    LEVEL_UP_MOVE(38, MOVE_RAGE_FIST), //Sucker Punch -> Rage Fist
+    LEVEL_UP_MOVE(41, MOVE_SUCKER_PUNCH), // Trick -> Sucker Punch
+	LEVEL_UP_MOVE(45, MOVE_BITTER_BLADE), // NEW MOVE SLOT -> BITTER BLADE. NEW MOVE: ANOTHER MOVE THAT WORKS. GIVES IT SOME RECOVERY AND COVERAGE
+    LEVEL_UP_MOVE(49, MOVE_GRUDGE),
+	LEVEL_UP_MOVE(54, MOVE_POLTERGEIST), // Trick -> Poltergesit
+	LEVEL_UP_MOVE(60, MOVE_RAGING_FURY), // Phantom Force -> Raging Fury
     LEVEL_UP_END
 };
-#endif //P_FAMILY_SHUPPET
+#endif //P_FAMILY_SHUPPET 
 
 #if P_FAMILY_DUSKULL
 static const struct LevelUpMove sDuskullLevelUpLearnset[] = {
@@ -9272,15 +9461,17 @@ static const struct LevelUpMove sDuskullLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 4, MOVE_DISABLE),
     LEVEL_UP_MOVE( 8, MOVE_SHADOW_SNEAK),
-    LEVEL_UP_MOVE(12, MOVE_CONFUSE_RAY),
+    LEVEL_UP_MOVE(12, MOVE_HYPNOSIS), // CONFUSE RAY -> HYPNOSIS: NEW MOVE. POKEDEX ENTRY FOR DUSCLOPS
     LEVEL_UP_MOVE(16, MOVE_NIGHT_SHADE),
     LEVEL_UP_MOVE(20, MOVE_PAYBACK),
     LEVEL_UP_MOVE(24, MOVE_WILL_O_WISP),
     LEVEL_UP_MOVE(28, MOVE_MEAN_LOOK),
-    LEVEL_UP_MOVE(32, MOVE_HEX),
-    LEVEL_UP_MOVE(36, MOVE_CURSE),
-    LEVEL_UP_MOVE(40, MOVE_SHADOW_BALL),
-    LEVEL_UP_MOVE(44, MOVE_FUTURE_SIGHT),
+    LEVEL_UP_MOVE(31, MOVE_HEX),
+    LEVEL_UP_MOVE(34, MOVE_CURSE),
+    LEVEL_UP_MOVE(38, MOVE_SPIRIT_SHACKLE), // SHADOW BALL -> SPIRIT SHACKLE: NEW MOVE. PHYSICAL 80+ BP GHOST MOVE. CAN INTERPRET IT AS DUSKNOIR EATING SOULS.
+    LEVEL_UP_MOVE(41, MOVE_PAIN_SPLIT),
+	LEVEL_UP_MOVE(44, MOVE_FUTURE_SIGHT),
+	LEVEL_UP_MOVE(47, MOVE_PHANTOM_FORCE),
     LEVEL_UP_END
 };
 
@@ -9289,47 +9480,50 @@ static const struct LevelUpMove sDusclopsLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SHADOW_PUNCH),
     LEVEL_UP_MOVE( 1, MOVE_FIRE_PUNCH),
     LEVEL_UP_MOVE( 1, MOVE_ICE_PUNCH),
-    LEVEL_UP_MOVE( 1, MOVE_THUNDER_PUNCH),
-    LEVEL_UP_MOVE( 1, MOVE_GRAVITY),
-    LEVEL_UP_MOVE( 1, MOVE_BIND),
+    LEVEL_UP_MOVE( 1, MOVE_THUNDER_PUNCH), 
+    LEVEL_UP_MOVE( 1, MOVE_TRICK_ROOM), // GRAVITY -> TIRCK ROOM: TM MOVE. ADD IT TO SET SINCE IT WON'T BE A TM TO START.
     LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
-    LEVEL_UP_MOVE( 1, MOVE_DISABLE),
-    LEVEL_UP_MOVE( 1, MOVE_SHADOW_SNEAK),
-    LEVEL_UP_MOVE(12, MOVE_CONFUSE_RAY),
+	LEVEL_UP_MOVE( 4, MOVE_DISABLE),
+	LEVEL_UP_MOVE( 8, MOVE_SHADOW_SNEAK),
+    LEVEL_UP_MOVE(12, MOVE_HYPNOSIS), // CONFUSE RAY -> HYPNOSIS: NEW MOVE. POKEDEX ENTRY FOR DUSCLOPS
     LEVEL_UP_MOVE(16, MOVE_NIGHT_SHADE),
     LEVEL_UP_MOVE(20, MOVE_PAYBACK),
     LEVEL_UP_MOVE(24, MOVE_WILL_O_WISP),
     LEVEL_UP_MOVE(28, MOVE_MEAN_LOOK),
-    LEVEL_UP_MOVE(32, MOVE_HEX),
-    LEVEL_UP_MOVE(36, MOVE_CURSE),
-    LEVEL_UP_MOVE(42, MOVE_SHADOW_BALL),
-    LEVEL_UP_MOVE(48, MOVE_FUTURE_SIGHT),
+    LEVEL_UP_MOVE(31, MOVE_HEX),
+    LEVEL_UP_MOVE(35, MOVE_CURSE),
+	LEVEL_UP_MOVE(39, MOVE_SPIRIT_SHACKLE), // SHADOW BALL -> SPIRIT SHACKLE: NEW MOVE. PHYSICAL 80+ BP GHOST MOVE. CAN INTERPRET IT AS DUSKNOIR EATING SOULS.
+	LEVEL_UP_MOVE(42, MOVE_PAIN_SPLIT), // NEW MOVE SLOT -> PAIN SPLIT: EGG MOVE. 
+    LEVEL_UP_MOVE(46, MOVE_FUTURE_SIGHT),
+	LEVEL_UP_MOVE(50, MOVE_PHANTOM_FORCE), // NEW MOVE SLOT -> PHANTOM FORCE?
     LEVEL_UP_END
 };
 
 #if P_GEN_4_CROSS_EVOS
 static const struct LevelUpMove sDusknoirLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_SHADOW_PUNCH),
+    LEVEL_UP_MOVE( 0, MOVE_LAST_RESPECTS),
+	LEVEL_UP_MOVE( 1, MOVE_LAST_RESPECTS),
+	LEVEL_UP_MOVE( 1, MOVE_SHADOW_PUNCH),
     LEVEL_UP_MOVE( 1, MOVE_FIRE_PUNCH),
     LEVEL_UP_MOVE( 1, MOVE_ICE_PUNCH),
     LEVEL_UP_MOVE( 1, MOVE_THUNDER_PUNCH),
-    LEVEL_UP_MOVE( 1, MOVE_GRAVITY),
-    LEVEL_UP_MOVE( 1, MOVE_BIND),
+    LEVEL_UP_MOVE( 1, MOVE_TRICK_ROOM), // GRAVITY -> TIRCK ROOM: TM MOVE. ADD IT TO SET SINCE IT WON'T BE A TM TO START.
     LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
-    LEVEL_UP_MOVE( 1, MOVE_DISABLE),
-    LEVEL_UP_MOVE( 1, MOVE_SHADOW_SNEAK),
-    LEVEL_UP_MOVE(12, MOVE_CONFUSE_RAY),
+	LEVEL_UP_MOVE( 4, MOVE_DISABLE),
+	LEVEL_UP_MOVE( 8, MOVE_SHADOW_SNEAK),
+    LEVEL_UP_MOVE(12, MOVE_HYPNOSIS), // CONFUSE RAY -> HYPNOSIS: NEW MOVE. POKEDEX ENTRY FOR DUSCLOPS
     LEVEL_UP_MOVE(16, MOVE_NIGHT_SHADE),
     LEVEL_UP_MOVE(20, MOVE_PAYBACK),
     LEVEL_UP_MOVE(24, MOVE_WILL_O_WISP),
     LEVEL_UP_MOVE(28, MOVE_MEAN_LOOK),
-    LEVEL_UP_MOVE(32, MOVE_HEX),
-    LEVEL_UP_MOVE(36, MOVE_CURSE),
-    LEVEL_UP_MOVE(42, MOVE_SHADOW_BALL),
-    LEVEL_UP_MOVE(48, MOVE_FUTURE_SIGHT),
-    LEVEL_UP_MOVE(54, MOVE_DESTINY_BOND),
+    LEVEL_UP_MOVE(31, MOVE_CURSE),
+    LEVEL_UP_MOVE(35, MOVE_DRAIN_PUNCH), // HEX -> DRAIN PUNCH: NEW MOVE. SWITCH LEVELS WITH CURSE
+	LEVEL_UP_MOVE(39, MOVE_SPIRIT_SHACKLE), // SHADOW BALL -> SPIRIT SHACKLE: NEW MOVE. PHYSICAL 80+ BP GHOST MOVE. CAN INTERPRET IT AS DUSKNOIR EATING SOULS.
+    LEVEL_UP_MOVE(42, MOVE_STRENGTH_SAP), // NEW MOVE SLOT -> STRENGTH SAP: NEW MOVE. WORKS FOR GHOST TYPES
+    LEVEL_UP_MOVE(46, MOVE_FUTURE_SIGHT),
+    LEVEL_UP_MOVE(50, MOVE_DESTINY_BOND),
     LEVEL_UP_END
 };
 #endif //P_GEN_4_CROSS_EVOS
@@ -9341,17 +9535,23 @@ static const struct LevelUpMove sTropiusLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 1, MOVE_GROWTH),
     LEVEL_UP_MOVE( 1, MOVE_RAZOR_LEAF),
-    LEVEL_UP_MOVE( 1, MOVE_LEAF_STORM),
+    LEVEL_UP_MOVE( 1, MOVE_LEAF_TORNADO), // LEAF STORM -> LEAF TORNDAO: GEN VIII MOVE. REPLACE LEAF STORM AT LEVEL 1 BECAUSE TOO HIGH POWERED
     LEVEL_UP_MOVE( 6, MOVE_SWEET_SCENT),
     LEVEL_UP_MOVE(10, MOVE_STOMP),
-    LEVEL_UP_MOVE(16, MOVE_MAGICAL_LEAF),
-    LEVEL_UP_MOVE(21, MOVE_WHIRLWIND),
-    LEVEL_UP_MOVE(30, MOVE_WIDE_GUARD),
-    LEVEL_UP_MOVE(36, MOVE_AIR_SLASH),
-    LEVEL_UP_MOVE(41, MOVE_BODY_SLAM),
-    LEVEL_UP_MOVE(46, MOVE_OUTRAGE),
-    LEVEL_UP_MOVE(50, MOVE_SYNTHESIS),
-    LEVEL_UP_MOVE(56, MOVE_SOLAR_BEAM),
+	LEVEL_UP_MOVE(14, MOVE_WHIRLWIND),
+    LEVEL_UP_MOVE(18, MOVE_SYRUP_BOMB), // MAGICAL LEAF -> SYRUP BOMB: NEW MOVE. AROUND THE SAME BP, BUT I FEEL THIS FITS MORE WITH THE FRUIT THEME, AND CAN FIX LOW SPEED
+    LEVEL_UP_MOVE(21, MOVE_WIDE_GUARD),
+	LEVEL_UP_MOVE(25, MOVE_NATURAL_GIFT), // NEW MOVE SLOT -> NATURAL GIFT: OLD MOVE. I THINK TROPIUS SHOULD BE BERRY/FRUIT THEMED AND THIS IS ONE OF THE BETTER USES FOR BERRIES IN COMBAT.
+    LEVEL_UP_MOVE(29, MOVE_DUAL_WINGBEAT), // WIDE GUARD -> DUAL WING BEAT: TUTOR. FLYING TYPE PHYSICAL MOVE. MOVE WIDE GUARD TO WHIRLWIND'S SPOT AND WHIRLWIND TO 14.
+	LEVEL_UP_MOVE(32, MOVE_GRAV_APPLE), // NEW MOVE SLOT -> GRAV APPLE. DAMAGING PHYSICAL FRUIT BASED MOVE. THESE MOVES ARE BASICALLY THE SAME EXCEPT FOR PHYSICAL/SPECIAL. MIGHT CHANGE TO JUST ONE.
+	LEVEL_UP_MOVE(32, MOVE_APPLE_ACID), // NEW MOVE SLOT -> GRAV APPLE. DAMAGING SPECIAL FRUIT BASED MOVE. THESE MOVES ARE BASICALLY THE SAME EXCEPT FOR PHYSICAL/SPECIAL. MIGHT CHANGE TO JUST ONE.
+    LEVEL_UP_MOVE(35, MOVE_AIR_SLASH),
+    LEVEL_UP_MOVE(39, MOVE_TAILWIND), // NEW MOVE SLOT -> TAILWIND: NEW MOVE. SWITCH LEVEL WITH BODY SLAM FOR TAITE AND LIZA FIGHT.
+	LEVEL_UP_MOVE(43, MOVE_DRAGON_DANCE), // BODY SLAM -> DRAGON DANCE: BDSP LEVEL UP MOVE. MOVE BODY SALM TO OUTRAGE LVL, MOVE OUTRAGE TO 59. WANT TO HAVE RAGON DANCE FOR END GAME AQUA/MAGMA AND JUAN
+    LEVEL_UP_MOVE(47, MOVE_BODY_SLAM), 
+    LEVEL_UP_MOVE(50, MOVE_JUNGLE_HEALING), // SYNTHESIS -> JUNGLE HEALING: NEW MOVE. UNQIUE MOVE THAT I THINK FITS TROPIUS' VIBE
+    LEVEL_UP_MOVE(54, MOVE_SOLAR_BEAM),
+	LEVEL_UP_MOVE(59, MOVE_OUTRAGE), // NEW MOVE SLOT -> OUTRAGE: MOVE OUTRAGE FROM 47
     LEVEL_UP_END
 };
 #endif //P_FAMILY_TROPIUS
@@ -9459,7 +9659,7 @@ static const struct LevelUpMove sGlalieLevelUpLearnset[] = {
 
 #if P_GEN_4_CROSS_EVOS
 static const struct LevelUpMove sFroslassLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 0, MOVE_HEX),
+    LEVEL_UP_MOVE( 0, MOVE_HEX), // DO NOT PULL HEX! ONLY GHOST TYPE IN THE HOENN DEX WITH IT IN LEVEL UP MOVESET RIGHT NOW.
     LEVEL_UP_MOVE( 1, MOVE_CRUNCH),
     LEVEL_UP_MOVE( 1, MOVE_ICE_FANG),
     LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
