@@ -59,7 +59,8 @@ const u16 gEggMoves[] = {
         MOVE_WATER_SPOUT,
         MOVE_BRINE,
         MOVE_DRAGON_PULSE,
-        MOVE_AURA_SPHERE),
+        MOVE_AURA_SPHERE,
+		MOVE_SNIPE_SHOT),
 #endif //P_FAMILY_SQUIRTLE
 
 #if P_FAMILY_PIDGEY
@@ -2272,6 +2273,8 @@ const u16 gEggMoves[] = {
         MOVE_ENDURE,
         MOVE_FELL_STINGER,
         MOVE_POWER_SPLIT,
+		MOVE_SNIPE_SHOT,
+		MOVE_BOUNCY_BUBBLE,
         MOVE_LUNGE),
 #endif //P_FAMILY_SURSKIT
 

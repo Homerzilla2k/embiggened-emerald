@@ -569,7 +569,12 @@ SlateportCity_EventScript_PowerTMClerk::
 	.align 2
 SlateportCity_Pokemart_PowerTMs:
 	.2byte ITEM_TM_HIDDEN_POWER
-	.2byte ITEM_TM_SECRET_POWER
+	.2byte ITEM_TM_THUNDER_WAVE
+	.2byte ITEM_TM_STEALTH_ROCK
+	.2byte ITEM_TM_TRAILBLAZE
+	.2byte ITEM_TM_FLAME_CHARGE
+	.2byte ITEM_TM_POUNCE
+	.2byte ITEM_TM_BULLDOZE
 	.2byte ITEM_NONE
 	release
 	end
