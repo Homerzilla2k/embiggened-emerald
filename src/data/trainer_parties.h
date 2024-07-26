@@ -3207,17 +3207,17 @@ static const struct TrainerMon sParty_Drake[] = {
 static const struct TrainerMon sParty_Roxanne1[] = {
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
-    .lvl = 12,
-    .species = SPECIES_GEODUDE,
+    .lvl = 13,
+    .species = SPECIES_LILEEP,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_TACKLE, MOVE_DEFENSE_CURL, MOVE_ROCK_THROW, MOVE_ROCK_TOMB}
+    .moves = {MOVE_ABSORB, MOVE_CONFUSE_RAY, MOVE_ROCK_TOMB, MOVE_ASTONISH}
     },
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
-    .lvl = 12,
-    .species = SPECIES_GEODUDE,
+    .lvl = 13,
+    .species = SPECIES_ANORITH,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_TACKLE, MOVE_DEFENSE_CURL, MOVE_ROCK_THROW, MOVE_ROCK_TOMB}
+    .moves = {MOVE_POUNCE, MOVE_SCRATCH, MOVE_WATER_GUN, MOVE_ROCK_TOMB}
     },
     {
     .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
@@ -4047,8 +4047,8 @@ static const struct TrainerMon sParty_Josh[] = {
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
     .lvl = 10,
-    .species = SPECIES_GEODUDE,
-    .moves = {MOVE_TACKLE, MOVE_NONE, MOVE_NONE, MOVE_NONE}
+    .species = SPECIES_RHYHORN,
+    .moves = {MOVE_TACKLE, MOVE_TAIL_WHIP, MOVE_SMACK_DOWN, MOVE_NONE}
     }
 };
 
@@ -4061,7 +4061,7 @@ static const struct TrainerMon sParty_Tommy[] = {
     {
     .iv = TRAINER_PARTY_IVS(14, 14, 14, 14, 14, 14),
     .lvl = 8,
-    .species = SPECIES_GEODUDE,
+    .species = SPECIES_ARON,
     }
 };
 
@@ -7252,7 +7252,7 @@ static const struct TrainerMon sParty_Marc[] = {
     {
     .iv = TRAINER_PARTY_IVS(14, 14, 14, 14, 14, 14),
     .lvl = 8,
-    .species = SPECIES_GEODUDE,
+    .species = SPECIES_ARON,
     },
     {
     .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
@@ -9482,11 +9482,13 @@ static const struct TrainerMon sParty_Devan[] = {
 static const struct TrainerMon sParty_Johnson[] = {
     {
     .lvl = 8,
-    .species = SPECIES_SHROOMISH,
+    .species = SPECIES_SKITTY,
+	.moves = {MOVE_FAKE_OUT, MOVE_HELPING_HAND, MOVE_GROWL, MOVE_TACKLE}
     },
     {
     .lvl = 8,
-    .species = SPECIES_LOTAD,
+    .species = SPECIES_MARILL,
+	.moves = {MOVE_HELPING_HAND, MOVE_WATER_GUN, MOVE_TACKLE, MOVE_TAIL_WHIP}
     }
 };
 
