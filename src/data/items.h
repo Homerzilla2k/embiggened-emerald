@@ -1998,7 +1998,7 @@ const struct Item gItemsInfo[] =
             .importance = 1,
             .pocket = POCKET_KEY_ITEMS,
         #else
-            .price = (I_PRICE >= GEN_7) ? 1000 : 550,
+            .price = (I_PRICE >= GEN_7) ? 300 : 550,
             .pocket = POCKET_ITEMS,
         #endif
         .type = ITEM_USE_FIELD,
@@ -10185,8 +10185,8 @@ const struct Item gItemsInfo[] =
         .name = _("TM64"),
         .price = 3000,
         .description = COMPOUND_STRING(
-			"Sets floating stones\n"
-			"that damage opponent\n"
+			"Set floating rocks\n"
+			"that damage foe\n"
 			"on switch in."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
@@ -10201,8 +10201,8 @@ const struct Item gItemsInfo[] =
         .price = 3000,
         .description = COMPOUND_STRING(
 			"Attack that leaves\n"
-			"the foe with at least\n"
-			"one HP."),
+			"the foe with at\n"
+			"least one HP."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -10216,8 +10216,8 @@ const struct Item gItemsInfo[] =
         .price = 3000,
         .description = COMPOUND_STRING(
 			"The user attacks\n"
-			"suddenly raising its\n"
-			"Speed."),
+			"suddenly raising\n"
+			"its Speed."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,

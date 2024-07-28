@@ -2799,6 +2799,7 @@ const u16 gEggMoves[] = {
         MOVE_CURSE,
         MOVE_IRON_DEFENSE,
         MOVE_WATER_PULSE,
+		MOVE_STRUGGLE_BUG,
         MOVE_AQUA_JET),
 #endif //P_FAMILY_ANORITH
 
