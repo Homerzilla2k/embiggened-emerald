@@ -7442,6 +7442,7 @@ static const struct TrainerMon sParty_BrendanRustboroTreecko[] = {
     .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
     .lvl = 15,
     .species = SPECIES_TORCHIC,
+    .heldItem = ITEM_ORAN_BERRY
     }
 };
 
@@ -7460,6 +7461,8 @@ static const struct TrainerMon sParty_BrendanRustboroMudkip[] = {
     .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
     .lvl = 15,
     .species = SPECIES_TREECKO,
+    .heldItem = ITEM_ORAN_BERRY,
+    .moves = {MOVE_BULLET_SEED, MOVE_QUICK_ATTACK, MOVE_LEER, MOVE_MEGA_DRAIN}
     }
 };
 
@@ -7535,12 +7538,14 @@ static const struct TrainerMon sParty_BrendanRustboroTorchic[] = {
 	{
 	.iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
 	.lvl = 13,
-	.species = SPECIES_SHROOMISH
+	.species = SPECIES_SHROOMISH,
+    .moves = {MOVE_BULLET_SEED, MOVE_LEECH_SEED, MOVE_STUN_SPORE, MOVE_NONE}
 	},
     {
     .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
     .lvl = 15,
     .species = SPECIES_MUDKIP,
+    .heldItem = ITEM_ORAN_BERRY
     }
 };
 
@@ -7559,6 +7564,8 @@ static const struct TrainerMon sParty_MayRustboroMudkip[] = {
     .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
     .lvl = 15,
     .species = SPECIES_TREECKO,
+    .heldItem = ITEM_ORAN_BERRY,
+    .moves = {MOVE_BULLET_SEED, MOVE_QUICK_ATTACK, MOVE_LEER, MOVE_MEGA_DRAIN}
     }
 };
 
@@ -9727,6 +9734,7 @@ static const struct TrainerMon sParty_MayRustboroTreecko[] = {
     .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
     .lvl = 15,
     .species = SPECIES_TORCHIC,
+    .heldItem = ITEM_ORAN_BERRY
     }
 };
 
@@ -9740,11 +9748,13 @@ static const struct TrainerMon sParty_MayRustboroTorchic[] = {
 	.iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
     .lvl = 13,
     .species = SPECIES_SHROOMISH,
+    .moves = {MOVE_BULLET_SEED, MOVE_LEECH_SEED, MOVE_STUN_SPORE, MOVE_NONE}
 	},
     {
     .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
     .lvl = 15,
     .species = SPECIES_MUDKIP,
+    .heldItem = ITEM_ORAN_BERRY
     }
 };
 
