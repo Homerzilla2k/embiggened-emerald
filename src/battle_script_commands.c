@@ -1072,12 +1072,12 @@ static const struct PickupItem sPickupTable[] =
     { ITEM_TINY_MUSHROOM,   {  25,  10,   _,   _,   _,   _,   _,   _,   _,   _, } },
     { ITEM_REPEL,           {   8,  30,   _,   _,   _,   _,   _,   _,   _,   _, } },
     { ITEM_SUPER_POTION,    {   8,  10,  30,   _,   _,   _,   _,   _,   _,   _, } },
-    { ITEM_POKE_DOLL,       {   8,  10,   9,  30,   _,   _,   _,   _,   _,   _, } },
+    { ITEM_POKE_DOLL,       {   7,  9,   10,  30,   _,   _,   _,   _,   _,   _, } },
     { ITEM_BIG_MUSHROOM,    {   3,  10,   9,   _,   _,   _,   _,   _,   _,   _, } },
-    { ITEM_SUPER_REPEL,     {   3,  10,   9,   9,  30,   _,   _,   _,   _,   _, } },
-    { ITEM_FULL_HEAL,       {   3,   3,   9,   8,   9,  30,   _,   _,   _,   _, } },
-    { ITEM_REVIVE,          {   3,   3,   3,   8,   8,   9,  30,   _,   _,   _, } },
-    { ITEM_HYPER_POTION,    {   3,   3,   3,   4,   8,   9,   8,  30,   _,   _, } },
+    { ITEM_SUPER_REPEL,     {   3,  10,   8,   8,  30,   _,   _,   _,   _,   _, } },
+    { ITEM_FULL_HEAL,       {   3,   3,   9,   8,   8,  30,   _,   _,   _,   _, } },
+    { ITEM_REVIVE,          {   3,   3,   3,   8,   8,   8,  30,   _,   _,   _, } },
+    { ITEM_HYPER_POTION,    {   3,   3,   3,   4,   8,   9,   7,  30,   _,   _, } },
     { ITEM_ETHER,           {   1,   1,   3,   4,   4,   _,   _,   _,   _,   _, } },
     { ITEM_MAX_REPEL,       {   _,   3,   3,   4,   4,   9,   8,   8,  30,   _, } },
     { ITEM_MOON_STONE,      {   _,   3,   3,   4,   4,   4,   4,   5,   9,  10, } },
@@ -1097,7 +1097,7 @@ static const struct PickupItem sPickupTable[] =
     { ITEM_MAX_REVIVE,      {   _,   _,   _,   4,   4,   4,   4,   7,   9,   9, } },
     { ITEM_ELIXIR,          {   _,   _,   _,   _,   1,   1,   4,   5,   4,   5, } },
     { ITEM_MAX_ELIXIR,      {   _,   _,   _,   _,   _,   _,   1,   1,   4,   5, } },
-    { ITEM_BOTTLE_CAP,      {   _,   _,   _,   _,   _,   _,   _,   1,   1,   1, } },
+    { ITEM_BOTTLE_CAP,      {   1,   1,   1,   1,   1,   1,   1,   1,   1,   1, } },
 };
 
 #undef _

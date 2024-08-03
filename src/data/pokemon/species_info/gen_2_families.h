@@ -4940,6 +4940,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sCorsolaLevelUpLearnset,
         .teachableLearnset = sCorsolaTeachableLearnset,
         .formSpeciesIdTable = sCorsolaFormSpeciesIdTable,
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_BLACK_SLUDGE, SPECIES_CURSOLA}),
     },
 
 #if P_GALARIAN_FORMS
@@ -5000,13 +5001,13 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 
     [SPECIES_CURSOLA] =
     {
-        .baseHP        = 60,
+        .baseHP        = 75,
         .baseAttack    = 95,
         .baseDefense   = 50,
         .baseSpeed     = 30,
-        .baseSpAttack  = 145,
+        .baseSpAttack  = 130,
         .baseSpDefense = 130,
-        .types = MON_TYPES(TYPE_GHOST),
+        .types = MON_TYPES(TYPE_GHOST, TYPE_ROCK),
         .catchRate = 30,
         .expYield = 179,
         .evYield_SpAttack = 2,
