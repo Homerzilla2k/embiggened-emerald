@@ -40056,7 +40056,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_CALM_MIND",
-	  "MOVE_WORK_UP",
+	    "MOVE_WORK_UP",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
       "MOVE_HYPER_BEAM",

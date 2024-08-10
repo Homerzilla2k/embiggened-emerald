@@ -3746,7 +3746,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .description = COMPOUND_STRING(
             "A rhythmic punch that may\n"
             "confuse the foe."),
-        .effect = EFFECT_HIT,
+        .effect = EFFECT_ACCURACY_DOWN,
         .power = 70,
         .type = TYPE_NORMAL,
         .accuracy = 100,
