@@ -70,7 +70,8 @@
 	F(TRAILBLAZE) \
 	F(FLAME_CHARGE) \
 	F(POUNCE) \
-	F(WORK_UP) 
+	F(WORK_UP) \
+    F(ROOST)
 
 #define FOREACH_HM(F) \
     F(CUT) \
