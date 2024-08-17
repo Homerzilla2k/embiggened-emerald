@@ -954,15 +954,12 @@ static const struct LevelUpMove sJigglypuffLevelUpLearnset[] = {
 	LEVEL_UP_MOVE( 8, MOVE_COVET), // Play Nice -> Covet: Gen VIII and IX move.  Fits character.
 	LEVEL_UP_MOVE(11, MOVE_DISABLE), // Disarming Voice -> Diable: Swap level with Fake Tears
 	LEVEL_UP_MOVE(14, MOVE_FAKE_TEARS), // Disable -> Fake Tears: TM Move.  Fits role better and gives power boost to Disarming Voice.
-	LEVEL_UP_MOVE(17, MOVE_SNARL), // Double Slap -> Snarl: New move for new role
-	LEVEL_UP_MOVE(20, MOVE_SWAGGER), // Rollout -> Swagger: New move for new role
+	LEVEL_UP_MOVE(18, MOVE_SNARL), // Double Slap -> Snarl: New move for new role
 	LEVEL_UP_MOVE(22, MOVE_ROUND),
-	LEVEL_UP_MOVE(25, MOVE_TAUNT), // Stockpile Suite -> Taunt: TM Move.  New Move for the role.  Also useful for Erika's Doubles Gym
-	LEVEL_UP_MOVE(27, MOVE_FAKE_OUT), // Wake-Up Slap -> Fake Out: New Move.  Fits Role.  Have for Erika
-	LEVEL_UP_MOVE(30, MOVE_REST),
-	LEVEL_UP_MOVE(32, MOVE_DAZZLING_GLEAM), // Body Slam -> Dazzling Gleam: TM Move.  Needs a Fairy Power upgrade but there are no mid power Fairy moves.  Could move to 38
-	LEVEL_UP_MOVE(35, MOVE_FOUL_PLAY), // Gyro Ball -> Foul Play: New Move for new Role.  
-	LEVEL_UP_MOVE(38, MOVE_TOPSY_TURVY), // Mimc -> Topsy Turvy.  New Move.  Mischevious trickery. Could move to 32
+	LEVEL_UP_MOVE(26, MOVE_FAKE_OUT), // Wake-Up Slap -> Fake Out: New Move.  Fits Role.  Have for Erika.  Move Wake-Up Slap to Egg or MT List.  
+	LEVEL_UP_MOVE(30, MOVE_ALLURING_VOICE), // Rest -> Alluring Voice: TM Move.  Fairy Power increase.  Plus, it's Wigglypuff, should get the Fairy voice move early
+	LEVEL_UP_MOVE(34, MOVE_BODY_SLAM), 
+	LEVEL_UP_MOVE(38, MOVE_REST), // Mimic -> Rest.  Move rest to 38 to get Alluring Voice earlier
 	LEVEL_UP_MOVE(41, MOVE_HYPER_VOICE),
 	LEVEL_UP_MOVE(45, MOVE_LOVELY_KISS), // Double-Edge -> Lovely Kiss: New Move. Update to Sing
 	LEVEL_UP_MOVE(48, MOVE_NASTY_PLOT), // New Move Slot -> Nasty Plot: TM Move.  
@@ -979,15 +976,12 @@ static const struct LevelUpMove sWigglytuffLevelUpLearnset[] = {
 	LEVEL_UP_MOVE( 8, MOVE_COVET), // Play Nice -> Covet: Gen VIII and IX move.  Fits character.
 	LEVEL_UP_MOVE(11, MOVE_DISABLE), // Disarming Voice -> Diable: Swap level with Fake Tears
 	LEVEL_UP_MOVE(14, MOVE_FAKE_TEARS), // Disable -> Fake Tears: TM Move.  Fits role better and gives power boost to Disarming Voice.
-	LEVEL_UP_MOVE(17, MOVE_SNARL), // Double Slap -> Snarl: New move for new role
-	LEVEL_UP_MOVE(20, MOVE_SWAGGER), // Rollout -> Swagger: New move for new role
+	LEVEL_UP_MOVE(18, MOVE_SNARL), // Double Slap -> Snarl: New move for new role
 	LEVEL_UP_MOVE(22, MOVE_ROUND),
-	LEVEL_UP_MOVE(25, MOVE_TAUNT), // Stockpile Suite -> Taunt: TM Move.  New Move for the role.  Also useful for Erika's Doubles Gym
-	LEVEL_UP_MOVE(27, MOVE_FAKE_OUT), // Wake-Up Slap -> Fake Out: New Move.  Fits Role.  Have for Erika.  Move Wake-Up Slap to Egg or MT List.  
-	LEVEL_UP_MOVE(30, MOVE_REST),
-	LEVEL_UP_MOVE(32, MOVE_DAZZLING_GLEAM), // Body Slam -> Dazzling Gleam: TM Move.  Needs a Fairy Power upgrade but there are no mid power Fairy moves.  Could move to 38
-	LEVEL_UP_MOVE(35, MOVE_FOUL_PLAY), // Gyro Ball -> Foul Play: New Move for new Role.  
-	LEVEL_UP_MOVE(38, MOVE_TOPSY_TURVY), // Mimc -> Topsy Turvy.  New Move.  Mischevious trickery. Could move to 32
+	LEVEL_UP_MOVE(26, MOVE_FAKE_OUT), // Wake-Up Slap -> Fake Out: New Move.  Fits Role.  Have for Erika.  Move Wake-Up Slap to Egg or MT List.  
+	LEVEL_UP_MOVE(30, MOVE_ALLURING_VOICE), // Rest -> Alluring Voice: TM Move.  Fairy Power increase.  Plus, it's Wigglypuff, should get the Fairy voice move early
+	LEVEL_UP_MOVE(34, MOVE_BODY_SLAM), 
+	LEVEL_UP_MOVE(38, MOVE_REST), // Mimic -> Rest.  Move rest to 38 to get Alluring Voice earlier
 	LEVEL_UP_MOVE(41, MOVE_HYPER_VOICE),
 	LEVEL_UP_MOVE(45, MOVE_LOVELY_KISS), // Double-Edge -> Lovely Kiss: New Move. Update to Sing
 	LEVEL_UP_MOVE(48, MOVE_NASTY_PLOT), // New Move Slot -> Nasty Plot: TM Move.  
@@ -7055,7 +7049,7 @@ static const struct LevelUpMove sCelebiLevelUpLearnset[] = {
 static const struct LevelUpMove sTreeckoLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_POUND),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
-    LEVEL_UP_MOVE( 6, MOVE_ABSORB),
+    LEVEL_UP_MOVE( 6, MOVE_LEAFAGE), // ABSORB -> LEAFAGE: GEN IX MOVE.  BETTER THAN ABSORB FOR THIS
     LEVEL_UP_MOVE( 9, MOVE_QUICK_ATTACK),
     LEVEL_UP_MOVE(13, MOVE_MEGA_DRAIN),
     LEVEL_UP_MOVE(17, MOVE_PURSUIT),
@@ -7071,19 +7065,19 @@ static const struct LevelUpMove sTreeckoLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sGrovyleLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 0, MOVE_RAZOR_LEAF),
+    LEVEL_UP_MOVE( 1, MOVE_RAZOR_LEAF), // HOW DOES THIS NOT GET RAZOR LEAF?
     LEVEL_UP_MOVE( 1, MOVE_POUND),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
-    LEVEL_UP_MOVE( 1, MOVE_ABSORB),
-    LEVEL_UP_MOVE( 1, MOVE_QUICK_ATTACK),
-    LEVEL_UP_MOVE( 5, MOVE_ABSORB),
+    LEVEL_UP_MOVE( 5, MOVE_LEAFAGE), // ABSORB -> LEAFAGE: GEN IX MOVE.  BETTER THAN ABSORB FOR THIS
     LEVEL_UP_MOVE( 9, MOVE_QUICK_ATTACK),
     LEVEL_UP_MOVE(13, MOVE_MEGA_DRAIN),
     LEVEL_UP_MOVE(16, MOVE_FURY_CUTTER),
     LEVEL_UP_MOVE(18, MOVE_PURSUIT),
-    LEVEL_UP_MOVE(23, MOVE_LEAF_BLADE),
+    LEVEL_UP_MOVE(23, MOVE_GIGA_DRAIN), // LEAF BLADE -> GIGA DRAIN: LEAF BLADE IS VERY GOOD.  PUT GIGA DRAIN BACK HERE FROM TREECKOS
     LEVEL_UP_MOVE(28, MOVE_AGILITY),
     LEVEL_UP_MOVE(33, MOVE_SLAM),
-    LEVEL_UP_MOVE(38, MOVE_DETECT),
+    LEVEL_UP_MOVE(38, MOVE_LEAF_BLADE),
     LEVEL_UP_MOVE(43, MOVE_X_SCISSOR),
     LEVEL_UP_MOVE(48, MOVE_FALSE_SWIPE),
     LEVEL_UP_MOVE(53, MOVE_QUICK_GUARD),
@@ -7095,20 +7089,19 @@ static const struct LevelUpMove sGrovyleLevelUpLearnset[] = {
 static const struct LevelUpMove sSceptileLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_LEAF_STORM),
     LEVEL_UP_MOVE( 1, MOVE_NIGHT_SLASH),
+    LEVEL_UP_MOVE( 1, MOVE_RAZOR_LEAF),
     LEVEL_UP_MOVE( 1, MOVE_POUND),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
-    LEVEL_UP_MOVE( 1, MOVE_ABSORB),
-    LEVEL_UP_MOVE( 1, MOVE_QUICK_ATTACK),
-    LEVEL_UP_MOVE( 5, MOVE_ABSORB),
+    LEVEL_UP_MOVE( 5, MOVE_LEAFAGE), // ABSORB -> LEAFAGE: GEN IX MOVE.  BETTER THAN ABSORB FOR THIS
     LEVEL_UP_MOVE( 9, MOVE_QUICK_ATTACK),
     LEVEL_UP_MOVE(13, MOVE_MEGA_DRAIN),
     LEVEL_UP_MOVE(16, MOVE_FURY_CUTTER),
     LEVEL_UP_MOVE(18, MOVE_PURSUIT),
-    LEVEL_UP_MOVE(23, MOVE_LEAF_BLADE),
+    LEVEL_UP_MOVE(23, MOVE_GIGA_DRAIN), // LEAF BLADE -> GIGA DRAIN: LEAF BLADE IS VERY GOOD.  PUT GIGA DRAIN BACK HERE FROM TREECKOS
     LEVEL_UP_MOVE(28, MOVE_AGILITY),
     LEVEL_UP_MOVE(33, MOVE_SLAM),
     LEVEL_UP_MOVE(36, MOVE_DUAL_CHOP),
-    LEVEL_UP_MOVE(39, MOVE_DETECT),
+    LEVEL_UP_MOVE(39, MOVE_LEAF_BLADE),
     LEVEL_UP_MOVE(45, MOVE_X_SCISSOR),
     LEVEL_UP_MOVE(51, MOVE_FALSE_SWIPE),
     LEVEL_UP_MOVE(57, MOVE_QUICK_GUARD),
@@ -7138,8 +7131,6 @@ static const struct LevelUpMove sTorchicLevelUpLearnset[] = {
 static const struct LevelUpMove sCombuskenLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
-    LEVEL_UP_MOVE( 1, MOVE_EMBER),
-    LEVEL_UP_MOVE( 1, MOVE_SAND_ATTACK),
     LEVEL_UP_MOVE( 5, MOVE_EMBER),
     LEVEL_UP_MOVE(10, MOVE_SAND_ATTACK),
     LEVEL_UP_MOVE(14, MOVE_PECK),
@@ -7162,8 +7153,6 @@ static const struct LevelUpMove sBlazikenLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_DOUBLE_KICK),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
-    LEVEL_UP_MOVE( 1, MOVE_EMBER),
-    LEVEL_UP_MOVE( 1, MOVE_SAND_ATTACK),
     LEVEL_UP_MOVE( 5, MOVE_EMBER),
     LEVEL_UP_MOVE(10, MOVE_SAND_ATTACK),
     LEVEL_UP_MOVE(14, MOVE_PECK),
@@ -7202,8 +7191,6 @@ static const struct LevelUpMove sMudkipLevelUpLearnset[] = {
 static const struct LevelUpMove sMarshtompLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
-    LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),
-    LEVEL_UP_MOVE( 1, MOVE_MUD_SLAP),
     LEVEL_UP_MOVE( 6, MOVE_WATER_GUN),
     LEVEL_UP_MOVE( 9, MOVE_MUD_SLAP),
     LEVEL_UP_MOVE(12, MOVE_FORESIGHT),
@@ -8191,23 +8178,25 @@ static const struct LevelUpMove sDelcattyLevelUpLearnset[] = {
 
 #if P_FAMILY_SABLEYE
 static const struct LevelUpMove sSableyeLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_QUASH), // NEW MOVE SLOT -> QUASH: MOVE QUASH TO LEVEL IT SINCE IT'S SO SITUATIONAL.
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 3, MOVE_ASTONISH),
+    LEVEL_UP_MOVE( 6, MOVE_NIGHT_SHADE), // NEW MOVE SLOT -> NIGHT SHADE: MOVE NIGHT SHADE HIGHER IN TO MOVESET TO FREE UP THE SPACE
     LEVEL_UP_MOVE( 9, MOVE_SHADOW_SNEAK),
     LEVEL_UP_MOVE(12, MOVE_FAKE_OUT),
     LEVEL_UP_MOVE(15, MOVE_DISABLE),
-    LEVEL_UP_MOVE(18, MOVE_DETECT),
-    LEVEL_UP_MOVE(21, MOVE_NIGHT_SHADE),
-    LEVEL_UP_MOVE(24, MOVE_FURY_SWIPES),
+    LEVEL_UP_MOVE(18, MOVE_FEINT_ATTACK), // DETECT -> FEINT ATTACK: OLD MOVE. ADD DARK TYPE STAB BEFORE KNOCK OFF AT 27
+    LEVEL_UP_MOVE(21, MOVE_DETECT), // NIGHT SHADE -> DETECT: MOVE DETECT TO NIGHT SHADE'S SPOT
+    LEVEL_UP_MOVE(24, MOVE_GLARE), // FURY SWIPES -> GLARE: NEW MOVE. PARALYSIS MOVE. FUN DOUBLE MEANING, GEM GALRE AND EVIL LOOK.  
     LEVEL_UP_MOVE(27, MOVE_KNOCK_OFF),
-    LEVEL_UP_MOVE(30, MOVE_QUASH),
+    LEVEL_UP_MOVE(30, MOVE_MEAN_LOOK), // QUASH -> MEAN LOOK: MOVE MEAN LOOK UP TO MAKE MORE ROOM AT THE END OF THE MOVESET.
     LEVEL_UP_MOVE(33, MOVE_SHADOW_CLAW),
-    LEVEL_UP_MOVE(36, MOVE_MEAN_LOOK),
-    LEVEL_UP_MOVE(39, MOVE_POWER_GEM),
+    LEVEL_UP_MOVE(36, MOVE_POWER_GEM), // MEAN LOOK -> POWER GEM.  MOVE POWER GEM UP TO MEAN LOOK'S OLD SPOT
+    LEVEL_UP_MOVE(39, MOVE_FOUL_PLAY), // MOVE FOUL PLAY TO POWER GEM'S OLD SPOT.
     LEVEL_UP_MOVE(42, MOVE_ZEN_HEADBUTT),
-    LEVEL_UP_MOVE(45, MOVE_SHADOW_BALL),
-    LEVEL_UP_MOVE(48, MOVE_FOUL_PLAY),
+    LEVEL_UP_MOVE(45, MOVE_SPECTRAL_THIEF), // Shadow Ball -> Spectral Thief: New move.  I think the effect works for Sableye
+    LEVEL_UP_MOVE(48, MOVE_BADDY_BAD), // FOUL PLAY -> BADDY BAD: NEW MOVE.  i THINK IT FITS REALLY WELL, OR THE IDEA OF IT CHANNELING EVIL ENGERY THROUGH ITS GEM TO DEAL DAMAGE AND SET UP A WALL DOES
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SABLEYE
@@ -8220,16 +8209,18 @@ static const struct LevelUpMove sMawileLevelUpLearnset[] = {
 	LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 4, MOVE_FAIRY_WIND),
-    LEVEL_UP_MOVE( 8, MOVE_BATON_PASS),
-    LEVEL_UP_MOVE(12, MOVE_BITE),
-	LEVEL_UP_MOVE(16, MOVE_VISE_GRIP), // STOCKPILE -> VISE GRIP: GEN 6 MOVE.
+    LEVEL_UP_MOVE( 7, MOVE_FAKE_TEARS), // BATON PASS -> FAKE TEARS: MOVE FT UP TO BATON PASS' SPOT AND MAKE IT ONE LEVEL EARLIER
+    LEVEL_UP_MOVE(10, MOVE_BITE),
+	LEVEL_UP_MOVE(13, MOVE_METAL_CLAW), // STOCKPILE -> METAL CLAW. NEW MOVE: EARLIER USEFUL STAB.
+    LEVEL_UP_MOVE(17, MOVE_COVET), // NEW MOVE SLOT -> COVET: NEW MOVE. CHANGED TYPE TO FAIRY TO MAKE AN EARLY GAME PHYSICAL FAIRY MOVE
     LEVEL_UP_MOVE(20, MOVE_SUCKER_PUNCH),
-    LEVEL_UP_MOVE(24, MOVE_IRON_DEFENSE),
-    LEVEL_UP_MOVE(28, MOVE_CRUNCH),
-    LEVEL_UP_MOVE(32, MOVE_SPIRIT_BREAK), // SWEET SCENT -> SPIRIT BREAK: NEW MOVE. NOT SURE WHAT SWEET SCENT EVEN DOES HERE.  NEEDS A PHYSICAL FAIRY MOVE BEFORE END GAME STAGE.
+    LEVEL_UP_MOVE(24, MOVE_BATON_PASS), // IRON DEFENSE -> BATON PASS: MOVE BATON PASS CLOSER TO WHERE IT IS IN GEN VI
+    LEVEL_UP_MOVE(27, MOVE_CRUNCH),
+    LEVEL_UP_MOVE(30, MOVE_IRON_DEFENSE), // NEW MOVE SLOT -> IRON DEFENSE: NEW SPOT FOR IRON DEFENSE
+    LEVEL_UP_MOVE(33, MOVE_SPIRIT_BREAK), // SWEET SCENT -> SPIRIT BREAK: NEW MOVE. NOT SURE WHAT SWEET SCENT EVEN DOES HERE.  NEEDS A PHYSICAL FAIRY MOVE BEFORE END GAME STAGE.
     LEVEL_UP_MOVE(36, MOVE_IRON_HEAD),
-    LEVEL_UP_MOVE(40, MOVE_TAUNT),
-    LEVEL_UP_MOVE(44, MOVE_FAKE_TEARS),
+    LEVEL_UP_MOVE(40, MOVE_PSYCHIC_FANGS), // TAUNT -> PSYCHIC FANGS: TM MOVE. TAUNT IS A TM MOVE AND YOU'LL GET IT EARLIER THAN 40 ANYWAY.
+    LEVEL_UP_MOVE(44, MOVE_PLAY_ROUGH), // BATON PASS -> PLAY ROUGH. MOVE PR UP 4 LEVELS
     LEVEL_UP_MOVE(48, MOVE_PLAY_ROUGH),
     LEVEL_UP_END
 };

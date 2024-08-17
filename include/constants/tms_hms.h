@@ -71,7 +71,8 @@
 	F(FLAME_CHARGE) \
 	F(POUNCE) \
 	F(WORK_UP) \
-    F(ROOST)
+    F(ROOST) \
+    F(SWAGGER)
 
 #define FOREACH_HM(F) \
     F(CUT) \

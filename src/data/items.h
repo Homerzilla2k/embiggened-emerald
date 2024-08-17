@@ -11452,28 +11452,34 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_ROOST, 
     },
 
-    [ITEM_TM71] =
+    [ITEM_TM_SWAGGER] =
     {
         .name = _("TM71"),
         .price = 3000,
-        .description = sQuestionMarksDesc, // Todo
+        .description = COMPOUND_STRING(
+            "Confuses the foe\n"
+            "but sharply raises\n"
+            "Attack."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
+        .secondaryId = MOVE_SWAGGER, // Todo
     },
 
-    [ITEM_TM72] =
+    [ITEM_TM_FOUL_PLAY] =
     {
         .name = _("TM72"),
         .price = 3000,
-        .description = sQuestionMarksDesc, // Todo
+        .description = COMPOUND_STRING(
+            "The higher the foe's\n"
+            "Attack. The more\n"
+            "damage caused."), 
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
+        .secondaryId = MOVE_FOUL_PLAY, // Todo
     },
 
     [ITEM_TM73] =

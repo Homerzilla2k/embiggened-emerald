@@ -2127,6 +2127,10 @@ Zigzagoon @ Nugget
 Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+Skitty
+Level: 7
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
 === TRAINER_DAPHNE ===
 Name: DAPHNE
 Class: Lady
@@ -2190,6 +2194,10 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Tackle
 - Tail Whip
 
+Skitty
+Level: 11
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
 === TRAINER_BRIANNA ===
 Name: BRIANNA
 Class: Lady
@@ -2244,7 +2252,11 @@ AI: Check Bad Move
 
 Linoone @ Nugget
 Level: 30
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Delcatty
+Level: 30
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CINDY_5 ===
 Name: CINDY
@@ -2257,6 +2269,10 @@ Double Battle: No
 AI: Check Bad Move
 
 Linoone @ Nugget
+Level: 33
+IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+
+Delcatty
 Level: 33
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
@@ -2277,6 +2293,10 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 - Mud Sport
 - Odor Sleuth
 - Sand Attack
+
+Delcatty
+Level: 36
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_MELISSA ===
 Name: MELISSA
@@ -2528,8 +2548,12 @@ Double Battle: No
 AI: Check Bad Move
 
 Zigzagoon @ Nugget
-Level: 7
+Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Taillow
+Level: 7
+IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe 
 
 === TRAINER_MOLLIE ===
 Name: MOLLIE
@@ -2576,6 +2600,10 @@ Linoone @ Nugget
 Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+Swellow
+Level: 27
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe 
+
 === TRAINER_WINSTON_3 ===
 Name: WINSTON
 Class: Rich Boy
@@ -2590,6 +2618,10 @@ Linoone @ Nugget
 Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+Swellow
+Level: 30
+IVs: IVs: 0 HP / 0 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe 
+
 === TRAINER_WINSTON_4 ===
 Name: WINSTON
 Class: Rich Boy
@@ -2603,6 +2635,10 @@ AI: Check Bad Move
 Linoone @ Nugget
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Swellow
+Level: 33
+IVs: IVs: 0 HP / 0 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe 
 
 === TRAINER_WINSTON_5 ===
 Name: WINSTON
@@ -2621,6 +2657,10 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Mud Sport
 - Odor Sleuth
 - Sand Attack
+
+Swellow:
+Level: 36
+IVs: IVs: 0 HP / 0 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe 
 
 === TRAINER_STEVE_1 ===
 Name: STEVE
@@ -5247,6 +5287,10 @@ Shroomish
 Level: 9
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
+Whismur
+Level: 10
+IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe 
+
 === TRAINER_GEORGIA ===
 Name: GEORGIA
 Class: School Kid
@@ -5970,10 +6014,11 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Geodude
+Rhyhorn
 Level: 10
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Tackle
+- Tail Whip
 
 === TRAINER_TOMMY ===
 Name: TOMMY
@@ -5985,12 +6030,18 @@ Double Battle: No
 AI: Check Bad Move
 
 Geodude
-Level: 8
+Level: 10
 IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+- Wide Guard
+- Tackle
+- Magnitude
 
-Geodude
-Level: 8
+Aron
+Level: 10
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+- Protect
+- Tackle
+- Rock Tomb
 
 === TRAINER_JOEY ===
 Name: JOEY
@@ -6000,6 +6051,10 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Check Bad Move
+
+Zigzagoon
+Level: 8
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe 
 
 Machop
 Level: 9
@@ -8797,13 +8852,17 @@ Music: Twins
 Double Battle: Yes
 AI: Check Bad Move
 
-Seedot
-Level: 6
+Skitty
+Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Fake Out
+- Helping Hand
 
-Lotad
-Level: 6
+Ralts
+Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Disarming Voice
+- Growl
 
 === TRAINER_MIU_AND_YUKI ===
 Name: MIU & YUKI
@@ -8848,17 +8907,17 @@ Music: Twins
 Double Battle: Yes
 AI: Check Bad Move
 
-Duskull
+Skitty
 Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Night Shade
-- Disable
+- Fake Out
+- Helping Hand
 
-Shroomish
+Ralts
 Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Absorb
-- Leech Seed
+- Growl
+- Disarming Voice
 
 === TRAINER_AMY_AND_LIV_4 ===
 Name: AMY & LIV
@@ -10551,13 +10610,26 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Geodude
-Level: 8
+Aron
+Level: 9
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+- Metal Claw
+- Protect
+- Tackle
 
 Geodude
-Level: 8
+Level: 9
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Wide Guard
+- Tackle
+- Rock Throw
+
+Geodude
+Level: 10
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+- Protect
+- Tackle
+- Rock Throw
 
 === TRAINER_BRENDEN ===
 Name: BRENDEN
@@ -11062,12 +11134,16 @@ Double Battle: No
 AI: Check Bad Move
 
 Lotad
-Level: 6
+Level: 9
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Shroomish
-Level: 6
+Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Seedot
+Level: 9
+IVs: 0 HP / 0 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe 
 
 === TRAINER_JANICE ===
 Name: JANICE
@@ -11120,6 +11196,10 @@ Shroomish
 Level: 26
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
+Nuzleaf
+Level: 26
+IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe 
+
 === TRAINER_HALEY_3 ===
 Name: HALEY
 Class: Lass
@@ -11136,6 +11216,10 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 Breloom
 Level: 29
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+
+Nuzleaf
+Level: 29
+IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe 
 
 === TRAINER_HALEY_4 ===
 Name: HALEY
@@ -11154,6 +11238,10 @@ Breloom
 Level: 32
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
+Shiftry
+Level: 32
+IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe 
+
 === TRAINER_HALEY_5 ===
 Name: HALEY
 Class: Lass
@@ -11167,13 +11255,17 @@ Swellow
 Level: 34
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-Lombre
+LLuicolo
 Level: 34
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 Breloom
 Level: 34
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+
+Shiftry
+Level: 34
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe 
 
 === TRAINER_SALLY ===
 Name: SALLY
@@ -11266,19 +11358,19 @@ Double Battle: No
 AI: Check Bad Move
 
 Wurmple
-Level: 3
+Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Wurmple
-Level: 3
+Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Wurmple
-Level: 3
+Cascoon
+Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Wurmple
-Level: 3
+Silcoon
+Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JOSE ===
@@ -11290,9 +11382,13 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Wurmple
+Silcoon
 Level: 8
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+Wurmple
+Level: 6
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe 
 
 Nincada
 Level: 8
@@ -11358,7 +11454,11 @@ Nincada
 Level: 6
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Nincada
+Cascoon
+Level: 6
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Surskit
 Level: 6
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -11374,6 +11474,14 @@ AI: Check Bad Move
 Ninjask
 Level: 27
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+
+Dustox
+Level: 27
+IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+
+Masquerain
+Level: 27
+IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe 
 
 === TRAINER_JAMES_3 ===
 Name: JAMES
@@ -11392,6 +11500,10 @@ Ninjask
 Level: 29
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
+Masquerain
+Level: 29
+IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe 
+
 === TRAINER_JAMES_4 ===
 Name: JAMES
 Class: Bug Catcher
@@ -11401,7 +11513,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Surskit
+Masquerain
 Level: 31
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
@@ -11422,7 +11534,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Surskit
+Masquerain
 Level: 33
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
@@ -11543,6 +11655,10 @@ AI: Check Bad Move
 Geodude
 Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Slakoth
+Level: 14
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe 
 
 === TRAINER_ERIC ===
 Name: ERIC
@@ -12971,6 +13087,10 @@ Magikarp
 Level: 9
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+Wingull
+Level: 7
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
 === TRAINER_HAILEY ===
 Name: HAILEY
 Class: Tuber F
@@ -13854,9 +13974,13 @@ Geodude
 Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Geodude
-Level: 8
+Zubat
+Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Makuhita
+Level: 8
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe 
 
 === TRAINER_JOHNSON ===
 Name: JOHNSON
@@ -13867,13 +13991,18 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Shroomish
-Level: 8
+Cascoon
+Level: 9
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- String Shot
+- Bug Bite
 
-Lotad
-Level: 8
+Marill
+Level: 9
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Bubble
+- Tail Whip
+- Helping Hand
 
 === TRAINER_MELINA ===
 Name: MELINA
