@@ -20052,12 +20052,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
 
     [MOVE_GIGATON_HAMMER] =
     {
-        .name = HANDLE_EXPANDED_MOVE_NAME("GigatonHammr", "Gigaton Hammer"),
+        .name = HANDLE_EXPANDED_MOVE_NAME("GigatonCrush", "Gigaton Hammer"),
         .description = COMPOUND_STRING(
-            "Swings a huge hammer. Can't\n"
+            "Crush with metal fangs. Can't\n"
             "be used twice in a row."),
         .effect = EFFECT_HIT,
-        .power = 160,
+        .power = 140, // 160 -> 140
         .type = TYPE_STEEL,
         .accuracy = 100,
         .pp = 5,

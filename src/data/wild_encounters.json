@@ -1152,7 +1152,7 @@
               {
                 "min_level": 16,
                 "max_level": 16,
-                "species": "SPECIES_SPINDA"
+                "species": "SPECIES_SLUGMA"
               },
               {
                 "min_level": 16,
@@ -1162,7 +1162,7 @@
               {
                 "min_level": 16,
                 "max_level": 16,
-                "species": "SPECIES_SPINDA"
+                "species": "SPECIES_SLUGMA"
               },
               {
                 "min_level": 16,
@@ -1380,7 +1380,7 @@
               {
                 "min_level": 7,
                 "max_level": 7,
-                "species": "SPECIES_ABRA"
+                "species": "SPECIES_SPOINK"
               },
               {
                 "min_level": 8,
@@ -1400,7 +1400,7 @@
               {
                 "min_level": 9,
                 "max_level": 9,
-                "species": "SPECIES_TAILLOW"
+                "species": "SPECIES_SPOINK"
               },
               {
                 "min_level": 7,
@@ -1444,7 +1444,7 @@
               {
                 "min_level": 14,
                 "max_level": 14,
-                "species": "SPECIES_POOCHYENA"
+                "species": "SPECIES_VULPIX"
               },
               {
                 "min_level": 14,

@@ -72,7 +72,8 @@
 	F(POUNCE) \
 	F(WORK_UP) \
     F(ROOST) \
-    F(SWAGGER)
+    F(SWAGGER) \
+    F(FOUL_PLAY)
 
 #define FOREACH_HM(F) \
     F(CUT) \
