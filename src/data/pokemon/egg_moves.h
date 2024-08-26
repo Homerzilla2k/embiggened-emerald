@@ -2875,6 +2875,7 @@ static const u16 sGulpinEggMoveLearnset[] = {
     MOVE_MUD_SLAP,
     MOVE_GUNK_SHOT,
     MOVE_VENOM_DRENCH,
+    MOVE_CORROSIVE_GAS,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_GULPIN
