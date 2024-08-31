@@ -4867,10 +4867,10 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Anorith
 Level: 12
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+IVs: 12 HP / 12 Atk / 12 Def / 6 SpA / 12 SpD / 12 Spe
 - Scratch
 - Harden
-- None
+- Struggle Bug
 - None
 
 
