@@ -12076,7 +12076,7 @@ F_TRAINER_FEMALE |
 #line 4871
                 MOVE_SCRATCH,
                 MOVE_HARDEN,
-                MOVE_NONE,
+                MOVE_STRUGGLE_BUG,
                 MOVE_NONE,
             },
             },
