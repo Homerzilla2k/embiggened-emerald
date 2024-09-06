@@ -7495,13 +7495,7 @@ static const struct LevelUpMove sLotadLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sLombreLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_GROWL),
-    LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),
-    LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
-    LEVEL_UP_MOVE( 1, MOVE_TEETER_DANCE),
-    LEVEL_UP_MOVE( 1, MOVE_KNOCK_OFF),
     LEVEL_UP_MOVE( 1, MOVE_FAKE_OUT),
-    LEVEL_UP_MOVE( 1, MOVE_FLAIL),
     LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 3, MOVE_ABSORB),
@@ -8148,9 +8142,9 @@ static const struct LevelUpMove sProbopassLevelUpLearnset[] = {
 
 #if P_FAMILY_SKITTY
 static const struct LevelUpMove sSkittyLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE( 1, MOVE_FAKE_OUT),
     LEVEL_UP_MOVE( 1, MOVE_CHARM), // GROWL -> CHARM: MOVE CHARM UP. FITS CHARACTER BETTER
-    LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE( 4, MOVE_SWIFT), // TACKLE -> SWIFT: NEW MOVE. ZEN MODE IDEA.
     LEVEL_UP_MOVE( 7, MOVE_HELPING_HAND),
     LEVEL_UP_MOVE(10, MOVE_YAWN), // SING -> YAWN: EGG MOVE. ZENMODE IDEA
