@@ -954,8 +954,8 @@ static const struct LevelUpMove sJigglypuffLevelUpLearnset[] = {
 	LEVEL_UP_MOVE( 3, MOVE_PLAY_NICE), // Defense Curl -> Play Nice: Move Play Nice up to Level 3.  Does the same thing as Defense Curl basically
 	LEVEL_UP_MOVE( 5, MOVE_DISARMING_VOICE), // Pound -> Disarming Voice: Moving Disarming Voice up because it fits better and enough things get generic Pound/Tackle moves. Plus Copycat can give you that.
 	LEVEL_UP_MOVE( 8, MOVE_COVET), // Play Nice -> Covet: Gen VIII and IX move.  Fits character.
-	LEVEL_UP_MOVE(11, MOVE_DISABLE), // Disarming Voice -> Diable: Swap level with Fake Tears
-	LEVEL_UP_MOVE(14, MOVE_FAKE_TEARS), // Disable -> Fake Tears: TM Move.  Fits role better and gives power boost to Disarming Voice.
+	LEVEL_UP_MOVE(11, MOVE_FAKE_TEARS), // Disarming Voice -> Diable: Swap level with Fake Tears
+	LEVEL_UP_MOVE(14, MOVE_FOLLOW_ME), // Disable -> Fake Tears: TM Move.  Fits role better and gives power boost to Disarming Voice.
 	LEVEL_UP_MOVE(18, MOVE_SNARL), // Double Slap -> Snarl: New move for new role
 	LEVEL_UP_MOVE(22, MOVE_ROUND),
 	LEVEL_UP_MOVE(26, MOVE_FAKE_OUT), // Wake-Up Slap -> Fake Out: New Move.  Fits Role.  Have for Erika.  Move Wake-Up Slap to Egg or MT List.  
@@ -976,8 +976,8 @@ static const struct LevelUpMove sWigglytuffLevelUpLearnset[] = {
 	LEVEL_UP_MOVE( 3, MOVE_PLAY_NICE), // Defense Curl -> Play Nice: Move Play Nice up to Level 3.  Does the same thing as Defense Curl basically
 	LEVEL_UP_MOVE( 5, MOVE_DISARMING_VOICE), // Pound -> Disarming Voice: Moving Disarming Voice up because it fits better and enough things get generic Pound/Tackle moves. Plus Copycat can give you that.
 	LEVEL_UP_MOVE( 8, MOVE_COVET), // Play Nice -> Covet: Gen VIII and IX move.  Fits character.
-	LEVEL_UP_MOVE(11, MOVE_DISABLE), // Disarming Voice -> Diable: Swap level with Fake Tears
-	LEVEL_UP_MOVE(14, MOVE_FAKE_TEARS), // Disable -> Fake Tears: TM Move.  Fits role better and gives power boost to Disarming Voice.
+	LEVEL_UP_MOVE(11, MOVE_FAKE_TEARS), // Disarming Voice -> Fake Tears: TM Move.  Fits role better and gives power boost to Disarming Voice.
+	LEVEL_UP_MOVE(14, MOVE_FOLLOW_ME), // Disable -> Follw Me: New Move. Jigglypuff should get it.  It's the showman Pokemon with the singing and kids like to look at balloons. 
 	LEVEL_UP_MOVE(18, MOVE_SNARL), // Double Slap -> Snarl: New move for new role
 	LEVEL_UP_MOVE(22, MOVE_ROUND),
 	LEVEL_UP_MOVE(26, MOVE_FAKE_OUT), // Wake-Up Slap -> Fake Out: New Move.  Fits Role.  Have for Erika.  Move Wake-Up Slap to Egg or MT List.  
@@ -7657,7 +7657,7 @@ static const struct LevelUpMove sWingullLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 5, MOVE_SUPERSONIC),
     LEVEL_UP_MOVE( 8, MOVE_GUST), // WING ATTACK -> GUST: KEVAN NOTICED WING ATTACK IS TOO STRONG FOR LEVEL 8.  GUST IS A GOOD OPTION
     LEVEL_UP_MOVE(12, MOVE_MIST),
-    LEVEL_UP_MOVE(15, MOVE_WATER_PULSE),
+    LEVEL_UP_MOVE(15, MOVE_CHILLING_WATER), // Water Pulse -> Chilling Water: TM Move Gen IX.  Do defense and offense
     LEVEL_UP_MOVE(19, MOVE_QUICK_ATTACK),
     LEVEL_UP_MOVE(22, MOVE_AIR_CUTTER),
     LEVEL_UP_MOVE(26, MOVE_PURSUIT),
@@ -7678,7 +7678,7 @@ static const struct LevelUpMove sPelipperLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 5, MOVE_SUPERSONIC),
     LEVEL_UP_MOVE( 8, MOVE_GUST), // WING ATTACK -> GUST: KEVAN NOTICED WING ATTACK IS TOO STRONG FOR LEVEL 8.  GUST IS A GOOD OPTION
     LEVEL_UP_MOVE(12, MOVE_MIST),
-    LEVEL_UP_MOVE(15, MOVE_WATER_PULSE),
+    LEVEL_UP_MOVE(15, MOVE_CHILLING_WATER), // Water Pulse -> Chilling Water: TM Move Gen IX.  Do defense and offense
     LEVEL_UP_MOVE(19, MOVE_PAYBACK),
     LEVEL_UP_MOVE(22, MOVE_ROOST),
     LEVEL_UP_MOVE(25, MOVE_PROTECT),
@@ -9643,7 +9643,7 @@ static const struct LevelUpMove sSphealLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_ROLLOUT),
     LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
     LEVEL_UP_MOVE( 4, MOVE_GROWL),
-    LEVEL_UP_MOVE( 8, MOVE_WATER_GUN),
+    LEVEL_UP_MOVE( 8, MOVE_CHILLING_WATER), // Water Gun -> Chilling Water: Gen IX TM move. Fit the character of Spheal as a Water/Ice
     LEVEL_UP_MOVE(12, MOVE_POWDER_SNOW),
     LEVEL_UP_MOVE(16, MOVE_REST),
     LEVEL_UP_MOVE(20, MOVE_SNORE),
@@ -9663,8 +9663,8 @@ static const struct LevelUpMove sSealeoLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SWAGGER),
     LEVEL_UP_MOVE( 1, MOVE_ROLLOUT),
     LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
-    LEVEL_UP_MOVE( 1, MOVE_GROWL),
-    LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),
+    LEVEL_UP_MOVE( 4, MOVE_GROWL),
+    LEVEL_UP_MOVE( 8, MOVE_CHILLING_WATER), // Water Gun -> Chilling Water: Gen IX TM move. Fit the character of Spheal as a Water/Ice
     LEVEL_UP_MOVE(12, MOVE_POWDER_SNOW),
     LEVEL_UP_MOVE(16, MOVE_REST),
     LEVEL_UP_MOVE(20, MOVE_SNORE),
@@ -9680,13 +9680,14 @@ static const struct LevelUpMove sSealeoLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sWalreinLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 0, MOVE_ICE_FANG), // Make Ice Fang Evolution Move
+    LEVEL_UP_MOVE( 1, MOVE_ICE_FANG),
     LEVEL_UP_MOVE( 1, MOVE_SWAGGER),
     LEVEL_UP_MOVE( 1, MOVE_CRUNCH),
-    LEVEL_UP_MOVE( 1, MOVE_ICE_FANG),
     LEVEL_UP_MOVE( 1, MOVE_ROLLOUT),
     LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
-    LEVEL_UP_MOVE( 1, MOVE_GROWL),
-    LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),
+    LEVEL_UP_MOVE( 4, MOVE_GROWL),
+    LEVEL_UP_MOVE( 8, MOVE_CHILLING_WATER), // Water Gun -> Chilling Water: Gen IX TM move. Fit the character of Spheal as a Water/Ice
     LEVEL_UP_MOVE(12, MOVE_POWDER_SNOW),
     LEVEL_UP_MOVE(16, MOVE_REST),
     LEVEL_UP_MOVE(20, MOVE_SNORE),

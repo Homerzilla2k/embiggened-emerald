@@ -11482,16 +11482,19 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_FOUL_PLAY, // Todo
     },
 
-    [ITEM_TM73] =
+    [ITEM_TM_ICY_WIND] =
     {
         .name = _("TM73"),
         .price = 3000,
-        .description = sQuestionMarksDesc, // Todo
+        .description = COMPOUND_STRING(
+            "A chilling attack\n"
+            "that lowers foe's\n"
+            "Speed."), 
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
+        .secondaryId = MOVE_ICY_WIND, // Todo
     },
 
     [ITEM_TM74] =

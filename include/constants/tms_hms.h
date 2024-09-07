@@ -73,7 +73,8 @@
 	F(WORK_UP) \
     F(ROOST) \
     F(SWAGGER) \
-    F(FOUL_PLAY)
+    F(FOUL_PLAY) \
+    F(ICY_WIND)
 
 #define FOREACH_HM(F) \
     F(CUT) \
