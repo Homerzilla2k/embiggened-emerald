@@ -13727,6 +13727,8 @@ const struct Item gItemsInfo[] =
     {
         .name = HANDLE_EXPANDED_ITEM_NAME("CornrstneMask", "Cornerstone Mask"),
         .price = 0,
+        .holdEffect = HOLD_EFFECT_OGERPON_MASK,
+        .holdEffectParam = 20,
         .description = COMPOUND_STRING(
             "Allows Ogerpon to\n"
             "wield the Rock-\n"
@@ -13742,6 +13744,8 @@ const struct Item gItemsInfo[] =
     {
         .name = HANDLE_EXPANDED_ITEM_NAME("WellsprngMask", "Wellspring Mask"),
         .price = 0,
+        .holdEffect = HOLD_EFFECT_OGERPON_MASK,
+        .holdEffectParam = 20,
         .description = COMPOUND_STRING(
             "Allows Ogerpon to\n"
             "wield the Water-\n"
@@ -13757,6 +13761,8 @@ const struct Item gItemsInfo[] =
     {
         .name = HANDLE_EXPANDED_ITEM_NAME("HrthflameMask", "Hearthflame Mask"),
         .price = 0,
+        .holdEffect = HOLD_EFFECT_OGERPON_MASK,
+        .holdEffectParam = 20,
         .description = COMPOUND_STRING(
             "Allows Ogerpon to\n"
             "wield the Fire-\n"
