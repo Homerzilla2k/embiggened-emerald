@@ -36114,6 +36114,7 @@
     ],
     "EggMoves": [
       "MOVE_AQUA_RING",
+      "MOVE_ASSIST",
       "MOVE_BODY_SLAM",
       "MOVE_CLEAR_SMOG",
       "MOVE_CURSE",
@@ -36125,6 +36126,7 @@
       "MOVE_SOAK",
       "MOVE_THRASH",
       "MOVE_TICKLE",
+      "MOVE_WISH",
       "MOVE_ZEN_HEADBUTT"
     ],
     "TutorMoves": []
@@ -36236,6 +36238,7 @@
     ],
     "EggMoves": [
       "MOVE_AQUA_RING",
+      "MOVE_ASSIST",
       "MOVE_BODY_SLAM",
       "MOVE_CLEAR_SMOG",
       "MOVE_CURSE",
@@ -36247,6 +36250,7 @@
       "MOVE_SOAK",
       "MOVE_THRASH",
       "MOVE_TICKLE",
+      "MOVE_WISH",
       "MOVE_ZEN_HEADBUTT"
     ],
     "TutorMoves": []
@@ -36620,7 +36624,9 @@
       "MOVE_ERUPTION",
       "MOVE_FISSURE",
       "MOVE_FLAIL",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_SKULL_BASH",
+      "MOVE_SLACK_OFF",
       "MOVE_SUPERPOWER",
       "MOVE_YAWN"
     ],
