@@ -17243,7 +17243,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
     {
         .name = COMPOUND_STRING("Tar Shot"),
         .description = COMPOUND_STRING(
-            "Lowers the foe's Speed and\n"
+            "Lowers foe's Speed and\n"
             "makes it weak to Fire."),
         .effect = EFFECT_TAR_SHOT,
         .power = 0,
@@ -18228,7 +18228,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .power = 70,
         .type = TYPE_FIRE,
         .accuracy = 100,
-        .pp = 5,
+        .pp = 15, // 5 -> 15
         .target = MOVE_TARGET_BOTH,
         .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
@@ -19030,8 +19030,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .name = COMPOUND_STRING("Shelter"),
         .description = COMPOUND_STRING(
             "The user hardens their skin,\n"
-            "sharply raising its Defense."),
-        .effect = EFFECT_DEFENSE_UP_2,
+            "raising its Defenses."),
+        .effect = EFFECT_COSMIC_POWER,
         .power = 0,
         .type = TYPE_STEEL,
         .accuracy = 0,
