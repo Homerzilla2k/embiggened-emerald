@@ -13146,7 +13146,8 @@
       "MOVE_MUD_SHOT",
       "MOVE_MUD_SLAP",
       "MOVE_PSYBEAM",
-      "MOVE_SKULL_BASH"
+      "MOVE_SKULL_BASH",
+      "MOVE_TRIPLE_DIVE"
     ],
     "TutorMoves": []
   },
@@ -13234,7 +13235,8 @@
       "MOVE_MUD_SHOT",
       "MOVE_MUD_SLAP",
       "MOVE_PSYBEAM",
-      "MOVE_SKULL_BASH"
+      "MOVE_SKULL_BASH",
+      "MOVE_TRIPLE_DIVE"
     ],
     "TutorMoves": []
   },
@@ -29440,6 +29442,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_ROAR",
+      "MOVE_WORK_UP",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
       "MOVE_PROTECT",
@@ -29460,6 +29463,7 @@
       "MOVE_DARK_PULSE",
       "MOVE_SLEEP_TALK",
       "MOVE_SWAGGER",
+      "MOVE_U_TURN",
       "MOVE_SUBSTITUTE",
       "MOVE_ROCK_SMASH"
     ],
@@ -29467,6 +29471,7 @@
       "MOVE_ASTONISH",
       "MOVE_COVET",
       "MOVE_FIRE_FANG",
+      "MOVE_HONE_CLAWS",
       "MOVE_ICE_FANG",
       "MOVE_LEER",
       "MOVE_PLAY_ROUGH",
@@ -29587,6 +29592,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_ROAR",
+      "MOVE_WORK_UP",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
       "MOVE_HYPER_BEAM",
@@ -29609,6 +29615,7 @@
       "MOVE_DARK_PULSE",
       "MOVE_SLEEP_TALK",
       "MOVE_SWAGGER",
+      "MOVE_U_TURN",
       "MOVE_SUBSTITUTE",
       "MOVE_STRENGTH",
       "MOVE_ROCK_SMASH"
@@ -29617,6 +29624,7 @@
       "MOVE_ASTONISH",
       "MOVE_COVET",
       "MOVE_FIRE_FANG",
+      "MOVE_HONE_CLAWS",
       "MOVE_ICE_FANG",
       "MOVE_LEER",
       "MOVE_PLAY_ROUGH",
@@ -36121,7 +36129,9 @@
       "MOVE_DEFENSE_CURL",
       "MOVE_DOUBLE_EDGE",
       "MOVE_FISSURE",
+      "MOVE_FOLLOW_ME",
       "MOVE_ROLLOUT",
+      "MOVE_SHED_TAIL",
       "MOVE_SNORE",
       "MOVE_SOAK",
       "MOVE_THRASH",
@@ -36245,7 +36255,9 @@
       "MOVE_DEFENSE_CURL",
       "MOVE_DOUBLE_EDGE",
       "MOVE_FISSURE",
+      "MOVE_FOLLOW_ME",
       "MOVE_ROLLOUT",
+      "MOVE_SHED_TAIL",
       "MOVE_SNORE",
       "MOVE_SOAK",
       "MOVE_THRASH",
@@ -36624,6 +36636,7 @@
       "MOVE_ERUPTION",
       "MOVE_FISSURE",
       "MOVE_FLAIL",
+      "MOVE_LAVA_PLUME",
       "MOVE_SCORCHING_SANDS",
       "MOVE_SKULL_BASH",
       "MOVE_SLACK_OFF",

@@ -74,7 +74,8 @@
     F(ROOST) \
     F(SWAGGER) \
     F(FOUL_PLAY) \
-    F(ICY_WIND)
+    F(ICY_WIND) \
+    F(TRICK_ROOM)
 
 #define FOREACH_HM(F) \
     F(CUT) \

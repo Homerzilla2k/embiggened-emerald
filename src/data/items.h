@@ -11497,16 +11497,19 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_ICY_WIND, // Todo
     },
 
-    [ITEM_TM74] =
+    [ITEM_TM_TRICK_ROOM] =
     {
         .name = _("TM74"),
         .price = 3000,
-        .description = sQuestionMarksDesc, // Todo
+        .description = COMPOUND_STRING(
+            "Slower Pokemon get\n"
+            "get to move first\n"
+            "for 5 turns."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
+        .secondaryId = MOVE_TRICK_ROOM, // Todo
     },
 
     [ITEM_TM75] =

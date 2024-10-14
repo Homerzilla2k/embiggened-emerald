@@ -7251,39 +7251,45 @@ static const struct LevelUpMove sPoochyenaLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 4, MOVE_HOWL),
     LEVEL_UP_MOVE( 7, MOVE_SAND_ATTACK),
     LEVEL_UP_MOVE(10, MOVE_BITE),
-    LEVEL_UP_MOVE(13, MOVE_LEER),
-    LEVEL_UP_MOVE(16, MOVE_ROAR),
+    LEVEL_UP_MOVE(13, MOVE_MUD_SLAP),
+    LEVEL_UP_MOVE(16, MOVE_PURSUIT), // Roar -> Pursuit: New Move. Pursuit trapper role
     LEVEL_UP_MOVE(19, MOVE_SWAGGER),
-    LEVEL_UP_MOVE(22, MOVE_ASSURANCE),
-    LEVEL_UP_MOVE(25, MOVE_SCARY_FACE),
-    LEVEL_UP_MOVE(28, MOVE_TAUNT),
-    LEVEL_UP_MOVE(31, MOVE_CRUNCH),
-    LEVEL_UP_MOVE(34, MOVE_YAWN),
-    LEVEL_UP_MOVE(36, MOVE_TAKE_DOWN),
-    LEVEL_UP_MOVE(40, MOVE_SUCKER_PUNCH),
-    LEVEL_UP_MOVE(44, MOVE_PLAY_ROUGH),
+    LEVEL_UP_MOVE(23, MOVE_BEAT_UP), // Assurance -> Beat Up: The whole pack tactics thing.  
+    LEVEL_UP_MOVE(27, MOVE_SCARY_FACE),
+    LEVEL_UP_MOVE(31, MOVE_TAUNT),
+    LEVEL_UP_MOVE(34, MOVE_CRUNCH),// New Move Slot -> Crunch: Move Crunch into the level up moveset
+    LEVEL_UP_MOVE(37, MOVE_PSYCHIC_FANGS), // New move slot -> Psychic Fangs: Crush reflect and light screen.  Coverage
+    LEVEL_UP_MOVE(40, MOVE_YAWN),
+    LEVEL_UP_MOVE(43, MOVE_HYPER_FANG), // Take down -> Hyper Fang: More fun
+    LEVEL_UP_MOVE(46, MOVE_JAW_LOCK), // New Move Slot -> Jaw Lock: New Move. Trapping and flavorful.
+    LEVEL_UP_MOVE(49, MOVE_SUCKER_PUNCH),
+    LEVEL_UP_MOVE(52, MOVE_PLAY_ROUGH),
     LEVEL_UP_END
 };
 
 static const struct LevelUpMove sMightyenaLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_SNARL),
-    LEVEL_UP_MOVE( 1, MOVE_CRUNCH),
+    LEVEL_UP_MOVE( 1, MOVE_SNARL),
     LEVEL_UP_MOVE( 1, MOVE_FIRE_FANG),
     LEVEL_UP_MOVE( 1, MOVE_ICE_FANG),
+    LEVEL_UP_MOVE( 1, MOVE_THUNDER_FANG),
     LEVEL_UP_MOVE( 1, MOVE_THIEF),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 4, MOVE_HOWL),
     LEVEL_UP_MOVE( 7, MOVE_SAND_ATTACK),
     LEVEL_UP_MOVE(10, MOVE_BITE),
     LEVEL_UP_MOVE(13, MOVE_MUD_SLAP),
-    LEVEL_UP_MOVE(16, MOVE_ROAR),
+    LEVEL_UP_MOVE(16, MOVE_PURSUIT), // Roar -> Pursuit: New Move. Pursuit trapper role
     LEVEL_UP_MOVE(20, MOVE_SWAGGER),
-    LEVEL_UP_MOVE(24, MOVE_ASSURANCE),
+    LEVEL_UP_MOVE(24, MOVE_BEAT_UP), // Assurance -> Beat Up: The whole pack tactics thing.  
     LEVEL_UP_MOVE(28, MOVE_SCARY_FACE),
-    LEVEL_UP_MOVE(36, MOVE_TAUNT),
+    LEVEL_UP_MOVE(32, MOVE_TAUNT),
+    LEVEL_UP_MOVE(36, MOVE_CRUNCH),// New Move Slot -> Crunch: Move Crunch into the level up moveset
+    LEVEL_UP_MOVE(40, MOVE_PSYCHIC_FANGS), // New move slot -> Psychic Fangs: Crush reflect and light screen.  Coverage
     LEVEL_UP_MOVE(44, MOVE_YAWN),
-    LEVEL_UP_MOVE(48, MOVE_TAKE_DOWN),
-    LEVEL_UP_MOVE(52, MOVE_SUCKER_PUNCH),
+    LEVEL_UP_MOVE(47, MOVE_HYPER_FANG), // Take down -> Hyper Fang: More fun
+    LEVEL_UP_MOVE(50, MOVE_JAW_LOCK), // New Move Slot -> Jaw Lock: New Move. Trapping and flavorful.
+    LEVEL_UP_MOVE(53, MOVE_SUCKER_PUNCH),
     LEVEL_UP_MOVE(56, MOVE_PLAY_ROUGH),
     LEVEL_UP_END
 };
@@ -7537,7 +7543,7 @@ static const struct LevelUpMove sLudicoloLevelUpLearnset[] = {
     LEVEL_UP_MOVE(34, MOVE_ZEN_HEADBUTT),
     LEVEL_UP_MOVE(38, MOVE_MATCHA_GOTCHA), // ENERGY BALL -> MATCHA GOTCHA. NEW MOVE: MATCHA GOTCHA IS A GRASS AND WATER (TEA) MOVE THAT BURNS AND RECOVERS HP WHICH I WHAT LUDICOLO WANTS TO DO.
 	LEVEL_UP_MOVE(41, MOVE_WEATHER_BALL), // NEW MOVE SLOT -> WEATHER BALL. TM MOVE: A WEATHER RELATED MOVE AND LATER THAN CASTFORM
-    LEVEL_UP_MOVE(45, MOVE_HYDRO_STEAM), // NEW MOVE SLOT -> HYDRO STEAM. NEW MOVE: WATER MOVE THAT DEALS MORE DAMAGE IN THE SUN. THIS FITS THE I WANT IT TO BE GOOD IN BOTH WEATHERS VIBE. HAVE IT BEFORE MAXIE FIGHTS? DEPENDS ON IF I GIVE IT TO TEAM MAGMA
+    LEVEL_UP_MOVE(45, MOVE_PETAL_DANCE), // NEW MOVE SLOT -> PETAL DANCE: HOW DOES IT NOT GET THIS MOVE ALREADY?
 	LEVEL_UP_MOVE(49, MOVE_PARTING_SHOT), // NEW MOVE SLOT -> PARTING SHOT. NEW MOVE: A SUPPORT MOVE THAT I CAN SEE WORKING
 	LEVEL_UP_MOVE(53, MOVE_HYDRO_PUMP),
     LEVEL_UP_END 
@@ -8639,41 +8645,45 @@ static const struct LevelUpMove sWailmerLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
     LEVEL_UP_MOVE( 3, MOVE_GROWL),
     LEVEL_UP_MOVE( 6, MOVE_ASTONISH),
-    LEVEL_UP_MOVE(10, MOVE_WATER_GUN),
-    LEVEL_UP_MOVE(13, MOVE_ROLLOUT),
-    LEVEL_UP_MOVE(15, MOVE_MIST),
-    LEVEL_UP_MOVE(18, MOVE_WATER_PULSE),
-    LEVEL_UP_MOVE(21, MOVE_HEAVY_SLAM),
-    LEVEL_UP_MOVE(24, MOVE_BRINE),
-    LEVEL_UP_MOVE(27, MOVE_WHIRLPOOL),
+    LEVEL_UP_MOVE( 9, MOVE_WATER_GUN),
+    LEVEL_UP_MOVE(12, MOVE_MIST),
+    LEVEL_UP_MOVE(15, MOVE_WIDE_GUARD), // New Move Slot -> Wide Guard: Early Wide Guard would be fun.
+    LEVEL_UP_MOVE(18, MOVE_BRINE), // Water Pulse -> Brine: WP is a TM and Brine gets me more move flexibility
+    LEVEL_UP_MOVE(21, MOVE_LIFE_DEW), // Heavy Slam  -> Life Dew: New Move. Recovery for single and doubles.
+    LEVEL_UP_MOVE(24, MOVE_WHIRLPOOL),
+    LEVEL_UP_MOVE(27, MOVE_BREAKING_SWIPE), // Brine -> Breaking Swipe: New Move. Spread Attack lowering move. Plus, it's a giant whale so it can break while swiping.
     LEVEL_UP_MOVE(30, MOVE_DIVE),
     LEVEL_UP_MOVE(33, MOVE_BOUNCE),
-    LEVEL_UP_MOVE(36, MOVE_BODY_SLAM),
-    LEVEL_UP_MOVE(39, MOVE_REST),
+    LEVEL_UP_MOVE(36, MOVE_HEAVY_SLAM), // Body Slam -> Heavy Slam: Move HS down. Same effect as Dragon Rush and BS is teachable
+    LEVEL_UP_MOVE(39, MOVE_TRIPLE_DIVE), // Rest -> Triple Dive: New Move.  Rest is TM and Triple Dive feels very whaley.
     LEVEL_UP_MOVE(42, MOVE_AMNESIA),
-    LEVEL_UP_MOVE(45, MOVE_HYDRO_PUMP),
-    LEVEL_UP_MOVE(48, MOVE_WATER_SPOUT),
+    LEVEL_UP_MOVE(45, MOVE_BOUNCY_BUBBLE), // New Move Slot -> Bouncy Bubble: New Move. Water type Drain Move for fun.
+    LEVEL_UP_MOVE(48, MOVE_WAVE_CRASH), // Hydro Pump -> Wave Crash: New Move. Just makes sense for the whale crashing on the beach.
+    LEVEL_UP_MOVE(51, MOVE_WATER_SPOUT),
     LEVEL_UP_END
 };
 
 static const struct LevelUpMove sWailordLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_SOAK),
+    LEVEL_UP_MOVE( 0, MOVE_NOBLE_ROAR),
     LEVEL_UP_MOVE( 1, MOVE_NOBLE_ROAR),
+    LEVEL_UP_MOVE( 1, MOVE_SOAK),
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
-    LEVEL_UP_MOVE( 1, MOVE_GROWL),
-    LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
-    LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),
-    LEVEL_UP_MOVE(15, MOVE_MIST),
-    LEVEL_UP_MOVE(18, MOVE_WATER_PULSE),
-    LEVEL_UP_MOVE(21, MOVE_HEAVY_SLAM),
-    LEVEL_UP_MOVE(24, MOVE_BRINE),
-    LEVEL_UP_MOVE(27, MOVE_WHIRLPOOL),
+    LEVEL_UP_MOVE( 3, MOVE_GROWL),
+    LEVEL_UP_MOVE( 6, MOVE_ASTONISH),
+    LEVEL_UP_MOVE( 9, MOVE_WATER_GUN),
+    LEVEL_UP_MOVE(12, MOVE_MIST),
+    LEVEL_UP_MOVE(15, MOVE_WIDE_GUARD), // New Move Slot -> Wide Guard: Early Wide Guard would be fun.
+    LEVEL_UP_MOVE(18, MOVE_BRINE), // Water Pulse -> Brine: WP is a TM and Brine gets me more move flexibility
+    LEVEL_UP_MOVE(21, MOVE_LIFE_DEW), // Heavy Slam  -> Life Dew: New Move. Recovery for single and doubles.
+    LEVEL_UP_MOVE(24, MOVE_WHIRLPOOL),
+    LEVEL_UP_MOVE(27, MOVE_BREAKING_SWIPE), // Brine -> Breaking Swipe: New Move. Spread Attack lowering move. Plus, it's a giant whale so it can break while swiping.
     LEVEL_UP_MOVE(30, MOVE_DIVE),
     LEVEL_UP_MOVE(33, MOVE_BOUNCE),
-    LEVEL_UP_MOVE(36, MOVE_BODY_SLAM),
-    LEVEL_UP_MOVE(39, MOVE_REST),
-    LEVEL_UP_MOVE(44, MOVE_AMNESIA),
-    LEVEL_UP_MOVE(49, MOVE_HYDRO_PUMP),
+    LEVEL_UP_MOVE(36, MOVE_HEAVY_SLAM), // Body Slam -> Heavy Slam: Move HS down. Same effect as Dragon Rush and BS is teachable
+    LEVEL_UP_MOVE(39, MOVE_TRIPLE_DIVE), // Rest -> Triple Dive: New Move.  Rest is TM and Triple Dive feels very whaley.
+    LEVEL_UP_MOVE(43, MOVE_AMNESIA),
+    LEVEL_UP_MOVE(47, MOVE_BOUNCY_BUBBLE), // New Move Slot -> Bouncy Bubble: New Move. Water type Drain Move for fun.
+    LEVEL_UP_MOVE(50, MOVE_WAVE_CRASH), // Hydro Pump -> Wave Crash: New Move. Just makes sense for the whale crashing on the beach.
     LEVEL_UP_MOVE(54, MOVE_WATER_SPOUT),
     LEVEL_UP_END
 };
@@ -8723,24 +8733,25 @@ static const struct LevelUpMove sCameruptLevelUpLearnset[] = {
 
 #if P_FAMILY_TORKOAL
 static const struct LevelUpMove sTorkoalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_SMOKESCREEN),
     LEVEL_UP_MOVE( 1, MOVE_EMBER),
     LEVEL_UP_MOVE( 4, MOVE_SMOG),
     LEVEL_UP_MOVE( 7, MOVE_WITHDRAW),
     LEVEL_UP_MOVE(10, MOVE_RAPID_SPIN),
     LEVEL_UP_MOVE(13, MOVE_FIRE_SPIN),
-    LEVEL_UP_MOVE(15, MOVE_SMOKESCREEN),
-    LEVEL_UP_MOVE(18, MOVE_FLAME_WHEEL),
+    LEVEL_UP_MOVE(15, MOVE_CLEAR_SMOG), // Smokescreen -> Clear Smog: Later Gen Level up Move.  Move Smokescreen to Level 1
+    LEVEL_UP_MOVE(18, MOVE_FLAME_CHARGE), // FLAME WHEEL -> FLAME CHARGE. FITS MORE WITH THE BURNING COAL THING.
     LEVEL_UP_MOVE(22, MOVE_CURSE),
-    LEVEL_UP_MOVE(25, MOVE_LAVA_PLUME),
+    LEVEL_UP_MOVE(25, MOVE_BURNING_JEALOUSY), // Lava Plume -> Burning Jealousy: Gen 8 and 9 TM Move.  Spread damage that has a burn condition
     LEVEL_UP_MOVE(27, MOVE_BODY_SLAM),
-    LEVEL_UP_MOVE(30, MOVE_PROTECT),
+    LEVEL_UP_MOVE(30, MOVE_TAR_SHOT), // Replace Protect with Tar Shot
     LEVEL_UP_MOVE(34, MOVE_FLAMETHROWER),
     LEVEL_UP_MOVE(38, MOVE_IRON_DEFENSE),
     LEVEL_UP_MOVE(40, MOVE_AMNESIA),
-    LEVEL_UP_MOVE(42, MOVE_FLAIL),
+    LEVEL_UP_MOVE(42, MOVE_SHELL_TRAP), // Flail -> Shell Trap
     LEVEL_UP_MOVE(45, MOVE_HEAT_WAVE),
     LEVEL_UP_MOVE(47, MOVE_SHELL_SMASH),
-    LEVEL_UP_MOVE(50, MOVE_INFERNO),
+    LEVEL_UP_MOVE(50, MOVE_BURN_UP), // INFERNO -> BURN UP: NEW MOVE. BURNING SO MUCH COAL.  
     LEVEL_UP_END
 };
 #endif //P_FAMILY_TORKOAL
@@ -8803,7 +8814,7 @@ static const struct LevelUpMove sSpindaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(47, MOVE_THRASH), // DOUBLE-EDGE -> THRASH: MOVE THRASH UP TO DOUBLE-EDGE SPOT FOR OBLVIOUS FUN BEFORE E4
     LEVEL_UP_MOVE(50, MOVE_FLAIL),
     LEVEL_UP_MOVE(55, MOVE_DOUBLE_EDGE),
-    LEVEL_UP_MOVE(60, MOVE_PSYCHO_BOOST), // NEW MOVE SLOT -> PSYCHO BOOST: NEW MOVE. IE DID THIS AND I THINK IT WOULD BE FUN FOR THE POSY GAME CONTRARY FUN.
+    LEVEL_UP_MOVE(60, MOVE_PSYCHO_BOOST), // NEW MOVE SLOT -> PSYCHO BOOST: NEW MOVE. IE DID THIS AND I THINK IT WOULD BE FUN FOR THE POSt GAME CONTRARY FUN.
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SPINDA
