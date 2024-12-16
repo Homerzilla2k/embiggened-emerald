@@ -9572,7 +9572,7 @@ static const struct LevelUpMove sChimechoLevelUpLearnset[] = {
     LEVEL_UP_MOVE(25, MOVE_ALLY_SWITCH), // Heal Bell -> Ally Switch
     LEVEL_UP_MOVE(28, MOVE_UPROAR),
     LEVEL_UP_MOVE(31, MOVE_HEAL_BELL), // Safeguard -> Heal Bell
-    LEVEL_UP_MOVE(35, MOVE_PSHYCIC_NOISE), // New Move Slot -> Psychic Noise
+    LEVEL_UP_MOVE(35, MOVE_PSYCHIC_NOISE), // New Move Slot -> Psychic Noise
     LEVEL_UP_MOVE(39, MOVE_SAFEGUARD), // New Move Slot -> Safeguard/Follow Me
     LEVEL_UP_MOVE(43, MOVE_LUNAR_BLESSING), // Heal Pulse -> Lunar Blessing: New Move. Better version of Heal Pulse since it heals Chimecho too.  
     LEVEL_UP_MOVE(47, MOVE_HYPER_VOICE), // Double Edge -> Hyper Voice
@@ -9584,24 +9584,25 @@ static const struct LevelUpMove sChimechoLevelUpLearnset[] = {
 
 #if P_FAMILY_ABSOL
 static const struct LevelUpMove sAbsolLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
+    LEVEL_UP_MOVE( 1, MOVE_QUICK_ATTACK), // Scratch -> Quick Attack: Replace Scratch with QA to free up move slot.
     LEVEL_UP_MOVE( 1, MOVE_FEINT),
     LEVEL_UP_MOVE( 4, MOVE_LEER),
-    LEVEL_UP_MOVE( 7, MOVE_QUICK_ATTACK),
+    LEVEL_UP_MOVE( 7, MOVE_DOUBLE_TEAM), // QA -> DT: Move Double Team to Quick Attack's old slot
     LEVEL_UP_MOVE(10, MOVE_PURSUIT),
     LEVEL_UP_MOVE(13, MOVE_TAUNT),
-    LEVEL_UP_MOVE(16, MOVE_BITE),
-    LEVEL_UP_MOVE(19, MOVE_DOUBLE_TEAM),
+    LEVEL_UP_MOVE(16, MOVE_FAINT_ATTACK), // Bite -> Faint Attack
+    LEVEL_UP_MOVE(19, MOVE_OMINOUS_WIND), // DT -> Ominous Wind: New Move.  Thematic.
     LEVEL_UP_MOVE(22, MOVE_SLASH),
-    LEVEL_UP_MOVE(25, MOVE_SWORDS_DANCE),
-    LEVEL_UP_MOVE(29, MOVE_NIGHT_SLASH),
-    LEVEL_UP_MOVE(33, MOVE_DETECT),
-    LEVEL_UP_MOVE(37, MOVE_PSYCHO_CUT),
-    LEVEL_UP_MOVE(41, MOVE_ME_FIRST),
-    LEVEL_UP_MOVE(45, MOVE_SUCKER_PUNCH),
-    LEVEL_UP_MOVE(49, MOVE_RAZOR_WIND),
-    LEVEL_UP_MOVE(53, MOVE_FUTURE_SIGHT),
-    LEVEL_UP_MOVE(57, MOVE_PERISH_SONG),
+    LEVEL_UP_MOVE(25, MOVE_ME_FIRST), // Switch Me First and SD
+    LEVEL_UP_MOVE(28, MOVE_NIGHT_SLASH),
+    LEVEL_UP_MOVE(31, MOVE_DETECT),
+    LEVEL_UP_MOVE(34, MOVE_PSYCHO_CUT),
+    LEVEL_UP_MOVE(37, MOVE_SUCKER_PUNCH), // New Move Slot -> Sucker Punch
+    LEVEL_UP_MOVE(41, MOVE_SWORDS_DANCE), // Switch Me First and SD.  SD is much scarier with the Speed increase we gave Absol.  
+    LEVEL_UP_MOVE(45, MOVE_FUTURE_SIGHT), // SP -> Future Sight
+    LEVEL_UP_MOVE(49, MOVE_SACRED_SWORD), // Razor Wind -> Sacred Sword
+    LEVEL_UP_MOVE(53, MOVE_WICKED_BLOW), // Future Sight -> Wicked Blow
+    LEVEL_UP_MOVE(57, MOVE_RUINATION), // Perish Song -> Ruination
     LEVEL_UP_END
 };
 #endif //P_FAMILY_ABSOL

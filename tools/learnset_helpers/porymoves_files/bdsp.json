@@ -40723,6 +40723,7 @@
       "MOVE_ASSURANCE",
       "MOVE_BATON_PASS",
       "MOVE_BITE",
+      "MOVE_CEASELESS_EDGE",
       "MOVE_CURSE",
       "MOVE_DOUBLE_EDGE",
       "MOVE_FEINT",
@@ -41367,6 +41368,7 @@
     "EggMoves": [
       "MOVE_AQUA_RING",
       "MOVE_BODY_SLAM",
+      "MOVE_BOUNCY_BUBBLE",
       "MOVE_CONFUSE_RAY",
       "MOVE_MUDDY_WATER",
       "MOVE_SUPERSONIC"
@@ -41475,6 +41477,7 @@
     "EggMoves": [
       "MOVE_AQUA_RING",
       "MOVE_BODY_SLAM",
+      "MOVE_BOUNCY_BUBBLE",
       "MOVE_CONFUSE_RAY",
       "MOVE_MUDDY_WATER",
       "MOVE_SUPERSONIC"
@@ -41586,6 +41589,7 @@
     "EggMoves": [
       "MOVE_AQUA_RING",
       "MOVE_BODY_SLAM",
+      "MOVE_BOUNCY_BUBBLE",
       "MOVE_CONFUSE_RAY",
       "MOVE_MUDDY_WATER",
       "MOVE_SUPERSONIC"
