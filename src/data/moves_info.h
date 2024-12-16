@@ -20062,11 +20062,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
 
     [MOVE_GIGATON_HAMMER] =
     {
-<<<<<<< HEAD
-        .name = HANDLE_EXPANDED_MOVE_NAME("GigatonCrush", "Gigaton Hammer"),
-=======
         .name = COMPOUND_STRING("Gigaton Hammer"),
->>>>>>> upstream/master
         .description = COMPOUND_STRING(
             "Crush with metal fangs. Can't\n"
             "be used twice in a row."),
