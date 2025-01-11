@@ -15076,7 +15076,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
 
     [MOVE_CELEBRATE] =
     {
-        .name = COMPOUND_STRING("Spark Pom Pom"),
+        .name = COMPOUND_STRING("Spark Pom-Pom"),
         .description = COMPOUND_STRING(
             "Explodes on foes, but\n"
             "restores ally's HP."),
