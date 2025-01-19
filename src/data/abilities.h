@@ -1901,7 +1901,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_MIMICRY] =
     {
-        .name = _("Mimicry"),
+        .name = _("Camouflage"),
         .description = COMPOUND_STRING("Changes type on terrain."),
         .aiRating = 2,
     },

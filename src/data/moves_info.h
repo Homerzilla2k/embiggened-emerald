@@ -206,9 +206,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
             "Repeatedly punches the foe\n"
             "2 to 5 times."),
         .effect = EFFECT_MULTI_HIT,
-        .power = 18,
+        .power = 25,
         .type = TYPE_NORMAL,
-        .accuracy = 85,
+        .accuracy = 95,
         .pp = 15,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
@@ -3364,7 +3364,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
             "strike 2 to 5 times."),
         .effect = EFFECT_MULTI_HIT,
         .power = 20,
-        .type = TYPE_NORMAL,
+        .type = TYPE_STEEL,
         .accuracy = 100,
         .pp = 15,
         .target = MOVE_TARGET_SELECTED,
@@ -3748,7 +3748,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .description = COMPOUND_STRING(
             "A rhythmic punch that may\n"
             "confuse the foe."),
-        .effect = EFFECT_ACCURACY_DOWN,
+        .effect = EFFECT_HIT,
         .power = 70,
         .type = TYPE_NORMAL,
         .accuracy = 100,
@@ -3760,7 +3760,11 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .punchingMove = TRUE,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_CONFUSION,
-            .chance = 20,
+            .chance = 50,
+        },
+        {
+            .moveEffect = MOVE_EFFECT_ACC_MINUS_1,
+            .chance = 100,
         }),
         .contestEffect = CONTEST_EFFECT_BADLY_STARTLE_FRONT_MON,
         .contestCategory = CONTEST_CATEGORY_COOL,
@@ -7808,13 +7812,14 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
             "Powerful, but leaves the\n"
             "user immobile the next turn."),
         .effect = EFFECT_HIT,
-        .power = 150,
+        .power = 90,
         .type = TYPE_WATER,
         .accuracy = 90,
-        .pp = 5,
+        .pp = 15,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
+        .pulseMove = TRUE,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_RECHARGE,
             .self = TRUE,
@@ -18318,18 +18323,22 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .description = COMPOUND_STRING(
             "Highly acidic gas melts items\n"
             "held by surrounding Pokémon."),
-        .effect = EFFECT_CORROSIVE_GAS,
-        .power = 70,
+        .effect = EFFECT_KNOCK_OFF,
+        .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 70 : 20,
         .type = TYPE_POISON,
         .accuracy = 100,
-        .pp = 15,
-        .target = MOVE_TARGET_FOES_AND_ALLY,
+        .pp = 20,
+        .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
-        .contestEffect = CONTEST_EFFECT_WORSEN_CONDITION_OF_PREV_MONS,
-        .contestCategory = CONTEST_CATEGORY_COOL,
+        .makesContact = TRUE,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_KNOCK_OFF,
+        }),
+        .contestEffect = CONTEST_EFFECT_BADLY_STARTLE_FRONT_MON,
+        .contestCategory = CONTEST_CATEGORY_SMART,
         .contestComboStarterId = 0,
-        .contestComboMoves = {0},
+        .contestComboMoves = {COMBO_STARTER_FAKE_OUT},
         .battleAnimScript = gBattleAnimMove_CorrosiveGas,
     },
 
@@ -18846,7 +18855,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .name = COMPOUND_STRING("Mystical Power"),
         .description = COMPOUND_STRING(
             "A mysterious power strikes,\n"
-            "raising the user's Sp. Atk."),
+            "raising the user's offenses."),
         .effect = EFFECT_HIT,
         .power = 70,
         .type = TYPE_PSYCHIC,
@@ -18857,6 +18866,11 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .category = DAMAGE_CATEGORY_SPECIAL,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_SP_ATK_PLUS_1,
+            .self = TRUE,
+            .chance = 100,
+        },
+        {
+            .moveEffect = MOVE_EFFECT_ATK_PLUS_1,
             .self = TRUE,
             .chance = 100,
         }),
@@ -20241,7 +20255,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
     [MOVE_COMBAT_TORQUE] =
     {
         .name = COMPOUND_STRING("Combat Torque"),
-        .description = COMPOUND_STRING("---"),
+        .description = COMPOUND_STRING(
+            "High-speed charge attack that\n"
+            "may cause paralysis."),
         .effect = EFFECT_HIT,
         .power = 100,
         .type = TYPE_FIGHTING,
@@ -20250,16 +20266,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
-        .mirrorMoveBanned = TRUE,
-        .meFirstBanned = TRUE,
-        .mimicBanned = TRUE,
-        .metronomeBanned = TRUE,
-        .copycatBanned = TRUE,
-        .sleepTalkBanned = TRUE,
-        .instructBanned = TRUE,
-        .encoreBanned = TRUE,
-        .assistBanned = TRUE,
-        .sketchBanned = (B_SKETCH_BANS >= GEN_9),
+        .makesContact = TRUE,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_PARALYSIS,
             .chance = 30,

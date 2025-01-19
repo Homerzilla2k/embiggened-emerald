@@ -4947,7 +4947,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY),
     #if P_UPDATED_ABILITIES >= GEN_6
-        .abilities = { ABILITY_PLUS, ABILITY_NONE, ABILITY_LIGHTNING_ROD },
+        .abilities = { ABILITY_POWER_SPOT, ABILITY_NONE, ABILITY_LIGHTNING_ROD },
     #else
         .abilities = { ABILITY_PLUS, ABILITY_NONE, ABILITY_NONE },
     #endif
@@ -5016,7 +5016,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY),
     #if P_UPDATED_ABILITIES >= GEN_6
-        .abilities = { ABILITY_MINUS, ABILITY_NONE, ABILITY_VOLT_ABSORB },
+        .abilities = { ABILITY_POWER_SPOT, ABILITY_NONE, ABILITY_LIGHTNING_ROD },
     #else
         .abilities = { ABILITY_MINUS, ABILITY_NONE, ABILITY_NONE },
     #endif
@@ -8305,7 +8305,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
     #if P_UPDATED_ABILITIES >= GEN_6
-        .abilities = { ABILITY_COLOR_CHANGE, ABILITY_NONE, ABILITY_PROTEAN },
+        .abilities = { ABILITY_MIMICRY, ABILITY_REGENERATOR, ABILITY_LIBERO },
     #else
         .abilities = { ABILITY_COLOR_CHANGE, ABILITY_NONE, ABILITY_NONE },
     #endif
