@@ -3384,7 +3384,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
             "Constricts to inflict pain.\n"
             "May lower Speed."),
         .effect = EFFECT_HIT,
-        .power = 10,
+        .power = 50,
         .type = TYPE_NORMAL,
         .accuracy = 100,
         .pp = 35,
@@ -3394,7 +3394,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .makesContact = TRUE,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_SPD_MINUS_1,
-            .chance = 10,
+            .chance = 20,
         }),
         .contestEffect = CONTEST_EFFECT_STARTLE_PREV_MON,
         .contestCategory = CONTEST_CATEGORY_TOUGH,
