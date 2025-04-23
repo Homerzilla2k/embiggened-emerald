@@ -1403,12 +1403,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Sprays a hide-melting acid.\n"
         #if B_UPDATED_MOVE_DATA >= GEN_4
-            "May lower Sp. Def."),
+            "May inflict a burn."),
         #else
             "May lower Defense."),
         #endif
         .effect = EFFECT_HIT,
-        .power = 40,
+        .power = 80,
         .type = TYPE_POISON,
         .accuracy = 100,
         .pp = 30,
@@ -1416,8 +1416,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
             .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = B_UPDATED_MOVE_DATA >= GEN_4 ? MOVE_EFFECT_SP_DEF_MINUS_1 : MOVE_EFFECT_DEF_MINUS_1,
-            .chance = 10,
+            .moveEffect = B_UPDATED_MOVE_DATA >= GEN_4 ? MOVE_EFFECT_BURN : MOVE_EFFECT_DEF_MINUS_1,
+            .chance = 30,
         }),
         .contestEffect = CONTEST_EFFECT_BADLY_STARTLE_FRONT_MON,
         .contestCategory = CONTEST_CATEGORY_SMART,
@@ -9026,22 +9026,18 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 
     [MOVE_WATER_SPORT] =
     {
-        .name = COMPOUND_STRING("Water Sport"),
+        .name = COMPOUND_STRING("Ripple Rush"),
         .description = COMPOUND_STRING(
-            "The user becomes soaked to\n"
-            "raise resistance to fire."),
-        .effect = EFFECT_WATER_SPORT,
-        .power = 0,
+            "The user attacks with the\n"
+            "force of a small wave."),
+        .effect = EFFECT_HIT,
+        .power = 50,
         .type = TYPE_WATER,
         .accuracy = 100,
         .pp = 15,
-        .target = MOVE_TARGET_ALL_BATTLERS,
+        .target = MOVE_TARGET_SELECTED,
         .priority = 0,
-        .category = DAMAGE_CATEGORY_STATUS,
-        .zMove = { .effect = Z_EFFECT_SPDEF_UP_1 },
-        .ignoresProtect = TRUE,
-        .mirrorMoveBanned = TRUE,
-        .skyBattleBanned = TRUE,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
         .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
         .contestCategory = CONTEST_CATEGORY_CUTE,
         .contestComboStarterId = COMBO_STARTER_WATER_SPORT,
@@ -9091,6 +9087,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_CRIT_PLUS_SIDE,
+            .chance = 50,
+        }),
         .makesContact = TRUE,
         .slicingMove = TRUE,
         .contestEffect = CONTEST_EFFECT_AFFECTED_BY_PREV_APPEAL,
@@ -19151,6 +19151,11 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .category = DAMAGE_CATEGORY_SPECIAL,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_SP_ATK_PLUS_1,
+            .self = TRUE,
+            .chance = 100,
+        },
+        { 
+            .moveEffect = MOVE_EFFECT_ATK_PLUS_1,
             .self = TRUE,
             .chance = 100,
         }),
