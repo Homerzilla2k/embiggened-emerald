@@ -7842,19 +7842,20 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Mud Sport"),
         .description = COMPOUND_STRING(
-            "Covers the user in mud to\n"
-            "raise electrical resistance."),
-        .effect = EFFECT_MUD_SPORT,
+            "Creates tricky terrain\n"
+            "slowing foes switching in."),
+        .effect = EFFECT_STICKY_WEB,
         .power = 0,
         .type = TYPE_GROUND,
-        .accuracy = 100,
-        .pp = 15,
-        .target = MOVE_TARGET_ALL_BATTLERS,
+        .accuracy = 0,
+        .pp = 20,
+        .target = MOVE_TARGET_OPPONENTS_FIELD,
         .priority = 0,
         .category = DAMAGE_CATEGORY_STATUS,
-        .zMove = { .effect = Z_EFFECT_SPDEF_UP_1 },
+        .zMove = { .effect = Z_EFFECT_SPD_UP_1 },
         .ignoresProtect = TRUE,
         .mirrorMoveBanned = TRUE,
+        .magicCoatAffected = TRUE,
         .skyBattleBanned = TRUE,
         .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
         .contestCategory = CONTEST_CATEGORY_CUTE,
