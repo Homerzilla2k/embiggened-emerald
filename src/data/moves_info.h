@@ -4759,11 +4759,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Powder Snow"),
         .description = COMPOUND_STRING(
             "Blasts the foe with a snowy\n"
-        #if B_USE_FROSTBITE == TRUE
             "gust. May cause frostbite."),
-        #else
-            "gust. May cause freezing."),
-        #endif
         .effect = EFFECT_HIT,
         .power = 40,
         .type = TYPE_ICE,
@@ -4773,8 +4769,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_FREEZE_OR_FROSTBITE,
-            .chance = 10,
+            .moveEffect = MOVE_EFFECT_FROSTBITE,
+            .chance = 20,
         }),
         .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
         .contestCategory = CONTEST_CATEGORY_BEAUTY,
@@ -13947,7 +13943,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Blows very cold air at the\n"
             "foe. It lowers their Speed."),
         .effect = EFFECT_HIT,
-        .power = 65,
+        .power = 70,
         .type = TYPE_ICE,
         .accuracy = 95,
         .pp = 10,
@@ -13957,6 +13953,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_SPD_MINUS_1,
             .chance = 100,
+        },
+        {
+            .moveEffect = MOVE_EFFECT_FREEZE,
+            .chance = 10,
         }),
         .contestEffect = CONTEST_EFFECT_STARTLE_PREV_MONS,
         .contestCategory = CONTEST_CATEGORY_BEAUTY,
@@ -19145,7 +19145,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Mystical Power"),
         .description = COMPOUND_STRING(
             "A mysterious power strikes,\n"
-            "raising the user's Sp. Atk."),
+            "raising the user's offense."),
         .effect = EFFECT_HIT,
         .power = 70,
         .type = TYPE_PSYCHIC,
@@ -19230,8 +19230,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Mountain Gale"),
         .description = COMPOUND_STRING(
-            "Giant chunks of ice damage\n"
-            "the foe. It may flinch."),
+            "Giant ice chunks hit the foe\n"
+            "May flinch or frostbite."),
         .effect = EFFECT_HIT,
         .power = 100,
         .type = TYPE_ICE,
@@ -19243,6 +19243,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_FLINCH,
             .chance = 30,
+        },
+        {
+            .moveEffect = MOVE_EFFECT_FROSTBITE,
+            .chance = 30,           
         }),
         .battleAnimScript = gBattleAnimMove_MountainGale,
     },
@@ -20139,9 +20143,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 
     [MOVE_CHILLY_RECEPTION] =
     {
-        .name = COMPOUND_STRING("Chilly Reception"),
+        .name = COMPOUND_STRING("Chilling Reception"),
         .description = COMPOUND_STRING(
-            "Bad joke summons snowstorm.\n"
+            "Cackling summons snowstorm.\n"
             "The user also switches out."),
         .effect = EFFECT_CHILLY_RECEPTION,
         .power = 0,
