@@ -19346,7 +19346,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "A spine-chilling resentment.\n"
             "Lowers the foe's Attack."),
-        .effect = EFFECT_HIT,
+        .effect = EFFECT_DOUBLE_POWER_ON_ARG_STATUS,
         .power = B_UPDATED_MOVE_DATA >= GEN_9 ? 75 : 60,
         .type = TYPE_GHOST,
         .accuracy = 100,
@@ -19355,8 +19355,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_ATK_MINUS_1,
-            .chance = 100,
+            .moveEffect = MOVE_EFFECT_FROSTBITE,
+            .chance = 30,
         }),
         .battleAnimScript = gBattleAnimMove_BitterMalice,
     },
