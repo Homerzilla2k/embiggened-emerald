@@ -8494,10 +8494,12 @@ static const struct LevelUpMove sIllumiseLevelUpLearnset[] = {
 #if P_GEN_4_CROSS_EVOS
 static const struct LevelUpMove sBudewLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_ABSORB),
-    LEVEL_UP_MOVE( 1, MOVE_GROWTH),
-    LEVEL_UP_MOVE( 1, MOVE_STUN_SPORE),
-    LEVEL_UP_MOVE( 1, MOVE_WORRY_SEED),
+    LEVEL_UP_MOVE( 4, MOVE_GROWTH),
+    LEVEL_UP_MOVE( 7, MOVE_LIFE_DEW), // Water Sport -> Life Dew
+    LEVEL_UP_MOVE(10, MOVE_STUN_SPORE),
     LEVEL_UP_MOVE(13, MOVE_MEGA_DRAIN),
+    LEVEL_UP_MOVE(16, MOVE_WORRY_SEED),
+    LEVEL_UP_END
     LEVEL_UP_END
 };
 #endif //P_GEN_4_CROSS_EVOS
