@@ -1019,13 +1019,15 @@ static enum CancelerResult CancelerPPDeduction(struct BattleCalcValues *cv)
         for (u32 i = 0; i < gBattlersCount; i++)
         {
             if (!IsBattlerAlly(i, cv->battlerAtk))
-                ppToDeduct += (GetBattlerAbility(i) == ABILITY_PRESSURE);
+                ppToDeduct += (cv->abilities[i] == ABILITY_PRESSURE);
         }
     }
     else if (moveTarget != TARGET_OPPONENTS_FIELD)
     {
-        if (cv->battlerAtk != cv->battlerDef && GetBattlerAbility(cv->battlerDef) == ABILITY_PRESSURE)
-             ppToDeduct++;
+        if (cv->battlerAtk != cv->battlerDef
+         && (GetConfig(B_PRESSURE_ALLIES) < GEN_5 || !IsBattlerAlly(cv->battlerAtk, cv->battlerDef))
+         && cv->abilities[cv->battlerDef] == ABILITY_PRESSURE)
+            ppToDeduct++;
     }
 
     // For item Metronome, echoed voice
@@ -1639,8 +1641,12 @@ static bool32 CanPledgeComboAttackHappen(struct BattleCalcValues *cv)
 
         gBattlerByTurnOrder[currPledgeUser++] = partner;
 
-        for (u32 i = 0; newTurnOrder[i] != 0xFF && i < 2; i++)
+        for (u32 i = 0; i < ARRAY_COUNT(newTurnOrder); i++)
+        {
+            if (newTurnOrder[i] == 0xFF)
+                continue;
             gBattlerByTurnOrder[currPledgeUser++] = newTurnOrder[i];
+        }
 
         gBattleStruct->pledgeState = PLEDGE_COMBO_WAITING;
         return TRUE;
@@ -3794,7 +3800,7 @@ static enum MoveEndResult MoveEndUpdateLastMoves(struct BattleCalcValues *cv)
 
         if (!gBattleStruct->unableToUseMove
          && !IsBattlerUnaffectedByMove(cv->battlerDef)
-         && gChosenMove != MOVE_UNAVAILABLE
+         && IsMoveValid(gChosenMove)
          && !gSpecialStatuses[cv->battlerAtk].dancerUsedMove)
         {
             gLastUsedMove = cv->move;
@@ -4982,7 +4988,9 @@ static enum MoveEndResult MoveEndThirdMoveBlock(struct BattleCalcValues *cv)
         }
         break;
     case EFFECT_NATURAL_GIFT:
-        if (!gBattleStruct->unableToUseMove && GetItemPocket(gBattleMons[cv->battlerAtk].item) == POCKET_BERRIES)
+        if (gBattleStruct->battlerState[cv->battlerAtk].originalBattlerPartyId == PARTY_SIZE
+         && !gBattleStruct->unableToUseMove
+         && GetItemPocket(gBattleMons[cv->battlerAtk].item) == POCKET_BERRIES)
         {
             enum Item item = gBattleMons[cv->battlerAtk].item;
             gBattleMons[gBattlerAttacker].item = ITEM_NONE;
@@ -5940,7 +5948,7 @@ static enum Move GetMirrorMoveMove(void)
         if (i != gBattlerAttacker)
         {
             move = gBattleStruct->lastTakenMoveFrom[gBattlerAttacker][i];
-            if (move != MOVE_NONE && move != MOVE_UNAVAILABLE)
+            if (IsMoveValid(move))
             {
                 validMoves[validMovesCount] = move;
                 validMovesCount++;
